@@ -18,4 +18,12 @@
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.4" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\KarmaCoreApp.Application\KarmaCoreApp.Application.csproj" />
+    <ProjectReference Include="..\KarmaCoreApp.Data.EF\KarmaCoreApp.Data.EF.csproj" />
+    <ProjectReference Include="..\KarmaCoreApp.Data\KarmaCoreApp.Data.csproj" />
+    <ProjectReference Include="..\KarmaCoreApp.Infrastructure\KarmaCoreApp.Infrastructure.csproj" />
+    <ProjectReference Include="..\KarmaCoreApp.Utilities\KarmaCoreApp.Utilities.csproj" />
+  </ItemGroup>
+
 </Project>
