@@ -1,4 +1,5 @@
 ﻿using KarmaCoreApp.Infrastructure.SharedKernel;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace KarmaCoreApp.Data.Entities
@@ -7,6 +8,9 @@ namespace KarmaCoreApp.Data.Entities
     public class BlogTag : DomainEntity<int>
     {
         public int BlogId { get; set; }
+
+        [StringLength(50)]
+        [Column(TypeName = "varchar")]
         public string TagId { get; set; }
 
         [ForeignKey("BlogId")]

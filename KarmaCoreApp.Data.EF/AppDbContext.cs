@@ -88,6 +88,7 @@ namespace KarmaCoreApp.Data.EF
         public override int SaveChanges()
         {
             var modified = ChangeTracker.Entries().Where(e => e.State == EntityState.Modified || e.State == EntityState.Added);
+
             foreach (EntityEntry item in modified)
             {
                 var changedOrAddedItem = item.Entity as IDateTracking;

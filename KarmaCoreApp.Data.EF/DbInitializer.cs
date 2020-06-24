@@ -52,7 +52,7 @@ namespace KarmaCoreApp.Data.EF
                     FullName = "Administrator",
                     Email = "admin@gmail.com",
                     Balance = 0,
-                }, "Adminz@123");
+                }, "Admin@123");
                 var user = await _userManager.FindByNameAsync("admin");
                 await _userManager.AddToRoleAsync(user, "Admin");
             }

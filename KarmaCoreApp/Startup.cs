@@ -1,5 +1,10 @@
-﻿using KarmaCoreApp.Data.EF;
+﻿using AutoMapper;
+using KarmaCoreApp.Application.Implementation;
+using KarmaCoreApp.Application.Interfaces;
+using KarmaCoreApp.Data.EF;
+using KarmaCoreApp.Data.EF.Repositories;
 using KarmaCoreApp.Data.Entities;
+using KarmaCoreApp.Data.IRepositories;
 using KarmaCoreApp.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -34,8 +39,15 @@ namespace KarmaCoreApp
             services.AddScoped<UserManager<AppUser>, UserManager<AppUser>>();
             services.AddScoped<RoleManager<AppRole>, RoleManager<AppRole>>();
 
+            // config Mapper
+            services.AddSingleton(Mapper.Configuration);
+            services.AddScoped<IMapper>(sp => new Mapper(sp.GetRequiredService<AutoMapper.IConfigurationProvider>(), sp.GetService));
+
             services.AddTransient<IEmailSender, EmailSender>();
             services.AddTransient<DbInitializer>();
+
+            services.AddTransient<IProductCategoryRepository,ProductCategoryRepository>();
+            services.AddTransient<IProductCategoryService, ProductCategoryService>();
 
             services.AddMvc();
         }
@@ -56,6 +68,7 @@ namespace KarmaCoreApp
 
             app.UseStaticFiles();
 
+            // AspNetIdentity
             app.UseAuthentication();
 
             app.UseMvc(routes =>
@@ -64,6 +77,7 @@ namespace KarmaCoreApp
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
+
             dbInitializer.Seed().Wait();
         }
     }
