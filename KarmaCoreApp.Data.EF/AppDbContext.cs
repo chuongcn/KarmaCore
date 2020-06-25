@@ -6,7 +6,10 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
+using Microsoft.EntityFrameworkCore.Design;
+using Microsoft.Extensions.Configuration;
 using System;
+using System.IO;
 using System.Linq;
 
 namespace KarmaCoreApp.Data.EF
@@ -49,9 +52,9 @@ namespace KarmaCoreApp.Data.EF
         public DbSet<Permission> Permissions { get; set; }
         public DbSet<WholePrice> WholePrices { get; set; }
 
-        public DbSet<AdvertisementPage> AdvertisementPages { get; set; }
-        public DbSet<Advertisement> Advertisements { get; set; }
-        public DbSet<AdvertisementPosition> AdvertisementPositions { get; set; }
+        //public DbSet<Advertisement> Advertisements { get; set; }
+        //public DbSet<AdvertisementPage> AdvertisementPages { get; set; }        
+        //public DbSet<AdvertisementPosition> AdvertisementPositions { get; set; }
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
@@ -72,8 +75,7 @@ namespace KarmaCoreApp.Data.EF
 
             #endregion Identity Config
 
-            builder.AddConfiguration(new TagConfiguration());
-            builder.AddConfiguration(new AdvertisementPositionConfiguration());
+            builder.AddConfiguration(new TagConfiguration());            
             builder.AddConfiguration(new BlogTagConfiguration());
             builder.AddConfiguration(new ContactDetailConfiguration());
             builder.AddConfiguration(new FooterConfiguration());
@@ -81,8 +83,9 @@ namespace KarmaCoreApp.Data.EF
             builder.AddConfiguration(new PageConfiguration());
             builder.AddConfiguration(new ProductTagConfiguration());
             builder.AddConfiguration(new SystemConfigConfiguration());
+            //builder.AddConfiguration(new AdvertisementPositionConfiguration());
 
-            base.OnModelCreating(builder);
+            //base.OnModelCreating(builder);
         }
 
         public override int SaveChanges()
@@ -103,6 +106,20 @@ namespace KarmaCoreApp.Data.EF
             }
 
             return base.SaveChanges();
+        }
+
+        public class DesignTimeDbContextFactory : IDesignTimeDbContextFactory<AppDbContext>
+        {
+            public AppDbContext CreateDbContext(string[] args)
+            {
+                IConfiguration configuration = new ConfigurationBuilder()
+                     .SetBasePath(Directory.GetCurrentDirectory())
+                     .AddJsonFile("appsettings.json").Build();
+                var builder = new DbContextOptionsBuilder<AppDbContext>();
+                var connectionString = configuration.GetConnectionString("DefaultConnection");
+                builder.UseSqlServer(connectionString);
+                return new AppDbContext(builder.Options);
+            }
         }
     }
 }

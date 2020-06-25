@@ -2,6 +2,7 @@
 using KarmaCoreApp.Data.Enums;
 using KarmaCoreApp.Utilities.Constants;
 using Microsoft.AspNetCore.Identity;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -52,6 +53,9 @@ namespace KarmaCoreApp.Data.EF
                     FullName = "Administrator",
                     Email = "admin@gmail.com",
                     Balance = 0,
+                    DateCreated = DateTime.Now,
+                    DateModified = DateTime.Now,
+                    Status = Status.Active
                 }, "Admin@123");
                 var user = await _userManager.FindByNameAsync("admin");
                 await _userManager.AddToRoleAsync(user, "Admin");
@@ -80,7 +84,7 @@ namespace KarmaCoreApp.Data.EF
                     new Function() {Id = "ANNOUNCEMENT",Name = "Thông báo",ParentId = "UTILITY",SortOrder = 3,Status = Status.Active,URL = "/admin/announcement/index",IconCss = "fa-clone"  },
                     new Function() {Id = "CONTACT",Name = "Liên hệ",ParentId = "UTILITY",SortOrder = 4,Status = Status.Active,URL = "/admin/contact/index",IconCss = "fa-clone"  },
                     new Function() {Id = "SLIDE",Name = "Slide",ParentId = "UTILITY",SortOrder = 5,Status = Status.Active,URL = "/admin/slide/index",IconCss = "fa-clone"  },
-                    new Function() {Id = "ADVERTISMENT",Name = "Quảng cáo",ParentId = "UTILITY",SortOrder = 6,Status = Status.Active,URL = "/admin/advertistment/index",IconCss = "fa-clone"  },
+                    //new Function() {Id = "ADVERTISMENT",Name = "Quảng cáo",ParentId = "UTILITY",SortOrder = 6,Status = Status.Active,URL = "/admin/advertistment/index",IconCss = "fa-clone"  },
 
                     new Function() {Id = "REPORT",Name = "Báo cáo",ParentId = null,SortOrder = 5,Status = Status.Active,URL = "/",IconCss = "fa-bar-chart-o"  },
                     new Function() {Id = "REVENUES",Name = "Báo cáo doanh thu",ParentId = "REPORT",SortOrder = 1,Status = Status.Active,URL = "/admin/report/revenues",IconCss = "fa-bar-chart-o"  },
@@ -111,24 +115,24 @@ namespace KarmaCoreApp.Data.EF
                 };
                 _context.Colors.AddRange(listColor);
             }
-            if (_context.AdvertisementPages.Count() == 0)
-            {
-                List<AdvertisementPage> pages = new List<AdvertisementPage>()
-                {
-                    new AdvertisementPage() {Id="home", Name="Trang chủ",AdvertisementPositions = new List<AdvertisementPosition>(){
-                        new AdvertisementPosition(){Id="home-left",Name="Bên trái"}
-                    } },
-                    new AdvertisementPage() {Id="product-cate", Name="Danh mục sản phẩm" ,
-                        AdvertisementPositions = new List<AdvertisementPosition>(){
-                        new AdvertisementPosition(){Id="product-cate-left",Name="Bên trái"}
-                    }},
-                    new AdvertisementPage() {Id="product-detail", Name="Chi tiết sản phẩm",
-                        AdvertisementPositions = new List<AdvertisementPosition>(){
-                        new AdvertisementPosition(){Id="product-detail-left",Name="Bên trái"}
-                    } },
-                };
-                _context.AdvertisementPages.AddRange(pages);
-            }
+            //if (_context.AdvertisementPages.Count() == 0)
+            //{
+            //    List<AdvertisementPage> pages = new List<AdvertisementPage>()
+            //    {
+            //        new AdvertisementPage() {Id="home", Name="Trang chủ",AdvertisementPositions = new List<AdvertisementPosition>(){
+            //            new AdvertisementPosition(){Id="home-left",Name="Bên trái"}
+            //        } },
+            //        new AdvertisementPage() {Id="product-cate", Name="Danh mục sản phẩm" ,
+            //            AdvertisementPositions = new List<AdvertisementPosition>(){
+            //            new AdvertisementPosition(){Id="product-cate-left",Name="Bên trái"}
+            //        }},
+            //        new AdvertisementPage() {Id="product-detail", Name="Chi tiết sản phẩm",
+            //            AdvertisementPositions = new List<AdvertisementPosition>(){
+            //            new AdvertisementPosition(){Id="product-detail-left",Name="Bên trái"}
+            //        } },
+            //    };
+            //    _context.AdvertisementPages.AddRange(pages);
+            //}
 
             if (_context.Slides.Count() == 0)
             {
