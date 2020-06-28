@@ -13,6 +13,13 @@
     <!-- Icons -->
     <link rel="stylesheet" href="~/admin-side/vendor/nucleo/css/nucleo.css" type="text/css">
     <link rel="stylesheet" href="~/admin-side/vendor/fortawesome/fontawesome-free/css/all.min.css" type="text/css">
+    <link rel="stylesheet" href="~/admin-side/vendor/animate.css/animate.min.css">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="~/admin-side/vendor/bootstrap/dist/css/bootstrap.min.css" type="text/css" asp-append-version="true">
+
+    <link rel="stylesheet" href="~/admin-side/vendor/fullcalendar/dist/fullcalendar.min.css">
+    <link rel="stylesheet" href="~/admin-side/vendor/sweetalert2/dist/sweetalert2.min.css">
+
     <!-- Page plugins -->
     <!-- Argon CSS -->
     <link rel="stylesheet" href="~/admin-side/css/argon.css?v=1.1.0" type="text/css">
@@ -501,19 +508,31 @@
         </div>
         <!-- Page content -->
         <div class="container-fluid mt--6">
-            @RenderBody()          
+            @RenderBody()
         </div>
     </div>
+
     <!-- Argon Scripts -->
     <!-- Core -->
-    <script src="~/admin-side/vendor/jquery/dist/jquery.min.js"></script>
+    <script src="~/admin-side/vendor/jquery/dist/jquery-3.4.1.min.js"></script>
     <script src="~/admin-side/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/admin-side/vendor/js-cookie/js.cookie.js"></script>
     <script src="~/admin-side/vendor/jquery.scrollbar/jquery.scrollbar.min.js"></script>
     <script src="~/admin-side/vendor/jquery-scroll-lock/dist/jquery-scrollLock.min.js"></script>
+
     <!-- Optional JS -->
     <script src="~/admin-side/vendor/chart.js/dist/Chart.min.js"></script>
     <script src="~/admin-side/vendor/chart.js/dist/Chart.extension.js"></script>
+    <script src="~/admin-side/vendor/sweetalert2/dist/sweetalert2.all.min.js" asp-append-version="true"></script>
+    <script src="~/admin-side/vendor/bootstrap-notify/bootstrap-notify.min.js" asp-append-version="true"></script>
+
+    <script src="~/admin-side/vendor/moment/min/moment.min.js"></script>
+    <script src="~/admin-side/vendor/fullcalendar/dist/fullcalendar.min.js"></script>
+    <script src="~/admin-side/vendor/sweetalert2/dist/sweetalert2.min.js"></script>
+
+    <script src="~/app/shared/alert.js"></script>
+    <script src="~/app/shared/messages.js"></script>
+    <script src="~/app/shared/karmar.js"></script>
     <!-- Argon JS -->
     <script src="~/admin-side/js/argon.js?v=1.1.0"></script>
     <!-- Demo JS - remove this in your project -->
