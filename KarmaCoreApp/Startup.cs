@@ -5,6 +5,7 @@ using KarmaCoreApp.Data.EF;
 using KarmaCoreApp.Data.EF.Repositories;
 using KarmaCoreApp.Data.Entities;
 using KarmaCoreApp.Data.IRepositories;
+using KarmaCoreApp.Helpers;
 using KarmaCoreApp.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -66,8 +67,12 @@ namespace KarmaCoreApp
             services.AddScoped<IMapper>(sp => new Mapper(sp.GetRequiredService<AutoMapper.IConfigurationProvider>(), sp.GetService));
 
             services.AddTransient<IEmailSender, EmailSender>();
+
             services.AddTransient<DbInitializer>();
 
+            services.AddScoped<IUserClaimsPrincipalFactory<AppUser>, CustomClaimsPrincipalFactory>();
+
+            //Services
             services.AddTransient<IProductCategoryRepository, ProductCategoryRepository>();
             services.AddTransient<IProductCategoryService, ProductCategoryService>();
 
@@ -103,7 +108,7 @@ namespace KarmaCoreApp
 
                 routes.MapRoute(
                     name: "areaRoute",
-                    template: "{area:exists}/{controller=Home}/{action=Index}/{id?}");
+                    template: "{area:exists}/{controller=Login}/{action=Index}/{id?}");
             });
 
             //dbInitializer.Seed().Wait();

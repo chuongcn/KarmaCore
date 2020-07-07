@@ -1,0 +1,9 @@
+﻿.validation-error {  
+    font-size: 0.8rem;
+    width: 100%;       
+    font-style:italic;
+}
+
+/*.invalid-feedback {
+    font-size: 100%;
+}*/

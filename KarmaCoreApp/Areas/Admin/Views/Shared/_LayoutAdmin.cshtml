@@ -1,11 +1,13 @@
-﻿<!DOCTYPE html>
+﻿@using KarmaCoreApp.Extensions;
+
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Start your development with a Dashboard for Bootstrap 4.">
     <meta name="author" content="Creative Tim">
-    <title>Argon Dashboard PRO - Premium Bootstrap 4 Admin Template</title>
+    <title>Admin Template</title>
     <!-- Favicon -->
     <link rel="icon" href="~/admin-side/img/brand/favicon.png" type="image/png">
     <!-- Fonts -->
@@ -22,6 +24,7 @@
 
     <!-- Page plugins -->
     <!-- Argon CSS -->
+    <link href="~/admin-side/css/site.css" rel="stylesheet" />
     <link rel="stylesheet" href="~/admin-side/css/argon.css?v=1.1.0" type="text/css">
 </head>
 <body>
@@ -297,12 +300,12 @@
                                         <div class="row align-items-center">
                                             <div class="col-auto">
                                                 <!-- Avatar -->
-                                                <img alt="Image placeholder" src="~/admin-side/img/theme/team-1.jpg" class="avatar rounded-circle">
+                                                <img alt="Avatar" src="~/admin-side/img/theme/team-1.jpg" class="avatar rounded-circle">
                                             </div>
                                             <div class="col ml--2">
                                                 <div class="d-flex justify-content-between align-items-center">
                                                     <div>
-                                                        <h4 class="mb-0 text-sm">John Snow</h4>
+                                                        <h4 class="mb-0 text-sm">Karmar</h4>
                                                     </div>
                                                     <div class="text-right text-muted">
                                                         <small>2 hrs ago</small>
@@ -444,10 +447,10 @@
                             <a class="nav-link pr-0" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <div class="media align-items-center">
                                     <span class="avatar avatar-sm rounded-circle">
-                                        <img alt="Image placeholder" src="~/admin-side/img/theme/team-4.jpg">
+                                        <img alt="" src="@User.GetSpecificClaim("Avatar")">
                                     </span>
                                     <div class="media-body ml-2 d-none d-lg-block">
-                                        <span class="mb-0 text-sm  font-weight-bold">John Snow</span>
+                                        <span class="mb-0 text-sm  font-weight-bold">@User.GetSpecificClaim("FullName")</span>
                                     </div>
                                 </div>
                             </a>

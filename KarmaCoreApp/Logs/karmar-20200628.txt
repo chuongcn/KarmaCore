@@ -490,3 +490,701 @@ WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
 2020-06-28T10:58:06.2042114+07:00 0HM0R2SRBERA3:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44306/admin-side/img/brand/favicon.png   (ca22a1cb)
 2020-06-28T10:58:06.2154553+07:00 0HM0R2SRBERA3:00000003 [INF] Sending file. Request path: '"/admin-side/img/brand/favicon.png"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\img\brand\favicon.png"' (27b0a520)
 2020-06-28T10:58:06.2826279+07:00 0HM0R2SRBERA3:00000003 [INF] Request finished in 73.7226ms 200 image/png (791a596a)
+2020-06-28T12:17:57.0301288+07:00  [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=KarmaCoreApp.Data.EF " (9958f5bb)
+2020-06-28T12:17:57.9368107+07:00  [INF] Executed DbCommand ("43"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-06-28T12:17:58.0082439+07:00  [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-06-28T12:17:58.0354917+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Functions] AS [f]" (0723d8ff)
+2020-06-28T12:17:58.1280311+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2020-06-28T12:17:58.1355161+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Colors] AS [c]" (0723d8ff)
+2020-06-28T12:17:58.2417035+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Slides] AS [s]" (0723d8ff)
+2020-06-28T12:17:58.2564722+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Sizes] AS [s]" (0723d8ff)
+2020-06-28T12:17:58.2776370+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [ProductCategories] AS [p]" (0723d8ff)
+2020-06-28T12:17:58.3482637+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-06-28T12:17:58.3849412+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-06-28T12:17:58.4004758+07:00  [INF] Executed DbCommand ("7"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-06-28T12:17:59.6050789+07:00 0HM0R4AFLSJV9:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:55321/   (ca22a1cb)
+2020-06-28T12:18:00.3906721+07:00 0HM0R4AFLSJV9:00000001 [INF] Authorization failed for user: null. (a4ab1676)
+2020-06-28T12:18:00.4021954+07:00 0HM0R4AFLSJV9:00000001 [INF] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"'. (8b6446cb)
+2020-06-28T12:18:00.4205922+07:00 0HM0R4AFLSJV9:00000001 [INF] Executing ChallengeResult with authentication schemes ([]). (f3dca807)
+2020-06-28T12:18:00.4576105+07:00 0HM0R4AFLSJV9:00000001 [INF] AuthenticationScheme: "Identity.Application" was challenged. (d45f1f38)
+2020-06-28T12:18:00.4683759+07:00 0HM0R4AFLSJV9:00000001 [INF] Executed action "KarmaCoreApp.Controllers.HomeController.Index (KarmaCoreApp)" in 114.1417ms (afa2e885)
+2020-06-28T12:18:00.5388170+07:00 0HM0R4AFLSJV9:00000001 [INF] Request finished in 1007.0041ms 302  (791a596a)
+2020-06-28T12:18:00.5807001+07:00 0HM0R4AFLSJV9:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:55321/Account/Login?ReturnUrl=%2F   (ca22a1cb)
+2020-06-28T12:18:00.7852743+07:00 0HM0R4AFLSJV9:00000002 [INF] Executing action method "KarmaCoreApp.Controllers.AccountController.Login (KarmaCoreApp)" with arguments (["/"]) - ModelState is Valid (ba7f4ac2)
+2020-06-28T12:18:00.8319232+07:00 0HM0R4AFLSJV9:00000002 [INF] AuthenticationScheme: "Identity.External" signed out. (d3f50c8d)
+2020-06-28T12:18:06.4205953+07:00 0HM0R4AFLSJV9:00000002 [INF] Executed action "KarmaCoreApp.Controllers.AccountController.Login (KarmaCoreApp)" in 5769.5269ms (afa2e885)
+2020-06-28T12:18:06.5083854+07:00 0HM0R4AFLSJV9:00000002 [ERR] An unhandled exception has occurred while executing the request (cf926119)
+Microsoft.AspNetCore.Mvc.Razor.Compilation.CompilationFailedException: One or more compilation failures occurred:
+5k3wohbm.2wb(604,147): error CS1031: Type expected
+5k3wohbm.2wb(604,347): error CS1031: Type expected
+5k3wohbm.2wb(604,547): error CS1031: Type expected
+5k3wohbm.2wb(593,30): error CS0246: The type or namespace name 'ApplicationUser' could not be found (are you missing a using directive or an assembly reference?)
+5k3wohbm.2wb(604,195): error CS1061: 'LoginViewModel' does not contain a definition for 'Email' and no extension method 'Email' accepting a first argument of type 'LoginViewModel' could be found (are you missing a using directive or an assembly reference?)
+5k3wohbm.2wb(604,395): error CS1061: 'LoginViewModel' does not contain a definition for 'Email' and no extension method 'Email' accepting a first argument of type 'LoginViewModel' could be found (are you missing a using directive or an assembly reference?)
+5k3wohbm.2wb(604,595): error CS1061: 'LoginViewModel' does not contain a definition for 'Email' and no extension method 'Email' accepting a first argument of type 'LoginViewModel' could be found (are you missing a using directive or an assembly reference?)
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompiler.CompileAndEmit(RazorCodeDocument codeDocument, String generatedCode)
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompiler.CompileAndEmit(String relativePath)
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompiler.CreateCacheEntry(String normalizedPath)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.DefaultRazorPageFactoryProvider.CreateFactory(String relativePath)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.CreateCacheResult(HashSet`1 expirationTokens, String relativePath, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.OnCacheMiss(ViewLocationExpanderContext expanderContext, ViewLocationCacheKey cacheKey)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.LocatePageFromViewLocations(ActionContext actionContext, String pageName, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.FindView(ActionContext context, String viewName, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.ViewEngines.CompositeViewEngine.FindView(ActionContext context, String viewName, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor.FindView(ActionContext actionContext, ViewResult viewResult)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultAsync(IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResultFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-06-28T12:18:07.1617897+07:00 0HM0R4AFLSJV9:00000002 [INF] Request finished in 6575.53ms 500 text/html; charset=utf-8 (791a596a)
+2020-06-28T12:18:22.0418845+07:00 0HM0R4AFLSJV9:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin   (ca22a1cb)
+2020-06-28T12:18:22.0636113+07:00 0HM0R4AFLSJV9:00000003 [INF] Executing action method "KarmaCoreApp.Areas.Admin.Controllers.LoginController.Index (KarmaCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2020-06-28T12:18:23.5576109+07:00 0HM0R4AFLSJV9:00000003 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2020-06-28T12:18:23.9263740+07:00 0HM0R4AFLSJV9:00000003 [INF] Executed action "KarmaCoreApp.Areas.Admin.Controllers.LoginController.Index (KarmaCoreApp)" in 1864.6601ms (afa2e885)
+2020-06-28T12:18:23.9483540+07:00 0HM0R4AFLSJV9:00000003 [INF] Request finished in 1910.2159ms 200 text/html; charset=utf-8 (791a596a)
+2020-06-28T12:18:24.0150697+07:00 0HM0R4AFLSJV9:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:55321/lib/jquery-validation/dist/jquery.validate.js   (ca22a1cb)
+2020-06-28T12:18:24.0226097+07:00 0HM0R4AFLSJVD:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:55321/app/shared/alert.js   (ca22a1cb)
+2020-06-28T12:18:24.0245408+07:00 0HM0R4AFLSJVA:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:55321/lib/jquery-validation/dist/additional-methods.js   (ca22a1cb)
+2020-06-28T12:18:24.0276168+07:00 0HM0R4AFLSJVC:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:55321/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js   (ca22a1cb)
+2020-06-28T12:18:24.0310552+07:00 0HM0R4AFLSJVB:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:55321/lib/jquery-validation/localization/messages_vi.js   (ca22a1cb)
+2020-06-28T12:18:24.0370063+07:00 0HM0R4AFLSJVE:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:55321/app/shared/messages.js   (ca22a1cb)
+2020-06-28T12:18:24.0693804+07:00 0HM0R4AFLSJVD:00000001 [INF] Sending file. Request path: '"/app/shared/alert.js"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\app\shared\alert.js"' (27b0a520)
+2020-06-28T12:18:24.0720394+07:00 0HM0R4AFLSJVC:00000001 [INF] Sending file. Request path: '"/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js"' (27b0a520)
+2020-06-28T12:18:24.0742057+07:00 0HM0R4AFLSJVA:00000001 [INF] Sending file. Request path: '"/lib/jquery-validation/dist/additional-methods.js"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\lib\jquery-validation\dist\additional-methods.js"' (27b0a520)
+2020-06-28T12:18:24.0766630+07:00 0HM0R4AFLSJVB:00000001 [INF] Sending file. Request path: '"/lib/jquery-validation/localization/messages_vi.js"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\lib\jquery-validation\localization\messages_vi.js"' (27b0a520)
+2020-06-28T12:18:24.0788230+07:00 0HM0R4AFLSJV9:00000004 [INF] Sending file. Request path: '"/lib/jquery-validation/dist/jquery.validate.js"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\lib\jquery-validation\dist\jquery.validate.js"' (27b0a520)
+2020-06-28T12:18:24.0801741+07:00 0HM0R4AFLSJVE:00000001 [INF] Sending file. Request path: '"/app/shared/messages.js"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\app\shared\messages.js"' (27b0a520)
+2020-06-28T12:18:24.1156443+07:00 0HM0R4AFLSJVD:00000001 [INF] Request finished in 88.9224ms 200 application/javascript (791a596a)
+2020-06-28T12:18:24.1342469+07:00 0HM0R4AFLSJVB:00000001 [INF] Request finished in 104.2623ms 200 application/javascript (791a596a)
+2020-06-28T12:18:24.1614279+07:00 0HM0R4AFLSJVD:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:55321/app/shared/karmar.js   (ca22a1cb)
+2020-06-28T12:18:24.1765914+07:00 0HM0R4AFLSJVE:00000001 [INF] Request finished in 91.3593ms 200 application/javascript (791a596a)
+2020-06-28T12:18:24.1871979+07:00 0HM0R4AFLSJVA:00000001 [INF] Request finished in 161.5851ms 200 application/javascript (791a596a)
+2020-06-28T12:18:24.1934416+07:00 0HM0R4AFLSJVD:00000002 [INF] Sending file. Request path: '"/app/shared/karmar.js"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\app\shared\karmar.js"' (27b0a520)
+2020-06-28T12:18:24.1984727+07:00 0HM0R4AFLSJV9:00000004 [INF] Request finished in 197.8749ms 200 application/javascript (791a596a)
+2020-06-28T12:18:24.2266762+07:00 0HM0R4AFLSJVC:00000001 [INF] Request finished in 180.2191ms 200 application/javascript (791a596a)
+2020-06-28T12:18:24.2319540+07:00 0HM0R4AFLSJVD:00000002 [INF] Request finished in 86.4715ms 200 application/javascript (791a596a)
+2020-06-28T12:18:24.2450528+07:00 0HM0R4AFLSJVE:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:55321/app/controllers/login/index.js   (ca22a1cb)
+2020-06-28T12:18:24.2529743+07:00 0HM0R4AFLSJVE:00000002 [INF] Sending file. Request path: '"/app/controllers/login/index.js"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\app\controllers\login\index.js"' (27b0a520)
+2020-06-28T12:18:24.2788867+07:00 0HM0R4AFLSJVE:00000002 [INF] Request finished in 51.7871ms 200 application/javascript (791a596a)
+2020-06-28T12:20:47.8558741+07:00  [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=KarmaCoreApp.Data.EF " (9958f5bb)
+2020-06-28T12:20:48.5125278+07:00  [INF] Executed DbCommand ("51"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-06-28T12:20:48.6048613+07:00  [INF] Executed DbCommand ("11"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-06-28T12:20:48.6406727+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Functions] AS [f]" (0723d8ff)
+2020-06-28T12:20:48.7367847+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2020-06-28T12:20:48.7467002+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Colors] AS [c]" (0723d8ff)
+2020-06-28T12:20:48.8570401+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Slides] AS [s]" (0723d8ff)
+2020-06-28T12:20:48.8714878+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Sizes] AS [s]" (0723d8ff)
+2020-06-28T12:20:48.8873245+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [ProductCategories] AS [p]" (0723d8ff)
+2020-06-28T12:20:48.9457616+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-06-28T12:20:48.9780100+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-06-28T12:20:48.9880040+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-06-28T12:20:50.4086326+07:00 0HM0R4C2GV371:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:55321/   (ca22a1cb)
+2020-06-28T12:20:51.0269493+07:00 0HM0R4C2GV371:00000001 [INF] Authorization failed for user: null. (a4ab1676)
+2020-06-28T12:20:51.0389497+07:00 0HM0R4C2GV371:00000001 [INF] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"'. (8b6446cb)
+2020-06-28T12:20:51.0532989+07:00 0HM0R4C2GV371:00000001 [INF] Executing ChallengeResult with authentication schemes ([]). (f3dca807)
+2020-06-28T12:20:51.0860661+07:00 0HM0R4C2GV371:00000001 [INF] AuthenticationScheme: "Identity.Application" was challenged. (d45f1f38)
+2020-06-28T12:20:51.0948182+07:00 0HM0R4C2GV371:00000001 [INF] Executed action "KarmaCoreApp.Controllers.HomeController.Index (KarmaCoreApp)" in 121.6009ms (afa2e885)
+2020-06-28T12:20:51.1670611+07:00 0HM0R4C2GV371:00000001 [INF] Request finished in 814.3135ms 302  (791a596a)
+2020-06-28T12:20:51.1973109+07:00 0HM0R4C2GV371:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:55321/Account/Login?ReturnUrl=%2F   (ca22a1cb)
+2020-06-28T12:20:51.3988830+07:00 0HM0R4C2GV371:00000002 [INF] Executing action method "KarmaCoreApp.Controllers.AccountController.Login (KarmaCoreApp)" with arguments (["/"]) - ModelState is Valid (ba7f4ac2)
+2020-06-28T12:20:51.4452057+07:00 0HM0R4C2GV371:00000002 [INF] AuthenticationScheme: "Identity.External" signed out. (d3f50c8d)
+2020-06-28T12:20:56.3342023+07:00 0HM0R4C2GV371:00000002 [INF] Executed action "KarmaCoreApp.Controllers.AccountController.Login (KarmaCoreApp)" in 5067.1908ms (afa2e885)
+2020-06-28T12:20:56.3997107+07:00 0HM0R4C2GV371:00000002 [ERR] An unhandled exception has occurred while executing the request (cf926119)
+Microsoft.AspNetCore.Mvc.Razor.Compilation.CompilationFailedException: One or more compilation failures occurred:
+edmzurul.rui(604,147): error CS1031: Type expected
+edmzurul.rui(604,347): error CS1031: Type expected
+edmzurul.rui(604,547): error CS1031: Type expected
+edmzurul.rui(593,30): error CS0246: The type or namespace name 'ApplicationUser' could not be found (are you missing a using directive or an assembly reference?)
+edmzurul.rui(604,195): error CS1061: 'LoginViewModel' does not contain a definition for 'Email' and no extension method 'Email' accepting a first argument of type 'LoginViewModel' could be found (are you missing a using directive or an assembly reference?)
+edmzurul.rui(604,395): error CS1061: 'LoginViewModel' does not contain a definition for 'Email' and no extension method 'Email' accepting a first argument of type 'LoginViewModel' could be found (are you missing a using directive or an assembly reference?)
+edmzurul.rui(604,595): error CS1061: 'LoginViewModel' does not contain a definition for 'Email' and no extension method 'Email' accepting a first argument of type 'LoginViewModel' could be found (are you missing a using directive or an assembly reference?)
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompiler.CompileAndEmit(RazorCodeDocument codeDocument, String generatedCode)
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompiler.CompileAndEmit(String relativePath)
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompiler.CreateCacheEntry(String normalizedPath)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.DefaultRazorPageFactoryProvider.CreateFactory(String relativePath)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.CreateCacheResult(HashSet`1 expirationTokens, String relativePath, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.OnCacheMiss(ViewLocationExpanderContext expanderContext, ViewLocationCacheKey cacheKey)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.LocatePageFromViewLocations(ActionContext actionContext, String pageName, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.FindView(ActionContext context, String viewName, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.ViewEngines.CompositeViewEngine.FindView(ActionContext context, String viewName, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor.FindView(ActionContext actionContext, ViewResult viewResult)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultAsync(IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResultFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-06-28T12:20:56.6554224+07:00 0HM0R4C2GV371:00000002 [INF] Request finished in 5454.383ms 500 text/html; charset=utf-8 (791a596a)
+2020-06-28T12:21:03.8769341+07:00 0HM0R4C2GV371:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin   (ca22a1cb)
+2020-06-28T12:21:03.8952731+07:00 0HM0R4C2GV371:00000003 [INF] Executing action method "KarmaCoreApp.Areas.Admin.Controllers.LoginController.Index (KarmaCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2020-06-28T12:21:05.3659712+07:00 0HM0R4C2GV371:00000003 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2020-06-28T12:21:05.6625273+07:00 0HM0R4C2GV371:00000003 [INF] Executed action "KarmaCoreApp.Areas.Admin.Controllers.LoginController.Index (KarmaCoreApp)" in 1772.4578ms (afa2e885)
+2020-06-28T12:21:05.6849833+07:00 0HM0R4C2GV371:00000003 [INF] Request finished in 1809.587ms 200 text/html; charset=utf-8 (791a596a)
+2020-06-28T12:21:05.7601581+07:00 0HM0R4C2GV371:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:55321/lib/jquery-validation/localization/messages_vi.js   (ca22a1cb)
+2020-06-28T12:21:05.7612200+07:00 0HM0R4C2GV372:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:55321/app/controllers/login/index.js   (ca22a1cb)
+2020-06-28T12:21:05.7908799+07:00 0HM0R4C2GV372:00000001 [INF] The file "/app/controllers/login/index.js" was not modified (f1f8d725)
+2020-06-28T12:21:05.7986505+07:00 0HM0R4C2GV371:00000004 [INF] Sending file. Request path: '"/lib/jquery-validation/localization/messages_vi.js"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\lib\jquery-validation\localization\messages_vi.js"' (27b0a520)
+2020-06-28T12:21:05.8039366+07:00 0HM0R4C2GV372:00000001 [INF] Request finished in 47.8433ms 304 application/javascript (791a596a)
+2020-06-28T12:21:05.8387279+07:00 0HM0R4C2GV371:00000004 [INF] Request finished in 98.8389ms 200 application/javascript (791a596a)
+2020-06-28T12:21:11.6992865+07:00 0HM0R4C2GV371:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/bootstrap/dist/js/bootstrap.bundle.min.js.map   (ca22a1cb)
+2020-06-28T12:21:11.7005823+07:00 0HM0R4C2GV372:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/jquery-scroll-lock/dist/jquery-scrollLock.min.js.map   (ca22a1cb)
+2020-06-28T12:21:11.7460891+07:00 0HM0R4C2GV372:00000002 [INF] Request finished in 12.9358ms 404  (791a596a)
+2020-06-28T12:21:11.7501810+07:00 0HM0R4C2GV371:00000005 [INF] Request finished in 15.3334ms 404  (791a596a)
+2020-06-28T12:21:11.7625052+07:00 0HM0R4C2GV372:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/bootstrap/dist/css/bootstrap.min.css.map   (ca22a1cb)
+2020-06-28T12:21:11.7693044+07:00 0HM0R4C2GV372:00000003 [INF] Request finished in 8.3729ms 404  (791a596a)
+2020-06-28T12:22:08.3107971+07:00 0HM0R4C2GV372:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin   (ca22a1cb)
+2020-06-28T12:22:08.3188009+07:00 0HM0R4C2GV372:00000004 [INF] Executing action method "KarmaCoreApp.Areas.Admin.Controllers.LoginController.Index (KarmaCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2020-06-28T12:22:08.3315358+07:00 0HM0R4C2GV372:00000004 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2020-06-28T12:22:08.3616136+07:00 0HM0R4C2GV372:00000004 [INF] Executed action "KarmaCoreApp.Areas.Admin.Controllers.LoginController.Index (KarmaCoreApp)" in 43.0898ms (afa2e885)
+2020-06-28T12:22:08.3776351+07:00 0HM0R4C2GV372:00000004 [INF] Request finished in 66.0192ms 200 text/html; charset=utf-8 (791a596a)
+2020-06-28T12:22:08.4276209+07:00 0HM0R4C2GV371:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:55321/app/controllers/login/index.js   (ca22a1cb)
+2020-06-28T12:22:08.4299602+07:00 0HM0R4C2GV372:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:55321/lib/jquery-validation/localization/messages_vi.js   (ca22a1cb)
+2020-06-28T12:22:08.4381780+07:00 0HM0R4C2GV371:00000006 [INF] The file "/app/controllers/login/index.js" was not modified (f1f8d725)
+2020-06-28T12:22:08.4428720+07:00 0HM0R4C2GV372:00000005 [INF] The file "/lib/jquery-validation/localization/messages_vi.js" was not modified (f1f8d725)
+2020-06-28T12:22:08.4591510+07:00 0HM0R4C2GV371:00000006 [INF] Request finished in 22.1356ms 304 application/javascript (791a596a)
+2020-06-28T12:22:08.4637189+07:00 0HM0R4C2GV372:00000005 [INF] Request finished in 26.826ms 304 application/javascript (791a596a)
+2020-06-28T12:22:08.5962772+07:00 0HM0R4C2GV372:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/img/brand/favicon.png   (ca22a1cb)
+2020-06-28T12:22:08.6121947+07:00 0HM0R4C2GV372:00000006 [INF] Sending file. Request path: '"/admin-side/img/brand/favicon.png"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\img\brand\favicon.png"' (27b0a520)
+2020-06-28T12:22:08.9204507+07:00 0HM0R4C2GV372:00000006 [INF] Request finished in 330.9186ms 200 image/png (791a596a)
+2020-06-28T12:22:24.4901658+07:00 0HM0R4C2GV372:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/bootstrap/dist/js/bootstrap.bundle.min.js.map   (ca22a1cb)
+2020-06-28T12:22:24.4936818+07:00 0HM0R4C2GV371:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/jquery-scroll-lock/dist/jquery-scrollLock.min.js.map   (ca22a1cb)
+2020-06-28T12:22:24.5232979+07:00 0HM0R4C2GV372:00000007 [INF] Request finished in 17.5755ms 404  (791a596a)
+2020-06-28T12:22:24.5327486+07:00 0HM0R4C2GV371:00000007 [INF] Request finished in 40.7374ms 404  (791a596a)
+2020-06-28T12:22:24.5422064+07:00 0HM0R4C2GV372:00000008 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/bootstrap/dist/css/bootstrap.min.css.map   (ca22a1cb)
+2020-06-28T12:22:24.5524740+07:00 0HM0R4C2GV372:00000008 [INF] Request finished in 14.1839ms 404  (791a596a)
+2020-06-28T12:27:40.9599183+07:00  [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=KarmaCoreApp.Data.EF " (9958f5bb)
+2020-06-28T12:27:41.5573424+07:00  [INF] Executed DbCommand ("35"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-06-28T12:27:41.6141745+07:00  [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-06-28T12:27:41.6339793+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Functions] AS [f]" (0723d8ff)
+2020-06-28T12:27:41.7102603+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2020-06-28T12:27:41.7177793+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Colors] AS [c]" (0723d8ff)
+2020-06-28T12:27:41.8007860+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Slides] AS [s]" (0723d8ff)
+2020-06-28T12:27:41.8149947+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Sizes] AS [s]" (0723d8ff)
+2020-06-28T12:27:41.8404770+07:00  [INF] Executed DbCommand ("7"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [ProductCategories] AS [p]" (0723d8ff)
+2020-06-28T12:27:41.9290887+07:00  [INF] Executed DbCommand ("6"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-06-28T12:27:41.9560833+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-06-28T12:27:41.9643185+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-06-28T12:27:42.8863635+07:00 0HM0R4FTFMIFR:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:55321/   (ca22a1cb)
+2020-06-28T12:27:43.4561543+07:00 0HM0R4FTFMIFR:00000001 [INF] Authorization failed for user: null. (a4ab1676)
+2020-06-28T12:27:43.4748124+07:00 0HM0R4FTFMIFR:00000001 [INF] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"'. (8b6446cb)
+2020-06-28T12:27:43.4927633+07:00 0HM0R4FTFMIFR:00000001 [INF] Executing ChallengeResult with authentication schemes ([]). (f3dca807)
+2020-06-28T12:27:43.5234598+07:00 0HM0R4FTFMIFR:00000001 [INF] AuthenticationScheme: "Identity.Application" was challenged. (d45f1f38)
+2020-06-28T12:27:43.5344053+07:00 0HM0R4FTFMIFR:00000001 [INF] Executed action "KarmaCoreApp.Controllers.HomeController.Index (KarmaCoreApp)" in 119.189ms (afa2e885)
+2020-06-28T12:27:43.6022522+07:00 0HM0R4FTFMIFR:00000001 [INF] Request finished in 776.1147ms 302  (791a596a)
+2020-06-28T12:27:43.6300592+07:00 0HM0R4FTFMIFR:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:55321/Account/Login?ReturnUrl=%2F   (ca22a1cb)
+2020-06-28T12:27:43.8205092+07:00 0HM0R4FTFMIFR:00000002 [INF] Executing action method "KarmaCoreApp.Controllers.AccountController.Login (KarmaCoreApp)" with arguments (["/"]) - ModelState is Valid (ba7f4ac2)
+2020-06-28T12:27:43.9877092+07:00 0HM0R4FTFMIFR:00000002 [INF] AuthenticationScheme: "Identity.External" signed out. (d3f50c8d)
+2020-06-28T12:27:48.6508570+07:00 0HM0R4FTFMIFR:00000002 [INF] Executed action "KarmaCoreApp.Controllers.AccountController.Login (KarmaCoreApp)" in 4957.1117ms (afa2e885)
+2020-06-28T12:27:48.7228175+07:00 0HM0R4FTFMIFR:00000002 [ERR] An unhandled exception has occurred while executing the request (cf926119)
+Microsoft.AspNetCore.Mvc.Razor.Compilation.CompilationFailedException: One or more compilation failures occurred:
+uf5i3qbp.zki(604,147): error CS1031: Type expected
+uf5i3qbp.zki(604,347): error CS1031: Type expected
+uf5i3qbp.zki(604,547): error CS1031: Type expected
+uf5i3qbp.zki(593,30): error CS0246: The type or namespace name 'ApplicationUser' could not be found (are you missing a using directive or an assembly reference?)
+uf5i3qbp.zki(604,195): error CS1061: 'LoginViewModel' does not contain a definition for 'Email' and no extension method 'Email' accepting a first argument of type 'LoginViewModel' could be found (are you missing a using directive or an assembly reference?)
+uf5i3qbp.zki(604,395): error CS1061: 'LoginViewModel' does not contain a definition for 'Email' and no extension method 'Email' accepting a first argument of type 'LoginViewModel' could be found (are you missing a using directive or an assembly reference?)
+uf5i3qbp.zki(604,595): error CS1061: 'LoginViewModel' does not contain a definition for 'Email' and no extension method 'Email' accepting a first argument of type 'LoginViewModel' could be found (are you missing a using directive or an assembly reference?)
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompiler.CompileAndEmit(RazorCodeDocument codeDocument, String generatedCode)
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompiler.CompileAndEmit(String relativePath)
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompiler.CreateCacheEntry(String normalizedPath)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.DefaultRazorPageFactoryProvider.CreateFactory(String relativePath)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.CreateCacheResult(HashSet`1 expirationTokens, String relativePath, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.OnCacheMiss(ViewLocationExpanderContext expanderContext, ViewLocationCacheKey cacheKey)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.LocatePageFromViewLocations(ActionContext actionContext, String pageName, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.FindView(ActionContext context, String viewName, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.ViewEngines.CompositeViewEngine.FindView(ActionContext context, String viewName, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor.FindView(ActionContext actionContext, ViewResult viewResult)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultAsync(IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResultFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-06-28T12:27:49.3379049+07:00 0HM0R4FTFMIFR:00000002 [INF] Request finished in 5674.271ms 500 text/html; charset=utf-8 (791a596a)
+2020-06-28T12:27:49.3556442+07:00 0HM0R4FTFMIFR:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin   (ca22a1cb)
+2020-06-28T12:27:49.3719124+07:00 0HM0R4FTFMIFR:00000003 [INF] Executing action method "KarmaCoreApp.Areas.Admin.Controllers.LoginController.Index (KarmaCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2020-06-28T12:27:50.8205944+07:00 0HM0R4FTFMIFR:00000003 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2020-06-28T12:27:51.1087182+07:00 0HM0R4FTFMIFR:00000003 [INF] Executed action "KarmaCoreApp.Areas.Admin.Controllers.LoginController.Index (KarmaCoreApp)" in 1736.9366ms (afa2e885)
+2020-06-28T12:27:51.1307643+07:00 0HM0R4FTFMIFR:00000003 [INF] Request finished in 1784.0102ms 200 text/html; charset=utf-8 (791a596a)
+2020-06-28T12:27:51.2146385+07:00 0HM0R4FTFMIFS:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:55321/app/controllers/login/index.js   (ca22a1cb)
+2020-06-28T12:27:51.2160356+07:00 0HM0R4FTFMIFR:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:55321/lib/jquery-validation/localization/messages_vi.js   (ca22a1cb)
+2020-06-28T12:27:51.2515411+07:00 0HM0R4FTFMIFR:00000004 [INF] The file "/lib/jquery-validation/localization/messages_vi.js" was not modified (f1f8d725)
+2020-06-28T12:27:51.2587736+07:00 0HM0R4FTFMIFS:00000001 [INF] Sending file. Request path: '"/app/controllers/login/index.js"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\app\controllers\login\index.js"' (27b0a520)
+2020-06-28T12:27:51.2818024+07:00 0HM0R4FTFMIFR:00000004 [INF] Request finished in 69.4819ms 304 application/javascript (791a596a)
+2020-06-28T12:27:51.3048333+07:00 0HM0R4FTFMIFS:00000001 [INF] Request finished in 97.481ms 200 application/javascript (791a596a)
+2020-06-28T12:27:57.3728890+07:00 0HM0R4FTFMIFS:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/bootstrap/dist/js/bootstrap.bundle.min.js.map   (ca22a1cb)
+2020-06-28T12:27:57.3745065+07:00 0HM0R4FTFMIFR:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/jquery-scroll-lock/dist/jquery-scrollLock.min.js.map   (ca22a1cb)
+2020-06-28T12:27:57.3861102+07:00 0HM0R4FTFMIFS:00000002 [INF] Request finished in 16.3224ms 404  (791a596a)
+2020-06-28T12:27:57.3894296+07:00 0HM0R4FTFMIFR:00000005 [INF] Request finished in 14.3191ms 404  (791a596a)
+2020-06-28T12:27:57.3994540+07:00 0HM0R4FTFMIFR:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/bootstrap/dist/css/bootstrap.min.css.map   (ca22a1cb)
+2020-06-28T12:27:57.4103266+07:00 0HM0R4FTFMIFR:00000006 [INF] Request finished in 8.8619ms 404  (791a596a)
+2020-06-28T12:57:40.4974604+07:00  [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=KarmaCoreApp.Data.EF " (9958f5bb)
+2020-06-28T12:57:41.1383094+07:00  [INF] Executed DbCommand ("38"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-06-28T12:57:41.2117724+07:00  [INF] Executed DbCommand ("8"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-06-28T12:57:41.2432971+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Functions] AS [f]" (0723d8ff)
+2020-06-28T12:57:41.3610102+07:00  [INF] Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2020-06-28T12:57:41.3768458+07:00  [INF] Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Colors] AS [c]" (0723d8ff)
+2020-06-28T12:57:41.5027521+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Slides] AS [s]" (0723d8ff)
+2020-06-28T12:57:41.5189249+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Sizes] AS [s]" (0723d8ff)
+2020-06-28T12:57:41.5340453+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [ProductCategories] AS [p]" (0723d8ff)
+2020-06-28T12:57:41.6042304+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-06-28T12:57:41.6379953+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-06-28T12:57:41.6482930+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-06-28T12:57:42.9428645+07:00 0HM0R50LT9H7D:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:55321/   (ca22a1cb)
+2020-06-28T12:57:43.5398842+07:00 0HM0R50LT9H7D:00000001 [INF] Authorization failed for user: null. (a4ab1676)
+2020-06-28T12:57:43.5562988+07:00 0HM0R50LT9H7D:00000001 [INF] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"'. (8b6446cb)
+2020-06-28T12:57:43.5751728+07:00 0HM0R50LT9H7D:00000001 [INF] Executing ChallengeResult with authentication schemes ([]). (f3dca807)
+2020-06-28T12:57:43.6102511+07:00 0HM0R50LT9H7D:00000001 [INF] AuthenticationScheme: "Identity.Application" was challenged. (d45f1f38)
+2020-06-28T12:57:43.6229658+07:00 0HM0R50LT9H7D:00000001 [INF] Executed action "KarmaCoreApp.Controllers.HomeController.Index (KarmaCoreApp)" in 126.0774ms (afa2e885)
+2020-06-28T12:57:43.7044224+07:00 0HM0R50LT9H7D:00000001 [INF] Request finished in 819.8232ms 302  (791a596a)
+2020-06-28T12:57:43.7373123+07:00 0HM0R50LT9H7D:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:55321/Account/Login?ReturnUrl=%2F   (ca22a1cb)
+2020-06-28T12:57:43.9377579+07:00 0HM0R50LT9H7D:00000002 [INF] Executing action method "KarmaCoreApp.Controllers.AccountController.Login (KarmaCoreApp)" with arguments (["/"]) - ModelState is Valid (ba7f4ac2)
+2020-06-28T12:57:43.9857728+07:00 0HM0R50LT9H7D:00000002 [INF] AuthenticationScheme: "Identity.External" signed out. (d3f50c8d)
+2020-06-28T12:57:48.9864943+07:00 0HM0R50LT9H7D:00000002 [INF] Executed action "KarmaCoreApp.Controllers.AccountController.Login (KarmaCoreApp)" in 5183.5478ms (afa2e885)
+2020-06-28T12:57:49.0565165+07:00 0HM0R50LT9H7D:00000002 [ERR] An unhandled exception has occurred while executing the request (cf926119)
+Microsoft.AspNetCore.Mvc.Razor.Compilation.CompilationFailedException: One or more compilation failures occurred:
+k4vpopsu.h1b(604,147): error CS1031: Type expected
+k4vpopsu.h1b(604,347): error CS1031: Type expected
+k4vpopsu.h1b(604,547): error CS1031: Type expected
+k4vpopsu.h1b(593,30): error CS0246: The type or namespace name 'ApplicationUser' could not be found (are you missing a using directive or an assembly reference?)
+k4vpopsu.h1b(604,195): error CS1061: 'LoginViewModel' does not contain a definition for 'Email' and no extension method 'Email' accepting a first argument of type 'LoginViewModel' could be found (are you missing a using directive or an assembly reference?)
+k4vpopsu.h1b(604,395): error CS1061: 'LoginViewModel' does not contain a definition for 'Email' and no extension method 'Email' accepting a first argument of type 'LoginViewModel' could be found (are you missing a using directive or an assembly reference?)
+k4vpopsu.h1b(604,595): error CS1061: 'LoginViewModel' does not contain a definition for 'Email' and no extension method 'Email' accepting a first argument of type 'LoginViewModel' could be found (are you missing a using directive or an assembly reference?)
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompiler.CompileAndEmit(RazorCodeDocument codeDocument, String generatedCode)
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompiler.CompileAndEmit(String relativePath)
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompiler.CreateCacheEntry(String normalizedPath)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.DefaultRazorPageFactoryProvider.CreateFactory(String relativePath)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.CreateCacheResult(HashSet`1 expirationTokens, String relativePath, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.OnCacheMiss(ViewLocationExpanderContext expanderContext, ViewLocationCacheKey cacheKey)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.LocatePageFromViewLocations(ActionContext actionContext, String pageName, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.FindView(ActionContext context, String viewName, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.ViewEngines.CompositeViewEngine.FindView(ActionContext context, String viewName, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor.FindView(ActionContext actionContext, ViewResult viewResult)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultAsync(IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResultFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-06-28T12:57:49.4942182+07:00 0HM0R50LT9H7D:00000002 [INF] Request finished in 5726.7811ms 500 text/html; charset=utf-8 (791a596a)
+2020-06-28T12:57:50.6741004+07:00 0HM0R50LT9H7D:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin/login   (ca22a1cb)
+2020-06-28T12:57:50.6900603+07:00 0HM0R50LT9H7D:00000003 [INF] Executing action method "KarmaCoreApp.Areas.Admin.Controllers.LoginController.Index (KarmaCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2020-06-28T12:57:52.3057586+07:00 0HM0R50LT9H7D:00000003 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2020-06-28T12:57:52.6081522+07:00 0HM0R50LT9H7D:00000003 [INF] Executed action "KarmaCoreApp.Areas.Admin.Controllers.LoginController.Index (KarmaCoreApp)" in 1920.2786ms (afa2e885)
+2020-06-28T12:57:52.6338626+07:00 0HM0R50LT9H7D:00000003 [INF] Request finished in 1960.1689ms 200 text/html; charset=utf-8 (791a596a)
+2020-06-28T12:57:52.7115160+07:00 0HM0R50LT9H7D:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:55321/lib/jquery-validation/localization/messages_vi.js   (ca22a1cb)
+2020-06-28T12:57:52.7155020+07:00 0HM0R50LT9H7F:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:55321/app/controllers/login/index.js   (ca22a1cb)
+2020-06-28T12:57:52.7543726+07:00 0HM0R50LT9H7D:00000004 [INF] The file "/lib/jquery-validation/localization/messages_vi.js" was not modified (f1f8d725)
+2020-06-28T12:57:52.7725411+07:00 0HM0R50LT9H7F:00000001 [INF] Sending file. Request path: '"/app/controllers/login/index.js"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\app\controllers\login\index.js"' (27b0a520)
+2020-06-28T12:57:52.7738444+07:00 0HM0R50LT9H7D:00000004 [INF] Request finished in 68.9839ms 304 application/javascript (791a596a)
+2020-06-28T12:57:52.8029866+07:00 0HM0R50LT9H7F:00000001 [INF] Request finished in 99.7602ms 200 application/javascript (791a596a)
+2020-06-28T12:58:01.3636740+07:00 0HM0R50LT9H7F:00000002 [INF] Request starting HTTP/1.1 POST http://localhost:55321/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 31 (ca22a1cb)
+2020-06-28T12:58:01.4082606+07:00 0HM0R50LT9H7F:00000002 [INF] Antiforgery token validation failed. "The required antiforgery cookie \".AspNetCore.Antiforgery.T9kS4AjZPpI\" is not present." (843d91fe)
+Microsoft.AspNetCore.Antiforgery.AntiforgeryValidationException: The required antiforgery cookie ".AspNetCore.Antiforgery.T9kS4AjZPpI" is not present.
+   at Microsoft.AspNetCore.Antiforgery.Internal.DefaultAntiforgery.ValidateRequestAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter.OnAuthorizationAsync(AuthorizationFilterContext context)
+2020-06-28T12:58:01.4167038+07:00 0HM0R50LT9H7F:00000002 [INF] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter"'. (8b6446cb)
+2020-06-28T12:58:01.4288891+07:00 0HM0R50LT9H7F:00000002 [INF] Executing HttpStatusCodeResult, setting HTTP status code 400 (e28ccfae)
+2020-06-28T12:58:01.4362201+07:00 0HM0R50LT9H7F:00000002 [INF] Executed action "KarmaCoreApp.Areas.Admin.Controllers.LoginController.Authen (KarmaCoreApp)" in 40.2093ms (afa2e885)
+2020-06-28T12:58:01.4674543+07:00 0HM0R50LT9H7F:00000002 [INF] Request finished in 102.9771ms 400  (791a596a)
+2020-06-28T12:58:02.8447543+07:00 0HM0R50LT9H7F:00000003 [INF] Request starting HTTP/1.1 POST http://localhost:55321/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 31 (ca22a1cb)
+2020-06-28T12:58:02.8536971+07:00 0HM0R50LT9H7F:00000003 [INF] Antiforgery token validation failed. "The required antiforgery cookie \".AspNetCore.Antiforgery.T9kS4AjZPpI\" is not present." (843d91fe)
+Microsoft.AspNetCore.Antiforgery.AntiforgeryValidationException: The required antiforgery cookie ".AspNetCore.Antiforgery.T9kS4AjZPpI" is not present.
+   at Microsoft.AspNetCore.Antiforgery.Internal.DefaultAntiforgery.ValidateRequestAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter.OnAuthorizationAsync(AuthorizationFilterContext context)
+2020-06-28T12:58:02.8614094+07:00 0HM0R50LT9H7F:00000003 [INF] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter"'. (8b6446cb)
+2020-06-28T12:58:02.8698504+07:00 0HM0R50LT9H7F:00000003 [INF] Executing HttpStatusCodeResult, setting HTTP status code 400 (e28ccfae)
+2020-06-28T12:58:02.8744897+07:00 0HM0R50LT9H7F:00000003 [INF] Executed action "KarmaCoreApp.Areas.Admin.Controllers.LoginController.Authen (KarmaCoreApp)" in 22.5221ms (afa2e885)
+2020-06-28T12:58:02.8815011+07:00 0HM0R50LT9H7F:00000003 [INF] Request finished in 36.1176ms 400  (791a596a)
+2020-06-28T12:58:04.2475459+07:00 0HM0R50LT9H7F:00000004 [INF] Request starting HTTP/1.1 POST http://localhost:55321/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 31 (ca22a1cb)
+2020-06-28T12:58:04.2547411+07:00 0HM0R50LT9H7F:00000004 [INF] Antiforgery token validation failed. "The required antiforgery cookie \".AspNetCore.Antiforgery.T9kS4AjZPpI\" is not present." (843d91fe)
+Microsoft.AspNetCore.Antiforgery.AntiforgeryValidationException: The required antiforgery cookie ".AspNetCore.Antiforgery.T9kS4AjZPpI" is not present.
+   at Microsoft.AspNetCore.Antiforgery.Internal.DefaultAntiforgery.ValidateRequestAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter.OnAuthorizationAsync(AuthorizationFilterContext context)
+2020-06-28T12:58:04.2622540+07:00 0HM0R50LT9H7F:00000004 [INF] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter"'. (8b6446cb)
+2020-06-28T12:58:04.2682530+07:00 0HM0R50LT9H7F:00000004 [INF] Executing HttpStatusCodeResult, setting HTTP status code 400 (e28ccfae)
+2020-06-28T12:58:04.2740535+07:00 0HM0R50LT9H7F:00000004 [INF] Executed action "KarmaCoreApp.Areas.Admin.Controllers.LoginController.Authen (KarmaCoreApp)" in 20.0602ms (afa2e885)
+2020-06-28T12:58:04.2834578+07:00 0HM0R50LT9H7F:00000004 [INF] Request finished in 31.2147ms 400  (791a596a)
+2020-06-28T12:58:04.6944488+07:00 0HM0R50LT9H7F:00000005 [INF] Request starting HTTP/1.1 POST http://localhost:55321/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 31 (ca22a1cb)
+2020-06-28T12:58:04.7031071+07:00 0HM0R50LT9H7F:00000005 [INF] Antiforgery token validation failed. "The required antiforgery cookie \".AspNetCore.Antiforgery.T9kS4AjZPpI\" is not present." (843d91fe)
+Microsoft.AspNetCore.Antiforgery.AntiforgeryValidationException: The required antiforgery cookie ".AspNetCore.Antiforgery.T9kS4AjZPpI" is not present.
+   at Microsoft.AspNetCore.Antiforgery.Internal.DefaultAntiforgery.ValidateRequestAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter.OnAuthorizationAsync(AuthorizationFilterContext context)
+2020-06-28T12:58:04.7116029+07:00 0HM0R50LT9H7F:00000005 [INF] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter"'. (8b6446cb)
+2020-06-28T12:58:04.7188239+07:00 0HM0R50LT9H7F:00000005 [INF] Executing HttpStatusCodeResult, setting HTTP status code 400 (e28ccfae)
+2020-06-28T12:58:04.7241175+07:00 0HM0R50LT9H7F:00000005 [INF] Executed action "KarmaCoreApp.Areas.Admin.Controllers.LoginController.Authen (KarmaCoreApp)" in 23.6198ms (afa2e885)
+2020-06-28T12:58:04.7343473+07:00 0HM0R50LT9H7F:00000005 [INF] Request finished in 35.6743ms 400  (791a596a)
+2020-06-28T12:58:05.1052355+07:00 0HM0R50LT9H7F:00000006 [INF] Request starting HTTP/1.1 POST http://localhost:55321/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 31 (ca22a1cb)
+2020-06-28T12:58:05.1152410+07:00 0HM0R50LT9H7F:00000006 [INF] Antiforgery token validation failed. "The required antiforgery cookie \".AspNetCore.Antiforgery.T9kS4AjZPpI\" is not present." (843d91fe)
+Microsoft.AspNetCore.Antiforgery.AntiforgeryValidationException: The required antiforgery cookie ".AspNetCore.Antiforgery.T9kS4AjZPpI" is not present.
+   at Microsoft.AspNetCore.Antiforgery.Internal.DefaultAntiforgery.ValidateRequestAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter.OnAuthorizationAsync(AuthorizationFilterContext context)
+2020-06-28T12:58:05.1205276+07:00 0HM0R50LT9H7F:00000006 [INF] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter"'. (8b6446cb)
+2020-06-28T12:58:05.1277331+07:00 0HM0R50LT9H7F:00000006 [INF] Executing HttpStatusCodeResult, setting HTTP status code 400 (e28ccfae)
+2020-06-28T12:58:05.1332877+07:00 0HM0R50LT9H7F:00000006 [INF] Executed action "KarmaCoreApp.Areas.Admin.Controllers.LoginController.Authen (KarmaCoreApp)" in 21.7938ms (afa2e885)
+2020-06-28T12:58:05.1384586+07:00 0HM0R50LT9H7F:00000006 [INF] Request finished in 35.4452ms 400  (791a596a)
+2020-06-28T12:58:05.3781844+07:00 0HM0R50LT9H7F:00000007 [INF] Request starting HTTP/1.1 POST http://localhost:55321/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 31 (ca22a1cb)
+2020-06-28T12:58:05.3871686+07:00 0HM0R50LT9H7F:00000007 [INF] Antiforgery token validation failed. "The required antiforgery cookie \".AspNetCore.Antiforgery.T9kS4AjZPpI\" is not present." (843d91fe)
+Microsoft.AspNetCore.Antiforgery.AntiforgeryValidationException: The required antiforgery cookie ".AspNetCore.Antiforgery.T9kS4AjZPpI" is not present.
+   at Microsoft.AspNetCore.Antiforgery.Internal.DefaultAntiforgery.ValidateRequestAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter.OnAuthorizationAsync(AuthorizationFilterContext context)
+2020-06-28T12:58:05.3948189+07:00 0HM0R50LT9H7F:00000007 [INF] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter"'. (8b6446cb)
+2020-06-28T12:58:05.4004139+07:00 0HM0R50LT9H7F:00000007 [INF] Executing HttpStatusCodeResult, setting HTTP status code 400 (e28ccfae)
+2020-06-28T12:58:05.4063018+07:00 0HM0R50LT9H7F:00000007 [INF] Executed action "KarmaCoreApp.Areas.Admin.Controllers.LoginController.Authen (KarmaCoreApp)" in 21.3044ms (afa2e885)
+2020-06-28T12:58:05.4163823+07:00 0HM0R50LT9H7F:00000007 [INF] Request finished in 36.1373ms 400  (791a596a)
+2020-06-28T12:58:05.5537747+07:00 0HM0R50LT9H7F:00000008 [INF] Request starting HTTP/1.1 POST http://localhost:55321/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 31 (ca22a1cb)
+2020-06-28T12:58:05.5619772+07:00 0HM0R50LT9H7F:00000008 [INF] Antiforgery token validation failed. "The required antiforgery cookie \".AspNetCore.Antiforgery.T9kS4AjZPpI\" is not present." (843d91fe)
+Microsoft.AspNetCore.Antiforgery.AntiforgeryValidationException: The required antiforgery cookie ".AspNetCore.Antiforgery.T9kS4AjZPpI" is not present.
+   at Microsoft.AspNetCore.Antiforgery.Internal.DefaultAntiforgery.ValidateRequestAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter.OnAuthorizationAsync(AuthorizationFilterContext context)
+2020-06-28T12:58:05.5659779+07:00 0HM0R50LT9H7F:00000008 [INF] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter"'. (8b6446cb)
+2020-06-28T12:58:05.5696476+07:00 0HM0R50LT9H7F:00000008 [INF] Executing HttpStatusCodeResult, setting HTTP status code 400 (e28ccfae)
+2020-06-28T12:58:05.5733299+07:00 0HM0R50LT9H7F:00000008 [INF] Executed action "KarmaCoreApp.Areas.Admin.Controllers.LoginController.Authen (KarmaCoreApp)" in 15.2712ms (afa2e885)
+2020-06-28T12:58:05.5809820+07:00 0HM0R50LT9H7F:00000008 [INF] Request finished in 23.5739ms 400  (791a596a)
+2020-06-28T12:58:05.7312781+07:00 0HM0R50LT9H7F:00000009 [INF] Request starting HTTP/1.1 POST http://localhost:55321/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 31 (ca22a1cb)
+2020-06-28T12:58:05.7391542+07:00 0HM0R50LT9H7F:00000009 [INF] Antiforgery token validation failed. "The required antiforgery cookie \".AspNetCore.Antiforgery.T9kS4AjZPpI\" is not present." (843d91fe)
+Microsoft.AspNetCore.Antiforgery.AntiforgeryValidationException: The required antiforgery cookie ".AspNetCore.Antiforgery.T9kS4AjZPpI" is not present.
+   at Microsoft.AspNetCore.Antiforgery.Internal.DefaultAntiforgery.ValidateRequestAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter.OnAuthorizationAsync(AuthorizationFilterContext context)
+2020-06-28T12:58:05.7468046+07:00 0HM0R50LT9H7F:00000009 [INF] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter"'. (8b6446cb)
+2020-06-28T12:58:05.7523335+07:00 0HM0R50LT9H7F:00000009 [INF] Executing HttpStatusCodeResult, setting HTTP status code 400 (e28ccfae)
+2020-06-28T12:58:05.7560034+07:00 0HM0R50LT9H7F:00000009 [INF] Executed action "KarmaCoreApp.Areas.Admin.Controllers.LoginController.Authen (KarmaCoreApp)" in 20.2541ms (afa2e885)
+2020-06-28T12:58:05.7667457+07:00 0HM0R50LT9H7F:00000009 [INF] Request finished in 32.5472ms 400  (791a596a)
+2020-06-28T12:58:05.8900851+07:00 0HM0R50LT9H7F:0000000A [INF] Request starting HTTP/1.1 POST http://localhost:55321/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 31 (ca22a1cb)
+2020-06-28T12:58:05.9022883+07:00 0HM0R50LT9H7F:0000000A [INF] Antiforgery token validation failed. "The required antiforgery cookie \".AspNetCore.Antiforgery.T9kS4AjZPpI\" is not present." (843d91fe)
+Microsoft.AspNetCore.Antiforgery.AntiforgeryValidationException: The required antiforgery cookie ".AspNetCore.Antiforgery.T9kS4AjZPpI" is not present.
+   at Microsoft.AspNetCore.Antiforgery.Internal.DefaultAntiforgery.ValidateRequestAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter.OnAuthorizationAsync(AuthorizationFilterContext context)
+2020-06-28T12:58:05.9072543+07:00 0HM0R50LT9H7F:0000000A [INF] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter"'. (8b6446cb)
+2020-06-28T12:58:05.9157091+07:00 0HM0R50LT9H7F:0000000A [INF] Executing HttpStatusCodeResult, setting HTTP status code 400 (e28ccfae)
+2020-06-28T12:58:05.9217489+07:00 0HM0R50LT9H7F:0000000A [INF] Executed action "KarmaCoreApp.Areas.Admin.Controllers.LoginController.Authen (KarmaCoreApp)" in 24.8929ms (afa2e885)
+2020-06-28T12:58:05.9318750+07:00 0HM0R50LT9H7F:0000000A [INF] Request finished in 38.5134ms 400  (791a596a)
+2020-06-28T12:58:06.0351364+07:00 0HM0R50LT9H7F:0000000B [INF] Request starting HTTP/1.1 POST http://localhost:55321/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 31 (ca22a1cb)
+2020-06-28T12:58:06.0461609+07:00 0HM0R50LT9H7F:0000000B [INF] Antiforgery token validation failed. "The required antiforgery cookie \".AspNetCore.Antiforgery.T9kS4AjZPpI\" is not present." (843d91fe)
+Microsoft.AspNetCore.Antiforgery.AntiforgeryValidationException: The required antiforgery cookie ".AspNetCore.Antiforgery.T9kS4AjZPpI" is not present.
+   at Microsoft.AspNetCore.Antiforgery.Internal.DefaultAntiforgery.ValidateRequestAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter.OnAuthorizationAsync(AuthorizationFilterContext context)
+2020-06-28T12:58:06.0510284+07:00 0HM0R50LT9H7F:0000000B [INF] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter"'. (8b6446cb)
+2020-06-28T12:58:06.0561076+07:00 0HM0R50LT9H7F:0000000B [INF] Executing HttpStatusCodeResult, setting HTTP status code 400 (e28ccfae)
+2020-06-28T12:58:06.0677612+07:00 0HM0R50LT9H7F:0000000B [INF] Executed action "KarmaCoreApp.Areas.Admin.Controllers.LoginController.Authen (KarmaCoreApp)" in 20.0964ms (afa2e885)
+2020-06-28T12:58:06.0771619+07:00 0HM0R50LT9H7F:0000000B [INF] Request finished in 38.3601ms 400  (791a596a)
+2020-06-28T12:58:06.1909762+07:00 0HM0R50LT9H7F:0000000C [INF] Request starting HTTP/1.1 POST http://localhost:55321/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 31 (ca22a1cb)
+2020-06-28T12:58:06.1995748+07:00 0HM0R50LT9H7F:0000000C [INF] Antiforgery token validation failed. "The required antiforgery cookie \".AspNetCore.Antiforgery.T9kS4AjZPpI\" is not present." (843d91fe)
+Microsoft.AspNetCore.Antiforgery.AntiforgeryValidationException: The required antiforgery cookie ".AspNetCore.Antiforgery.T9kS4AjZPpI" is not present.
+   at Microsoft.AspNetCore.Antiforgery.Internal.DefaultAntiforgery.ValidateRequestAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter.OnAuthorizationAsync(AuthorizationFilterContext context)
+2020-06-28T12:58:06.2053274+07:00 0HM0R50LT9H7F:0000000C [INF] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter"'. (8b6446cb)
+2020-06-28T12:58:06.2145014+07:00 0HM0R50LT9H7F:0000000C [INF] Executing HttpStatusCodeResult, setting HTTP status code 400 (e28ccfae)
+2020-06-28T12:58:06.2200796+07:00 0HM0R50LT9H7F:0000000C [INF] Executed action "KarmaCoreApp.Areas.Admin.Controllers.LoginController.Authen (KarmaCoreApp)" in 21.8539ms (afa2e885)
+2020-06-28T12:58:06.2284205+07:00 0HM0R50LT9H7F:0000000C [INF] Request finished in 35.4068ms 400  (791a596a)
+2020-06-28T12:58:06.3466065+07:00 0HM0R50LT9H7F:0000000D [INF] Request starting HTTP/1.1 POST http://localhost:55321/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 31 (ca22a1cb)
+2020-06-28T12:58:06.3537606+07:00 0HM0R50LT9H7F:0000000D [INF] Antiforgery token validation failed. "The required antiforgery cookie \".AspNetCore.Antiforgery.T9kS4AjZPpI\" is not present." (843d91fe)
+Microsoft.AspNetCore.Antiforgery.AntiforgeryValidationException: The required antiforgery cookie ".AspNetCore.Antiforgery.T9kS4AjZPpI" is not present.
+   at Microsoft.AspNetCore.Antiforgery.Internal.DefaultAntiforgery.ValidateRequestAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter.OnAuthorizationAsync(AuthorizationFilterContext context)
+2020-06-28T12:58:06.3625879+07:00 0HM0R50LT9H7F:0000000D [INF] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter"'. (8b6446cb)
+2020-06-28T12:58:06.3699793+07:00 0HM0R50LT9H7F:0000000D [INF] Executing HttpStatusCodeResult, setting HTTP status code 400 (e28ccfae)
+2020-06-28T12:58:06.3773501+07:00 0HM0R50LT9H7F:0000000D [INF] Executed action "KarmaCoreApp.Areas.Admin.Controllers.LoginController.Authen (KarmaCoreApp)" in 22.7263ms (afa2e885)
+2020-06-28T12:58:06.3853926+07:00 0HM0R50LT9H7F:0000000D [INF] Request finished in 38.333ms 400  (791a596a)
+2020-06-28T12:58:06.4987857+07:00 0HM0R50LT9H7F:0000000E [INF] Request starting HTTP/1.1 POST http://localhost:55321/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 31 (ca22a1cb)
+2020-06-28T12:58:06.5065980+07:00 0HM0R50LT9H7F:0000000E [INF] Antiforgery token validation failed. "The required antiforgery cookie \".AspNetCore.Antiforgery.T9kS4AjZPpI\" is not present." (843d91fe)
+Microsoft.AspNetCore.Antiforgery.AntiforgeryValidationException: The required antiforgery cookie ".AspNetCore.Antiforgery.T9kS4AjZPpI" is not present.
+   at Microsoft.AspNetCore.Antiforgery.Internal.DefaultAntiforgery.ValidateRequestAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter.OnAuthorizationAsync(AuthorizationFilterContext context)
+2020-06-28T12:58:06.5192823+07:00 0HM0R50LT9H7F:0000000E [INF] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter"'. (8b6446cb)
+2020-06-28T12:58:06.5263009+07:00 0HM0R50LT9H7F:0000000E [INF] Executing HttpStatusCodeResult, setting HTTP status code 400 (e28ccfae)
+2020-06-28T12:58:06.5335409+07:00 0HM0R50LT9H7F:0000000E [INF] Executed action "KarmaCoreApp.Areas.Admin.Controllers.LoginController.Authen (KarmaCoreApp)" in 27.4134ms (afa2e885)
+2020-06-28T12:58:06.5391583+07:00 0HM0R50LT9H7F:0000000E [INF] Request finished in 40.8148ms 400  (791a596a)
+2020-06-28T12:58:06.6691997+07:00 0HM0R50LT9H7F:0000000F [INF] Request starting HTTP/1.1 POST http://localhost:55321/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 31 (ca22a1cb)
+2020-06-28T12:58:06.6780442+07:00 0HM0R50LT9H7F:0000000F [INF] Antiforgery token validation failed. "The required antiforgery cookie \".AspNetCore.Antiforgery.T9kS4AjZPpI\" is not present." (843d91fe)
+Microsoft.AspNetCore.Antiforgery.AntiforgeryValidationException: The required antiforgery cookie ".AspNetCore.Antiforgery.T9kS4AjZPpI" is not present.
+   at Microsoft.AspNetCore.Antiforgery.Internal.DefaultAntiforgery.ValidateRequestAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter.OnAuthorizationAsync(AuthorizationFilterContext context)
+2020-06-28T12:58:06.6832868+07:00 0HM0R50LT9H7F:0000000F [INF] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter"'. (8b6446cb)
+2020-06-28T12:58:06.6885274+07:00 0HM0R50LT9H7F:0000000F [INF] Executing HttpStatusCodeResult, setting HTTP status code 400 (e28ccfae)
+2020-06-28T12:58:06.6950499+07:00 0HM0R50LT9H7F:0000000F [INF] Executed action "KarmaCoreApp.Areas.Admin.Controllers.LoginController.Authen (KarmaCoreApp)" in 18.7048ms (afa2e885)
+2020-06-28T12:58:06.7035896+07:00 0HM0R50LT9H7F:0000000F [INF] Request finished in 33.0658ms 400  (791a596a)
+2020-06-28T12:58:06.8262859+07:00 0HM0R50LT9H7F:00000010 [INF] Request starting HTTP/1.1 POST http://localhost:55321/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 31 (ca22a1cb)
+2020-06-28T12:58:06.8334841+07:00 0HM0R50LT9H7F:00000010 [INF] Antiforgery token validation failed. "The required antiforgery cookie \".AspNetCore.Antiforgery.T9kS4AjZPpI\" is not present." (843d91fe)
+Microsoft.AspNetCore.Antiforgery.AntiforgeryValidationException: The required antiforgery cookie ".AspNetCore.Antiforgery.T9kS4AjZPpI" is not present.
+   at Microsoft.AspNetCore.Antiforgery.Internal.DefaultAntiforgery.ValidateRequestAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter.OnAuthorizationAsync(AuthorizationFilterContext context)
+2020-06-28T12:58:06.8385757+07:00 0HM0R50LT9H7F:00000010 [INF] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter"'. (8b6446cb)
+2020-06-28T12:58:06.8460114+07:00 0HM0R50LT9H7F:00000010 [INF] Executing HttpStatusCodeResult, setting HTTP status code 400 (e28ccfae)
+2020-06-28T12:58:06.8512892+07:00 0HM0R50LT9H7F:00000010 [INF] Executed action "KarmaCoreApp.Areas.Admin.Controllers.LoginController.Authen (KarmaCoreApp)" in 18.8049ms (afa2e885)
+2020-06-28T12:58:06.8575142+07:00 0HM0R50LT9H7F:00000010 [INF] Request finished in 32.476ms 400  (791a596a)
+2020-06-28T12:58:06.9892548+07:00 0HM0R50LT9H7F:00000011 [INF] Request starting HTTP/1.1 POST http://localhost:55321/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 31 (ca22a1cb)
+2020-06-28T12:58:06.9995495+07:00 0HM0R50LT9H7F:00000011 [INF] Antiforgery token validation failed. "The required antiforgery cookie \".AspNetCore.Antiforgery.T9kS4AjZPpI\" is not present." (843d91fe)
+Microsoft.AspNetCore.Antiforgery.AntiforgeryValidationException: The required antiforgery cookie ".AspNetCore.Antiforgery.T9kS4AjZPpI" is not present.
+   at Microsoft.AspNetCore.Antiforgery.Internal.DefaultAntiforgery.ValidateRequestAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter.OnAuthorizationAsync(AuthorizationFilterContext context)
+2020-06-28T12:58:07.0039937+07:00 0HM0R50LT9H7F:00000011 [INF] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter"'. (8b6446cb)
+2020-06-28T12:58:07.0104666+07:00 0HM0R50LT9H7F:00000011 [INF] Executing HttpStatusCodeResult, setting HTTP status code 400 (e28ccfae)
+2020-06-28T12:58:07.0176458+07:00 0HM0R50LT9H7F:00000011 [INF] Executed action "KarmaCoreApp.Areas.Admin.Controllers.LoginController.Authen (KarmaCoreApp)" in 20.3675ms (afa2e885)
+2020-06-28T12:58:07.0229613+07:00 0HM0R50LT9H7F:00000011 [INF] Request finished in 36.0045ms 400  (791a596a)
+2020-06-28T12:58:07.1537557+07:00 0HM0R50LT9H7F:00000012 [INF] Request starting HTTP/1.1 POST http://localhost:55321/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 31 (ca22a1cb)
+2020-06-28T12:58:07.1656373+07:00 0HM0R50LT9H7F:00000012 [INF] Antiforgery token validation failed. "The required antiforgery cookie \".AspNetCore.Antiforgery.T9kS4AjZPpI\" is not present." (843d91fe)
+Microsoft.AspNetCore.Antiforgery.AntiforgeryValidationException: The required antiforgery cookie ".AspNetCore.Antiforgery.T9kS4AjZPpI" is not present.
+   at Microsoft.AspNetCore.Antiforgery.Internal.DefaultAntiforgery.ValidateRequestAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter.OnAuthorizationAsync(AuthorizationFilterContext context)
+2020-06-28T12:58:07.1719361+07:00 0HM0R50LT9H7F:00000012 [INF] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter"'. (8b6446cb)
+2020-06-28T12:58:07.1822063+07:00 0HM0R50LT9H7F:00000012 [INF] Executing HttpStatusCodeResult, setting HTTP status code 400 (e28ccfae)
+2020-06-28T12:58:07.1875496+07:00 0HM0R50LT9H7F:00000012 [INF] Executed action "KarmaCoreApp.Areas.Admin.Controllers.LoginController.Authen (KarmaCoreApp)" in 27.5297ms (afa2e885)
+2020-06-28T12:58:07.1954403+07:00 0HM0R50LT9H7F:00000012 [INF] Request finished in 39.0961ms 400  (791a596a)
+2020-06-28T12:58:07.3281426+07:00 0HM0R50LT9H7F:00000013 [INF] Request starting HTTP/1.1 POST http://localhost:55321/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 31 (ca22a1cb)
+2020-06-28T12:58:07.3343613+07:00 0HM0R50LT9H7F:00000013 [INF] Antiforgery token validation failed. "The required antiforgery cookie \".AspNetCore.Antiforgery.T9kS4AjZPpI\" is not present." (843d91fe)
+Microsoft.AspNetCore.Antiforgery.AntiforgeryValidationException: The required antiforgery cookie ".AspNetCore.Antiforgery.T9kS4AjZPpI" is not present.
+   at Microsoft.AspNetCore.Antiforgery.Internal.DefaultAntiforgery.ValidateRequestAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter.OnAuthorizationAsync(AuthorizationFilterContext context)
+2020-06-28T12:58:07.3396905+07:00 0HM0R50LT9H7F:00000013 [INF] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter"'. (8b6446cb)
+2020-06-28T12:58:07.3478482+07:00 0HM0R50LT9H7F:00000013 [INF] Executing HttpStatusCodeResult, setting HTTP status code 400 (e28ccfae)
+2020-06-28T12:58:07.3532821+07:00 0HM0R50LT9H7F:00000013 [INF] Executed action "KarmaCoreApp.Areas.Admin.Controllers.LoginController.Authen (KarmaCoreApp)" in 19.0462ms (afa2e885)
+2020-06-28T12:58:07.3649837+07:00 0HM0R50LT9H7F:00000013 [INF] Request finished in 34.0355ms 400  (791a596a)
+2020-06-28T12:58:07.5001898+07:00 0HM0R50LT9H7F:00000014 [INF] Request starting HTTP/1.1 POST http://localhost:55321/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 31 (ca22a1cb)
+2020-06-28T12:58:07.5065990+07:00 0HM0R50LT9H7F:00000014 [INF] Antiforgery token validation failed. "The required antiforgery cookie \".AspNetCore.Antiforgery.T9kS4AjZPpI\" is not present." (843d91fe)
+Microsoft.AspNetCore.Antiforgery.AntiforgeryValidationException: The required antiforgery cookie ".AspNetCore.Antiforgery.T9kS4AjZPpI" is not present.
+   at Microsoft.AspNetCore.Antiforgery.Internal.DefaultAntiforgery.ValidateRequestAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter.OnAuthorizationAsync(AuthorizationFilterContext context)
+2020-06-28T12:58:07.5154918+07:00 0HM0R50LT9H7F:00000014 [INF] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter"'. (8b6446cb)
+2020-06-28T12:58:07.5205497+07:00 0HM0R50LT9H7F:00000014 [INF] Executing HttpStatusCodeResult, setting HTTP status code 400 (e28ccfae)
+2020-06-28T12:58:07.5286264+07:00 0HM0R50LT9H7F:00000014 [INF] Executed action "KarmaCoreApp.Areas.Admin.Controllers.LoginController.Authen (KarmaCoreApp)" in 19.6666ms (afa2e885)
+2020-06-28T12:58:07.5350129+07:00 0HM0R50LT9H7F:00000014 [INF] Request finished in 35.4455ms 400  (791a596a)
+2020-06-28T12:58:07.6651842+07:00 0HM0R50LT9H7F:00000015 [INF] Request starting HTTP/1.1 POST http://localhost:55321/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 31 (ca22a1cb)
+2020-06-28T12:58:07.6742417+07:00 0HM0R50LT9H7F:00000015 [INF] Antiforgery token validation failed. "The required antiforgery cookie \".AspNetCore.Antiforgery.T9kS4AjZPpI\" is not present." (843d91fe)
+Microsoft.AspNetCore.Antiforgery.AntiforgeryValidationException: The required antiforgery cookie ".AspNetCore.Antiforgery.T9kS4AjZPpI" is not present.
+   at Microsoft.AspNetCore.Antiforgery.Internal.DefaultAntiforgery.ValidateRequestAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter.OnAuthorizationAsync(AuthorizationFilterContext context)
+2020-06-28T12:58:07.6817603+07:00 0HM0R50LT9H7F:00000015 [INF] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter"'. (8b6446cb)
+2020-06-28T12:58:07.6862167+07:00 0HM0R50LT9H7F:00000015 [INF] Executing HttpStatusCodeResult, setting HTTP status code 400 (e28ccfae)
+2020-06-28T12:58:07.6937262+07:00 0HM0R50LT9H7F:00000015 [INF] Executed action "KarmaCoreApp.Areas.Admin.Controllers.LoginController.Authen (KarmaCoreApp)" in 20.1505ms (afa2e885)
+2020-06-28T12:58:07.7009509+07:00 0HM0R50LT9H7F:00000015 [INF] Request finished in 37.3269ms 400  (791a596a)

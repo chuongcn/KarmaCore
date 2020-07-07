@@ -1,0 +1,1640 @@
+2020-06-29T14:59:41.5424654+07:00  [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=KarmaCoreApp.Data.EF " (9958f5bb)
+2020-06-29T14:59:42.4422995+07:00  [INF] Executed DbCommand ("50"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-06-29T14:59:42.5139257+07:00  [INF] Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-06-29T14:59:42.5406029+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Functions] AS [f]" (0723d8ff)
+2020-06-29T14:59:42.6372329+07:00  [INF] Executed DbCommand ("6"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2020-06-29T14:59:42.6477277+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Colors] AS [c]" (0723d8ff)
+2020-06-29T14:59:42.7482702+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Slides] AS [s]" (0723d8ff)
+2020-06-29T14:59:42.8190355+07:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Sizes] AS [s]" (0723d8ff)
+2020-06-29T14:59:42.8455528+07:00  [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [ProductCategories] AS [p]" (0723d8ff)
+2020-06-29T14:59:43.0445191+07:00  [INF] Executed DbCommand ("9"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-06-29T14:59:43.1625049+07:00  [INF] Executed DbCommand ("8"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-06-29T14:59:43.1870663+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-06-29T14:59:44.4665198+07:00 0HM0S09H38VH6:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:55321/   (ca22a1cb)
+2020-06-29T14:59:45.0718326+07:00 0HM0S09H38VH6:00000001 [INF] Authorization failed for user: null. (a4ab1676)
+2020-06-29T14:59:45.0846160+07:00 0HM0S09H38VH6:00000001 [INF] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"'. (8b6446cb)
+2020-06-29T14:59:45.1006335+07:00 0HM0S09H38VH6:00000001 [INF] Executing ChallengeResult with authentication schemes ([]). (f3dca807)
+2020-06-29T14:59:45.1300460+07:00 0HM0S09H38VH6:00000001 [INF] AuthenticationScheme: "Identity.Application" was challenged. (d45f1f38)
+2020-06-29T14:59:45.1382145+07:00 0HM0S09H38VH6:00000001 [INF] Executed action "KarmaCoreApp.Controllers.HomeController.Index (KarmaCoreApp)" in 104.2657ms (afa2e885)
+2020-06-29T14:59:45.2020449+07:00 0HM0S09H38VH6:00000001 [INF] Request finished in 802.2669ms 302  (791a596a)
+2020-06-29T14:59:45.2304271+07:00 0HM0S09H38VH6:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:55321/Account/Login?ReturnUrl=%2F   (ca22a1cb)
+2020-06-29T14:59:45.4048091+07:00 0HM0S09H38VH6:00000002 [INF] Executing action method "KarmaCoreApp.Controllers.AccountController.Login (KarmaCoreApp)" with arguments (["/"]) - ModelState is Valid (ba7f4ac2)
+2020-06-29T14:59:45.4532656+07:00 0HM0S09H38VH6:00000002 [INF] AuthenticationScheme: "Identity.External" signed out. (d3f50c8d)
+2020-06-29T14:59:50.2539740+07:00 0HM0S09H38VH6:00000002 [INF] Executed action "KarmaCoreApp.Controllers.AccountController.Login (KarmaCoreApp)" in 4966.5385ms (afa2e885)
+2020-06-29T14:59:50.3570425+07:00 0HM0S09H38VH6:00000002 [ERR] An unhandled exception has occurred while executing the request (cf926119)
+Microsoft.AspNetCore.Mvc.Razor.Compilation.CompilationFailedException: One or more compilation failures occurred:
+kzumvmxb.ieq(604,147): error CS1031: Type expected
+kzumvmxb.ieq(604,347): error CS1031: Type expected
+kzumvmxb.ieq(604,547): error CS1031: Type expected
+kzumvmxb.ieq(593,30): error CS0246: The type or namespace name 'ApplicationUser' could not be found (are you missing a using directive or an assembly reference?)
+kzumvmxb.ieq(604,195): error CS1061: 'LoginViewModel' does not contain a definition for 'Email' and no extension method 'Email' accepting a first argument of type 'LoginViewModel' could be found (are you missing a using directive or an assembly reference?)
+kzumvmxb.ieq(604,395): error CS1061: 'LoginViewModel' does not contain a definition for 'Email' and no extension method 'Email' accepting a first argument of type 'LoginViewModel' could be found (are you missing a using directive or an assembly reference?)
+kzumvmxb.ieq(604,595): error CS1061: 'LoginViewModel' does not contain a definition for 'Email' and no extension method 'Email' accepting a first argument of type 'LoginViewModel' could be found (are you missing a using directive or an assembly reference?)
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompiler.CompileAndEmit(RazorCodeDocument codeDocument, String generatedCode)
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompiler.CompileAndEmit(String relativePath)
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompiler.CreateCacheEntry(String normalizedPath)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.DefaultRazorPageFactoryProvider.CreateFactory(String relativePath)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.CreateCacheResult(HashSet`1 expirationTokens, String relativePath, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.OnCacheMiss(ViewLocationExpanderContext expanderContext, ViewLocationCacheKey cacheKey)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.LocatePageFromViewLocations(ActionContext actionContext, String pageName, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.FindView(ActionContext context, String viewName, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.ViewEngines.CompositeViewEngine.FindView(ActionContext context, String viewName, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor.FindView(ActionContext actionContext, ViewResult viewResult)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultAsync(IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResultFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-06-29T14:59:51.3803861+07:00 0HM0S09H38VH6:00000002 [INF] Request finished in 6101.1261ms 500 text/html; charset=utf-8 (791a596a)
+2020-06-29T15:00:00.8087993+07:00 0HM0S09H38VH6:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin   (ca22a1cb)
+2020-06-29T15:00:00.8282905+07:00 0HM0S09H38VH6:00000003 [INF] Executing action method "KarmaCoreApp.Areas.Admin.Controllers.LoginController.Index (KarmaCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2020-06-29T15:00:02.5090677+07:00 0HM0S09H38VH6:00000003 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2020-06-29T15:00:02.9139238+07:00 0HM0S09H38VH6:00000003 [INF] Executed action "KarmaCoreApp.Areas.Admin.Controllers.LoginController.Index (KarmaCoreApp)" in 2092.605ms (afa2e885)
+2020-06-29T15:00:02.9435769+07:00 0HM0S09H38VH6:00000003 [INF] Request finished in 2129.633ms 200 text/html; charset=utf-8 (791a596a)
+2020-06-29T15:00:03.0073095+07:00 0HM0S09H38VH6:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:55321/lib/jquery-validation/localization/messages_vi.js   (ca22a1cb)
+2020-06-29T15:00:03.0093136+07:00 0HM0S09H38VHA:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:55321/app/controllers/login/index.js   (ca22a1cb)
+2020-06-29T15:00:03.0116829+07:00 0HM0S09H38VH9:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:55321/app/shared/karmar.js   (ca22a1cb)
+2020-06-29T15:00:03.0138808+07:00 0HM0S09H38VH7:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:55321/app/shared/alert.js   (ca22a1cb)
+2020-06-29T15:00:03.0148632+07:00 0HM0S09H38VH8:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:55321/app/shared/messages.js   (ca22a1cb)
+2020-06-29T15:00:03.0493731+07:00 0HM0S09H38VH8:00000001 [INF] Sending file. Request path: '"/app/shared/messages.js"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\app\shared\messages.js"' (27b0a520)
+2020-06-29T15:00:03.0505457+07:00 0HM0S09H38VHA:00000001 [INF] Sending file. Request path: '"/app/controllers/login/index.js"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\app\controllers\login\index.js"' (27b0a520)
+2020-06-29T15:00:03.0547633+07:00 0HM0S09H38VH9:00000001 [INF] Sending file. Request path: '"/app/shared/karmar.js"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\app\shared\karmar.js"' (27b0a520)
+2020-06-29T15:00:03.0557664+07:00 0HM0S09H38VH7:00000001 [INF] Sending file. Request path: '"/app/shared/alert.js"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\app\shared\alert.js"' (27b0a520)
+2020-06-29T15:00:03.0574778+07:00 0HM0S09H38VH6:00000004 [INF] Sending file. Request path: '"/lib/jquery-validation/localization/messages_vi.js"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\lib\jquery-validation\localization\messages_vi.js"' (27b0a520)
+2020-06-29T15:00:03.1727808+07:00 0HM0S09H38VH8:00000001 [INF] Request finished in 112.599ms 200 application/javascript (791a596a)
+2020-06-29T15:00:03.1904759+07:00 0HM0S09H38VHA:00000001 [INF] Request finished in 169.2059ms 200 application/javascript (791a596a)
+2020-06-29T15:00:03.1961621+07:00 0HM0S09H38VH9:00000001 [INF] Request finished in 148.8547ms 200 application/javascript (791a596a)
+2020-06-29T15:00:03.2003251+07:00 0HM0S09H38VH7:00000001 [INF] Request finished in 148.9685ms 200 application/javascript (791a596a)
+2020-06-29T15:00:03.2111343+07:00 0HM0S09H38VH6:00000004 [INF] Request finished in 164.1775ms 200 application/javascript (791a596a)
+2020-06-29T15:00:10.9814309+07:00 0HM0S09H38VHA:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/bootstrap/dist/js/bootstrap.bundle.min.js.map   (ca22a1cb)
+2020-06-29T15:00:10.9835567+07:00 0HM0S09H38VH9:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/jquery-scroll-lock/dist/jquery-scrollLock.min.js.map   (ca22a1cb)
+2020-06-29T15:00:10.9940238+07:00 0HM0S09H38VHA:00000002 [INF] Request finished in 13.3915ms 404  (791a596a)
+2020-06-29T15:00:10.9975885+07:00 0HM0S09H38VH9:00000002 [INF] Request finished in 10.8251ms 404  (791a596a)
+2020-06-29T15:00:11.0403436+07:00 0HM0S09H38VH9:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/bootstrap/dist/css/bootstrap.min.css.map   (ca22a1cb)
+2020-06-29T15:00:11.0474933+07:00 0HM0S09H38VH9:00000003 [INF] Request finished in 10.4441ms 404  (791a596a)
+2020-06-29T15:00:42.3017545+07:00 0HM0S09H38VH9:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin   (ca22a1cb)
+2020-06-29T15:00:42.3094762+07:00 0HM0S09H38VH9:00000004 [INF] Executing action method "KarmaCoreApp.Areas.Admin.Controllers.LoginController.Index (KarmaCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2020-06-29T15:00:42.3169727+07:00 0HM0S09H38VH9:00000004 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2020-06-29T15:00:42.3525964+07:00 0HM0S09H38VH9:00000004 [INF] Executed action "KarmaCoreApp.Areas.Admin.Controllers.LoginController.Index (KarmaCoreApp)" in 43.1541ms (afa2e885)
+2020-06-29T15:00:42.5366267+07:00 0HM0S09H38VH9:00000004 [INF] Request finished in 57.6488ms 200 text/html; charset=utf-8 (791a596a)
+2020-06-29T15:00:42.5569469+07:00 0HM0S09H38VH9:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:55321/app/controllers/login/index.js   (ca22a1cb)
+2020-06-29T15:00:42.5728920+07:00 0HM0S09H38VH9:00000005 [INF] Sending file. Request path: '"/app/controllers/login/index.js"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\app\controllers\login\index.js"' (27b0a520)
+2020-06-29T15:00:42.5903128+07:00 0HM0S09H38VH9:00000005 [INF] Request finished in 33.6918ms 200 application/javascript (791a596a)
+2020-06-29T15:00:42.6115476+07:00 0HM0S09H38VH9:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/bootstrap/dist/css/bootstrap.min.css.map   (ca22a1cb)
+2020-06-29T15:00:42.6230218+07:00 0HM0S09H38VH9:00000006 [INF] Request finished in 9.7017ms 404  (791a596a)
+2020-06-29T15:00:42.7421773+07:00 0HM0S09H38VH9:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/bootstrap/dist/js/bootstrap.bundle.min.js.map   (ca22a1cb)
+2020-06-29T15:00:42.7633401+07:00 0HM0S09H38VHA:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/jquery-scroll-lock/dist/jquery-scrollLock.min.js.map   (ca22a1cb)
+2020-06-29T15:00:42.8322980+07:00 0HM0S09H38VH9:00000007 [INF] Request finished in 70.1328ms 404  (791a596a)
+2020-06-29T15:00:42.8430933+07:00 0HM0S09H38VHA:00000003 [INF] Request finished in 109.9423ms 404  (791a596a)
+2020-06-29T15:00:52.3036056+07:00  [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=KarmaCoreApp.Data.EF " (9958f5bb)
+2020-06-29T15:00:52.9104060+07:00  [INF] Executed DbCommand ("37"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-06-29T15:00:52.9731695+07:00  [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-06-29T15:00:52.9944986+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Functions] AS [f]" (0723d8ff)
+2020-06-29T15:00:53.0682932+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2020-06-29T15:00:53.0761593+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Colors] AS [c]" (0723d8ff)
+2020-06-29T15:00:53.1635665+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Slides] AS [s]" (0723d8ff)
+2020-06-29T15:00:53.1755199+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Sizes] AS [s]" (0723d8ff)
+2020-06-29T15:00:53.1927058+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [ProductCategories] AS [p]" (0723d8ff)
+2020-06-29T15:00:53.2572237+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-06-29T15:00:53.2830676+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-06-29T15:00:53.3058708+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-06-29T15:00:53.9226562+07:00 0HM0S0A5T60C0:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:55321/   (ca22a1cb)
+2020-06-29T15:00:54.3882968+07:00 0HM0S0A5T60C0:00000001 [INF] Authorization failed for user: null. (a4ab1676)
+2020-06-29T15:00:54.3974479+07:00 0HM0S0A5T60C0:00000001 [INF] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"'. (8b6446cb)
+2020-06-29T15:00:54.4138169+07:00 0HM0S0A5T60C0:00000001 [INF] Executing ChallengeResult with authentication schemes ([]). (f3dca807)
+2020-06-29T15:00:54.4488751+07:00 0HM0S0A5T60C0:00000001 [INF] AuthenticationScheme: "Identity.Application" was challenged. (d45f1f38)
+2020-06-29T15:00:54.4589463+07:00 0HM0S0A5T60C0:00000001 [INF] Executed action "KarmaCoreApp.Controllers.HomeController.Index (KarmaCoreApp)" in 104.8679ms (afa2e885)
+2020-06-29T15:00:54.5215786+07:00 0HM0S0A5T60C0:00000001 [INF] Request finished in 662.3017ms 302  (791a596a)
+2020-06-29T15:00:54.5495871+07:00 0HM0S0A5T60C0:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:55321/Account/Login?ReturnUrl=%2F   (ca22a1cb)
+2020-06-29T15:00:54.7287283+07:00 0HM0S0A5T60C0:00000002 [INF] Executing action method "KarmaCoreApp.Controllers.AccountController.Login (KarmaCoreApp)" with arguments (["/"]) - ModelState is Valid (ba7f4ac2)
+2020-06-29T15:00:54.7752851+07:00 0HM0S0A5T60C0:00000002 [INF] AuthenticationScheme: "Identity.External" signed out. (d3f50c8d)
+2020-06-29T15:00:59.6208598+07:00 0HM0S0A5T60C0:00000002 [INF] Executed action "KarmaCoreApp.Controllers.AccountController.Login (KarmaCoreApp)" in 5009.0341ms (afa2e885)
+2020-06-29T15:00:59.6907580+07:00 0HM0S0A5T60C0:00000002 [ERR] An unhandled exception has occurred while executing the request (cf926119)
+Microsoft.AspNetCore.Mvc.Razor.Compilation.CompilationFailedException: One or more compilation failures occurred:
+5nzocaqu.hlt(593,30): error CS0246: The type or namespace name 'ApplicationUser' could not be found (are you missing a using directive or an assembly reference?)
+F:\SourceCodeNet\KarmaCore\KarmaCoreApp\Views\Account\Login.cshtml(21,135): error CS1061: 'LoginViewModel' does not contain a definition for 'Email' and no extension method 'Email' accepting a first argument of type 'LoginViewModel' could be found (are you missing a using directive or an assembly reference?)
+F:\SourceCodeNet\KarmaCore\KarmaCoreApp\Views\Account\Login.cshtml(22,135): error CS1061: 'LoginViewModel' does not contain a definition for 'Email' and no extension method 'Email' accepting a first argument of type 'LoginViewModel' could be found (are you missing a using directive or an assembly reference?)
+F:\SourceCodeNet\KarmaCore\KarmaCoreApp\Views\Account\Login.cshtml(23,147): error CS1061: 'LoginViewModel' does not contain a definition for 'Email' and no extension method 'Email' accepting a first argument of type 'LoginViewModel' could be found (are you missing a using directive or an assembly reference?)
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompiler.CompileAndEmit(RazorCodeDocument codeDocument, String generatedCode)
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompiler.CompileAndEmit(String relativePath)
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompiler.CreateCacheEntry(String normalizedPath)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.DefaultRazorPageFactoryProvider.CreateFactory(String relativePath)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.CreateCacheResult(HashSet`1 expirationTokens, String relativePath, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.OnCacheMiss(ViewLocationExpanderContext expanderContext, ViewLocationCacheKey cacheKey)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.LocatePageFromViewLocations(ActionContext actionContext, String pageName, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.FindView(ActionContext context, String viewName, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.ViewEngines.CompositeViewEngine.FindView(ActionContext context, String viewName, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor.FindView(ActionContext actionContext, ViewResult viewResult)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultAsync(IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResultFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-06-29T15:00:59.9374289+07:00 0HM0S0A5T60C0:00000002 [INF] Request finished in 5386.3853ms 500 text/html; charset=utf-8 (791a596a)
+2020-06-29T15:01:04.2346347+07:00 0HM0S0A5T60C0:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin   (ca22a1cb)
+2020-06-29T15:01:04.2471570+07:00 0HM0S0A5T60C0:00000003 [INF] Executing action method "KarmaCoreApp.Areas.Admin.Controllers.LoginController.Index (KarmaCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2020-06-29T15:01:05.6841720+07:00 0HM0S0A5T60C0:00000003 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2020-06-29T15:01:05.9732557+07:00 0HM0S0A5T60C0:00000003 [INF] Executed action "KarmaCoreApp.Areas.Admin.Controllers.LoginController.Index (KarmaCoreApp)" in 1724.043ms (afa2e885)
+2020-06-29T15:01:05.9966196+07:00 0HM0S0A5T60C0:00000003 [INF] Request finished in 1762.9305ms 200 text/html; charset=utf-8 (791a596a)
+2020-06-29T15:01:06.0527595+07:00 0HM0S0A5T60C0:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:55321/app/controllers/login/index.js   (ca22a1cb)
+2020-06-29T15:01:06.0861932+07:00 0HM0S0A5T60C0:00000004 [INF] The file "/app/controllers/login/index.js" was not modified (f1f8d725)
+2020-06-29T15:01:06.0958625+07:00 0HM0S0A5T60C0:00000004 [INF] Request finished in 53.2729ms 304 application/javascript (791a596a)
+2020-06-29T15:01:09.9736342+07:00 0HM0S0A5T60C0:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/bootstrap/dist/js/bootstrap.bundle.min.js.map   (ca22a1cb)
+2020-06-29T15:01:09.9747610+07:00 0HM0S0A5T60C2:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/jquery-scroll-lock/dist/jquery-scrollLock.min.js.map   (ca22a1cb)
+2020-06-29T15:01:09.9893763+07:00 0HM0S0A5T60C0:00000005 [INF] Request finished in 36.6654ms 404  (791a596a)
+2020-06-29T15:01:09.9918410+07:00 0HM0S0A5T60C2:00000001 [INF] Request finished in 32.794ms 404  (791a596a)
+2020-06-29T15:01:10.0006790+07:00 0HM0S0A5T60C0:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/bootstrap/dist/css/bootstrap.min.css.map   (ca22a1cb)
+2020-06-29T15:01:10.0057014+07:00 0HM0S0A5T60C0:00000006 [INF] Request finished in 7.4607ms 404  (791a596a)
+2020-06-29T15:02:01.3407726+07:00  [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=KarmaCoreApp.Data.EF " (9958f5bb)
+2020-06-29T15:02:02.0107678+07:00  [INF] Executed DbCommand ("79"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-06-29T15:02:02.1084439+07:00  [INF] Executed DbCommand ("9"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-06-29T15:02:02.1711466+07:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Functions] AS [f]" (0723d8ff)
+2020-06-29T15:02:02.2769604+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2020-06-29T15:02:02.2879526+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Colors] AS [c]" (0723d8ff)
+2020-06-29T15:02:02.4221580+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Slides] AS [s]" (0723d8ff)
+2020-06-29T15:02:02.4418363+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Sizes] AS [s]" (0723d8ff)
+2020-06-29T15:02:02.4600531+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [ProductCategories] AS [p]" (0723d8ff)
+2020-06-29T15:02:02.5319395+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-06-29T15:02:02.5633158+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-06-29T15:02:02.5718874+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-06-29T15:02:03.8602552+07:00 0HM0S0AQLC7S4:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:55321/   (ca22a1cb)
+2020-06-29T15:02:04.4446914+07:00 0HM0S0AQLC7S4:00000001 [INF] Authorization failed for user: null. (a4ab1676)
+2020-06-29T15:02:04.4755536+07:00 0HM0S0AQLC7S4:00000001 [INF] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"'. (8b6446cb)
+2020-06-29T15:02:04.4993879+07:00 0HM0S0AQLC7S4:00000001 [INF] Executing ChallengeResult with authentication schemes ([]). (f3dca807)
+2020-06-29T15:02:04.5320072+07:00 0HM0S0AQLC7S4:00000001 [INF] AuthenticationScheme: "Identity.Application" was challenged. (d45f1f38)
+2020-06-29T15:02:04.5398143+07:00 0HM0S0AQLC7S4:00000001 [INF] Executed action "KarmaCoreApp.Controllers.HomeController.Index (KarmaCoreApp)" in 132.7146ms (afa2e885)
+2020-06-29T15:02:04.6087743+07:00 0HM0S0AQLC7S4:00000001 [INF] Request finished in 924.3566ms 302  (791a596a)
+2020-06-29T15:02:04.6412546+07:00 0HM0S0AQLC7S4:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:55321/Account/Login?ReturnUrl=%2F   (ca22a1cb)
+2020-06-29T15:02:04.8387010+07:00 0HM0S0AQLC7S4:00000002 [INF] Executing action method "KarmaCoreApp.Controllers.AccountController.Login (KarmaCoreApp)" with arguments (["/"]) - ModelState is Valid (ba7f4ac2)
+2020-06-29T15:02:04.8808163+07:00 0HM0S0AQLC7S4:00000002 [INF] AuthenticationScheme: "Identity.External" signed out. (d3f50c8d)
+2020-06-29T15:02:07.3235708+07:00 0HM0S0AQLC7S3:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin/login   (ca22a1cb)
+2020-06-29T15:02:07.3412651+07:00 0HM0S0AQLC7S3:00000001 [INF] Executing action method "KarmaCoreApp.Areas.Admin.Controllers.LoginController.Index (KarmaCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2020-06-29T15:02:08.8123359+07:00 0HM0S0AQLC7S4:00000002 [INF] Executed action "KarmaCoreApp.Controllers.AccountController.Login (KarmaCoreApp)" in 4110.8698ms (afa2e885)
+2020-06-29T15:02:08.8777862+07:00 0HM0S0AQLC7S4:00000002 [ERR] An unhandled exception has occurred while executing the request (cf926119)
+Microsoft.AspNetCore.Mvc.Razor.Compilation.CompilationFailedException: One or more compilation failures occurred:
+5gs5vjus.awj(593,30): error CS0246: The type or namespace name 'ApplicationUser' could not be found (are you missing a using directive or an assembly reference?)
+F:\SourceCodeNet\KarmaCore\KarmaCoreApp\Views\Account\Login.cshtml(21,135): error CS1061: 'LoginViewModel' does not contain a definition for 'Email' and no extension method 'Email' accepting a first argument of type 'LoginViewModel' could be found (are you missing a using directive or an assembly reference?)
+F:\SourceCodeNet\KarmaCore\KarmaCoreApp\Views\Account\Login.cshtml(22,135): error CS1061: 'LoginViewModel' does not contain a definition for 'Email' and no extension method 'Email' accepting a first argument of type 'LoginViewModel' could be found (are you missing a using directive or an assembly reference?)
+F:\SourceCodeNet\KarmaCore\KarmaCoreApp\Views\Account\Login.cshtml(23,147): error CS1061: 'LoginViewModel' does not contain a definition for 'Email' and no extension method 'Email' accepting a first argument of type 'LoginViewModel' could be found (are you missing a using directive or an assembly reference?)
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompiler.CompileAndEmit(RazorCodeDocument codeDocument, String generatedCode)
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompiler.CompileAndEmit(String relativePath)
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompiler.CreateCacheEntry(String normalizedPath)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.DefaultRazorPageFactoryProvider.CreateFactory(String relativePath)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.CreateCacheResult(HashSet`1 expirationTokens, String relativePath, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.OnCacheMiss(ViewLocationExpanderContext expanderContext, ViewLocationCacheKey cacheKey)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.LocatePageFromViewLocations(ActionContext actionContext, String pageName, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.FindView(ActionContext context, String viewName, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.ViewEngines.CompositeViewEngine.FindView(ActionContext context, String viewName, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor.FindView(ActionContext actionContext, ViewResult viewResult)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultAsync(IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResultFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-06-29T15:02:09.0808099+07:00 0HM0S0AQLC7S4:00000002 [INF] Request finished in 4439.501ms 500 text/html; charset=utf-8 (791a596a)
+2020-06-29T15:02:09.8871613+07:00 0HM0S0AQLC7S3:00000001 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2020-06-29T15:02:10.1892993+07:00 0HM0S0AQLC7S3:00000001 [INF] Executed action "KarmaCoreApp.Areas.Admin.Controllers.LoginController.Index (KarmaCoreApp)" in 2850.5821ms (afa2e885)
+2020-06-29T15:02:10.2676784+07:00 0HM0S0AQLC7S3:00000001 [INF] Request finished in 2894.5427ms 200 text/html; charset=utf-8 (791a596a)
+2020-06-29T15:02:10.2815373+07:00 0HM0S0AQLC7S3:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:55321/app/controllers/login/index.js   (ca22a1cb)
+2020-06-29T15:02:10.3145252+07:00 0HM0S0AQLC7S3:00000002 [INF] Sending file. Request path: '"/app/controllers/login/index.js"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\app\controllers\login\index.js"' (27b0a520)
+2020-06-29T15:02:10.3502139+07:00 0HM0S0AQLC7S3:00000002 [INF] Request finished in 72.0402ms 200 application/javascript (791a596a)
+2020-06-29T15:02:14.1331609+07:00 0HM0S0AQLC7S3:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/bootstrap/dist/js/bootstrap.bundle.min.js.map   (ca22a1cb)
+2020-06-29T15:02:14.1343690+07:00 0HM0S0AQLC7S5:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/jquery-scroll-lock/dist/jquery-scrollLock.min.js.map   (ca22a1cb)
+2020-06-29T15:02:14.1469538+07:00 0HM0S0AQLC7S3:00000003 [INF] Request finished in 11.6718ms 404  (791a596a)
+2020-06-29T15:02:14.1486557+07:00 0HM0S0AQLC7S5:00000001 [INF] Request finished in 10.2295ms 404  (791a596a)
+2020-06-29T15:02:14.1784494+07:00 0HM0S0AQLC7S3:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/bootstrap/dist/css/bootstrap.min.css.map   (ca22a1cb)
+2020-06-29T15:02:14.1855370+07:00 0HM0S0AQLC7S3:00000004 [INF] Request finished in 7.5173ms 404  (791a596a)
+2020-06-29T15:03:10.4232693+07:00  [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=KarmaCoreApp.Data.EF " (9958f5bb)
+2020-06-29T15:03:11.0068691+07:00  [INF] Executed DbCommand ("35"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-06-29T15:03:11.0623872+07:00  [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-06-29T15:03:11.0865337+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Functions] AS [f]" (0723d8ff)
+2020-06-29T15:03:11.1561597+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2020-06-29T15:03:11.1651314+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Colors] AS [c]" (0723d8ff)
+2020-06-29T15:03:11.2479204+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Slides] AS [s]" (0723d8ff)
+2020-06-29T15:03:11.2607697+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Sizes] AS [s]" (0723d8ff)
+2020-06-29T15:03:11.2761038+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [ProductCategories] AS [p]" (0723d8ff)
+2020-06-29T15:03:11.3338381+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-06-29T15:03:11.3643183+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-06-29T15:03:11.3805198+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-06-29T15:03:12.1654265+07:00 0HM0S0BF36536:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:55321/   (ca22a1cb)
+2020-06-29T15:03:12.7738093+07:00 0HM0S0BF36536:00000001 [INF] Authorization failed for user: null. (a4ab1676)
+2020-06-29T15:03:12.7846119+07:00 0HM0S0BF36536:00000001 [INF] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"'. (8b6446cb)
+2020-06-29T15:03:12.8002643+07:00 0HM0S0BF36536:00000001 [INF] Executing ChallengeResult with authentication schemes ([]). (f3dca807)
+2020-06-29T15:03:12.8338325+07:00 0HM0S0BF36536:00000001 [INF] AuthenticationScheme: "Identity.Application" was challenged. (d45f1f38)
+2020-06-29T15:03:12.8447270+07:00 0HM0S0BF36536:00000001 [INF] Executed action "KarmaCoreApp.Controllers.HomeController.Index (KarmaCoreApp)" in 104.4821ms (afa2e885)
+2020-06-29T15:03:12.9162839+07:00 0HM0S0BF36536:00000001 [INF] Request finished in 806.2832ms 302  (791a596a)
+2020-06-29T15:03:12.9475239+07:00 0HM0S0BF36536:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:55321/Account/Login?ReturnUrl=%2F   (ca22a1cb)
+2020-06-29T15:03:13.1418176+07:00 0HM0S0BF36536:00000002 [INF] Executing action method "KarmaCoreApp.Controllers.AccountController.Login (KarmaCoreApp)" with arguments (["/"]) - ModelState is Valid (ba7f4ac2)
+2020-06-29T15:03:13.1915510+07:00 0HM0S0BF36536:00000002 [INF] AuthenticationScheme: "Identity.External" signed out. (d3f50c8d)
+2020-06-29T15:03:19.0609020+07:00 0HM0S0BF36536:00000002 [INF] Executed action "KarmaCoreApp.Controllers.AccountController.Login (KarmaCoreApp)" in 6042.0833ms (afa2e885)
+2020-06-29T15:03:19.1881540+07:00 0HM0S0BF36536:00000002 [ERR] An unhandled exception has occurred while executing the request (cf926119)
+Microsoft.AspNetCore.Mvc.Razor.Compilation.CompilationFailedException: One or more compilation failures occurred:
+teyveo51.xlk(604,147): error CS1031: Type expected
+teyveo51.xlk(604,347): error CS1031: Type expected
+teyveo51.xlk(604,547): error CS1031: Type expected
+teyveo51.xlk(593,30): error CS0246: The type or namespace name 'ApplicationUser' could not be found (are you missing a using directive or an assembly reference?)
+teyveo51.xlk(604,195): error CS1061: 'LoginViewModel' does not contain a definition for 'Email' and no extension method 'Email' accepting a first argument of type 'LoginViewModel' could be found (are you missing a using directive or an assembly reference?)
+teyveo51.xlk(604,395): error CS1061: 'LoginViewModel' does not contain a definition for 'Email' and no extension method 'Email' accepting a first argument of type 'LoginViewModel' could be found (are you missing a using directive or an assembly reference?)
+teyveo51.xlk(604,595): error CS1061: 'LoginViewModel' does not contain a definition for 'Email' and no extension method 'Email' accepting a first argument of type 'LoginViewModel' could be found (are you missing a using directive or an assembly reference?)
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompiler.CompileAndEmit(RazorCodeDocument codeDocument, String generatedCode)
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompiler.CompileAndEmit(String relativePath)
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompiler.CreateCacheEntry(String normalizedPath)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.DefaultRazorPageFactoryProvider.CreateFactory(String relativePath)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.CreateCacheResult(HashSet`1 expirationTokens, String relativePath, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.OnCacheMiss(ViewLocationExpanderContext expanderContext, ViewLocationCacheKey cacheKey)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.LocatePageFromViewLocations(ActionContext actionContext, String pageName, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.FindView(ActionContext context, String viewName, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.ViewEngines.CompositeViewEngine.FindView(ActionContext context, String viewName, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor.FindView(ActionContext actionContext, ViewResult viewResult)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultAsync(IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResultFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-06-29T15:03:19.5628643+07:00 0HM0S0BF36536:00000002 [INF] Request finished in 6613.2374ms 500 text/html; charset=utf-8 (791a596a)
+2020-06-29T15:03:24.5842309+07:00 0HM0S0BF36536:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin   (ca22a1cb)
+2020-06-29T15:03:24.5967823+07:00 0HM0S0BF36536:00000003 [INF] Executing action method "KarmaCoreApp.Areas.Admin.Controllers.LoginController.Index (KarmaCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2020-06-29T15:03:26.2375861+07:00 0HM0S0BF36536:00000003 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2020-06-29T15:03:26.5559688+07:00 0HM0S0BF36536:00000003 [INF] Executed action "KarmaCoreApp.Areas.Admin.Controllers.LoginController.Index (KarmaCoreApp)" in 1960.8234ms (afa2e885)
+2020-06-29T15:03:26.5728946+07:00 0HM0S0BF36537:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin   (ca22a1cb)
+2020-06-29T15:03:26.5797084+07:00 0HM0S0BF36537:00000001 [INF] Executing action method "KarmaCoreApp.Areas.Admin.Controllers.LoginController.Index (KarmaCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2020-06-29T15:03:26.5867557+07:00 0HM0S0BF36536:00000003 [INF] Request finished in 2002.4852ms 200 text/html; charset=utf-8 (791a596a)
+2020-06-29T15:03:26.5930115+07:00 0HM0S0BF36537:00000001 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2020-06-29T15:03:26.6037437+07:00 0HM0S0BF36537:00000001 [INF] Executed action "KarmaCoreApp.Areas.Admin.Controllers.LoginController.Index (KarmaCoreApp)" in 23.4024ms (afa2e885)
+2020-06-29T15:03:26.6184316+07:00 0HM0S0BF36537:00000001 [INF] Request finished in 37.896ms 200 text/html; charset=utf-8 (791a596a)
+2020-06-29T15:03:26.6877704+07:00 0HM0S0BF36537:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:55321/app/controllers/login/index.js   (ca22a1cb)
+2020-06-29T15:03:26.7232249+07:00 0HM0S0BF36537:00000002 [INF] Sending file. Request path: '"/app/controllers/login/index.js"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\app\controllers\login\index.js"' (27b0a520)
+2020-06-29T15:03:26.7775770+07:00 0HM0S0BF36537:00000002 [INF] Request finished in 101.2257ms 200 application/javascript (791a596a)
+2020-06-29T18:23:30.2439765+07:00  [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=KarmaCoreApp.Data.EF " (9958f5bb)
+2020-06-29T18:23:30.9268577+07:00  [INF] Executed DbCommand ("46"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-06-29T18:23:31.0653482+07:00  [INF] Executed DbCommand ("27"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-06-29T18:23:31.0917509+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Functions] AS [f]" (0723d8ff)
+2020-06-29T18:23:31.1750003+07:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2020-06-29T18:23:31.1828840+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Colors] AS [c]" (0723d8ff)
+2020-06-29T18:23:31.2788820+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Slides] AS [s]" (0723d8ff)
+2020-06-29T18:23:31.2957379+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Sizes] AS [s]" (0723d8ff)
+2020-06-29T18:23:31.3146003+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [ProductCategories] AS [p]" (0723d8ff)
+2020-06-29T18:23:31.3731544+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-06-29T18:23:31.4026753+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-06-29T18:23:31.4110790+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-06-29T18:23:32.2329459+07:00 0HM0S3RDAAIQD:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:55321/   (ca22a1cb)
+2020-06-29T18:23:32.7480492+07:00 0HM0S3RDAAIQD:00000001 [INF] Authorization failed for user: null. (a4ab1676)
+2020-06-29T18:23:32.7585429+07:00 0HM0S3RDAAIQD:00000001 [INF] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"'. (8b6446cb)
+2020-06-29T18:23:32.7750478+07:00 0HM0S3RDAAIQD:00000001 [INF] Executing ChallengeResult with authentication schemes ([]). (f3dca807)
+2020-06-29T18:23:32.8172894+07:00 0HM0S3RDAAIQD:00000001 [INF] AuthenticationScheme: "Identity.Application" was challenged. (d45f1f38)
+2020-06-29T18:23:32.8315373+07:00 0HM0S3RDAAIQD:00000001 [INF] Executed action "KarmaCoreApp.Controllers.HomeController.Index (KarmaCoreApp)" in 111.6983ms (afa2e885)
+2020-06-29T18:23:32.9375596+07:00 0HM0S3RDAAIQD:00000001 [INF] Request finished in 768.6094ms 302  (791a596a)
+2020-06-29T18:23:32.9739874+07:00 0HM0S3RDAAIQD:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:55321/Account/Login?ReturnUrl=%2F   (ca22a1cb)
+2020-06-29T18:23:33.1794326+07:00 0HM0S3RDAAIQD:00000002 [INF] Executing action method "KarmaCoreApp.Controllers.AccountController.Login (KarmaCoreApp)" with arguments (["/"]) - ModelState is Valid (ba7f4ac2)
+2020-06-29T18:23:33.2235386+07:00 0HM0S3RDAAIQD:00000002 [INF] AuthenticationScheme: "Identity.External" signed out. (d3f50c8d)
+2020-06-29T18:23:37.9639942+07:00 0HM0S3RDAAIQD:00000002 [INF] Executed action "KarmaCoreApp.Controllers.AccountController.Login (KarmaCoreApp)" in 4922.0951ms (afa2e885)
+2020-06-29T18:23:38.1837989+07:00 0HM0S3RDAAIQD:00000002 [ERR] An unhandled exception has occurred while executing the request (cf926119)
+Microsoft.AspNetCore.Mvc.Razor.Compilation.CompilationFailedException: One or more compilation failures occurred:
+vi0yyewb.xmz(593,30): error CS0246: The type or namespace name 'ApplicationUser' could not be found (are you missing a using directive or an assembly reference?)
+F:\SourceCodeNet\KarmaCore\KarmaCoreApp\Views\Account\Login.cshtml(21,135): error CS1061: 'LoginViewModel' does not contain a definition for 'Email' and no extension method 'Email' accepting a first argument of type 'LoginViewModel' could be found (are you missing a using directive or an assembly reference?)
+F:\SourceCodeNet\KarmaCore\KarmaCoreApp\Views\Account\Login.cshtml(22,135): error CS1061: 'LoginViewModel' does not contain a definition for 'Email' and no extension method 'Email' accepting a first argument of type 'LoginViewModel' could be found (are you missing a using directive or an assembly reference?)
+F:\SourceCodeNet\KarmaCore\KarmaCoreApp\Views\Account\Login.cshtml(23,147): error CS1061: 'LoginViewModel' does not contain a definition for 'Email' and no extension method 'Email' accepting a first argument of type 'LoginViewModel' could be found (are you missing a using directive or an assembly reference?)
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompiler.CompileAndEmit(RazorCodeDocument codeDocument, String generatedCode)
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompiler.CompileAndEmit(String relativePath)
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompiler.CreateCacheEntry(String normalizedPath)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.DefaultRazorPageFactoryProvider.CreateFactory(String relativePath)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.CreateCacheResult(HashSet`1 expirationTokens, String relativePath, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.OnCacheMiss(ViewLocationExpanderContext expanderContext, ViewLocationCacheKey cacheKey)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.LocatePageFromViewLocations(ActionContext actionContext, String pageName, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.FindView(ActionContext context, String viewName, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.ViewEngines.CompositeViewEngine.FindView(ActionContext context, String viewName, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor.FindView(ActionContext actionContext, ViewResult viewResult)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultAsync(IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResultFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-06-29T18:23:38.4515762+07:00 0HM0S3RDAAIQD:00000002 [INF] Request finished in 5480.0659ms 500 text/html; charset=utf-8 (791a596a)
+2020-06-29T18:23:48.1403114+07:00 0HM0S3RDAAIQD:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin   (ca22a1cb)
+2020-06-29T18:23:48.1555336+07:00 0HM0S3RDAAIQD:00000003 [INF] Executing action method "KarmaCoreApp.Areas.Admin.Controllers.LoginController.Index (KarmaCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2020-06-29T18:23:49.6143979+07:00 0HM0S3RDAAIQD:00000003 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2020-06-29T18:23:49.9744132+07:00 0HM0S3RDAAIQD:00000003 [INF] Executed action "KarmaCoreApp.Areas.Admin.Controllers.LoginController.Index (KarmaCoreApp)" in 1822.1406ms (afa2e885)
+2020-06-29T18:23:49.9951492+07:00 0HM0S3RDAAIQD:00000003 [INF] Request finished in 1853.7919ms 200 text/html; charset=utf-8 (791a596a)
+2020-06-29T18:23:50.0417201+07:00 0HM0S3RDAAIQD:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:55321/lib/jquery-validation/localization/messages_vi.js   (ca22a1cb)
+2020-06-29T18:23:50.0557042+07:00 0HM0S3RDAAIQF:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:55321/app/controllers/login/index.js   (ca22a1cb)
+2020-06-29T18:23:50.0811602+07:00 0HM0S3RDAAIQD:00000004 [INF] The file "/lib/jquery-validation/localization/messages_vi.js" was not modified (f1f8d725)
+2020-06-29T18:23:50.0875698+07:00 0HM0S3RDAAIQF:00000001 [INF] Sending file. Request path: '"/app/controllers/login/index.js"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\app\controllers\login\index.js"' (27b0a520)
+2020-06-29T18:23:50.0938082+07:00 0HM0S3RDAAIQD:00000004 [INF] Request finished in 53.2173ms 304 application/javascript (791a596a)
+2020-06-29T18:23:50.1258010+07:00 0HM0S3RDAAIQF:00000001 [INF] Request finished in 69.1233ms 200 application/javascript (791a596a)
+2020-06-29T18:23:50.4698442+07:00 0HM0S3RDAAIQF:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin/login   (ca22a1cb)
+2020-06-29T18:23:50.4776997+07:00 0HM0S3RDAAIQF:00000002 [INF] Executing action method "KarmaCoreApp.Areas.Admin.Controllers.LoginController.Index (KarmaCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2020-06-29T18:23:50.4857657+07:00 0HM0S3RDAAIQF:00000002 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2020-06-29T18:23:50.5065191+07:00 0HM0S3RDAAIQF:00000002 [INF] Executed action "KarmaCoreApp.Areas.Admin.Controllers.LoginController.Index (KarmaCoreApp)" in 26.5756ms (afa2e885)
+2020-06-29T18:23:50.5227579+07:00 0HM0S3RDAAIQF:00000002 [INF] Request finished in 46.8788ms 200 text/html; charset=utf-8 (791a596a)
+2020-06-29T18:24:15.4700623+07:00  [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=KarmaCoreApp.Data.EF " (9958f5bb)
+2020-06-29T18:24:16.0861964+07:00  [INF] Executed DbCommand ("38"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-06-29T18:24:16.1411521+07:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-06-29T18:24:16.1631297+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Functions] AS [f]" (0723d8ff)
+2020-06-29T18:24:16.2405738+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2020-06-29T18:24:16.2469654+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Colors] AS [c]" (0723d8ff)
+2020-06-29T18:24:16.3327252+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Slides] AS [s]" (0723d8ff)
+2020-06-29T18:24:16.3453993+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Sizes] AS [s]" (0723d8ff)
+2020-06-29T18:24:16.3592447+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [ProductCategories] AS [p]" (0723d8ff)
+2020-06-29T18:24:16.4239522+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-06-29T18:24:16.4545023+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-06-29T18:24:16.4617178+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-06-29T18:24:17.4142552+07:00 0HM0S3RQONUBF:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:55321/   (ca22a1cb)
+2020-06-29T18:24:17.8984615+07:00 0HM0S3RQONUBF:00000001 [INF] Authorization failed for user: null. (a4ab1676)
+2020-06-29T18:24:17.9089903+07:00 0HM0S3RQONUBF:00000001 [INF] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"'. (8b6446cb)
+2020-06-29T18:24:17.9231648+07:00 0HM0S3RQONUBF:00000001 [INF] Executing ChallengeResult with authentication schemes ([]). (f3dca807)
+2020-06-29T18:24:17.9548904+07:00 0HM0S3RQONUBF:00000001 [INF] AuthenticationScheme: "Identity.Application" was challenged. (d45f1f38)
+2020-06-29T18:24:17.9658590+07:00 0HM0S3RQONUBF:00000001 [INF] Executed action "KarmaCoreApp.Controllers.HomeController.Index (KarmaCoreApp)" in 102.0975ms (afa2e885)
+2020-06-29T18:24:18.0395934+07:00 0HM0S3RQONUBF:00000001 [INF] Request finished in 678.8103ms 302  (791a596a)
+2020-06-29T18:24:18.0798280+07:00 0HM0S3RQONUBF:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:55321/Account/Login?ReturnUrl=%2F   (ca22a1cb)
+2020-06-29T18:24:18.2558445+07:00 0HM0S3RQONUBF:00000002 [INF] Executing action method "KarmaCoreApp.Controllers.AccountController.Login (KarmaCoreApp)" with arguments (["/"]) - ModelState is Valid (ba7f4ac2)
+2020-06-29T18:24:18.2985199+07:00 0HM0S3RQONUBF:00000002 [INF] AuthenticationScheme: "Identity.External" signed out. (d3f50c8d)
+2020-06-29T18:24:23.4017307+07:00 0HM0S3RQONUBF:00000002 [INF] Executed action "KarmaCoreApp.Controllers.AccountController.Login (KarmaCoreApp)" in 5259.2454ms (afa2e885)
+2020-06-29T18:24:23.4815615+07:00 0HM0S3RQONUBF:00000002 [ERR] An unhandled exception has occurred while executing the request (cf926119)
+Microsoft.AspNetCore.Mvc.Razor.Compilation.CompilationFailedException: One or more compilation failures occurred:
+vlreqnel.44p(604,147): error CS1031: Type expected
+vlreqnel.44p(604,347): error CS1031: Type expected
+vlreqnel.44p(604,547): error CS1031: Type expected
+vlreqnel.44p(593,30): error CS0246: The type or namespace name 'ApplicationUser' could not be found (are you missing a using directive or an assembly reference?)
+vlreqnel.44p(604,195): error CS1061: 'LoginViewModel' does not contain a definition for 'Email' and no extension method 'Email' accepting a first argument of type 'LoginViewModel' could be found (are you missing a using directive or an assembly reference?)
+vlreqnel.44p(604,395): error CS1061: 'LoginViewModel' does not contain a definition for 'Email' and no extension method 'Email' accepting a first argument of type 'LoginViewModel' could be found (are you missing a using directive or an assembly reference?)
+vlreqnel.44p(604,595): error CS1061: 'LoginViewModel' does not contain a definition for 'Email' and no extension method 'Email' accepting a first argument of type 'LoginViewModel' could be found (are you missing a using directive or an assembly reference?)
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompiler.CompileAndEmit(RazorCodeDocument codeDocument, String generatedCode)
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompiler.CompileAndEmit(String relativePath)
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompiler.CreateCacheEntry(String normalizedPath)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.DefaultRazorPageFactoryProvider.CreateFactory(String relativePath)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.CreateCacheResult(HashSet`1 expirationTokens, String relativePath, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.OnCacheMiss(ViewLocationExpanderContext expanderContext, ViewLocationCacheKey cacheKey)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.LocatePageFromViewLocations(ActionContext actionContext, String pageName, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.FindView(ActionContext context, String viewName, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.ViewEngines.CompositeViewEngine.FindView(ActionContext context, String viewName, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor.FindView(ActionContext actionContext, ViewResult viewResult)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultAsync(IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResultFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-06-29T18:24:24.0522490+07:00 0HM0S3RQONUBF:00000002 [INF] Request finished in 5973.7163ms 500 text/html; charset=utf-8 (791a596a)
+2020-06-29T18:24:31.6391621+07:00 0HM0S3RQONUBF:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin   (ca22a1cb)
+2020-06-29T18:24:31.6580829+07:00 0HM0S3RQONUBF:00000003 [INF] Executing action method "KarmaCoreApp.Areas.Admin.Controllers.LoginController.Index (KarmaCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2020-06-29T18:24:33.2021905+07:00 0HM0S3RQONUBF:00000003 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2020-06-29T18:24:33.5047856+07:00 0HM0S3RQONUBF:00000003 [INF] Executed action "KarmaCoreApp.Areas.Admin.Controllers.LoginController.Index (KarmaCoreApp)" in 1851.0269ms (afa2e885)
+2020-06-29T18:24:33.5264256+07:00 0HM0S3RQONUBF:00000003 [INF] Request finished in 1889.5067ms 200 text/html; charset=utf-8 (791a596a)
+2020-06-29T18:24:33.5923544+07:00 0HM0S3RQONUBF:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:55321/app/controllers/login/index.js   (ca22a1cb)
+2020-06-29T18:24:33.6267232+07:00 0HM0S3RQONUBF:00000004 [INF] Sending file. Request path: '"/app/controllers/login/index.js"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\app\controllers\login\index.js"' (27b0a520)
+2020-06-29T18:24:33.6497355+07:00 0HM0S3RQONUBF:00000004 [INF] Request finished in 65.7492ms 200 application/javascript (791a596a)
+2020-06-29T18:24:37.9998296+07:00 0HM0S3RQONUBF:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/bootstrap/dist/js/bootstrap.bundle.min.js.map   (ca22a1cb)
+2020-06-29T18:24:38.0031296+07:00 0HM0S3RQONUBH:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/jquery-scroll-lock/dist/jquery-scrollLock.min.js.map   (ca22a1cb)
+2020-06-29T18:24:38.0214439+07:00 0HM0S3RQONUBF:00000005 [INF] Request finished in 15.7288ms 404  (791a596a)
+2020-06-29T18:24:38.0273617+07:00 0HM0S3RQONUBH:00000001 [INF] Request finished in 13.7488ms 404  (791a596a)
+2020-06-29T18:24:38.0627428+07:00 0HM0S3RQONUBH:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/bootstrap/dist/css/bootstrap.min.css.map   (ca22a1cb)
+2020-06-29T18:24:38.0871569+07:00 0HM0S3RQONUBH:00000002 [INF] Request finished in 20.7364ms 404  (791a596a)
+2020-06-29T18:25:28.5483577+07:00  [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=KarmaCoreApp.Data.EF " (9958f5bb)
+2020-06-29T18:25:29.1361806+07:00  [INF] Executed DbCommand ("36"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-06-29T18:25:29.1970913+07:00  [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-06-29T18:25:29.2175269+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Functions] AS [f]" (0723d8ff)
+2020-06-29T18:25:29.3015948+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2020-06-29T18:25:29.3111452+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Colors] AS [c]" (0723d8ff)
+2020-06-29T18:25:29.4508756+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Slides] AS [s]" (0723d8ff)
+2020-06-29T18:25:29.4643354+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Sizes] AS [s]" (0723d8ff)
+2020-06-29T18:25:29.4783960+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [ProductCategories] AS [p]" (0723d8ff)
+2020-06-29T18:25:29.5274683+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-06-29T18:25:29.5576281+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-06-29T18:25:29.5649884+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-06-29T18:25:30.4801054+07:00 0HM0S3SGI4BPN:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:55321/   (ca22a1cb)
+2020-06-29T18:25:31.1064282+07:00 0HM0S3SGI4BPN:00000001 [INF] Authorization failed for user: null. (a4ab1676)
+2020-06-29T18:25:31.1231623+07:00 0HM0S3SGI4BPN:00000001 [INF] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"'. (8b6446cb)
+2020-06-29T18:25:31.1552053+07:00 0HM0S3SGI4BPN:00000001 [INF] Executing ChallengeResult with authentication schemes ([]). (f3dca807)
+2020-06-29T18:25:31.1898259+07:00 0HM0S3SGI4BPN:00000001 [INF] AuthenticationScheme: "Identity.Application" was challenged. (d45f1f38)
+2020-06-29T18:25:31.1989879+07:00 0HM0S3SGI4BPN:00000001 [INF] Executed action "KarmaCoreApp.Controllers.HomeController.Index (KarmaCoreApp)" in 133.098ms (afa2e885)
+2020-06-29T18:25:31.2685201+07:00 0HM0S3SGI4BPN:00000001 [INF] Request finished in 845.2439ms 302  (791a596a)
+2020-06-29T18:25:31.2964093+07:00 0HM0S3SGI4BPN:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:55321/Account/Login?ReturnUrl=%2F   (ca22a1cb)
+2020-06-29T18:25:31.5136175+07:00 0HM0S3SGI4BPN:00000002 [INF] Executing action method "KarmaCoreApp.Controllers.AccountController.Login (KarmaCoreApp)" with arguments (["/"]) - ModelState is Valid (ba7f4ac2)
+2020-06-29T18:25:31.5626977+07:00 0HM0S3SGI4BPN:00000002 [INF] AuthenticationScheme: "Identity.External" signed out. (d3f50c8d)
+2020-06-29T18:25:34.4589628+07:00 0HM0S3SGI4BPM:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin/login   (ca22a1cb)
+2020-06-29T18:25:34.4791392+07:00 0HM0S3SGI4BPM:00000001 [INF] Executing action method "KarmaCoreApp.Areas.Admin.Controllers.LoginController.Index (KarmaCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2020-06-29T18:25:35.8072020+07:00 0HM0S3SGI4BPN:00000002 [INF] Executed action "KarmaCoreApp.Controllers.AccountController.Login (KarmaCoreApp)" in 4444.1885ms (afa2e885)
+2020-06-29T18:25:35.8755194+07:00 0HM0S3SGI4BPN:00000002 [ERR] An unhandled exception has occurred while executing the request (cf926119)
+Microsoft.AspNetCore.Mvc.Razor.Compilation.CompilationFailedException: One or more compilation failures occurred:
+dqqfegdd.5ly(604,147): error CS1031: Type expected
+dqqfegdd.5ly(604,347): error CS1031: Type expected
+dqqfegdd.5ly(604,547): error CS1031: Type expected
+dqqfegdd.5ly(593,30): error CS0246: The type or namespace name 'ApplicationUser' could not be found (are you missing a using directive or an assembly reference?)
+dqqfegdd.5ly(604,195): error CS1061: 'LoginViewModel' does not contain a definition for 'Email' and no extension method 'Email' accepting a first argument of type 'LoginViewModel' could be found (are you missing a using directive or an assembly reference?)
+dqqfegdd.5ly(604,395): error CS1061: 'LoginViewModel' does not contain a definition for 'Email' and no extension method 'Email' accepting a first argument of type 'LoginViewModel' could be found (are you missing a using directive or an assembly reference?)
+dqqfegdd.5ly(604,595): error CS1061: 'LoginViewModel' does not contain a definition for 'Email' and no extension method 'Email' accepting a first argument of type 'LoginViewModel' could be found (are you missing a using directive or an assembly reference?)
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompiler.CompileAndEmit(RazorCodeDocument codeDocument, String generatedCode)
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompiler.CompileAndEmit(String relativePath)
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompiler.CreateCacheEntry(String normalizedPath)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.DefaultRazorPageFactoryProvider.CreateFactory(String relativePath)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.CreateCacheResult(HashSet`1 expirationTokens, String relativePath, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.OnCacheMiss(ViewLocationExpanderContext expanderContext, ViewLocationCacheKey cacheKey)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.LocatePageFromViewLocations(ActionContext actionContext, String pageName, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.FindView(ActionContext context, String viewName, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.ViewEngines.CompositeViewEngine.FindView(ActionContext context, String viewName, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor.FindView(ActionContext actionContext, ViewResult viewResult)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultAsync(IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResultFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-06-29T18:25:36.3750694+07:00 0HM0S3SGI4BPN:00000002 [INF] Request finished in 5079.3263ms 500 text/html; charset=utf-8 (791a596a)
+2020-06-29T18:25:36.9095533+07:00 0HM0S3SGI4BPM:00000001 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2020-06-29T18:25:37.2109585+07:00 0HM0S3SGI4BPM:00000001 [INF] Executed action "KarmaCoreApp.Areas.Admin.Controllers.LoginController.Index (KarmaCoreApp)" in 2736.3283ms (afa2e885)
+2020-06-29T18:25:37.2575865+07:00 0HM0S3SGI4BPM:00000001 [INF] Request finished in 2782.3108ms 200 text/html; charset=utf-8 (791a596a)
+2020-06-29T18:25:37.2928690+07:00 0HM0S3SGI4BPM:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/css/site.css   (ca22a1cb)
+2020-06-29T18:25:37.3350083+07:00 0HM0S3SGI4BPO:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:55321/app/controllers/login/index.js   (ca22a1cb)
+2020-06-29T18:25:37.3518133+07:00 0HM0S3SGI4BPM:00000002 [INF] Sending file. Request path: '"/admin-side/css/site.css"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\css\site.css"' (27b0a520)
+2020-06-29T18:25:37.3621103+07:00 0HM0S3SGI4BPO:00000001 [INF] The file "/app/controllers/login/index.js" was not modified (f1f8d725)
+2020-06-29T18:25:37.3721832+07:00 0HM0S3SGI4BPO:00000001 [INF] Request finished in 45.8505ms 304 application/javascript (791a596a)
+2020-06-29T18:25:37.4051298+07:00 0HM0S3SGI4BPM:00000002 [INF] Request finished in 109.6045ms 200 text/css (791a596a)
+2020-06-29T18:25:43.0835335+07:00 0HM0S3SGI4BPM:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin/login   (ca22a1cb)
+2020-06-29T18:25:43.0908290+07:00 0HM0S3SGI4BPM:00000003 [INF] Executing action method "KarmaCoreApp.Areas.Admin.Controllers.LoginController.Index (KarmaCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2020-06-29T18:25:43.0995336+07:00 0HM0S3SGI4BPM:00000003 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2020-06-29T18:25:43.1181920+07:00 0HM0S3SGI4BPM:00000003 [INF] Executed action "KarmaCoreApp.Areas.Admin.Controllers.LoginController.Index (KarmaCoreApp)" in 25.1541ms (afa2e885)
+2020-06-29T18:25:43.1353479+07:00 0HM0S3SGI4BPM:00000003 [INF] Request finished in 51.5268ms 200 text/html; charset=utf-8 (791a596a)
+2020-06-29T18:25:43.2535715+07:00 0HM0S3SGI4BPM:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/img/brand/favicon.png   (ca22a1cb)
+2020-06-29T18:25:43.2660684+07:00 0HM0S3SGI4BPM:00000004 [INF] Sending file. Request path: '"/admin-side/img/brand/favicon.png"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\img\brand\favicon.png"' (27b0a520)
+2020-06-29T18:25:43.3209825+07:00 0HM0S3SGI4BPM:00000004 [INF] Request finished in 62.5068ms 200 image/png (791a596a)
+2020-06-29T19:03:23.4257173+07:00  [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=KarmaCoreApp.Data.EF " (9958f5bb)
+2020-06-29T19:03:24.0225952+07:00  [INF] Executed DbCommand ("36"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-06-29T19:03:24.0804998+07:00  [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-06-29T19:03:24.1003618+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Functions] AS [f]" (0723d8ff)
+2020-06-29T19:03:24.1696282+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2020-06-29T19:03:24.1799195+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Colors] AS [c]" (0723d8ff)
+2020-06-29T19:03:24.2636701+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Slides] AS [s]" (0723d8ff)
+2020-06-29T19:03:24.2766725+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Sizes] AS [s]" (0723d8ff)
+2020-06-29T19:03:24.2913032+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [ProductCategories] AS [p]" (0723d8ff)
+2020-06-29T19:03:24.3678094+07:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-06-29T19:03:24.4270986+07:00  [INF] Executed DbCommand ("7"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-06-29T19:03:24.4479045+07:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-06-29T19:03:26.0320224+07:00 0HM0S4HMLI72M:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:55321/   (ca22a1cb)
+2020-06-29T19:03:26.6035867+07:00 0HM0S4HMLI72M:00000001 [INF] Authorization failed for user: null. (a4ab1676)
+2020-06-29T19:03:26.6163367+07:00 0HM0S4HMLI72M:00000001 [INF] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"'. (8b6446cb)
+2020-06-29T19:03:26.6330525+07:00 0HM0S4HMLI72M:00000001 [INF] Executing ChallengeResult with authentication schemes ([]). (f3dca807)
+2020-06-29T19:03:26.6688554+07:00 0HM0S4HMLI72M:00000001 [INF] AuthenticationScheme: "Identity.Application" was challenged. (d45f1f38)
+2020-06-29T19:03:26.6803925+07:00 0HM0S4HMLI72M:00000001 [INF] Executed action "KarmaCoreApp.Controllers.HomeController.Index (KarmaCoreApp)" in 116.4441ms (afa2e885)
+2020-06-29T19:03:26.7499452+07:00 0HM0S4HMLI72M:00000001 [INF] Request finished in 795.0499ms 302  (791a596a)
+2020-06-29T19:03:26.7795325+07:00 0HM0S4HMLI72M:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:55321/Account/Login?ReturnUrl=%2F   (ca22a1cb)
+2020-06-29T19:03:26.9737163+07:00 0HM0S4HMLI72M:00000002 [INF] Executing action method "KarmaCoreApp.Controllers.AccountController.Login (KarmaCoreApp)" with arguments (["/"]) - ModelState is Valid (ba7f4ac2)
+2020-06-29T19:03:27.0191832+07:00 0HM0S4HMLI72M:00000002 [INF] AuthenticationScheme: "Identity.External" signed out. (d3f50c8d)
+2020-06-29T19:03:29.5559944+07:00 0HM0S4HMLI72L:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin   (ca22a1cb)
+2020-06-29T19:03:29.7323159+07:00 0HM0S4HMLI72L:00000001 [INF] Executing action method "KarmaCoreApp.Areas.Admin.Controllers.LoginController.Index (KarmaCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2020-06-29T19:03:31.6829851+07:00 0HM0S4HMLI72M:00000002 [INF] Executed action "KarmaCoreApp.Controllers.AccountController.Login (KarmaCoreApp)" in 4838.0211ms (afa2e885)
+2020-06-29T19:03:31.7793823+07:00 0HM0S4HMLI72M:00000002 [ERR] An unhandled exception has occurred while executing the request (cf926119)
+Microsoft.AspNetCore.Mvc.Razor.Compilation.CompilationFailedException: One or more compilation failures occurred:
+adqi02z2.2fm(593,30): error CS0246: The type or namespace name 'ApplicationUser' could not be found (are you missing a using directive or an assembly reference?)
+F:\SourceCodeNet\KarmaCore\KarmaCoreApp\Views\Account\Login.cshtml(21,135): error CS1061: 'LoginViewModel' does not contain a definition for 'Email' and no extension method 'Email' accepting a first argument of type 'LoginViewModel' could be found (are you missing a using directive or an assembly reference?)
+F:\SourceCodeNet\KarmaCore\KarmaCoreApp\Views\Account\Login.cshtml(22,135): error CS1061: 'LoginViewModel' does not contain a definition for 'Email' and no extension method 'Email' accepting a first argument of type 'LoginViewModel' could be found (are you missing a using directive or an assembly reference?)
+F:\SourceCodeNet\KarmaCore\KarmaCoreApp\Views\Account\Login.cshtml(23,147): error CS1061: 'LoginViewModel' does not contain a definition for 'Email' and no extension method 'Email' accepting a first argument of type 'LoginViewModel' could be found (are you missing a using directive or an assembly reference?)
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompiler.CompileAndEmit(RazorCodeDocument codeDocument, String generatedCode)
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompiler.CompileAndEmit(String relativePath)
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompiler.CreateCacheEntry(String normalizedPath)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.DefaultRazorPageFactoryProvider.CreateFactory(String relativePath)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.CreateCacheResult(HashSet`1 expirationTokens, String relativePath, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.OnCacheMiss(ViewLocationExpanderContext expanderContext, ViewLocationCacheKey cacheKey)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.LocatePageFromViewLocations(ActionContext actionContext, String pageName, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.FindView(ActionContext context, String viewName, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.ViewEngines.CompositeViewEngine.FindView(ActionContext context, String viewName, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor.FindView(ActionContext actionContext, ViewResult viewResult)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultAsync(IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResultFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-06-29T19:03:32.0152554+07:00 0HM0S4HMLI72M:00000002 [INF] Request finished in 5237.7607ms 500 text/html; charset=utf-8 (791a596a)
+2020-06-29T19:03:32.8100960+07:00 0HM0S4HMLI72L:00000001 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2020-06-29T19:03:33.1412405+07:00 0HM0S4HMLI72L:00000001 [INF] Executed action "KarmaCoreApp.Areas.Admin.Controllers.LoginController.Index (KarmaCoreApp)" in 3570.0201ms (afa2e885)
+2020-06-29T19:03:33.1721120+07:00 0HM0S4HMLI72L:00000001 [INF] Request finished in 3618.2851ms 200 text/html; charset=utf-8 (791a596a)
+2020-06-29T19:03:33.2794868+07:00 0HM0S4HMLI72L:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/css/site.css   (ca22a1cb)
+2020-06-29T19:03:33.2795939+07:00 0HM0S4HMLI72N:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:55321/app/controllers/login/index.js   (ca22a1cb)
+2020-06-29T19:03:33.3061222+07:00 0HM0S4HMLI72N:00000001 [INF] The file "/app/controllers/login/index.js" was not modified (f1f8d725)
+2020-06-29T19:03:33.3116967+07:00 0HM0S4HMLI72L:00000002 [INF] Sending file. Request path: '"/admin-side/css/site.css"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\css\site.css"' (27b0a520)
+2020-06-29T19:03:33.3203699+07:00 0HM0S4HMLI72N:00000001 [INF] Request finished in 67.6106ms 304 application/javascript (791a596a)
+2020-06-29T19:03:33.3506922+07:00 0HM0S4HMLI72L:00000002 [INF] Request finished in 98.893ms 200 text/css (791a596a)
+2020-06-29T19:03:53.9391284+07:00 0HM0S4HMLI72L:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin   (ca22a1cb)
+2020-06-29T19:03:53.9466092+07:00 0HM0S4HMLI72L:00000003 [INF] Executing action method "KarmaCoreApp.Areas.Admin.Controllers.LoginController.Index (KarmaCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2020-06-29T19:03:53.9543774+07:00 0HM0S4HMLI72L:00000003 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2020-06-29T19:03:53.9800123+07:00 0HM0S4HMLI72L:00000003 [INF] Executed action "KarmaCoreApp.Areas.Admin.Controllers.LoginController.Index (KarmaCoreApp)" in 34.6329ms (afa2e885)
+2020-06-29T19:03:53.9950754+07:00 0HM0S4HMLI72L:00000003 [INF] Request finished in 56.3092ms 200 text/html; charset=utf-8 (791a596a)
+2020-06-29T19:03:54.0372155+07:00 0HM0S4HMLI72L:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/css/site.css   (ca22a1cb)
+2020-06-29T19:03:54.0441754+07:00 0HM0S4HMLI72L:00000004 [INF] Sending file. Request path: '"/admin-side/css/site.css"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\css\site.css"' (27b0a520)
+2020-06-29T19:03:54.0607535+07:00 0HM0S4HMLI72L:00000004 [INF] Request finished in 28.8495ms 200 text/css (791a596a)
+2020-06-29T19:03:54.1537275+07:00 0HM0S4HMLI72L:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/img/brand/favicon.png   (ca22a1cb)
+2020-06-29T19:03:54.1633858+07:00 0HM0S4HMLI72L:00000005 [INF] Sending file. Request path: '"/admin-side/img/brand/favicon.png"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\img\brand\favicon.png"' (27b0a520)
+2020-06-29T19:03:54.2048543+07:00 0HM0S4HMLI72L:00000005 [INF] Request finished in 50.7523ms 200 image/png (791a596a)
+2020-06-29T19:04:08.5502948+07:00 0HM0S4HMLI72L:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin   (ca22a1cb)
+2020-06-29T19:04:08.5572282+07:00 0HM0S4HMLI72L:00000006 [INF] Executing action method "KarmaCoreApp.Areas.Admin.Controllers.LoginController.Index (KarmaCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2020-06-29T19:04:08.5619402+07:00 0HM0S4HMLI72L:00000006 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2020-06-29T19:04:08.5739612+07:00 0HM0S4HMLI72L:00000006 [INF] Executed action "KarmaCoreApp.Areas.Admin.Controllers.LoginController.Index (KarmaCoreApp)" in 17.0676ms (afa2e885)
+2020-06-29T19:04:08.5836370+07:00 0HM0S4HMLI72L:00000006 [INF] Request finished in 34.5451ms 200 text/html; charset=utf-8 (791a596a)
+2020-06-29T19:04:08.6206229+07:00 0HM0S4HMLI72L:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/css/site.css   (ca22a1cb)
+2020-06-29T19:04:08.6280216+07:00 0HM0S4HMLI72L:00000007 [INF] Sending file. Request path: '"/admin-side/css/site.css"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\css\site.css"' (27b0a520)
+2020-06-29T19:04:08.6471602+07:00 0HM0S4HMLI72L:00000007 [INF] Request finished in 30.2288ms 200 text/css (791a596a)
+2020-06-29T19:04:08.7553478+07:00 0HM0S4HMLI72L:00000008 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/img/brand/favicon.png   (ca22a1cb)
+2020-06-29T19:04:08.7658427+07:00 0HM0S4HMLI72L:00000008 [INF] Sending file. Request path: '"/admin-side/img/brand/favicon.png"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\img\brand\favicon.png"' (27b0a520)
+2020-06-29T19:04:08.7778776+07:00 0HM0S4HMLI72L:00000008 [INF] Request finished in 20.0474ms 200 image/png (791a596a)
+2020-06-29T19:04:29.9032495+07:00 0HM0S4HMLI72L:00000009 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/css/site.css   (ca22a1cb)
+2020-06-29T19:04:29.9112050+07:00 0HM0S4HMLI72L:00000009 [INF] The file "/admin-side/css/site.css" was not modified (f1f8d725)
+2020-06-29T19:04:29.9203311+07:00 0HM0S4HMLI72L:00000009 [INF] Request finished in 19.3685ms 304 text/css (791a596a)
+2020-06-29T19:04:29.9586208+07:00 0HM0S4HMLI72L:0000000A [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/bootstrap/dist/js/bootstrap.bundle.min.js.map   (ca22a1cb)
+2020-06-29T19:04:29.9597131+07:00 0HM0S4HMLI72N:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/jquery-scroll-lock/dist/jquery-scrollLock.min.js.map   (ca22a1cb)
+2020-06-29T19:04:29.9952200+07:00 0HM0S4HMLI72L:0000000A [INF] Request finished in 11.6935ms 404  (791a596a)
+2020-06-29T19:04:30.0082414+07:00 0HM0S4HMLI72N:00000002 [INF] Request finished in 13.0163ms 404  (791a596a)
+2020-06-29T19:04:30.0172582+07:00 0HM0S4HMLI72N:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/bootstrap/dist/css/bootstrap.min.css.map   (ca22a1cb)
+2020-06-29T19:04:30.0250335+07:00 0HM0S4HMLI72N:00000003 [INF] Request finished in 6.9059ms 404  (791a596a)
+2020-06-29T19:04:47.3304644+07:00 0HM0S4HMLI72N:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin   (ca22a1cb)
+2020-06-29T19:04:47.3378674+07:00 0HM0S4HMLI72N:00000004 [INF] Executing action method "KarmaCoreApp.Areas.Admin.Controllers.LoginController.Index (KarmaCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2020-06-29T19:04:47.3430812+07:00 0HM0S4HMLI72N:00000004 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2020-06-29T19:04:47.3697148+07:00 0HM0S4HMLI72N:00000004 [INF] Executed action "KarmaCoreApp.Areas.Admin.Controllers.LoginController.Index (KarmaCoreApp)" in 33.2016ms (afa2e885)
+2020-06-29T19:04:47.3797016+07:00 0HM0S4HMLI72N:00000004 [INF] Request finished in 47.8017ms 200 text/html; charset=utf-8 (791a596a)
+2020-06-29T19:04:47.4386775+07:00 0HM0S4HMLI72N:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/css/site.css   (ca22a1cb)
+2020-06-29T19:04:47.4465359+07:00 0HM0S4HMLI72N:00000005 [INF] The file "/admin-side/css/site.css" was not modified (f1f8d725)
+2020-06-29T19:04:47.4567377+07:00 0HM0S4HMLI72N:00000005 [INF] Request finished in 27.6045ms 304 text/css (791a596a)
+2020-06-29T19:04:47.6517360+07:00 0HM0S4HMLI72N:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/bootstrap/dist/js/bootstrap.bundle.min.js.map   (ca22a1cb)
+2020-06-29T19:04:47.6533973+07:00 0HM0S4HMLI72L:0000000B [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/jquery-scroll-lock/dist/jquery-scrollLock.min.js.map   (ca22a1cb)
+2020-06-29T19:04:47.6669407+07:00 0HM0S4HMLI72L:0000000B [INF] Request finished in 12.9949ms 404  (791a596a)
+2020-06-29T19:04:47.6693655+07:00 0HM0S4HMLI72N:00000006 [INF] Request finished in 30.5594ms 404  (791a596a)
+2020-06-29T19:04:47.6789825+07:00 0HM0S4HMLI72L:0000000C [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/bootstrap/dist/css/bootstrap.min.css.map   (ca22a1cb)
+2020-06-29T19:04:47.6881574+07:00 0HM0S4HMLI72L:0000000C [INF] Request finished in 10.0939ms 404  (791a596a)
+2020-06-29T19:04:47.7230141+07:00 0HM0S4HMLI72L:0000000D [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/img/brand/favicon.png   (ca22a1cb)
+2020-06-29T19:04:47.7287000+07:00 0HM0S4HMLI72L:0000000D [INF] Sending file. Request path: '"/admin-side/img/brand/favicon.png"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\img\brand\favicon.png"' (27b0a520)
+2020-06-29T19:04:47.7376210+07:00 0HM0S4HMLI72L:0000000D [INF] Request finished in 28.3702ms 200 image/png (791a596a)
+2020-06-29T19:40:51.4131933+07:00  [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=KarmaCoreApp.Data.EF " (9958f5bb)
+2020-06-29T19:40:51.9918239+07:00  [INF] Executed DbCommand ("44"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-06-29T19:40:52.0495371+07:00  [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-06-29T19:40:52.0723324+07:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Functions] AS [f]" (0723d8ff)
+2020-06-29T19:40:52.1421238+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2020-06-29T19:40:52.1505958+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Colors] AS [c]" (0723d8ff)
+2020-06-29T19:40:52.2386623+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Slides] AS [s]" (0723d8ff)
+2020-06-29T19:40:52.2510558+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Sizes] AS [s]" (0723d8ff)
+2020-06-29T19:40:52.2651685+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [ProductCategories] AS [p]" (0723d8ff)
+2020-06-29T19:40:52.3176045+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-06-29T19:40:52.3507822+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-06-29T19:40:52.3618420+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-06-29T19:40:53.2745739+07:00 0HM0S56KE9AIN:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:55321/   (ca22a1cb)
+2020-06-29T19:40:53.9240596+07:00 0HM0S56KE9AIN:00000001 [INF] Authorization failed for user: null. (a4ab1676)
+2020-06-29T19:40:53.9349553+07:00 0HM0S56KE9AIN:00000001 [INF] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"'. (8b6446cb)
+2020-06-29T19:40:53.9501470+07:00 0HM0S56KE9AIN:00000001 [INF] Executing ChallengeResult with authentication schemes ([]). (f3dca807)
+2020-06-29T19:40:53.9879523+07:00 0HM0S56KE9AIN:00000001 [INF] AuthenticationScheme: "Identity.Application" was challenged. (d45f1f38)
+2020-06-29T19:40:53.9968706+07:00 0HM0S56KE9AIN:00000001 [INF] Executed action "KarmaCoreApp.Controllers.HomeController.Index (KarmaCoreApp)" in 108.585ms (afa2e885)
+2020-06-29T19:40:54.0659853+07:00 0HM0S56KE9AIN:00000001 [INF] Request finished in 854.5383ms 302  (791a596a)
+2020-06-29T19:40:54.0905285+07:00 0HM0S56KE9AIN:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:55321/Account/Login?ReturnUrl=%2F   (ca22a1cb)
+2020-06-29T19:40:54.2608191+07:00 0HM0S56KE9AIN:00000002 [INF] Executing action method "KarmaCoreApp.Controllers.AccountController.Login (KarmaCoreApp)" with arguments (["/"]) - ModelState is Valid (ba7f4ac2)
+2020-06-29T19:40:54.2993664+07:00 0HM0S56KE9AIN:00000002 [INF] AuthenticationScheme: "Identity.External" signed out. (d3f50c8d)
+2020-06-29T19:40:58.8284506+07:00 0HM0S56KE9AIN:00000002 [INF] Executed action "KarmaCoreApp.Controllers.AccountController.Login (KarmaCoreApp)" in 4681.9457ms (afa2e885)
+2020-06-29T19:40:58.8935698+07:00 0HM0S56KE9AIN:00000002 [ERR] An unhandled exception has occurred while executing the request (cf926119)
+Microsoft.AspNetCore.Mvc.Razor.Compilation.CompilationFailedException: One or more compilation failures occurred:
+szeipdes.yoi(593,30): error CS0246: The type or namespace name 'ApplicationUser' could not be found (are you missing a using directive or an assembly reference?)
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompiler.CompileAndEmit(RazorCodeDocument codeDocument, String generatedCode)
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompiler.CompileAndEmit(String relativePath)
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompiler.CreateCacheEntry(String normalizedPath)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.DefaultRazorPageFactoryProvider.CreateFactory(String relativePath)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.CreateCacheResult(HashSet`1 expirationTokens, String relativePath, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.OnCacheMiss(ViewLocationExpanderContext expanderContext, ViewLocationCacheKey cacheKey)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.LocatePageFromViewLocations(ActionContext actionContext, String pageName, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.FindView(ActionContext context, String viewName, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.ViewEngines.CompositeViewEngine.FindView(ActionContext context, String viewName, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor.FindView(ActionContext actionContext, ViewResult viewResult)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultAsync(IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResultFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-06-29T19:40:59.1336965+07:00 0HM0S56KE9AIN:00000002 [INF] Request finished in 5041.2685ms 500 text/html; charset=utf-8 (791a596a)
+2020-06-29T19:42:19.1602330+07:00  [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=KarmaCoreApp.Data.EF " (9958f5bb)
+2020-06-29T19:42:19.7455963+07:00  [INF] Executed DbCommand ("41"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-06-29T19:42:19.8045062+07:00  [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-06-29T19:42:19.8258032+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Functions] AS [f]" (0723d8ff)
+2020-06-29T19:42:19.8992758+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2020-06-29T19:42:19.9094675+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Colors] AS [c]" (0723d8ff)
+2020-06-29T19:42:19.9913561+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Slides] AS [s]" (0723d8ff)
+2020-06-29T19:42:20.0064510+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Sizes] AS [s]" (0723d8ff)
+2020-06-29T19:42:20.0213850+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [ProductCategories] AS [p]" (0723d8ff)
+2020-06-29T19:42:20.0748850+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-06-29T19:42:20.1012603+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-06-29T19:42:20.1135530+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-06-29T19:42:20.8406612+07:00 0HM0S57EIC3DP:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:55321/   (ca22a1cb)
+2020-06-29T19:42:21.3913839+07:00 0HM0S57EIC3DP:00000001 [INF] Authorization failed for user: null. (a4ab1676)
+2020-06-29T19:42:21.4053885+07:00 0HM0S57EIC3DP:00000001 [INF] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"'. (8b6446cb)
+2020-06-29T19:42:21.4250037+07:00 0HM0S57EIC3DP:00000001 [INF] Executing ChallengeResult with authentication schemes ([]). (f3dca807)
+2020-06-29T19:42:21.4600082+07:00 0HM0S57EIC3DP:00000001 [INF] AuthenticationScheme: "Identity.Application" was challenged. (d45f1f38)
+2020-06-29T19:42:21.5836414+07:00 0HM0S57EIC3DP:00000001 [INF] Executed action "KarmaCoreApp.Controllers.HomeController.Index (KarmaCoreApp)" in 114.503ms (afa2e885)
+2020-06-29T19:42:21.6813538+07:00 0HM0S57EIC3DP:00000001 [INF] Request finished in 907.3095ms 302  (791a596a)
+2020-06-29T19:42:21.7112414+07:00 0HM0S57EIC3DP:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:55321/Account/Login?ReturnUrl=%2F   (ca22a1cb)
+2020-06-29T19:42:21.9102294+07:00 0HM0S57EIC3DP:00000002 [INF] Executing action method "KarmaCoreApp.Controllers.AccountController.Login (KarmaCoreApp)" with arguments (["/"]) - ModelState is Valid (ba7f4ac2)
+2020-06-29T19:42:21.9588160+07:00 0HM0S57EIC3DP:00000002 [INF] AuthenticationScheme: "Identity.External" signed out. (d3f50c8d)
+2020-06-29T19:42:27.9431881+07:00 0HM0S57EIC3DP:00000002 [INF] Executing ViewResult, running view at path "/Views/Account/Login.cshtml". (9707eebe)
+2020-06-29T19:42:29.0374616+07:00 0HM0S57EIC3DP:00000002 [INF] Executed action "KarmaCoreApp.Controllers.AccountController.Login (KarmaCoreApp)" in 7257.2892ms (afa2e885)
+2020-06-29T19:42:29.0826963+07:00 0HM0S57EIC3DP:00000002 [INF] Request finished in 7364.0589ms 200 text/html; charset=utf-8 (791a596a)
+2020-06-29T19:42:29.1114580+07:00 0HM0S57EIC3DQ:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:55321/css/site.css   (ca22a1cb)
+2020-06-29T19:42:29.1206186+07:00 0HM0S57EIC3DT:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:55321/js/site.js?v=ji3-IxbEzYWjzzLCGkF1KDjrT2jLbbrSYXw-AhMPNIA   (ca22a1cb)
+2020-06-29T19:42:29.1227297+07:00 0HM0S57EIC3DS:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:55321/lib/bootstrap/dist/js/bootstrap.js   (ca22a1cb)
+2020-06-29T19:42:29.1276979+07:00 0HM0S57EIC3DR:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:55321/lib/jquery/dist/jquery.js   (ca22a1cb)
+2020-06-29T19:42:29.1337561+07:00 0HM0S57EIC3DP:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:55321/lib/bootstrap/dist/css/bootstrap.css   (ca22a1cb)
+2020-06-29T19:42:29.1624345+07:00 0HM0S57EIC3DQ:00000001 [INF] Sending file. Request path: '"/css/site.css"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\css\site.css"' (27b0a520)
+2020-06-29T19:42:29.1635479+07:00 0HM0S57EIC3DT:00000001 [INF] Sending file. Request path: '"/js/site.js"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\js\site.js"' (27b0a520)
+2020-06-29T19:42:29.1684076+07:00 0HM0S57EIC3DS:00000001 [INF] Sending file. Request path: '"/lib/bootstrap/dist/js/bootstrap.js"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\lib\bootstrap\dist\js\bootstrap.js"' (27b0a520)
+2020-06-29T19:42:29.1698232+07:00 0HM0S57EIC3DP:00000003 [INF] Sending file. Request path: '"/lib/bootstrap/dist/css/bootstrap.css"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\lib\bootstrap\dist\css\bootstrap.css"' (27b0a520)
+2020-06-29T19:42:29.1720240+07:00 0HM0S57EIC3DR:00000001 [INF] Sending file. Request path: '"/lib/jquery/dist/jquery.js"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\lib\jquery\dist\jquery.js"' (27b0a520)
+2020-06-29T19:42:29.1910563+07:00 0HM0S57EIC3DT:00000001 [INF] Request finished in 83.7664ms 200 application/javascript (791a596a)
+2020-06-29T19:42:29.2278973+07:00 0HM0S57EIC3DQ:00000001 [INF] Request finished in 133.3978ms 200 text/css (791a596a)
+2020-06-29T19:42:29.2920825+07:00 0HM0S57EIC3DP:00000003 [INF] Request finished in 153.1858ms 200 text/css (791a596a)
+2020-06-29T19:42:29.3103795+07:00 0HM0S57EIC3DS:00000001 [INF] Request finished in 213.1695ms 200 application/javascript (791a596a)
+2020-06-29T19:42:29.3863493+07:00 0HM0S57EIC3DR:00000001 [INF] Request finished in 293.3457ms 200 application/javascript (791a596a)
+2020-06-29T19:42:41.0237212+07:00 0HM0S57EIC3DR:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin   (ca22a1cb)
+2020-06-29T19:42:41.0367377+07:00 0HM0S57EIC3DR:00000002 [INF] Executing action method "KarmaCoreApp.Areas.Admin.Controllers.LoginController.Index (KarmaCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2020-06-29T19:42:41.3431534+07:00 0HM0S57EIC3DR:00000002 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2020-06-29T19:42:41.4251113+07:00 0HM0S57EIC3DR:00000002 [INF] Executed action "KarmaCoreApp.Areas.Admin.Controllers.LoginController.Index (KarmaCoreApp)" in 389.7396ms (afa2e885)
+2020-06-29T19:42:41.4393405+07:00 0HM0S57EIC3DR:00000002 [INF] Request finished in 416.7408ms 200 text/html; charset=utf-8 (791a596a)
+2020-06-29T19:42:41.4727520+07:00 0HM0S57EIC3DR:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/css/site.css   (ca22a1cb)
+2020-06-29T19:42:41.4918640+07:00 0HM0S57EIC3DR:00000003 [INF] Sending file. Request path: '"/admin-side/css/site.css"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\css\site.css"' (27b0a520)
+2020-06-29T19:42:41.5023246+07:00 0HM0S57EIC3DR:00000003 [INF] Request finished in 27.0256ms 200 text/css (791a596a)
+2020-06-29T19:42:41.5291481+07:00 0HM0S57EIC3DR:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:55321/app/controllers/login/index.js   (ca22a1cb)
+2020-06-29T19:42:41.5373897+07:00 0HM0S57EIC3DR:00000004 [INF] The file "/app/controllers/login/index.js" was not modified (f1f8d725)
+2020-06-29T19:42:41.5439483+07:00 0HM0S57EIC3DR:00000004 [INF] Request finished in 16.8863ms 304 application/javascript (791a596a)
+2020-06-29T19:42:42.7508757+07:00 0HM0S57EIC3DR:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin/login   (ca22a1cb)
+2020-06-29T19:42:42.7579436+07:00 0HM0S57EIC3DR:00000005 [INF] Executing action method "KarmaCoreApp.Areas.Admin.Controllers.LoginController.Index (KarmaCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2020-06-29T19:42:42.7671946+07:00 0HM0S57EIC3DR:00000005 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2020-06-29T19:42:42.7770349+07:00 0HM0S57EIC3DR:00000005 [INF] Executed action "KarmaCoreApp.Areas.Admin.Controllers.LoginController.Index (KarmaCoreApp)" in 19.4903ms (afa2e885)
+2020-06-29T19:42:42.7927630+07:00 0HM0S57EIC3DR:00000005 [INF] Request finished in 47.2447ms 200 text/html; charset=utf-8 (791a596a)
+2020-06-29T19:44:00.0130764+07:00  [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=KarmaCoreApp.Data.EF " (9958f5bb)
+2020-06-29T19:44:00.5828951+07:00  [INF] Executed DbCommand ("36"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-06-29T19:44:00.6451897+07:00  [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-06-29T19:44:00.6665286+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Functions] AS [f]" (0723d8ff)
+2020-06-29T19:44:00.7383913+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2020-06-29T19:44:00.7453510+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Colors] AS [c]" (0723d8ff)
+2020-06-29T19:44:01.0301265+07:00  [INF] Executed DbCommand ("205"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Slides] AS [s]" (0723d8ff)
+2020-06-29T19:44:01.0432189+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Sizes] AS [s]" (0723d8ff)
+2020-06-29T19:44:01.0596987+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [ProductCategories] AS [p]" (0723d8ff)
+2020-06-29T19:44:01.1109030+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-06-29T19:44:01.1370605+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-06-29T19:44:01.1459181+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-06-29T19:44:02.3808478+07:00 0HM0S58CPPVPR:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:55321/   (ca22a1cb)
+2020-06-29T19:44:03.0260402+07:00 0HM0S58CPPVPR:00000001 [INF] Authorization failed for user: null. (a4ab1676)
+2020-06-29T19:44:03.0375628+07:00 0HM0S58CPPVPR:00000001 [INF] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"'. (8b6446cb)
+2020-06-29T19:44:03.0525544+07:00 0HM0S58CPPVPR:00000001 [INF] Executing ChallengeResult with authentication schemes ([]). (f3dca807)
+2020-06-29T19:44:03.0815468+07:00 0HM0S58CPPVPR:00000001 [INF] AuthenticationScheme: "Identity.Application" was challenged. (d45f1f38)
+2020-06-29T19:44:03.0914716+07:00 0HM0S58CPPVPR:00000001 [INF] Executed action "KarmaCoreApp.Controllers.HomeController.Index (KarmaCoreApp)" in 135.4098ms (afa2e885)
+2020-06-29T19:44:03.1580665+07:00 0HM0S58CPPVPR:00000001 [INF] Request finished in 858.3529ms 302  (791a596a)
+2020-06-29T19:44:03.1914146+07:00 0HM0S58CPPVPR:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:55321/Account/Login?ReturnUrl=%2F   (ca22a1cb)
+2020-06-29T19:44:03.3722249+07:00 0HM0S58CPPVPR:00000002 [INF] Executing action method "KarmaCoreApp.Controllers.AccountController.Login (KarmaCoreApp)" with arguments (["/"]) - ModelState is Valid (ba7f4ac2)
+2020-06-29T19:44:03.4203815+07:00 0HM0S58CPPVPR:00000002 [INF] AuthenticationScheme: "Identity.External" signed out. (d3f50c8d)
+2020-06-29T19:44:09.3253458+07:00 0HM0S58CPPVPR:00000002 [INF] Executing ViewResult, running view at path "/Views/Account/Login.cshtml". (9707eebe)
+2020-06-29T19:44:10.3595082+07:00 0HM0S58CPPVPR:00000002 [INF] Executed action "KarmaCoreApp.Controllers.AccountController.Login (KarmaCoreApp)" in 7106.6606ms (afa2e885)
+2020-06-29T19:44:10.4137002+07:00 0HM0S58CPPVPR:00000002 [INF] Request finished in 7206.4923ms 200 text/html; charset=utf-8 (791a596a)
+2020-06-29T19:44:16.9538705+07:00 0HM0S58CPPVPR:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin/login   (ca22a1cb)
+2020-06-29T19:44:16.9677124+07:00 0HM0S58CPPVPR:00000003 [INF] Executing action method "KarmaCoreApp.Areas.Admin.Controllers.LoginController.Index (KarmaCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2020-06-29T19:44:17.2803234+07:00 0HM0S58CPPVPR:00000003 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2020-06-29T19:44:17.3535975+07:00 0HM0S58CPPVPR:00000003 [INF] Executed action "KarmaCoreApp.Areas.Admin.Controllers.LoginController.Index (KarmaCoreApp)" in 388.4056ms (afa2e885)
+2020-06-29T19:44:17.3625055+07:00 0HM0S58CPPVPR:00000003 [INF] Request finished in 406.8806ms 200 text/html; charset=utf-8 (791a596a)
+2020-06-29T19:44:17.4489989+07:00 0HM0S58CPPVPR:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/css/site.css   (ca22a1cb)
+2020-06-29T19:44:17.4839858+07:00 0HM0S58CPPVPR:00000004 [INF] Sending file. Request path: '"/admin-side/css/site.css"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\css\site.css"' (27b0a520)
+2020-06-29T19:44:17.5158650+07:00 0HM0S58CPPVPR:00000004 [INF] Request finished in 90.0654ms 200 text/css (791a596a)
+2020-06-29T19:44:26.8040521+07:00 0HM0S58CPPVPR:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/css/site.css   (ca22a1cb)
+2020-06-29T19:44:26.8247225+07:00 0HM0S58CPPVPR:00000005 [INF] The file "/admin-side/css/site.css" was not modified (f1f8d725)
+2020-06-29T19:44:26.8394801+07:00 0HM0S58CPPVPR:00000005 [INF] Request finished in 50.8172ms 304 text/css (791a596a)
+2020-06-29T19:44:26.8995063+07:00 0HM0S58CPPVPR:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/bootstrap/dist/js/bootstrap.bundle.min.js.map   (ca22a1cb)
+2020-06-29T19:44:26.9008316+07:00 0HM0S58CPPVPS:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/jquery-scroll-lock/dist/jquery-scrollLock.min.js.map   (ca22a1cb)
+2020-06-29T19:44:26.9165754+07:00 0HM0S58CPPVPR:00000006 [INF] Request finished in 33.474ms 404  (791a596a)
+2020-06-29T19:44:26.9176914+07:00 0HM0S58CPPVPS:00000001 [INF] Request finished in 28.876ms 404  (791a596a)
+2020-06-29T19:44:26.9273404+07:00 0HM0S58CPPVPS:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/bootstrap/dist/css/bootstrap.min.css.map   (ca22a1cb)
+2020-06-29T19:44:26.9366629+07:00 0HM0S58CPPVPS:00000002 [INF] Request finished in 6.9954ms 404  (791a596a)
+2020-06-29T19:44:35.9330805+07:00 0HM0S58CPPVPS:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin/login   (ca22a1cb)
+2020-06-29T19:44:35.9438374+07:00 0HM0S58CPPVPS:00000003 [INF] Executing action method "KarmaCoreApp.Areas.Admin.Controllers.LoginController.Index (KarmaCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2020-06-29T19:44:35.9526796+07:00 0HM0S58CPPVPS:00000003 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2020-06-29T19:44:35.9650042+07:00 0HM0S58CPPVPS:00000003 [INF] Executed action "KarmaCoreApp.Areas.Admin.Controllers.LoginController.Index (KarmaCoreApp)" in 25.6531ms (afa2e885)
+2020-06-29T19:44:35.9736222+07:00 0HM0S58CPPVPS:00000003 [INF] Request finished in 45.1132ms 200 text/html; charset=utf-8 (791a596a)
+2020-06-29T19:44:36.0691501+07:00 0HM0S58CPPVPS:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/nucleo/css/nucleo.css   (ca22a1cb)
+2020-06-29T19:44:36.0773147+07:00 0HM0S58CPPVPT:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/bootstrap/dist/css/bootstrap.min.css?v=YLGeXaapI0_5IgZopewRJcFXomhRMlYYjugPLSyNjTY   (ca22a1cb)
+2020-06-29T19:44:36.0866716+07:00 0HM0S58CPPVPR:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/fortawesome/fontawesome-free/css/all.min.css   (ca22a1cb)
+2020-06-29T19:44:36.1005438+07:00 0HM0S58CPPVPV:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/fullcalendar/dist/fullcalendar.min.css   (ca22a1cb)
+2020-06-29T19:44:36.1128580+07:00 0HM0S58CPPVPS:00000004 [INF] Sending file. Request path: '"/admin-side/vendor/nucleo/css/nucleo.css"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\vendor\nucleo\css\nucleo.css"' (27b0a520)
+2020-06-29T19:44:36.1156116+07:00 0HM0S58CPPVPT:00000001 [INF] Sending file. Request path: '"/admin-side/vendor/bootstrap/dist/css/bootstrap.min.css"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\vendor\bootstrap\dist\css\bootstrap.min.css"' (27b0a520)
+2020-06-29T19:44:36.1218913+07:00 0HM0S58CPPVPV:00000001 [INF] Sending file. Request path: '"/admin-side/vendor/fullcalendar/dist/fullcalendar.min.css"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\vendor\fullcalendar\dist\fullcalendar.min.css"' (27b0a520)
+2020-06-29T19:44:36.1503090+07:00 0HM0S58CPPVPR:00000007 [INF] Sending file. Request path: '"/admin-side/vendor/fortawesome/fontawesome-free/css/all.min.css"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\vendor\fortawesome\fontawesome-free\css\all.min.css"' (27b0a520)
+2020-06-29T19:44:36.1665381+07:00 0HM0S58CPPVPU:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/animate.css/animate.min.css   (ca22a1cb)
+2020-06-29T19:44:36.1883190+07:00 0HM0S58CPPVQ0:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/sweetalert2/dist/sweetalert2.min.css   (ca22a1cb)
+2020-06-29T19:44:36.1922095+07:00 0HM0S58CPPVPU:00000001 [INF] Sending file. Request path: '"/admin-side/vendor/animate.css/animate.min.css"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\vendor\animate.css\animate.min.css"' (27b0a520)
+2020-06-29T19:44:36.2121821+07:00 0HM0S58CPPVPT:00000001 [INF] Request finished in 96.0561ms 200 text/css (791a596a)
+2020-06-29T19:44:36.2164337+07:00 0HM0S58CPPVQ0:00000001 [INF] Sending file. Request path: '"/admin-side/vendor/sweetalert2/dist/sweetalert2.min.css"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\vendor\sweetalert2\dist\sweetalert2.min.css"' (27b0a520)
+2020-06-29T19:44:36.2307099+07:00 0HM0S58CPPVPR:00000007 [INF] Request finished in 166.2535ms 200 text/css (791a596a)
+2020-06-29T19:44:36.2355672+07:00 0HM0S58CPPVPT:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/css/argon.css?v=1.1.0   (ca22a1cb)
+2020-06-29T19:44:36.2458222+07:00 0HM0S58CPPVPU:00000001 [INF] Request finished in 178.4172ms 200 text/css (791a596a)
+2020-06-29T19:44:36.2581205+07:00 0HM0S58CPPVQ0:00000001 [INF] Request finished in 168.425ms 200 text/css (791a596a)
+2020-06-29T19:44:36.2652932+07:00 0HM0S58CPPVPU:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/bootstrap/dist/js/bootstrap.bundle.min.js   (ca22a1cb)
+2020-06-29T19:44:36.2702359+07:00 0HM0S58CPPVPT:00000002 [INF] Sending file. Request path: '"/admin-side/css/argon.css"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\css\argon.css"' (27b0a520)
+2020-06-29T19:44:36.2779539+07:00 0HM0S58CPPVQ0:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/js-cookie/js.cookie.js   (ca22a1cb)
+2020-06-29T19:44:36.2823856+07:00 0HM0S58CPPVPR:00000008 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/jquery/dist/jquery-3.4.1.min.js   (ca22a1cb)
+2020-06-29T19:44:36.2851423+07:00 0HM0S58CPPVPU:00000002 [INF] Sending file. Request path: '"/admin-side/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\vendor\bootstrap\dist\js\bootstrap.bundle.min.js"' (27b0a520)
+2020-06-29T19:44:36.2975958+07:00 0HM0S58CPPVPR:00000008 [INF] Sending file. Request path: '"/admin-side/vendor/jquery/dist/jquery-3.4.1.min.js"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\vendor\jquery\dist\jquery-3.4.1.min.js"' (27b0a520)
+2020-06-29T19:44:36.3017964+07:00 0HM0S58CPPVQ0:00000002 [INF] Sending file. Request path: '"/admin-side/vendor/js-cookie/js.cookie.js"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\vendor\js-cookie\js.cookie.js"' (27b0a520)
+2020-06-29T19:44:36.3172281+07:00 0HM0S58CPPVPS:00000004 [INF] Request finished in 139.519ms 200 text/css (791a596a)
+2020-06-29T19:44:36.3425830+07:00 0HM0S58CPPVPT:00000002 [INF] Request finished in 93.6083ms 200 text/css (791a596a)
+2020-06-29T19:44:36.3506046+07:00 0HM0S58CPPVPS:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/css/site.css   (ca22a1cb)
+2020-06-29T19:44:36.3547333+07:00 0HM0S58CPPVPV:00000001 [INF] Request finished in 115.6946ms 200 text/css (791a596a)
+2020-06-29T19:44:36.3589768+07:00 0HM0S58CPPVPT:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/jquery.scrollbar/jquery.scrollbar.min.js   (ca22a1cb)
+2020-06-29T19:44:36.3639872+07:00 0HM0S58CPPVPS:00000005 [INF] Sending file. Request path: '"/admin-side/css/site.css"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\css\site.css"' (27b0a520)
+2020-06-29T19:44:36.3740467+07:00 0HM0S58CPPVPT:00000003 [INF] Sending file. Request path: '"/admin-side/vendor/jquery.scrollbar/jquery.scrollbar.min.js"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\vendor\jquery.scrollbar\jquery.scrollbar.min.js"' (27b0a520)
+2020-06-29T19:44:36.3811334+07:00 0HM0S58CPPVPV:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin/login   (ca22a1cb)
+2020-06-29T19:44:36.4134063+07:00 0HM0S58CPPVPV:00000002 [INF] Executing action method "KarmaCoreApp.Areas.Admin.Controllers.LoginController.Index (KarmaCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2020-06-29T19:44:36.4185301+07:00 0HM0S58CPPVPU:00000002 [INF] Request finished in 140.4573ms 200 application/javascript (791a596a)
+2020-06-29T19:44:36.4279835+07:00 0HM0S58CPPVPT:00000003 [INF] Request finished in 61.6005ms 200 application/javascript (791a596a)
+2020-06-29T19:44:36.4441993+07:00 0HM0S58CPPVPU:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/jquery-scroll-lock/dist/jquery-scrollLock.min.js   (ca22a1cb)
+2020-06-29T19:44:36.4502186+07:00 0HM0S58CPPVPT:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/chart.js/dist/Chart.min.js   (ca22a1cb)
+2020-06-29T19:44:36.4525897+07:00 0HM0S58CPPVPR:00000008 [INF] Request finished in 194.572ms 200 application/javascript (791a596a)
+2020-06-29T19:44:36.4536594+07:00 0HM0S58CPPVPV:00000002 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2020-06-29T19:44:36.4853343+07:00 0HM0S58CPPVPU:00000003 [INF] Sending file. Request path: '"/admin-side/vendor/jquery-scroll-lock/dist/jquery-scrollLock.min.js"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\vendor\jquery-scroll-lock\dist\jquery-scrollLock.min.js"' (27b0a520)
+2020-06-29T19:44:36.4874965+07:00 0HM0S58CPPVPT:00000004 [INF] Sending file. Request path: '"/admin-side/vendor/chart.js/dist/Chart.min.js"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\vendor\chart.js\dist\Chart.min.js"' (27b0a520)
+2020-06-29T19:44:36.4953807+07:00 0HM0S58CPPVPR:00000009 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/chart.js/dist/Chart.extension.js   (ca22a1cb)
+2020-06-29T19:44:36.5478684+07:00 0HM0S58CPPVPR:00000009 [INF] Sending file. Request path: '"/admin-side/vendor/chart.js/dist/Chart.extension.js"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\vendor\chart.js\dist\Chart.extension.js"' (27b0a520)
+2020-06-29T19:44:36.5523215+07:00 0HM0S58CPPVPV:00000002 [INF] Executed action "KarmaCoreApp.Areas.Admin.Controllers.LoginController.Index (KarmaCoreApp)" in 127.8021ms (afa2e885)
+2020-06-29T19:44:36.5613280+07:00 0HM0S58CPPVPU:00000003 [INF] Request finished in 111.8815ms 200 application/javascript (791a596a)
+2020-06-29T19:44:36.5641979+07:00 0HM0S58CPPVPS:00000005 [INF] Request finished in 178.505ms 200 text/css (791a596a)
+2020-06-29T19:44:36.5800771+07:00 0HM0S58CPPVPU:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:55321/lib/jquery-validation/dist/jquery.validate.js   (ca22a1cb)
+2020-06-29T19:44:36.5852059+07:00 0HM0S58CPPVPS:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/sweetalert2/dist/sweetalert2.all.min.js?v=Qfxgn9jULeGAdbaeDjXeIhZB3Ra6NCK3dvjwAG8Y-xU   (ca22a1cb)
+2020-06-29T19:44:36.5884664+07:00 0HM0S58CPPVPR:00000009 [INF] Request finished in 92.9536ms 200 application/javascript (791a596a)
+2020-06-29T19:44:36.5931925+07:00 0HM0S58CPPVPU:00000004 [INF] Sending file. Request path: '"/lib/jquery-validation/dist/jquery.validate.js"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\lib\jquery-validation\dist\jquery.validate.js"' (27b0a520)
+2020-06-29T19:44:36.6023151+07:00 0HM0S58CPPVPS:00000006 [INF] Sending file. Request path: '"/admin-side/vendor/sweetalert2/dist/sweetalert2.all.min.js"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\vendor\sweetalert2\dist\sweetalert2.all.min.js"' (27b0a520)
+2020-06-29T19:44:36.6088439+07:00 0HM0S58CPPVPR:0000000A [INF] Request starting HTTP/1.1 GET http://localhost:55321/lib/jquery-validation/dist/additional-methods.js   (ca22a1cb)
+2020-06-29T19:44:36.6426001+07:00 0HM0S58CPPVPR:0000000A [INF] Sending file. Request path: '"/lib/jquery-validation/dist/additional-methods.js"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\lib\jquery-validation\dist\additional-methods.js"' (27b0a520)
+2020-06-29T19:44:36.6451414+07:00 0HM0S58CPPVPV:00000002 [INF] Request finished in 261.9765ms 200 text/html; charset=utf-8 (791a596a)
+2020-06-29T19:44:36.6751121+07:00 0HM0S58CPPVQ0:00000002 [INF] Request finished in 382.0153ms 200 application/javascript (791a596a)
+2020-06-29T19:44:36.6774195+07:00 0HM0S58CPPVQ1:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/bootstrap-notify/bootstrap-notify.min.js?v=DRllCE_8rrevSAnSMWB4XO3zpr-3WaSuqUSNLD5NAzg   (ca22a1cb)
+2020-06-29T19:44:36.6934649+07:00 0HM0S58CPPVQ0:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/moment/min/moment.min.js   (ca22a1cb)
+2020-06-29T19:44:36.6953866+07:00 0HM0S58CPPVQ1:00000001 [INF] Sending file. Request path: '"/admin-side/vendor/bootstrap-notify/bootstrap-notify.min.js"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\vendor\bootstrap-notify\bootstrap-notify.min.js"' (27b0a520)
+2020-06-29T19:44:36.6974170+07:00 0HM0S58CPPVPT:00000004 [INF] Request finished in 208.907ms 200 application/javascript (791a596a)
+2020-06-29T19:44:36.7018160+07:00 0HM0S58CPPVPU:00000004 [INF] Request finished in 78.1893ms 200 application/javascript (791a596a)
+2020-06-29T19:44:36.7127876+07:00 0HM0S58CPPVQ0:00000003 [INF] Sending file. Request path: '"/admin-side/vendor/moment/min/moment.min.js"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\vendor\moment\min\moment.min.js"' (27b0a520)
+2020-06-29T19:44:36.7284564+07:00 0HM0S58CPPVQ1:00000001 [INF] Request finished in 64.9747ms 200 application/javascript (791a596a)
+2020-06-29T19:44:36.7328389+07:00 0HM0S58CPPVPT:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/fullcalendar/dist/fullcalendar.min.js   (ca22a1cb)
+2020-06-29T19:44:36.7473780+07:00 0HM0S58CPPVQ1:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:55321/app/shared/alert.js   (ca22a1cb)
+2020-06-29T19:44:36.7496519+07:00 0HM0S58CPPVPT:00000005 [INF] Sending file. Request path: '"/admin-side/vendor/fullcalendar/dist/fullcalendar.min.js"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\vendor\fullcalendar\dist\fullcalendar.min.js"' (27b0a520)
+2020-06-29T19:44:36.7587041+07:00 0HM0S58CPPVPU:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:55321/lib/jquery-validation/localization/messages_vi.js   (ca22a1cb)
+2020-06-29T19:44:36.7610924+07:00 0HM0S58CPPVQ1:00000002 [INF] Sending file. Request path: '"/app/shared/alert.js"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\app\shared\alert.js"' (27b0a520)
+2020-06-29T19:44:36.7670800+07:00 0HM0S58CPPVPR:0000000A [INF] Request finished in 99.5824ms 200 application/javascript (791a596a)
+2020-06-29T19:44:36.7702362+07:00 0HM0S58CPPVPU:00000005 [INF] Sending file. Request path: '"/lib/jquery-validation/localization/messages_vi.js"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\lib\jquery-validation\localization\messages_vi.js"' (27b0a520)
+2020-06-29T19:44:36.7920623+07:00 0HM0S58CPPVPS:00000006 [INF] Request finished in 55.3759ms 200 application/javascript (791a596a)
+2020-06-29T19:44:36.8114249+07:00 0HM0S58CPPVPR:0000000B [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/sweetalert2/dist/sweetalert2.min.js   (ca22a1cb)
+2020-06-29T19:44:36.8269075+07:00 0HM0S58CPPVQ0:00000003 [INF] Request finished in 129.8857ms 200 application/javascript (791a596a)
+2020-06-29T19:44:36.8657969+07:00 0HM0S58CPPVQ1:00000002 [INF] Request finished in 80.7748ms 200 application/javascript (791a596a)
+2020-06-29T19:44:36.8750545+07:00 0HM0S58CPPVPU:00000005 [INF] Request finished in 81.0189ms 200 application/javascript (791a596a)
+2020-06-29T19:44:36.8999708+07:00 0HM0S58CPPVQ0:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:55321/app/shared/messages.js   (ca22a1cb)
+2020-06-29T19:44:36.9127265+07:00 0HM0S58CPPVQ1:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:55321/app/shared/karmar.js   (ca22a1cb)
+2020-06-29T19:44:36.9189660+07:00 0HM0S58CPPVPR:0000000B [INF] Sending file. Request path: '"/admin-side/vendor/sweetalert2/dist/sweetalert2.min.js"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\vendor\sweetalert2\dist\sweetalert2.min.js"' (27b0a520)
+2020-06-29T19:44:36.9254532+07:00 0HM0S58CPPVQ0:00000004 [INF] Sending file. Request path: '"/app/shared/messages.js"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\app\shared\messages.js"' (27b0a520)
+2020-06-29T19:44:36.9677035+07:00 0HM0S58CPPVPU:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:55321/app/controllers/login/index.js   (ca22a1cb)
+2020-06-29T19:44:36.9942631+07:00 0HM0S58CPPVQ1:00000003 [INF] Sending file. Request path: '"/app/shared/karmar.js"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\app\shared\karmar.js"' (27b0a520)
+2020-06-29T19:44:37.0110791+07:00 0HM0S58CPPVPS:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:55321/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js   (ca22a1cb)
+2020-06-29T19:44:37.0538906+07:00 0HM0S58CPPVPT:00000005 [INF] Request finished in 312.3606ms 200 application/javascript (791a596a)
+2020-06-29T19:44:37.0609132+07:00 0HM0S58CPPVQ1:00000003 [INF] Request finished in 133.4256ms 200 application/javascript (791a596a)
+2020-06-29T19:44:37.0757319+07:00 0HM0S58CPPVPT:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin/login   (ca22a1cb)
+2020-06-29T19:44:37.0794338+07:00 0HM0S58CPPVQ1:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/bootstrap/dist/css/bootstrap.min.css.map   (ca22a1cb)
+2020-06-29T19:44:37.1156077+07:00 0HM0S58CPPVPT:00000006 [INF] Executing action method "KarmaCoreApp.Areas.Admin.Controllers.LoginController.Index (KarmaCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2020-06-29T19:44:37.1191845+07:00 0HM0S58CPPVQ1:00000004 [INF] Request finished in 16.6971ms 404  (791a596a)
+2020-06-29T19:44:37.1312342+07:00 0HM0S58CPPVPT:00000006 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2020-06-29T19:44:37.1539228+07:00 0HM0S58CPPVQ0:00000004 [INF] Request finished in 190.1106ms 200 application/javascript (791a596a)
+2020-06-29T19:44:37.1611091+07:00 0HM0S58CPPVQ1:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin/login   (ca22a1cb)
+2020-06-29T19:44:37.1689930+07:00 0HM0S58CPPVPU:00000006 [INF] Sending file. Request path: '"/app/controllers/login/index.js"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\app\controllers\login\index.js"' (27b0a520)
+2020-06-29T19:44:37.1822891+07:00 0HM0S58CPPVQ1:00000005 [INF] Executing action method "KarmaCoreApp.Areas.Admin.Controllers.LoginController.Index (KarmaCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2020-06-29T19:44:37.1854533+07:00 0HM0S58CPPVQ0:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/js/argon.js?v=1.1.0   (ca22a1cb)
+2020-06-29T19:44:37.1971392+07:00 0HM0S58CPPVQ1:00000005 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2020-06-29T19:44:37.2308141+07:00 0HM0S58CPPVPS:00000007 [INF] Sending file. Request path: '"/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js"' (27b0a520)
+2020-06-29T19:44:37.2327715+07:00 0HM0S58CPPVQ0:00000005 [INF] Sending file. Request path: '"/admin-side/js/argon.js"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\js\argon.js"' (27b0a520)
+2020-06-29T19:44:37.2493750+07:00 0HM0S58CPPVPU:00000006 [INF] Request finished in 324.8405ms 200 application/javascript (791a596a)
+2020-06-29T19:44:37.2548593+07:00 0HM0S58CPPVPT:00000006 [INF] Executed action "KarmaCoreApp.Areas.Admin.Controllers.LoginController.Index (KarmaCoreApp)" in 157.2608ms (afa2e885)
+2020-06-29T19:44:37.2638584+07:00 0HM0S58CPPVQ4:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin/login   (ca22a1cb)
+2020-06-29T19:44:37.2675691+07:00 0HM0S58CPPVPR:0000000B [INF] Request finished in 269.7995ms 200 application/javascript (791a596a)
+2020-06-29T19:44:37.2815392+07:00 0HM0S58CPPVQ4:00000001 [INF] Executing action method "KarmaCoreApp.Areas.Admin.Controllers.LoginController.Index (KarmaCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2020-06-29T19:44:37.2958694+07:00 0HM0S58CPPVPT:00000006 [INF] Request finished in 213.9212ms 200 text/html; charset=utf-8 (791a596a)
+2020-06-29T19:44:37.2972294+07:00 0HM0S58CPPVPS:00000007 [INF] Request finished in 477.6345ms 200 application/javascript (791a596a)
+2020-06-29T19:44:37.3074718+07:00 0HM0S58CPPVQ4:00000001 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2020-06-29T19:44:37.3147131+07:00 0HM0S58CPPVQ1:00000005 [INF] Executed action "KarmaCoreApp.Areas.Admin.Controllers.LoginController.Index (KarmaCoreApp)" in 70.0732ms (afa2e885)
+2020-06-29T19:44:37.3225945+07:00 0HM0S58CPPVPR:0000000C [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/bootstrap/dist/js/bootstrap.bundle.min.js.map   (ca22a1cb)
+2020-06-29T19:44:37.3349237+07:00 0HM0S58CPPVQ3:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin/login   (ca22a1cb)
+2020-06-29T19:44:37.3414456+07:00 0HM0S58CPPVQ2:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/jquery-scroll-lock/dist/jquery-scrollLock.min.js.map   (ca22a1cb)
+2020-06-29T19:44:37.3439506+07:00 0HM0S58CPPVPR:0000000C [INF] Request finished in 53.4836ms 404  (791a596a)
+2020-06-29T19:44:37.3528092+07:00 0HM0S58CPPVQ3:00000001 [INF] Executing action method "KarmaCoreApp.Areas.Admin.Controllers.LoginController.Index (KarmaCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2020-06-29T19:44:37.3638157+07:00 0HM0S58CPPVQ0:00000005 [INF] Request finished in 186.1444ms 200 application/javascript (791a596a)
+2020-06-29T19:44:37.3729883+07:00 0HM0S58CPPVQ3:00000001 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2020-06-29T19:44:37.3781844+07:00 0HM0S58CPPVQ4:00000001 [INF] Executed action "KarmaCoreApp.Areas.Admin.Controllers.LoginController.Index (KarmaCoreApp)" in 92.7029ms (afa2e885)
+2020-06-29T19:44:37.3927009+07:00 0HM0S58CPPVQ2:00000001 [INF] Request finished in 215.8696ms 404  (791a596a)
+2020-06-29T19:44:37.4180894+07:00 0HM0S58CPPVQ1:00000005 [INF] Request finished in 204.091ms 200 text/html; charset=utf-8 (791a596a)
+2020-06-29T19:44:37.4453156+07:00 0HM0S58CPPVPR:0000000D [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/animate.css/animate.min.css   (ca22a1cb)
+2020-06-29T19:44:37.4593438+07:00 0HM0S58CPPVQ0:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/nucleo/css/nucleo.css   (ca22a1cb)
+2020-06-29T19:44:37.4865175+07:00 0HM0S58CPPVQ2:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/fortawesome/fontawesome-free/css/all.min.css   (ca22a1cb)
+2020-06-29T19:44:37.4933128+07:00 0HM0S58CPPVPR:0000000D [INF] Sending file. Request path: '"/admin-side/vendor/animate.css/animate.min.css"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\vendor\animate.css\animate.min.css"' (27b0a520)
+2020-06-29T19:44:37.5031323+07:00 0HM0S58CPPVQ4:00000001 [INF] Request finished in 239.4224ms 200 text/html; charset=utf-8 (791a596a)
+2020-06-29T19:44:37.5094382+07:00 0HM0S58CPPVQ0:00000006 [INF] Sending file. Request path: '"/admin-side/vendor/nucleo/css/nucleo.css"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\vendor\nucleo\css\nucleo.css"' (27b0a520)
+2020-06-29T19:44:37.5250920+07:00 0HM0S58CPPVQ3:00000001 [INF] Executed action "KarmaCoreApp.Areas.Admin.Controllers.LoginController.Index (KarmaCoreApp)" in 137.644ms (afa2e885)
+2020-06-29T19:44:37.5397449+07:00 0HM0S58CPPVQ4:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/sweetalert2/dist/sweetalert2.min.css   (ca22a1cb)
+2020-06-29T19:44:37.5450434+07:00 0HM0S58CPPVPR:0000000D [INF] Request finished in 89.1608ms 200 text/css (791a596a)
+2020-06-29T19:44:37.5473759+07:00 0HM0S58CPPVQ0:00000006 [INF] Request finished in 99.8262ms 200 text/css (791a596a)
+2020-06-29T19:44:37.5618956+07:00 0HM0S58CPPVPR:0000000E [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/css/argon.css?v=1.1.0   (ca22a1cb)
+2020-06-29T19:44:37.5676268+07:00 0HM0S58CPPVQ0:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/css/site.css   (ca22a1cb)
+2020-06-29T19:44:37.5759253+07:00 0HM0S58CPPVQ4:00000002 [INF] Sending file. Request path: '"/admin-side/vendor/sweetalert2/dist/sweetalert2.min.css"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\vendor\sweetalert2\dist\sweetalert2.min.css"' (27b0a520)
+2020-06-29T19:44:37.5815673+07:00 0HM0S58CPPVPR:0000000E [INF] Sending file. Request path: '"/admin-side/css/argon.css"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\css\argon.css"' (27b0a520)
+2020-06-29T19:44:37.5859014+07:00 0HM0S58CPPVQ0:00000007 [INF] Sending file. Request path: '"/admin-side/css/site.css"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\css\site.css"' (27b0a520)
+2020-06-29T19:44:37.5889837+07:00 0HM0S58CPPVQ3:00000001 [INF] Request finished in 367.4995ms 200 text/html; charset=utf-8 (791a596a)
+2020-06-29T19:44:37.5912805+07:00 0HM0S58CPPVQ2:00000002 [INF] Sending file. Request path: '"/admin-side/vendor/fortawesome/fontawesome-free/css/all.min.css"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\vendor\fortawesome\fontawesome-free\css\all.min.css"' (27b0a520)
+2020-06-29T19:44:37.6237370+07:00 0HM0S58CPPVPU:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/fullcalendar/dist/fullcalendar.min.css   (ca22a1cb)
+2020-06-29T19:44:37.6275527+07:00 0HM0S58CPPVQ0:00000007 [INF] Request finished in 47.1018ms 200 text/css (791a596a)
+2020-06-29T19:44:37.6421054+07:00 0HM0S58CPPVPU:00000007 [INF] Sending file. Request path: '"/admin-side/vendor/fullcalendar/dist/fullcalendar.min.css"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\vendor\fullcalendar\dist\fullcalendar.min.css"' (27b0a520)
+2020-06-29T19:44:37.6486945+07:00 0HM0S58CPPVPS:00000008 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/bootstrap/dist/css/bootstrap.min.css?v=YLGeXaapI0_5IgZopewRJcFXomhRMlYYjugPLSyNjTY   (ca22a1cb)
+2020-06-29T19:44:37.6710733+07:00 0HM0S58CPPVQ4:00000002 [INF] Request finished in 128.5532ms 200 text/css (791a596a)
+2020-06-29T19:44:37.6745600+07:00 0HM0S58CPPVPU:00000007 [INF] Request finished in 58.4659ms 200 text/css (791a596a)
+2020-06-29T19:44:37.6762597+07:00 0HM0S58CPPVPS:00000008 [INF] Sending file. Request path: '"/admin-side/vendor/bootstrap/dist/css/bootstrap.min.css"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\vendor\bootstrap\dist\css\bootstrap.min.css"' (27b0a520)
+2020-06-29T19:44:37.6879203+07:00 0HM0S58CPPVQ2:00000002 [INF] Request finished in 182.2802ms 200 text/css (791a596a)
+2020-06-29T19:44:37.6991641+07:00 0HM0S58CPPVQ4:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/js-cookie/js.cookie.js   (ca22a1cb)
+2020-06-29T19:44:37.7040287+07:00 0HM0S58CPPVQ5:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/bootstrap/dist/js/bootstrap.bundle.min.js   (ca22a1cb)
+2020-06-29T19:44:37.7107484+07:00 0HM0S58CPPVPS:00000008 [INF] Request finished in 88.3648ms 200 text/css (791a596a)
+2020-06-29T19:44:37.7166681+07:00 0HM0S58CPPVPU:00000008 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin/login   (ca22a1cb)
+2020-06-29T19:44:37.7199692+07:00 0HM0S58CPPVQ4:00000003 [INF] Sending file. Request path: '"/admin-side/vendor/js-cookie/js.cookie.js"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\vendor\js-cookie\js.cookie.js"' (27b0a520)
+2020-06-29T19:44:37.7302046+07:00 0HM0S58CPPVQ5:00000001 [INF] Sending file. Request path: '"/admin-side/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\vendor\bootstrap\dist\js\bootstrap.bundle.min.js"' (27b0a520)
+2020-06-29T19:44:37.7357967+07:00 0HM0S58CPPVPS:00000009 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/jquery.scrollbar/jquery.scrollbar.min.js   (ca22a1cb)
+2020-06-29T19:44:37.7543275+07:00 0HM0S58CPPVQ5:00000001 [INF] Request finished in 53.0998ms 200 application/javascript (791a596a)
+2020-06-29T19:44:37.7633509+07:00 0HM0S58CPPVPS:00000009 [INF] Sending file. Request path: '"/admin-side/vendor/jquery.scrollbar/jquery.scrollbar.min.js"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\vendor\jquery.scrollbar\jquery.scrollbar.min.js"' (27b0a520)
+2020-06-29T19:44:37.7698986+07:00 0HM0S58CPPVQ4:00000003 [INF] Request finished in 52.2728ms 200 application/javascript (791a596a)
+2020-06-29T19:44:37.7712980+07:00 0HM0S58CPPVQ5:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/chart.js/dist/Chart.extension.js   (ca22a1cb)
+2020-06-29T19:44:37.7786908+07:00 0HM0S58CPPVPU:00000008 [INF] Executing action method "KarmaCoreApp.Areas.Admin.Controllers.LoginController.Index (KarmaCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2020-06-29T19:44:37.7903580+07:00 0HM0S58CPPVQ5:00000002 [INF] Sending file. Request path: '"/admin-side/vendor/chart.js/dist/Chart.extension.js"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\vendor\chart.js\dist\Chart.extension.js"' (27b0a520)
+2020-06-29T19:44:37.7932120+07:00 0HM0S58CPPVPS:00000009 [INF] Request finished in 65.9046ms 200 application/javascript (791a596a)
+2020-06-29T19:44:37.7962623+07:00 0HM0S58CPPVQ4:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/chart.js/dist/Chart.min.js   (ca22a1cb)
+2020-06-29T19:44:37.8105721+07:00 0HM0S58CPPVPS:0000000A [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/sweetalert2/dist/sweetalert2.all.min.js?v=Qfxgn9jULeGAdbaeDjXeIhZB3Ra6NCK3dvjwAG8Y-xU   (ca22a1cb)
+2020-06-29T19:44:37.8129859+07:00 0HM0S58CPPVQ5:00000002 [INF] Request finished in 39.705ms 200 application/javascript (791a596a)
+2020-06-29T19:44:37.8236306+07:00 0HM0S58CPPVQ4:00000004 [INF] Sending file. Request path: '"/admin-side/vendor/chart.js/dist/Chart.min.js"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\vendor\chart.js\dist\Chart.min.js"' (27b0a520)
+2020-06-29T19:44:37.8615867+07:00 0HM0S58CPPVPU:00000008 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2020-06-29T19:44:37.8654371+07:00 0HM0S58CPPVQ5:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/bootstrap-notify/bootstrap-notify.min.js?v=DRllCE_8rrevSAnSMWB4XO3zpr-3WaSuqUSNLD5NAzg   (ca22a1cb)
+2020-06-29T19:44:37.8692958+07:00 0HM0S58CPPVPS:0000000A [INF] Sending file. Request path: '"/admin-side/vendor/sweetalert2/dist/sweetalert2.all.min.js"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\vendor\sweetalert2\dist\sweetalert2.all.min.js"' (27b0a520)
+2020-06-29T19:44:37.8717951+07:00 0HM0S58CPPVPR:0000000E [INF] Request finished in 139.8532ms 200 text/css (791a596a)
+2020-06-29T19:44:37.8957893+07:00 0HM0S58CPPVQ5:00000003 [INF] Sending file. Request path: '"/admin-side/vendor/bootstrap-notify/bootstrap-notify.min.js"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\vendor\bootstrap-notify\bootstrap-notify.min.js"' (27b0a520)
+2020-06-29T19:44:37.9033244+07:00 0HM0S58CPPVQ4:00000004 [INF] Request finished in 104.9397ms 200 application/javascript (791a596a)
+2020-06-29T19:44:37.9080476+07:00 0HM0S58CPPVPS:0000000A [INF] Request finished in 87.2874ms 200 application/javascript (791a596a)
+2020-06-29T19:44:37.9133797+07:00 0HM0S58CPPVQ5:00000003 [INF] Request finished in 84.7395ms 200 application/javascript (791a596a)
+2020-06-29T19:44:37.9207107+07:00 0HM0S58CPPVPS:0000000B [INF] Request starting HTTP/1.1 GET http://localhost:55321/lib/jquery-validation/dist/additional-methods.js   (ca22a1cb)
+2020-06-29T19:44:37.9287342+07:00 0HM0S58CPPVQ5:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:55321/lib/jquery-validation/localization/messages_vi.js   (ca22a1cb)
+2020-06-29T19:44:37.9350641+07:00 0HM0S58CPPVPS:0000000B [INF] Sending file. Request path: '"/lib/jquery-validation/dist/additional-methods.js"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\lib\jquery-validation\dist\additional-methods.js"' (27b0a520)
+2020-06-29T19:44:37.9433201+07:00 0HM0S58CPPVQ4:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:55321/lib/jquery-validation/dist/jquery.validate.js   (ca22a1cb)
+2020-06-29T19:44:37.9477747+07:00 0HM0S58CPPVQ5:00000004 [INF] Sending file. Request path: '"/lib/jquery-validation/localization/messages_vi.js"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\lib\jquery-validation\localization\messages_vi.js"' (27b0a520)
+2020-06-29T19:44:37.9550719+07:00 0HM0S58CPPVQ6:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:55321/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js   (ca22a1cb)
+2020-06-29T19:44:37.9596934+07:00 0HM0S58CPPVQ4:00000005 [INF] Sending file. Request path: '"/lib/jquery-validation/dist/jquery.validate.js"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\lib\jquery-validation\dist\jquery.validate.js"' (27b0a520)
+2020-06-29T19:44:37.9627238+07:00 0HM0S58CPPVPS:0000000B [INF] Request finished in 39.4147ms 200 application/javascript (791a596a)
+2020-06-29T19:44:37.9699451+07:00 0HM0S58CPPVQ5:00000004 [INF] Request finished in 39.1945ms 200 application/javascript (791a596a)
+2020-06-29T19:44:37.9829736+07:00 0HM0S58CPPVPS:0000000C [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/moment/min/moment.min.js   (ca22a1cb)
+2020-06-29T19:44:37.9872085+07:00 0HM0S58CPPVQ4:00000005 [INF] Request finished in 49.0095ms 200 application/javascript (791a596a)
+2020-06-29T19:44:37.9891999+07:00 0HM0S58CPPVQ6:00000001 [INF] Sending file. Request path: '"/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js"' (27b0a520)
+2020-06-29T19:44:37.9923003+07:00 0HM0S58CPPVQ5:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/fullcalendar/dist/fullcalendar.min.js   (ca22a1cb)
+2020-06-29T19:44:38.0052494+07:00 0HM0S58CPPVPS:0000000C [INF] Sending file. Request path: '"/admin-side/vendor/moment/min/moment.min.js"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\vendor\moment\min\moment.min.js"' (27b0a520)
+2020-06-29T19:44:38.0069810+07:00 0HM0S58CPPVQ5:00000005 [INF] Sending file. Request path: '"/admin-side/vendor/fullcalendar/dist/fullcalendar.min.js"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\vendor\fullcalendar\dist\fullcalendar.min.js"' (27b0a520)
+2020-06-29T19:44:38.0141564+07:00 0HM0S58CPPVPU:00000008 [INF] Executed action "KarmaCoreApp.Areas.Admin.Controllers.LoginController.Index (KarmaCoreApp)" in 173.5561ms (afa2e885)
+2020-06-29T19:44:38.0196812+07:00 0HM0S58CPPVQ4:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/sweetalert2/dist/sweetalert2.min.js   (ca22a1cb)
+2020-06-29T19:44:38.0228581+07:00 0HM0S58CPPVPR:0000000F [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/jquery-scroll-lock/dist/jquery-scrollLock.min.js   (ca22a1cb)
+2020-06-29T19:44:38.0333744+07:00 0HM0S58CPPVQ4:00000006 [INF] Sending file. Request path: '"/admin-side/vendor/sweetalert2/dist/sweetalert2.min.js"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\vendor\sweetalert2\dist\sweetalert2.min.js"' (27b0a520)
+2020-06-29T19:44:38.0385700+07:00 0HM0S58CPPVPR:0000000F [INF] Sending file. Request path: '"/admin-side/vendor/jquery-scroll-lock/dist/jquery-scrollLock.min.js"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\vendor\jquery-scroll-lock\dist\jquery-scrollLock.min.js"' (27b0a520)
+2020-06-29T19:44:38.0415411+07:00 0HM0S58CPPVQ2:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/jquery/dist/jquery-3.4.1.min.js   (ca22a1cb)
+2020-06-29T19:44:38.0711544+07:00 0HM0S58CPPVQ6:00000001 [INF] Request finished in 152.0081ms 200 application/javascript (791a596a)
+2020-06-29T19:44:38.0733836+07:00 0HM0S58CPPVQ4:00000006 [INF] Request finished in 48.4177ms 200 application/javascript (791a596a)
+2020-06-29T19:44:38.0756403+07:00 0HM0S58CPPVPR:0000000F [INF] Request finished in 160.4895ms 200 application/javascript (791a596a)
+2020-06-29T19:44:38.0947357+07:00 0HM0S58CPPVQ6:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:55321/app/shared/messages.js   (ca22a1cb)
+2020-06-29T19:44:38.0973154+07:00 0HM0S58CPPVQ4:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:55321/app/shared/karmar.js   (ca22a1cb)
+2020-06-29T19:44:38.1095088+07:00 0HM0S58CPPVQ4:00000007 [INF] Sending file. Request path: '"/app/shared/karmar.js"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\app\shared\karmar.js"' (27b0a520)
+2020-06-29T19:44:38.1128111+07:00 0HM0S58CPPVQ6:00000002 [INF] Sending file. Request path: '"/app/shared/messages.js"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\app\shared\messages.js"' (27b0a520)
+2020-06-29T19:44:38.1153287+07:00 0HM0S58CPPVPR:00000010 [INF] Request starting HTTP/1.1 GET http://localhost:55321/app/shared/alert.js   (ca22a1cb)
+2020-06-29T19:44:38.1165739+07:00 0HM0S58CPPVQ2:00000003 [INF] Sending file. Request path: '"/admin-side/vendor/jquery/dist/jquery-3.4.1.min.js"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\vendor\jquery\dist\jquery-3.4.1.min.js"' (27b0a520)
+2020-06-29T19:44:38.1306797+07:00 0HM0S58CPPVPR:00000010 [INF] Sending file. Request path: '"/app/shared/alert.js"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\app\shared\alert.js"' (27b0a520)
+2020-06-29T19:44:38.1403630+07:00 0HM0S58CPPVQ4:00000007 [INF] Request finished in 36.7719ms 200 application/javascript (791a596a)
+2020-06-29T19:44:38.1494093+07:00 0HM0S58CPPVQ6:00000002 [INF] Request finished in 51.3539ms 200 application/javascript (791a596a)
+2020-06-29T19:44:38.1598387+07:00 0HM0S58CPPVQ4:00000008 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin/login   (ca22a1cb)
+2020-06-29T19:44:38.1676692+07:00 0HM0S58CPPVQ6:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/js/argon.js?v=1.1.0   (ca22a1cb)
+2020-06-29T19:44:38.1729821+07:00 0HM0S58CPPVPR:00000010 [INF] Request finished in 57.029ms 200 application/javascript (791a596a)
+2020-06-29T19:44:38.1760552+07:00 0HM0S58CPPVQ4:00000008 [INF] Executing action method "KarmaCoreApp.Areas.Admin.Controllers.LoginController.Index (KarmaCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2020-06-29T19:44:38.1916600+07:00 0HM0S58CPPVQ6:00000003 [INF] Sending file. Request path: '"/admin-side/js/argon.js"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\js\argon.js"' (27b0a520)
+2020-06-29T19:44:38.1957028+07:00 0HM0S58CPPVQ4:00000008 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2020-06-29T19:44:38.2066215+07:00 0HM0S58CPPVQ2:00000003 [INF] Request finished in 251.4735ms 200 application/javascript (791a596a)
+2020-06-29T19:44:38.2093778+07:00 0HM0S58CPPVPR:00000011 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/bootstrap/dist/css/bootstrap.min.css.map   (ca22a1cb)
+2020-06-29T19:44:38.2207077+07:00 0HM0S58CPPVPR:00000011 [INF] Request finished in 30.9886ms 404  (791a596a)
+2020-06-29T19:44:38.2249937+07:00 0HM0S58CPPVQ2:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:55321/app/controllers/login/index.js   (ca22a1cb)
+2020-06-29T19:44:38.2376225+07:00 0HM0S58CPPVQ6:00000003 [INF] Request finished in 66.539ms 200 application/javascript (791a596a)
+2020-06-29T19:44:38.2638171+07:00 0HM0S58CPPVQ4:00000008 [INF] Executed action "KarmaCoreApp.Areas.Admin.Controllers.LoginController.Index (KarmaCoreApp)" in 69.5535ms (afa2e885)
+2020-06-29T19:44:38.2673725+07:00 0HM0S58CPPVPS:0000000C [INF] Request finished in 263.9486ms 200 application/javascript (791a596a)
+2020-06-29T19:44:38.2785511+07:00 0HM0S58CPPVQ5:00000005 [INF] Request finished in 274.4827ms 200 application/javascript (791a596a)
+2020-06-29T19:44:38.3357783+07:00 0HM0S58CPPVQ4:00000008 [INF] Request finished in 125.3506ms 200 text/html; charset=utf-8 (791a596a)
+2020-06-29T19:44:38.3432531+07:00 0HM0S58CPPVPU:00000008 [INF] Request finished in 545.6679ms 200 text/html; charset=utf-8 (791a596a)
+2020-06-29T19:44:38.3461137+07:00 0HM0S58CPPVQ5:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/jquery-scroll-lock/dist/jquery-scrollLock.min.js.map   (ca22a1cb)
+2020-06-29T19:44:38.3721397+07:00 0HM0S58CPPVQ5:00000006 [INF] Request finished in 42.0316ms 404  (791a596a)
+2020-06-29T19:44:38.3820289+07:00 0HM0S58CPPVQ4:00000009 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/bootstrap/dist/js/bootstrap.bundle.min.js.map   (ca22a1cb)
+2020-06-29T19:44:38.3849712+07:00 0HM0S58CPPVQ7:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/bootstrap/dist/css/bootstrap.min.css?v=YLGeXaapI0_5IgZopewRJcFXomhRMlYYjugPLSyNjTY   (ca22a1cb)
+2020-06-29T19:44:38.3925544+07:00 0HM0S58CPPVPR:00000012 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/animate.css/animate.min.css   (ca22a1cb)
+2020-06-29T19:44:38.3980582+07:00 0HM0S58CPPVQ5:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/fullcalendar/dist/fullcalendar.min.css   (ca22a1cb)
+2020-06-29T19:44:38.4088327+07:00 0HM0S58CPPVQ7:00000001 [INF] Sending file. Request path: '"/admin-side/vendor/bootstrap/dist/css/bootstrap.min.css"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\vendor\bootstrap\dist\css\bootstrap.min.css"' (27b0a520)
+2020-06-29T19:44:38.4152352+07:00 0HM0S58CPPVPR:00000012 [INF] Sending file. Request path: '"/admin-side/vendor/animate.css/animate.min.css"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\vendor\animate.css\animate.min.css"' (27b0a520)
+2020-06-29T19:44:38.4193764+07:00 0HM0S58CPPVQ5:00000007 [INF] Sending file. Request path: '"/admin-side/vendor/fullcalendar/dist/fullcalendar.min.css"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\vendor\fullcalendar\dist\fullcalendar.min.css"' (27b0a520)
+2020-06-29T19:44:38.4306843+07:00 0HM0S58CPPVPS:0000000D [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/nucleo/css/nucleo.css   (ca22a1cb)
+2020-06-29T19:44:38.4348583+07:00 0HM0S58CPPVQ6:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/fortawesome/fontawesome-free/css/all.min.css   (ca22a1cb)
+2020-06-29T19:44:38.4536966+07:00 0HM0S58CPPVQ7:00000001 [INF] Request finished in 61.6652ms 200 text/css (791a596a)
+2020-06-29T19:44:38.4594013+07:00 0HM0S58CPPVQ5:00000007 [INF] Request finished in 58.3708ms 200 text/css (791a596a)
+2020-06-29T19:44:38.4934916+07:00 0HM0S58CPPVQ7:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/sweetalert2/dist/sweetalert2.min.css   (ca22a1cb)
+2020-06-29T19:44:38.4973270+07:00 0HM0S58CPPVQ5:00000008 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/css/site.css   (ca22a1cb)
+2020-06-29T19:44:38.5094778+07:00 0HM0S58CPPVQ7:00000002 [INF] Sending file. Request path: '"/admin-side/vendor/sweetalert2/dist/sweetalert2.min.css"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\vendor\sweetalert2\dist\sweetalert2.min.css"' (27b0a520)
+2020-06-29T19:44:38.5109283+07:00 0HM0S58CPPVQ5:00000008 [INF] Sending file. Request path: '"/admin-side/css/site.css"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\css\site.css"' (27b0a520)
+2020-06-29T19:44:38.5153342+07:00 0HM0S58CPPVPR:00000012 [INF] Request finished in 82.0016ms 200 text/css (791a596a)
+2020-06-29T19:44:38.5369635+07:00 0HM0S58CPPVQ7:00000002 [INF] Request finished in 55.2217ms 200 text/css (791a596a)
+2020-06-29T19:44:38.5449913+07:00 0HM0S58CPPVQ4:00000009 [INF] Request finished in 167.4001ms 404  (791a596a)
+2020-06-29T19:44:38.5496172+07:00 0HM0S58CPPVQ5:00000008 [INF] Request finished in 60.9518ms 200 text/css (791a596a)
+2020-06-29T19:44:38.5609452+07:00 0HM0S58CPPVPR:00000013 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/css/argon.css?v=1.1.0   (ca22a1cb)
+2020-06-29T19:44:38.5657222+07:00 0HM0S58CPPVQ7:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/jquery/dist/jquery-3.4.1.min.js   (ca22a1cb)
+2020-06-29T19:44:38.5692101+07:00 0HM0S58CPPVQ4:0000000A [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/bootstrap/dist/js/bootstrap.bundle.min.js   (ca22a1cb)
+2020-06-29T19:44:38.5740020+07:00 0HM0S58CPPVQ5:00000009 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/js-cookie/js.cookie.js   (ca22a1cb)
+2020-06-29T19:44:38.5807602+07:00 0HM0S58CPPVPR:00000013 [INF] Sending file. Request path: '"/admin-side/css/argon.css"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\css\argon.css"' (27b0a520)
+2020-06-29T19:44:38.5831066+07:00 0HM0S58CPPVQ7:00000003 [INF] Sending file. Request path: '"/admin-side/vendor/jquery/dist/jquery-3.4.1.min.js"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\vendor\jquery\dist\jquery-3.4.1.min.js"' (27b0a520)
+2020-06-29T19:44:38.5918823+07:00 0HM0S58CPPVQ6:00000004 [INF] Sending file. Request path: '"/admin-side/vendor/fortawesome/fontawesome-free/css/all.min.css"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\vendor\fortawesome\fontawesome-free\css\all.min.css"' (27b0a520)
+2020-06-29T19:44:38.6171623+07:00 0HM0S58CPPVQ4:0000000A [INF] Sending file. Request path: '"/admin-side/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\vendor\bootstrap\dist\js\bootstrap.bundle.min.js"' (27b0a520)
+2020-06-29T19:44:38.6192159+07:00 0HM0S58CPPVQ5:00000009 [INF] Sending file. Request path: '"/admin-side/vendor/js-cookie/js.cookie.js"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\vendor\js-cookie\js.cookie.js"' (27b0a520)
+2020-06-29T19:44:38.6367821+07:00 0HM0S58CPPVQ7:00000003 [INF] Request finished in 41.6436ms 200 application/javascript (791a596a)
+2020-06-29T19:44:38.6459478+07:00 0HM0S58CPPVPS:0000000D [INF] Sending file. Request path: '"/admin-side/vendor/nucleo/css/nucleo.css"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\vendor\nucleo\css\nucleo.css"' (27b0a520)
+2020-06-29T19:44:38.6700985+07:00 0HM0S58CPPVPR:00000013 [INF] Request finished in 69.5681ms 200 text/css (791a596a)
+2020-06-29T19:44:38.6786470+07:00 0HM0S58CPPVQ7:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/jquery.scrollbar/jquery.scrollbar.min.js   (ca22a1cb)
+2020-06-29T19:44:38.7065104+07:00 0HM0S58CPPVQ4:0000000A [INF] Request finished in 122.5613ms 200 application/javascript (791a596a)
+2020-06-29T19:44:38.7089964+07:00 0HM0S58CPPVQ7:00000004 [INF] Sending file. Request path: '"/admin-side/vendor/jquery.scrollbar/jquery.scrollbar.min.js"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\vendor\jquery.scrollbar\jquery.scrollbar.min.js"' (27b0a520)
+2020-06-29T19:44:38.7229758+07:00 0HM0S58CPPVPR:00000014 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/jquery-scroll-lock/dist/jquery-scrollLock.min.js   (ca22a1cb)
+2020-06-29T19:44:38.7256613+07:00 0HM0S58CPPVQ4:0000000B [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/chart.js/dist/Chart.min.js   (ca22a1cb)
+2020-06-29T19:44:38.7341569+07:00 0HM0S58CPPVQ7:00000004 [INF] Request finished in 66.3448ms 200 application/javascript (791a596a)
+2020-06-29T19:44:38.7362161+07:00 0HM0S58CPPVPR:00000014 [INF] Sending file. Request path: '"/admin-side/vendor/jquery-scroll-lock/dist/jquery-scrollLock.min.js"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\vendor\jquery-scroll-lock\dist\jquery-scrollLock.min.js"' (27b0a520)
+2020-06-29T19:44:38.7472566+07:00 0HM0S58CPPVQ4:0000000B [INF] Sending file. Request path: '"/admin-side/vendor/chart.js/dist/Chart.min.js"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\vendor\chart.js\dist\Chart.min.js"' (27b0a520)
+2020-06-29T19:44:38.7527931+07:00 0HM0S58CPPVQ2:00000004 [INF] Sending file. Request path: '"/app/controllers/login/index.js"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\app\controllers\login\index.js"' (27b0a520)
+2020-06-29T19:44:38.7539476+07:00 0HM0S58CPPVQ7:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/chart.js/dist/Chart.extension.js   (ca22a1cb)
+2020-06-29T19:44:38.7721076+07:00 0HM0S58CPPVPR:00000014 [INF] Request finished in 61.3573ms 200 application/javascript (791a596a)
+2020-06-29T19:44:38.7834827+07:00 0HM0S58CPPVQ7:00000005 [INF] Sending file. Request path: '"/admin-side/vendor/chart.js/dist/Chart.extension.js"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\vendor\chart.js\dist\Chart.extension.js"' (27b0a520)
+2020-06-29T19:44:38.8021148+07:00 0HM0S58CPPVQ5:00000009 [INF] Request finished in 222.3107ms 200 application/javascript (791a596a)
+2020-06-29T19:44:38.8046716+07:00 0HM0S58CPPVQ4:0000000B [INF] Request finished in 69.3905ms 200 application/javascript (791a596a)
+2020-06-29T19:44:38.8115323+07:00 0HM0S58CPPVQ6:00000004 [INF] Request finished in 426.4092ms 200 text/css (791a596a)
+2020-06-29T19:44:38.8268563+07:00 0HM0S58CPPVPS:0000000D [INF] Request finished in 437.5689ms 200 text/css (791a596a)
+2020-06-29T19:44:38.8341189+07:00 0HM0S58CPPVQ5:0000000A [INF] Request starting HTTP/1.1 GET http://localhost:55321/lib/jquery-validation/dist/jquery.validate.js   (ca22a1cb)
+2020-06-29T19:44:38.8364363+07:00 0HM0S58CPPVQ4:0000000C [INF] Request starting HTTP/1.1 GET http://localhost:55321/lib/jquery-validation/dist/additional-methods.js   (ca22a1cb)
+2020-06-29T19:44:38.8451282+07:00 0HM0S58CPPVPS:0000000E [INF] Request starting HTTP/1.1 GET http://localhost:55321/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js   (ca22a1cb)
+2020-06-29T19:44:38.8466977+07:00 0HM0S58CPPVQ7:00000005 [INF] Request finished in 64.7207ms 200 application/javascript (791a596a)
+2020-06-29T19:44:38.8574030+07:00 0HM0S58CPPVQ5:0000000A [INF] Sending file. Request path: '"/lib/jquery-validation/dist/jquery.validate.js"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\lib\jquery-validation\dist\jquery.validate.js"' (27b0a520)
+2020-06-29T19:44:38.8615566+07:00 0HM0S58CPPVQ4:0000000C [INF] Sending file. Request path: '"/lib/jquery-validation/dist/additional-methods.js"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\lib\jquery-validation\dist\additional-methods.js"' (27b0a520)
+2020-06-29T19:44:38.8876049+07:00 0HM0S58CPPVQ5:0000000A [INF] Request finished in 54.7978ms 200 application/javascript (791a596a)
+2020-06-29T19:44:38.8906027+07:00 0HM0S58CPPVQ4:0000000C [INF] Request finished in 50.7993ms 200 application/javascript (791a596a)
+2020-06-29T19:44:38.8978883+07:00 0HM0S58CPPVPS:0000000E [INF] Sending file. Request path: '"/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js"' (27b0a520)
+2020-06-29T19:44:38.9054282+07:00 0HM0S58CPPVQ7:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:55321/lib/jquery-validation/localization/messages_vi.js   (ca22a1cb)
+2020-06-29T19:44:38.9088945+07:00 0HM0S58CPPVQ5:0000000B [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/moment/min/moment.min.js   (ca22a1cb)
+2020-06-29T19:44:38.9123860+07:00 0HM0S58CPPVQ4:0000000D [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/fullcalendar/dist/fullcalendar.min.js   (ca22a1cb)
+2020-06-29T19:44:38.9308113+07:00 0HM0S58CPPVQ5:0000000B [INF] Sending file. Request path: '"/admin-side/vendor/moment/min/moment.min.js"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\vendor\moment\min\moment.min.js"' (27b0a520)
+2020-06-29T19:44:38.9329767+07:00 0HM0S58CPPVQ4:0000000D [INF] Sending file. Request path: '"/admin-side/vendor/fullcalendar/dist/fullcalendar.min.js"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\vendor\fullcalendar\dist\fullcalendar.min.js"' (27b0a520)
+2020-06-29T19:44:38.9353864+07:00 0HM0S58CPPVPS:0000000E [INF] Request finished in 83.9492ms 200 application/javascript (791a596a)
+2020-06-29T19:44:38.9430262+07:00 0HM0S58CPPVQ7:00000006 [INF] Sending file. Request path: '"/lib/jquery-validation/localization/messages_vi.js"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\lib\jquery-validation\localization\messages_vi.js"' (27b0a520)
+2020-06-29T19:44:38.9619394+07:00 0HM0S58CPPVQ4:0000000D [INF] Request finished in 51.3785ms 200 application/javascript (791a596a)
+2020-06-29T19:44:38.9631705+07:00 0HM0S58CPPVPS:0000000F [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/sweetalert2/dist/sweetalert2.min.js   (ca22a1cb)
+2020-06-29T19:44:38.9733940+07:00 0HM0S58CPPVQ6:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/bootstrap-notify/bootstrap-notify.min.js?v=DRllCE_8rrevSAnSMWB4XO3zpr-3WaSuqUSNLD5NAzg   (ca22a1cb)
+2020-06-29T19:44:38.9867279+07:00 0HM0S58CPPVQ5:0000000B [INF] Request finished in 72.8048ms 200 application/javascript (791a596a)
+2020-06-29T19:44:38.9912476+07:00 0HM0S58CPPVPS:0000000F [INF] Sending file. Request path: '"/admin-side/vendor/sweetalert2/dist/sweetalert2.min.js"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\vendor\sweetalert2\dist\sweetalert2.min.js"' (27b0a520)
+2020-06-29T19:44:39.0037409+07:00 0HM0S58CPPVQ4:0000000E [INF] Request starting HTTP/1.1 GET http://localhost:55321/app/shared/messages.js   (ca22a1cb)
+2020-06-29T19:44:39.0171165+07:00 0HM0S58CPPVQ5:0000000C [INF] Request starting HTTP/1.1 GET http://localhost:55321/app/shared/karmar.js   (ca22a1cb)
+2020-06-29T19:44:39.0273740+07:00 0HM0S58CPPVPS:0000000F [INF] Request finished in 61.715ms 200 application/javascript (791a596a)
+2020-06-29T19:44:39.0291497+07:00 0HM0S58CPPVQ4:0000000E [INF] Sending file. Request path: '"/app/shared/messages.js"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\app\shared\messages.js"' (27b0a520)
+2020-06-29T19:44:39.0392444+07:00 0HM0S58CPPVQ6:00000005 [INF] Sending file. Request path: '"/admin-side/vendor/bootstrap-notify/bootstrap-notify.min.js"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\vendor\bootstrap-notify\bootstrap-notify.min.js"' (27b0a520)
+2020-06-29T19:44:39.0591312+07:00 0HM0S58CPPVQ7:00000006 [INF] Request finished in 76.4279ms 200 application/javascript (791a596a)
+2020-06-29T19:44:39.0619248+07:00 0HM0S58CPPVPS:00000010 [INF] Request starting HTTP/1.1 GET http://localhost:55321/app/controllers/login/index.js   (ca22a1cb)
+2020-06-29T19:44:39.0847581+07:00 0HM0S58CPPVQ5:0000000C [INF] Sending file. Request path: '"/app/shared/karmar.js"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\app\shared\karmar.js"' (27b0a520)
+2020-06-29T19:44:39.1092291+07:00 0HM0S58CPPVPS:00000010 [INF] Sending file. Request path: '"/app/controllers/login/index.js"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\app\controllers\login\index.js"' (27b0a520)
+2020-06-29T19:44:39.1243031+07:00 0HM0S58CPPVQ6:00000005 [INF] Request finished in 131.6238ms 200 application/javascript (791a596a)
+2020-06-29T19:44:39.1283601+07:00 0HM0S58CPPVQ4:0000000E [INF] Request finished in 100.3235ms 200 application/javascript (791a596a)
+2020-06-29T19:44:39.1530643+07:00 0HM0S58CPPVQ5:0000000C [INF] Request finished in 140.2405ms 200 application/javascript (791a596a)
+2020-06-29T19:44:39.1571738+07:00 0HM0S58CPPVQ4:0000000F [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/nucleo/fonts/nucleo-icons.woff2   (ca22a1cb)
+2020-06-29T19:44:39.1632630+07:00 0HM0S58CPPVQ6:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/js/argon.js?v=1.1.0   (ca22a1cb)
+2020-06-29T19:44:39.1707189+07:00 0HM0S58CPPVQ5:0000000D [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/bootstrap/dist/css/bootstrap.min.css.map   (ca22a1cb)
+2020-06-29T19:44:39.1827092+07:00 0HM0S58CPPVQ4:0000000F [INF] Sending file. Request path: '"/admin-side/vendor/nucleo/fonts/nucleo-icons.woff2"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\vendor\nucleo\fonts\nucleo-icons.woff2"' (27b0a520)
+2020-06-29T19:44:39.2048475+07:00 0HM0S58CPPVQ6:00000006 [INF] Sending file. Request path: '"/admin-side/js/argon.js"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\js\argon.js"' (27b0a520)
+2020-06-29T19:44:39.2077293+07:00 0HM0S58CPPVQ5:0000000D [INF] Request finished in 23.4767ms 404  (791a596a)
+2020-06-29T19:44:39.2353156+07:00 0HM0S58CPPVQ4:0000000F [INF] Request finished in 84.6677ms 200 font/woff2 (791a596a)
+2020-06-29T19:44:39.2376284+07:00 0HM0S58CPPVQ6:00000006 [INF] Request finished in 87.2044ms 200 application/javascript (791a596a)
+2020-06-29T19:44:39.2531527+07:00 0HM0S58CPPVPS:00000010 [INF] Request finished in 114.9629ms 200 application/javascript (791a596a)
+2020-06-29T19:44:39.2642789+07:00 0HM0S58CPPVQ7:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:55321/app/shared/alert.js   (ca22a1cb)
+2020-06-29T19:44:39.2701780+07:00 0HM0S58CPPVQ2:00000004 [INF] Request finished in 551.6893ms 200 application/javascript (791a596a)
+2020-06-29T19:44:39.2788196+07:00 0HM0S58CPPVPR:00000015 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/sweetalert2/dist/sweetalert2.all.min.js?v=Qfxgn9jULeGAdbaeDjXeIhZB3Ra6NCK3dvjwAG8Y-xU   (ca22a1cb)
+2020-06-29T19:44:39.2818381+07:00 0HM0S58CPPVQ7:00000007 [INF] Sending file. Request path: '"/app/shared/alert.js"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\app\shared\alert.js"' (27b0a520)
+2020-06-29T19:44:39.2973399+07:00 0HM0S58CPPVPR:00000015 [INF] Sending file. Request path: '"/admin-side/vendor/sweetalert2/dist/sweetalert2.all.min.js"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\vendor\sweetalert2\dist\sweetalert2.all.min.js"' (27b0a520)
+2020-06-29T19:44:39.3079737+07:00 0HM0S58CPPVQ6:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/jquery-scroll-lock/dist/jquery-scrollLock.min.js.map   (ca22a1cb)
+2020-06-29T19:44:39.3118623+07:00 0HM0S58CPPVQ7:00000007 [INF] Request finished in 222.4083ms 200 application/javascript (791a596a)
+2020-06-29T19:44:39.3297769+07:00 0HM0S58CPPVQ6:00000007 [INF] Request finished in 15.9137ms 404  (791a596a)
+2020-06-29T19:44:39.3334263+07:00 0HM0S58CPPVPR:00000015 [INF] Request finished in 536.4148ms 200 application/javascript (791a596a)
+2020-06-29T19:44:39.3673461+07:00 0HM0S58CPPVQ4:00000010 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/bootstrap/dist/js/bootstrap.bundle.min.js.map   (ca22a1cb)
+2020-06-29T19:44:39.3867717+07:00 0HM0S58CPPVQ4:00000010 [INF] Request finished in 74.8009ms 404  (791a596a)
+2020-06-29T19:44:39.5298408+07:00 0HM0S58CPPVQ4:00000011 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/img/brand/favicon.png   (ca22a1cb)
+2020-06-29T19:44:39.5400791+07:00 0HM0S58CPPVQ4:00000011 [INF] Sending file. Request path: '"/admin-side/img/brand/favicon.png"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\img\brand\favicon.png"' (27b0a520)
+2020-06-29T19:44:39.5564925+07:00 0HM0S58CPPVQ4:00000011 [INF] Request finished in 22.1772ms 200 image/png (791a596a)
