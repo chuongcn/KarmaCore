@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using KarmaCoreApp.Application.ViewModels.Product;
+using KarmaCoreApp.Application.ViewModels.System;
 using KarmaCoreApp.Data.Entities;
 
 namespace KarmaCoreApp.Application.AutoMapper
@@ -9,6 +10,7 @@ namespace KarmaCoreApp.Application.AutoMapper
         public DomainToViewModelMappingProfile()
         {
             CreateMap<ProductCategory, ProductCategoryViewModel>();
+            CreateMap<Function, FunctionViewModel>();
         }
     }
 }

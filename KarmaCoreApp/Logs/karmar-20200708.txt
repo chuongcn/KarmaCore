@@ -1,0 +1,1119 @@
+2020-07-08T09:02:29.0762702+07:00  [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=KarmaCoreApp.Data.EF " (9958f5bb)
+2020-07-08T09:02:29.7596416+07:00  [INF] Executed DbCommand ("38"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-07-08T09:02:29.8161001+07:00  [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-07-08T09:02:29.8351922+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Functions] AS [f]" (0723d8ff)
+2020-07-08T09:02:29.9305051+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2020-07-08T09:02:29.9390788+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Colors] AS [c]" (0723d8ff)
+2020-07-08T09:02:30.0528025+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Slides] AS [s]" (0723d8ff)
+2020-07-08T09:02:30.0658750+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Sizes] AS [s]" (0723d8ff)
+2020-07-08T09:02:30.0896807+07:00  [INF] Executed DbCommand ("9"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [ProductCategories] AS [p]" (0723d8ff)
+2020-07-08T09:02:30.1738453+07:00  [INF] Executed DbCommand ("6"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-07-08T09:02:30.2157545+07:00  [INF] Executed DbCommand ("7"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-07-08T09:02:30.2275339+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-07-08T09:02:31.5969107+07:00 0HM12SBSHM104:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:55321/   (ca22a1cb)
+2020-07-08T09:02:32.0706448+07:00 0HM12SBSHM104:00000001 [INF] Authorization failed for user: null. (a4ab1676)
+2020-07-08T09:02:32.0806884+07:00 0HM12SBSHM104:00000001 [INF] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"'. (8b6446cb)
+2020-07-08T09:02:32.0942149+07:00 0HM12SBSHM104:00000001 [INF] Executing ChallengeResult with authentication schemes ([]). (f3dca807)
+2020-07-08T09:02:32.1235854+07:00 0HM12SBSHM104:00000001 [INF] AuthenticationScheme: "Identity.Application" was challenged. (d45f1f38)
+2020-07-08T09:02:32.1335534+07:00 0HM12SBSHM104:00000001 [INF] Executed action "KarmaCoreApp.Controllers.HomeController.Index (KarmaCoreApp)" in 94.0366ms (afa2e885)
+2020-07-08T09:02:32.1931105+07:00 0HM12SBSHM104:00000001 [INF] Request finished in 650.6928ms 302  (791a596a)
+2020-07-08T09:02:32.2174897+07:00 0HM12SBSHM104:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:55321/Account/Login?ReturnUrl=%2F   (ca22a1cb)
+2020-07-08T09:02:32.3823941+07:00 0HM12SBSHM104:00000002 [INF] Executing action method "KarmaCoreApp.Controllers.AccountController.Login (KarmaCoreApp)" with arguments (["/"]) - ModelState is Valid (ba7f4ac2)
+2020-07-08T09:02:32.4203974+07:00 0HM12SBSHM104:00000002 [INF] AuthenticationScheme: "Identity.External" signed out. (d3f50c8d)
+2020-07-08T09:02:38.3004797+07:00 0HM12SBSHM104:00000002 [INF] Executing ViewResult, running view at path "/Views/Account/Login.cshtml". (9707eebe)
+2020-07-08T09:02:39.4982529+07:00 0HM12SBSHM104:00000002 [INF] Executed action "KarmaCoreApp.Controllers.AccountController.Login (KarmaCoreApp)" in 7222.9697ms (afa2e885)
+2020-07-08T09:02:39.6106099+07:00 0HM12SBSHM104:00000002 [INF] Request finished in 7360.3004ms 200 text/html; charset=utf-8 (791a596a)
+2020-07-08T09:02:44.0723323+07:00 0HM12SBSHM104:00000003 [INF] Request starting HTTP/1.1 POST http://localhost:55321/Account/Login?returnurl=%2F application/x-www-form-urlencoded 235 (ca22a1cb)
+2020-07-08T09:02:44.1907829+07:00 0HM12SBSHM104:00000003 [INF] Executing action method "KarmaCoreApp.Controllers.AccountController.Login (KarmaCoreApp)" with arguments (["KarmaCoreApp.Models.AccountViewModels.LoginViewModel", "/"]) - ModelState is Valid (ba7f4ac2)
+2020-07-08T09:02:44.2080345+07:00 0HM12SBSHM104:00000003 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=KarmaCoreApp.Data.EF " (9958f5bb)
+2020-07-08T09:02:44.3838957+07:00 0HM12SBSHM104:00000003 [INF] Executed DbCommand ("73"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[Birthday], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2020-07-08T09:02:44.6837055+07:00 0HM12SBSHM104:00000003 [INF] Executed DbCommand ("12"ms) [Parameters=["@__user_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2020-07-08T09:02:44.7697371+07:00 0HM12SBSHM104:00000003 [INF] Executed DbCommand ("8"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2020-07-08T09:02:44.7925516+07:00 0HM12SBSHM104:00000003 [INF] Executed DbCommand ("2"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2020-07-08T09:02:44.8238283+07:00 0HM12SBSHM104:00000003 [INF] Executed DbCommand ("2"ms) [Parameters=["@__role_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2020-07-08T09:02:44.8409636+07:00 0HM12SBSHM104:00000003 [INF] Executed DbCommand ("1"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2020-07-08T09:02:44.8736368+07:00 0HM12SBSHM104:00000003 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2020-07-08T09:02:44.8852622+07:00 0HM12SBSHM104:00000003 [INF] User logged in. (fdce0db4)
+2020-07-08T09:02:44.9023585+07:00 0HM12SBSHM104:00000003 [INF] Executing RedirectResult, redirecting to "/". (d98d540e)
+2020-07-08T09:02:44.9097070+07:00 0HM12SBSHM104:00000003 [INF] Executed action "KarmaCoreApp.Controllers.AccountController.Login (KarmaCoreApp)" in 815.7306ms (afa2e885)
+2020-07-08T09:02:44.9190918+07:00 0HM12SBSHM104:00000003 [INF] Request finished in 855.9942ms 302  (791a596a)
+2020-07-08T09:02:44.9356993+07:00 0HM12SBSHM104:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:55321/   (ca22a1cb)
+2020-07-08T09:02:44.9560750+07:00 0HM12SBSHM104:00000004 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-07-08T09:02:44.9637290+07:00 0HM12SBSHM104:00000004 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2020-07-08T09:02:44.9691136+07:00 0HM12SBSHM104:00000004 [INF] Executing action method "KarmaCoreApp.Controllers.HomeController.Index (KarmaCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2020-07-08T09:02:45.1242135+07:00 0HM12SBSHM104:00000004 [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2020-07-08T09:02:45.1628091+07:00 0HM12SBSHM104:00000004 [INF] Executed action "KarmaCoreApp.Controllers.HomeController.Index (KarmaCoreApp)" in 200.3786ms (afa2e885)
+2020-07-08T09:02:45.1827308+07:00 0HM12SBSHM104:00000004 [INF] Request finished in 245.1789ms 200 text/html; charset=utf-8 (791a596a)
+2020-07-08T09:02:55.9111400+07:00 0HM12SBSHM104:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin/login   (ca22a1cb)
+2020-07-08T09:02:55.9257697+07:00 0HM12SBSHM104:00000005 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-07-08T09:02:55.9399465+07:00 0HM12SBSHM104:00000005 [INF] Executing action method "KarmaCoreApp.Areas.Admin.Controllers.LoginController.Index (KarmaCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2020-07-08T09:02:56.3170298+07:00 0HM12SBSHM104:00000005 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2020-07-08T09:02:56.5320179+07:00 0HM12SBSHM104:00000005 [INF] Executed action "KarmaCoreApp.Areas.Admin.Controllers.LoginController.Index (KarmaCoreApp)" in 591.1977ms (afa2e885)
+2020-07-08T09:02:56.5477860+07:00 0HM12SBSHM104:00000005 [INF] Request finished in 635.374ms 200 text/html; charset=utf-8 (791a596a)
+2020-07-08T09:02:56.6048922+07:00 0HM12SBSHM104:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/css/site.css   (ca22a1cb)
+2020-07-08T09:02:56.6092357+07:00 0HM12SBSHM106:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:55321/app/controllers/login/index.js   (ca22a1cb)
+2020-07-08T09:02:56.6425830+07:00 0HM12SBSHM106:00000001 [INF] Sending file. Request path: '"/app/controllers/login/index.js"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\app\controllers\login\index.js"' (27b0a520)
+2020-07-08T09:02:56.6425909+07:00 0HM12SBSHM104:00000006 [INF] Sending file. Request path: '"/admin-side/css/site.css"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\css\site.css"' (27b0a520)
+2020-07-08T09:02:56.6745093+07:00 0HM12SBSHM104:00000006 [INF] Request finished in 85.8492ms 200 text/css (791a596a)
+2020-07-08T09:02:56.6994411+07:00 0HM12SBSHM106:00000001 [INF] Request finished in 89.0228ms 200 application/javascript (791a596a)
+2020-07-08T09:02:58.5269995+07:00 0HM12SBSHM106:00000002 [INF] Request starting HTTP/1.1 POST http://localhost:55321/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 35 (ca22a1cb)
+2020-07-08T09:02:58.5346212+07:00 0HM12SBSHM106:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-07-08T09:02:58.5541988+07:00 0HM12SBSHM106:00000002 [INF] Executing action method "KarmaCoreApp.Areas.Admin.Controllers.LoginController.Authen (KarmaCoreApp)" with arguments (["KarmaCoreApp.Models.AccountViewModels.LoginViewModel"]) - ModelState is Valid (ba7f4ac2)
+2020-07-08T09:02:58.5878552+07:00 0HM12SBSHM106:00000002 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=KarmaCoreApp.Data.EF " (9958f5bb)
+2020-07-08T09:02:58.6051121+07:00 0HM12SBSHM106:00000002 [INF] Executed DbCommand ("5"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[Birthday], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2020-07-08T09:02:58.6270343+07:00 0HM12SBSHM106:00000002 [INF] Executed DbCommand ("3"ms) [Parameters=["@__user_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2020-07-08T09:02:58.6375819+07:00 0HM12SBSHM106:00000002 [INF] Executed DbCommand ("3"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2020-07-08T09:02:58.6472806+07:00 0HM12SBSHM106:00000002 [INF] Executed DbCommand ("2"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2020-07-08T09:02:58.6556179+07:00 0HM12SBSHM106:00000002 [INF] Executed DbCommand ("2"ms) [Parameters=["@__role_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2020-07-08T09:02:58.6627150+07:00 0HM12SBSHM106:00000002 [INF] Executed DbCommand ("1"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2020-07-08T09:02:58.6678889+07:00 0HM12SBSHM106:00000002 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2020-07-08T09:02:58.6719522+07:00 0HM12SBSHM106:00000002 [INF] User logged in. (fdce0db4)
+2020-07-08T09:02:58.6964543+07:00 0HM12SBSHM106:00000002 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2020-07-08T09:02:58.8230416+07:00 0HM12SBSHM106:00000002 [INF] Executed action "KarmaCoreApp.Areas.Admin.Controllers.LoginController.Authen (KarmaCoreApp)" in 278.9872ms (afa2e885)
+2020-07-08T09:02:58.8328036+07:00 0HM12SBSHM106:00000002 [INF] Request finished in 304.9917ms 200 application/json; charset=utf-8 (791a596a)
+2020-07-08T09:02:58.8477656+07:00 0HM12SBSHM106:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:55321/Admin/Home/Index   (ca22a1cb)
+2020-07-08T09:02:58.8534675+07:00 0HM12SBSHM106:00000003 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-07-08T09:02:58.8645823+07:00 0HM12SBSHM106:00000003 [INF] Executing action method "KarmaCoreApp.Areas.Admin.Controllers.HomeController.Index (KarmaCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2020-07-08T09:02:59.1769434+07:00 0HM12SBSHM106:00000003 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2020-07-08T09:02:59.5221732+07:00 0HM12SBSHM106:00000003 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=KarmaCoreApp.Data.EF " (9958f5bb)
+2020-07-08T09:02:59.5691034+07:00 0HM12SBSHM106:00000003 [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[URL], [dto].[ParentId], [dto].[IconCss], [dto].[Status], [dto].[SortOrder]
+FROM [Functions] AS [dto]" (0723d8ff)
+2020-07-08T09:02:59.8861564+07:00 0HM12SBSHM106:00000003 [INF] Executed action "KarmaCoreApp.Areas.Admin.Controllers.HomeController.Index (KarmaCoreApp)" in 1025.5917ms (afa2e885)
+2020-07-08T09:02:59.9074756+07:00 0HM12SBSHM106:00000003 [INF] Request finished in 1063.8476ms 200 text/html; charset=utf-8 (791a596a)
+2020-07-08T09:02:59.9893300+07:00 0HM12SBSHM106:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:55321/Admin/Home/.admin-side/img/theme/team-4.jpg   (ca22a1cb)
+2020-07-08T09:02:59.9978573+07:00 0HM12SBSHM104:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:55321/Admin/Home/.~/admin-side/img/theme/team-1.jpg   (ca22a1cb)
+2020-07-08T09:03:00.0278141+07:00 0HM12SBSHM106:00000004 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-07-08T09:03:00.0343362+07:00 0HM12SBSHM104:00000007 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-07-08T09:03:00.0441555+07:00 0HM12SBSHM106:00000004 [INF] Request finished in 74.3497ms 404  (791a596a)
+2020-07-08T09:03:00.0488894+07:00 0HM12SBSHM104:00000007 [INF] Request finished in 55.1017ms 404  (791a596a)
+2020-07-08T09:03:21.6256121+07:00 0HM12SBSHM104:00000008 [INF] Request starting HTTP/1.1 GET http://localhost:55321/Admin/Account/Logout   (ca22a1cb)
+2020-07-08T09:03:21.6344517+07:00 0HM12SBSHM104:00000008 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-07-08T09:03:21.6438888+07:00 0HM12SBSHM104:00000008 [INF] Request finished in 14.8447ms 404  (791a596a)
+2020-07-08T09:10:39.7320643+07:00  [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=KarmaCoreApp.Data.EF " (9958f5bb)
+2020-07-08T09:10:40.3077582+07:00  [INF] Executed DbCommand ("36"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-07-08T09:10:40.3676649+07:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-07-08T09:10:40.3885035+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Functions] AS [f]" (0723d8ff)
+2020-07-08T09:10:40.4678506+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2020-07-08T09:10:40.4763093+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Colors] AS [c]" (0723d8ff)
+2020-07-08T09:10:40.5786326+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Slides] AS [s]" (0723d8ff)
+2020-07-08T09:10:40.5918157+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Sizes] AS [s]" (0723d8ff)
+2020-07-08T09:10:40.6065807+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [ProductCategories] AS [p]" (0723d8ff)
+2020-07-08T09:10:40.6812568+07:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-07-08T09:10:40.7246642+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-07-08T09:10:40.7371911+07:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-07-08T09:10:41.8013661+07:00 0HM12SGEKUBQK:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:55321/   (ca22a1cb)
+2020-07-08T09:10:42.0807851+07:00 0HM12SGEKUBQK:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-07-08T09:10:42.4775555+07:00 0HM12SGEKUBQK:00000001 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2020-07-08T09:10:42.5280263+07:00 0HM12SGEKUBQK:00000001 [INF] Executing action method "KarmaCoreApp.Controllers.HomeController.Index (KarmaCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2020-07-08T09:10:47.9593015+07:00 0HM12SGEKUBQK:00000001 [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2020-07-08T09:10:48.8367541+07:00 0HM12SGEKUBQK:00000001 [INF] Executed action "KarmaCoreApp.Controllers.HomeController.Index (KarmaCoreApp)" in 6393.9979ms (afa2e885)
+2020-07-08T09:10:49.0623653+07:00 0HM12SGEKUBQK:00000001 [INF] Request finished in 7203.404ms 200 text/html; charset=utf-8 (791a596a)
+2020-07-08T09:10:49.1691207+07:00 0HM12SGEKUBQK:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:55321/lib/bootstrap/dist/css/bootstrap.css.map   (ca22a1cb)
+2020-07-08T09:10:49.2065752+07:00 0HM12SGEKUBQK:00000002 [INF] Sending file. Request path: '"/lib/bootstrap/dist/css/bootstrap.css.map"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\lib\bootstrap\dist\css\bootstrap.css.map"' (27b0a520)
+2020-07-08T09:10:49.2972508+07:00 0HM12SGEKUBQK:00000002 [INF] Request finished in 129.0681ms 200 text/plain (791a596a)
+2020-07-08T09:10:53.9186977+07:00 0HM12SGEKUBQK:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin/login   (ca22a1cb)
+2020-07-08T09:10:53.9274177+07:00 0HM12SGEKUBQK:00000003 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-07-08T09:10:53.9482431+07:00 0HM12SGEKUBQK:00000003 [INF] Executing action method "KarmaCoreApp.Areas.Admin.Controllers.LoginController.Index (KarmaCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2020-07-08T09:10:54.2901214+07:00 0HM12SGEKUBQK:00000003 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2020-07-08T09:10:54.3746974+07:00 0HM12SGEKUBQK:00000003 [INF] Executed action "KarmaCoreApp.Areas.Admin.Controllers.LoginController.Index (KarmaCoreApp)" in 431.9296ms (afa2e885)
+2020-07-08T09:10:54.4889862+07:00 0HM12SGEKUBQK:00000003 [INF] Request finished in 469.3309ms 200 text/html; charset=utf-8 (791a596a)
+2020-07-08T09:10:54.6274172+07:00 0HM12SGEKUBQK:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/bootstrap/dist/css/bootstrap.min.css.map   (ca22a1cb)
+2020-07-08T09:10:54.6358959+07:00 0HM12SGEKUBQK:00000004 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-07-08T09:10:54.6469715+07:00 0HM12SGEKUBQK:00000004 [INF] Request finished in 17.1411ms 404  (791a596a)
+2020-07-08T09:10:54.7371351+07:00 0HM12SGEKUBQK:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/bootstrap/dist/js/bootstrap.bundle.min.js.map   (ca22a1cb)
+2020-07-08T09:10:54.7386513+07:00 0HM12SGEKUBQL:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/jquery-scroll-lock/dist/jquery-scrollLock.min.js.map   (ca22a1cb)
+2020-07-08T09:10:54.7453272+07:00 0HM12SGEKUBQK:00000005 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-07-08T09:10:54.7556283+07:00 0HM12SGEKUBQL:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-07-08T09:10:54.7581682+07:00 0HM12SGEKUBQK:00000005 [INF] Request finished in 26.0929ms 404  (791a596a)
+2020-07-08T09:10:54.7740315+07:00 0HM12SGEKUBQL:00000001 [INF] Request finished in 32.2209ms 404  (791a596a)
+2020-07-08T09:11:00.7963334+07:00 0HM12SGEKUBQL:00000002 [INF] Request starting HTTP/1.1 POST http://localhost:55321/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 35 (ca22a1cb)
+2020-07-08T09:11:00.8033855+07:00 0HM12SGEKUBQL:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-07-08T09:11:01.0264447+07:00 0HM12SGEKUBQL:00000002 [INF] Executing action method "KarmaCoreApp.Areas.Admin.Controllers.LoginController.Authen (KarmaCoreApp)" with arguments (["KarmaCoreApp.Models.AccountViewModels.LoginViewModel"]) - ModelState is Valid (ba7f4ac2)
+2020-07-08T09:11:01.0632640+07:00 0HM12SGEKUBQL:00000002 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=KarmaCoreApp.Data.EF " (9958f5bb)
+2020-07-08T09:11:01.2170401+07:00 0HM12SGEKUBQL:00000002 [INF] Executed DbCommand ("62"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[Birthday], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2020-07-08T09:11:01.4859303+07:00 0HM12SGEKUBQL:00000002 [INF] Executed DbCommand ("11"ms) [Parameters=["@__user_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2020-07-08T09:11:01.5611482+07:00 0HM12SGEKUBQL:00000002 [INF] Executed DbCommand ("3"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2020-07-08T09:11:01.5839755+07:00 0HM12SGEKUBQL:00000002 [INF] Executed DbCommand ("2"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2020-07-08T09:11:01.6113614+07:00 0HM12SGEKUBQL:00000002 [INF] Executed DbCommand ("2"ms) [Parameters=["@__role_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2020-07-08T09:11:01.6290544+07:00 0HM12SGEKUBQL:00000002 [INF] Executed DbCommand ("2"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2020-07-08T09:11:01.6787556+07:00 0HM12SGEKUBQL:00000002 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2020-07-08T09:11:01.6909787+07:00 0HM12SGEKUBQL:00000002 [INF] User logged in. (fdce0db4)
+2020-07-08T09:11:01.7193668+07:00 0HM12SGEKUBQL:00000002 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2020-07-08T09:11:01.8479448+07:00 0HM12SGEKUBQL:00000002 [INF] Executed action "KarmaCoreApp.Areas.Admin.Controllers.LoginController.Authen (KarmaCoreApp)" in 967.1489ms (afa2e885)
+2020-07-08T09:11:01.8595466+07:00 0HM12SGEKUBQL:00000002 [INF] Request finished in 1061.1706ms 200 application/json; charset=utf-8 (791a596a)
+2020-07-08T09:11:01.8742596+07:00 0HM12SGEKUBQL:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:55321/Admin/Home/Index   (ca22a1cb)
+2020-07-08T09:11:01.8835635+07:00 0HM12SGEKUBQL:00000003 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-07-08T09:11:01.8915682+07:00 0HM12SGEKUBQL:00000003 [INF] Executing action method "KarmaCoreApp.Areas.Admin.Controllers.HomeController.Index (KarmaCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2020-07-08T09:11:02.1412556+07:00 0HM12SGEKUBQL:00000003 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2020-07-08T09:11:02.5068777+07:00 0HM12SGEKUBQL:00000003 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=KarmaCoreApp.Data.EF " (9958f5bb)
+2020-07-08T09:11:02.5596354+07:00 0HM12SGEKUBQL:00000003 [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[URL], [dto].[ParentId], [dto].[IconCss], [dto].[Status], [dto].[SortOrder]
+FROM [Functions] AS [dto]" (0723d8ff)
+2020-07-08T09:11:03.1520621+07:00 0HM12SGEKUBQL:00000003 [INF] Executed action "KarmaCoreApp.Areas.Admin.Controllers.HomeController.Index (KarmaCoreApp)" in 1260.1813ms (afa2e885)
+2020-07-08T09:11:03.4683909+07:00 0HM12SGEKUBQL:00000003 [INF] Request finished in 1592.5443ms 200 text/html; charset=utf-8 (791a596a)
+2020-07-08T09:11:03.5738790+07:00 0HM12SGEKUBQK:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:55321/Admin/Home/.~/admin-side/img/theme/team-1.jpg   (ca22a1cb)
+2020-07-08T09:11:03.5807373+07:00 0HM12SGEKUBQL:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:55321/Admin/Home/.admin-side/img/theme/team-4.jpg   (ca22a1cb)
+2020-07-08T09:11:03.6229611+07:00 0HM12SGEKUBQK:00000006 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-07-08T09:11:03.6281553+07:00 0HM12SGEKUBQL:00000004 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-07-08T09:11:03.6549522+07:00 0HM12SGEKUBQK:00000006 [INF] Request finished in 96.8458ms 404  (791a596a)
+2020-07-08T09:11:03.6579149+07:00 0HM12SGEKUBQL:00000004 [INF] Request finished in 77.3887ms 404  (791a596a)
+2020-07-08T09:11:03.9505999+07:00 0HM12SGEKUBQL:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/bootstrap/dist/js/bootstrap.bundle.min.js.map   (ca22a1cb)
+2020-07-08T09:11:03.9525705+07:00 0HM12SGEKUBQK:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/jquery-scroll-lock/dist/jquery-scrollLock.min.js.map   (ca22a1cb)
+2020-07-08T09:11:03.9669496+07:00 0HM12SGEKUBQK:00000007 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-07-08T09:11:03.9718836+07:00 0HM12SGEKUBQL:00000005 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-07-08T09:11:03.9869310+07:00 0HM12SGEKUBQK:00000007 [INF] Request finished in 27.9682ms 404  (791a596a)
+2020-07-08T09:11:03.9891786+07:00 0HM12SGEKUBQL:00000005 [INF] Request finished in 33.9782ms 404  (791a596a)
+2020-07-08T09:11:04.0006944+07:00 0HM12SGEKUBQM:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/bootstrap/dist/css/bootstrap.min.css.map   (ca22a1cb)
+2020-07-08T09:11:04.0082279+07:00 0HM12SGEKUBQM:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-07-08T09:11:04.0152579+07:00 0HM12SGEKUBQM:00000001 [INF] Request finished in 55.3249ms 404  (791a596a)
+2020-07-08T09:12:08.0865628+07:00 0HM12SGEKUBQM:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:55321/Admin/Account/Logout   (ca22a1cb)
+2020-07-08T09:12:08.0961469+07:00 0HM12SGEKUBQM:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-07-08T09:12:08.1134913+07:00 0HM12SGEKUBQM:00000002 [INF] Request finished in 15.8458ms 404  (791a596a)
+2020-07-08T09:12:11.3692630+07:00 0HM12SGEKUBQM:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:55321/Admin/Account/Logout   (ca22a1cb)
+2020-07-08T09:12:11.3780815+07:00 0HM12SGEKUBQM:00000003 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-07-08T09:12:11.3849314+07:00 0HM12SGEKUBQM:00000003 [INF] Request finished in 16.2739ms 404  (791a596a)
+2020-07-08T09:13:02.6389647+07:00  [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=KarmaCoreApp.Data.EF " (9958f5bb)
+2020-07-08T09:13:03.2352582+07:00  [INF] Executed DbCommand ("41"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-07-08T09:13:03.3008350+07:00  [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-07-08T09:13:03.3221774+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Functions] AS [f]" (0723d8ff)
+2020-07-08T09:13:03.3951993+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2020-07-08T09:13:03.4027179+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Colors] AS [c]" (0723d8ff)
+2020-07-08T09:13:03.4978050+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Slides] AS [s]" (0723d8ff)
+2020-07-08T09:13:03.5117166+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Sizes] AS [s]" (0723d8ff)
+2020-07-08T09:13:03.5274315+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [ProductCategories] AS [p]" (0723d8ff)
+2020-07-08T09:13:03.5992379+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-07-08T09:13:03.6328796+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-07-08T09:13:03.6428627+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-07-08T09:13:04.3473202+07:00 0HM12SHP476PT:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:55321/   (ca22a1cb)
+2020-07-08T09:13:04.5009805+07:00 0HM12SHP476PT:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-07-08T09:13:04.9950867+07:00 0HM12SHP476PT:00000001 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2020-07-08T09:13:05.0677060+07:00 0HM12SHP476PT:00000001 [INF] Executing action method "KarmaCoreApp.Controllers.HomeController.Index (KarmaCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2020-07-08T09:13:10.2724074+07:00 0HM12SHP476PT:00000001 [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2020-07-08T09:13:11.1357637+07:00 0HM12SHP476PT:00000001 [INF] Executed action "KarmaCoreApp.Controllers.HomeController.Index (KarmaCoreApp)" in 6177.5986ms (afa2e885)
+2020-07-08T09:13:11.2797265+07:00 0HM12SHP476PT:00000001 [INF] Request finished in 6963.178ms 200 text/html; charset=utf-8 (791a596a)
+2020-07-08T09:13:15.7527379+07:00 0HM12SHP476PT:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin/login   (ca22a1cb)
+2020-07-08T09:13:15.7638611+07:00 0HM12SHP476PT:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-07-08T09:13:15.7811657+07:00 0HM12SHP476PT:00000002 [INF] Executing action method "KarmaCoreApp.Areas.Admin.Controllers.LoginController.Index (KarmaCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2020-07-08T09:13:16.0820151+07:00 0HM12SHP476PT:00000002 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2020-07-08T09:13:16.1550594+07:00 0HM12SHP476PT:00000002 [INF] Executed action "KarmaCoreApp.Areas.Admin.Controllers.LoginController.Index (KarmaCoreApp)" in 376.9001ms (afa2e885)
+2020-07-08T09:13:16.1630572+07:00 0HM12SHP476PT:00000002 [INF] Request finished in 410.1776ms 200 text/html; charset=utf-8 (791a596a)
+2020-07-08T09:13:28.0916111+07:00 0HM12SHP476PT:00000003 [INF] Request starting HTTP/1.1 POST http://localhost:55321/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 35 (ca22a1cb)
+2020-07-08T09:13:28.0986607+07:00 0HM12SHP476PT:00000003 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-07-08T09:13:28.3464361+07:00 0HM12SHP476PT:00000003 [INF] Executing action method "KarmaCoreApp.Areas.Admin.Controllers.LoginController.Authen (KarmaCoreApp)" with arguments (["KarmaCoreApp.Models.AccountViewModels.LoginViewModel"]) - ModelState is Valid (ba7f4ac2)
+2020-07-08T09:13:28.3710084+07:00 0HM12SHP476PT:00000003 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=KarmaCoreApp.Data.EF " (9958f5bb)
+2020-07-08T09:13:28.5313885+07:00 0HM12SHP476PT:00000003 [INF] Executed DbCommand ("64"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[Birthday], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2020-07-08T09:13:28.8000962+07:00 0HM12SHP476PT:00000003 [INF] Executed DbCommand ("12"ms) [Parameters=["@__user_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2020-07-08T09:13:28.8857794+07:00 0HM12SHP476PT:00000003 [INF] Executed DbCommand ("2"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2020-07-08T09:13:28.9088402+07:00 0HM12SHP476PT:00000003 [INF] Executed DbCommand ("1"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2020-07-08T09:13:28.9412579+07:00 0HM12SHP476PT:00000003 [INF] Executed DbCommand ("1"ms) [Parameters=["@__role_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2020-07-08T09:13:28.9581582+07:00 0HM12SHP476PT:00000003 [INF] Executed DbCommand ("0"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2020-07-08T09:13:29.0085119+07:00 0HM12SHP476PT:00000003 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2020-07-08T09:13:29.0174432+07:00 0HM12SHP476PT:00000003 [INF] User logged in. (fdce0db4)
+2020-07-08T09:13:29.0463199+07:00 0HM12SHP476PT:00000003 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2020-07-08T09:13:29.1847832+07:00 0HM12SHP476PT:00000003 [INF] Executed action "KarmaCoreApp.Areas.Admin.Controllers.LoginController.Authen (KarmaCoreApp)" in 990.1325ms (afa2e885)
+2020-07-08T09:13:29.1951454+07:00 0HM12SHP476PT:00000003 [INF] Request finished in 1103.8571ms 200 application/json; charset=utf-8 (791a596a)
+2020-07-08T09:13:29.2112144+07:00 0HM12SHP476PT:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:55321/Admin/Home/Index   (ca22a1cb)
+2020-07-08T09:13:29.2179548+07:00 0HM12SHP476PT:00000004 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-07-08T09:13:29.2232612+07:00 0HM12SHP476PT:00000004 [INF] Executing action method "KarmaCoreApp.Areas.Admin.Controllers.HomeController.Index (KarmaCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2020-07-08T09:13:29.5113077+07:00 0HM12SHP476PT:00000004 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2020-07-08T09:13:29.8845933+07:00 0HM12SHP476PT:00000004 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=KarmaCoreApp.Data.EF " (9958f5bb)
+2020-07-08T09:13:29.9277357+07:00 0HM12SHP476PT:00000004 [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[URL], [dto].[ParentId], [dto].[IconCss], [dto].[Status], [dto].[SortOrder]
+FROM [Functions] AS [dto]" (0723d8ff)
+2020-07-08T09:13:30.4939974+07:00 0HM12SHP476PT:00000004 [INF] Executed action "KarmaCoreApp.Areas.Admin.Controllers.HomeController.Index (KarmaCoreApp)" in 1269.6745ms (afa2e885)
+2020-07-08T09:13:30.5207027+07:00 0HM12SHP476PT:00000004 [INF] Request finished in 1304.4128ms 200 text/html; charset=utf-8 (791a596a)
+2020-07-08T09:13:30.5672433+07:00 0HM12SHP476PT:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:55321/Admin/Home/.admin-side/img/theme/team-4.jpg   (ca22a1cb)
+2020-07-08T09:13:30.5789073+07:00 0HM12SHP476Q0:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:55321/Admin/Home/.~/admin-side/img/theme/team-1.jpg   (ca22a1cb)
+2020-07-08T09:13:30.5874173+07:00 0HM12SHP476PT:00000005 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-07-08T09:13:30.5909410+07:00 0HM12SHP476Q0:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-07-08T09:13:30.6059159+07:00 0HM12SHP476Q0:00000001 [INF] Request finished in 23.7693ms 404  (791a596a)
+2020-07-08T09:13:30.6072846+07:00 0HM12SHP476PT:00000005 [INF] Request finished in 41.0922ms 404  (791a596a)
+2020-07-08T09:13:41.7244665+07:00 0HM12SHP476PT:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/bootstrap/dist/js/bootstrap.bundle.min.js.map   (ca22a1cb)
+2020-07-08T09:13:41.7263838+07:00 0HM12SHP476Q0:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/jquery-scroll-lock/dist/jquery-scrollLock.min.js.map   (ca22a1cb)
+2020-07-08T09:13:41.7400721+07:00 0HM12SHP476PT:00000006 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-07-08T09:13:41.7474422+07:00 0HM12SHP476Q0:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-07-08T09:13:41.7621210+07:00 0HM12SHP476PT:00000006 [INF] Request finished in 31.6831ms 404  (791a596a)
+2020-07-08T09:13:41.7653583+07:00 0HM12SHP476Q1:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/bootstrap/dist/css/bootstrap.min.css.map   (ca22a1cb)
+2020-07-08T09:13:41.7741710+07:00 0HM12SHP476Q0:00000002 [INF] Request finished in 36.8297ms 404  (791a596a)
+2020-07-08T09:13:41.7794540+07:00 0HM12SHP476Q1:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-07-08T09:13:41.7878929+07:00 0HM12SHP476Q1:00000001 [INF] Request finished in 33.0113ms 404  (791a596a)
+2020-07-08T09:13:47.1171246+07:00 0HM12SHP476Q1:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:55321/Admin/Account/Logout   (ca22a1cb)
+2020-07-08T09:13:47.1260570+07:00 0HM12SHP476Q1:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-07-08T09:13:47.1374860+07:00 0HM12SHP476Q1:00000002 [INF] Executing action method "KarmaCoreApp.Areas.Admin.Controllers.AccountController.Logout (KarmaCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2020-07-08T09:13:55.1512052+07:00 0HM12SHP476Q1:00000002 [INF] AuthenticationScheme: "Identity.Application" signed out. (d3f50c8d)
+2020-07-08T09:13:55.1589355+07:00 0HM12SHP476Q1:00000002 [INF] AuthenticationScheme: "Identity.External" signed out. (d3f50c8d)
+2020-07-08T09:13:55.1643748+07:00 0HM12SHP476Q1:00000002 [INF] AuthenticationScheme: "Identity.TwoFactorUserId" signed out. (d3f50c8d)
+2020-07-08T09:14:06.1480173+07:00 0HM12SHP476Q1:00000002 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=KarmaCoreApp.Data.EF " (9958f5bb)
+2020-07-08T09:14:27.9667831+07:00 0HM12SHP476Q1:00000002 [INF] Executing RedirectResult, redirecting to "/Admin/Login/Index". (d98d540e)
+2020-07-08T09:14:27.9748480+07:00 0HM12SHP476Q1:00000002 [INF] Executed action "KarmaCoreApp.Areas.Admin.Controllers.AccountController.Logout (KarmaCoreApp)" in 40837.5152ms (afa2e885)
+2020-07-08T09:14:27.9841010+07:00 0HM12SHP476Q1:00000002 [INF] Request finished in 40865.2601ms 302  (791a596a)
+2020-07-08T09:14:27.9939745+07:00 0HM12SHP476Q1:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:55321/Admin/Login/Index   (ca22a1cb)
+2020-07-08T09:14:28.0026392+07:00 0HM12SHP476Q1:00000003 [INF] Executing action method "KarmaCoreApp.Areas.Admin.Controllers.LoginController.Index (KarmaCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2020-07-08T09:14:28.0096724+07:00 0HM12SHP476Q1:00000003 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2020-07-08T09:14:28.0270470+07:00 0HM12SHP476Q1:00000003 [INF] Executed action "KarmaCoreApp.Areas.Admin.Controllers.LoginController.Index (KarmaCoreApp)" in 26.327ms (afa2e885)
+2020-07-08T09:14:28.0454715+07:00 0HM12SHP476Q1:00000003 [INF] Request finished in 46.7688ms 200 text/html; charset=utf-8 (791a596a)
+2020-07-08T09:14:28.2488466+07:00 0HM12SHP476Q1:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/bootstrap/dist/css/bootstrap.min.css.map   (ca22a1cb)
+2020-07-08T09:14:28.2572701+07:00 0HM12SHP476Q1:00000004 [INF] Request finished in 8.7015ms 404  (791a596a)
+2020-07-08T09:14:28.3407224+07:00 0HM12SHP476Q1:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/bootstrap/dist/js/bootstrap.bundle.min.js.map   (ca22a1cb)
+2020-07-08T09:14:28.3441035+07:00 0HM12SHP476Q0:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/jquery-scroll-lock/dist/jquery-scrollLock.min.js.map   (ca22a1cb)
+2020-07-08T09:14:28.3711673+07:00 0HM12SHP476Q1:00000005 [INF] Request finished in 24.9584ms 404  (791a596a)
+2020-07-08T09:14:28.3711837+07:00 0HM12SHP476Q0:00000003 [INF] Request finished in 25.9033ms 404  (791a596a)
+2020-07-08T09:14:36.0942154+07:00 0HM12SHP476Q0:00000004 [INF] Request starting HTTP/1.1 POST http://localhost:55321/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 35 (ca22a1cb)
+2020-07-08T09:14:36.1025898+07:00 0HM12SHP476Q0:00000004 [INF] Executing action method "KarmaCoreApp.Areas.Admin.Controllers.LoginController.Authen (KarmaCoreApp)" with arguments (["KarmaCoreApp.Models.AccountViewModels.LoginViewModel"]) - ModelState is Valid (ba7f4ac2)
+2020-07-08T09:14:36.1070135+07:00 0HM12SHP476Q0:00000004 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=KarmaCoreApp.Data.EF " (9958f5bb)
+2020-07-08T09:14:36.1182276+07:00 0HM12SHP476Q0:00000004 [INF] Executed DbCommand ("4"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[Birthday], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2020-07-08T09:14:36.1356189+07:00 0HM12SHP476Q0:00000004 [INF] Executed DbCommand ("2"ms) [Parameters=["@__user_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2020-07-08T09:14:36.1437296+07:00 0HM12SHP476Q0:00000004 [INF] Executed DbCommand ("2"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2020-07-08T09:14:36.1510152+07:00 0HM12SHP476Q0:00000004 [INF] Executed DbCommand ("1"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2020-07-08T09:14:36.1581299+07:00 0HM12SHP476Q0:00000004 [INF] Executed DbCommand ("1"ms) [Parameters=["@__role_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2020-07-08T09:14:36.1648350+07:00 0HM12SHP476Q0:00000004 [INF] Executed DbCommand ("1"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2020-07-08T09:14:36.1703304+07:00 0HM12SHP476Q0:00000004 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2020-07-08T09:14:36.1761777+07:00 0HM12SHP476Q0:00000004 [INF] User logged in. (fdce0db4)
+2020-07-08T09:14:36.1813197+07:00 0HM12SHP476Q0:00000004 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2020-07-08T09:14:36.1901699+07:00 0HM12SHP476Q0:00000004 [INF] Executed action "KarmaCoreApp.Areas.Admin.Controllers.LoginController.Authen (KarmaCoreApp)" in 85.9176ms (afa2e885)
+2020-07-08T09:14:36.1972724+07:00 0HM12SHP476Q0:00000004 [INF] Request finished in 104.5599ms 200 application/json; charset=utf-8 (791a596a)
+2020-07-08T09:14:36.2155678+07:00 0HM12SHP476Q0:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:55321/Admin/Home/Index   (ca22a1cb)
+2020-07-08T09:14:36.2207795+07:00 0HM12SHP476Q0:00000005 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-07-08T09:14:36.2265624+07:00 0HM12SHP476Q0:00000005 [INF] Executing action method "KarmaCoreApp.Areas.Admin.Controllers.HomeController.Index (KarmaCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2020-07-08T09:14:36.2316518+07:00 0HM12SHP476Q0:00000005 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2020-07-08T09:14:36.2381344+07:00 0HM12SHP476Q0:00000005 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=KarmaCoreApp.Data.EF " (9958f5bb)
+2020-07-08T09:14:36.2494655+07:00 0HM12SHP476Q0:00000005 [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[URL], [dto].[ParentId], [dto].[IconCss], [dto].[Status], [dto].[SortOrder]
+FROM [Functions] AS [dto]" (0723d8ff)
+2020-07-08T09:14:36.2714797+07:00 0HM12SHP476Q0:00000005 [INF] Executed action "KarmaCoreApp.Areas.Admin.Controllers.HomeController.Index (KarmaCoreApp)" in 46.9732ms (afa2e885)
+2020-07-08T09:14:36.7816611+07:00 0HM12SHP476Q1:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:55321/Admin/Home/.admin-side/img/theme/team-4.jpg   (ca22a1cb)
+2020-07-08T09:14:36.7856697+07:00 0HM12SHP476Q0:00000005 [INF] Request finished in 429.2986ms 200 text/html; charset=utf-8 (791a596a)
+2020-07-08T09:14:36.7967187+07:00 0HM12SHP476PT:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:55321/Admin/Home/.~/admin-side/img/theme/team-1.jpg   (ca22a1cb)
+2020-07-08T09:14:36.8168359+07:00 0HM12SHP476Q1:00000006 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-07-08T09:14:36.8335075+07:00 0HM12SHP476PT:00000007 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-07-08T09:14:36.8414453+07:00 0HM12SHP476Q1:00000006 [INF] Request finished in 72.1542ms 404  (791a596a)
+2020-07-08T09:14:36.8480728+07:00 0HM12SHP476PT:00000007 [INF] Request finished in 82.0703ms 404  (791a596a)
+2020-07-08T09:14:36.9180806+07:00 0HM12SHP476PT:00000008 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/bootstrap/dist/css/bootstrap.min.css.map   (ca22a1cb)
+2020-07-08T09:14:36.9328742+07:00 0HM12SHP476PT:00000008 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-07-08T09:14:36.9380256+07:00 0HM12SHP476PT:00000008 [INF] Request finished in 25.0769ms 404  (791a596a)
+2020-07-08T09:14:37.4229757+07:00 0HM12SHP476PT:00000009 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/bootstrap/dist/js/bootstrap.bundle.min.js.map   (ca22a1cb)
+2020-07-08T09:14:37.4277287+07:00 0HM12SHP476Q1:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/jquery-scroll-lock/dist/jquery-scrollLock.min.js.map   (ca22a1cb)
+2020-07-08T09:14:37.4543269+07:00 0HM12SHP476PT:00000009 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-07-08T09:14:37.4606226+07:00 0HM12SHP476Q1:00000007 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-07-08T09:14:37.4684504+07:00 0HM12SHP476PT:00000009 [INF] Request finished in 73.8754ms 404  (791a596a)
+2020-07-08T09:14:37.4775737+07:00 0HM12SHP476Q1:00000007 [INF] Request finished in 68.1765ms 404  (791a596a)
+2020-07-08T09:14:39.7056644+07:00 0HM12SHP476Q1:00000008 [INF] Request starting HTTP/1.1 GET http://localhost:55321/Admin/Account/Logout   (ca22a1cb)
+2020-07-08T09:14:39.7148997+07:00 0HM12SHP476Q1:00000008 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-07-08T09:14:39.7249708+07:00 0HM12SHP476Q1:00000008 [INF] Executing action method "KarmaCoreApp.Areas.Admin.Controllers.AccountController.Logout (KarmaCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2020-07-08T09:14:43.0543055+07:00 0HM12SHP476Q1:00000008 [INF] AuthenticationScheme: "Identity.Application" signed out. (d3f50c8d)
+2020-07-08T09:15:02.8045808+07:00  [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=KarmaCoreApp.Data.EF " (9958f5bb)
+2020-07-08T09:15:03.3699129+07:00  [INF] Executed DbCommand ("36"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-07-08T09:15:03.4244222+07:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-07-08T09:15:03.4440157+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Functions] AS [f]" (0723d8ff)
+2020-07-08T09:15:03.5154936+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2020-07-08T09:15:03.5242300+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Colors] AS [c]" (0723d8ff)
+2020-07-08T09:15:03.6098777+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Slides] AS [s]" (0723d8ff)
+2020-07-08T09:15:03.6226996+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Sizes] AS [s]" (0723d8ff)
+2020-07-08T09:15:03.6383366+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [ProductCategories] AS [p]" (0723d8ff)
+2020-07-08T09:15:03.6881156+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-07-08T09:15:03.7160081+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-07-08T09:15:03.7240564+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-07-08T09:15:04.6563027+07:00 0HM12SISVSV1O:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:55321/   (ca22a1cb)
+2020-07-08T09:15:04.8044785+07:00 0HM12SISVSV1O:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-07-08T09:15:05.2815648+07:00 0HM12SISVSV1O:00000001 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2020-07-08T09:15:05.3297256+07:00 0HM12SISVSV1O:00000001 [INF] Executing action method "KarmaCoreApp.Controllers.HomeController.Index (KarmaCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2020-07-08T09:15:08.6385006+07:00 0HM12SISVSV1N:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin/login   (ca22a1cb)
+2020-07-08T09:15:08.6511741+07:00 0HM12SISVSV1N:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-07-08T09:15:08.6688385+07:00 0HM12SISVSV1N:00000001 [INF] Executing action method "KarmaCoreApp.Areas.Admin.Controllers.LoginController.Index (KarmaCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2020-07-08T09:15:10.5679327+07:00 0HM12SISVSV1N:00000001 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2020-07-08T09:15:10.5689832+07:00 0HM12SISVSV1O:00000001 [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2020-07-08T09:15:10.9911246+07:00 0HM12SISVSV1N:00000001 [INF] Executed action "KarmaCoreApp.Areas.Admin.Controllers.LoginController.Index (KarmaCoreApp)" in 2323.437ms (afa2e885)
+2020-07-08T09:15:11.1335147+07:00 0HM12SISVSV1N:00000001 [INF] Request finished in 2467.6104ms 200 text/html; charset=utf-8 (791a596a)
+2020-07-08T09:15:11.3219062+07:00 0HM12SISVSV1O:00000001 [INF] Executed action "KarmaCoreApp.Controllers.HomeController.Index (KarmaCoreApp)" in 6078.9675ms (afa2e885)
+2020-07-08T09:15:11.3323045+07:00 0HM12SISVSV1O:00000001 [INF] Request finished in 6732.2869ms 200 text/html; charset=utf-8 (791a596a)
+2020-07-08T09:15:12.3312884+07:00 0HM12SISVSV1N:00000002 [INF] Request starting HTTP/1.1 POST http://localhost:55321/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 35 (ca22a1cb)
+2020-07-08T09:15:12.3387227+07:00 0HM12SISVSV1N:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-07-08T09:15:12.5611505+07:00 0HM12SISVSV1N:00000002 [INF] Executing action method "KarmaCoreApp.Areas.Admin.Controllers.LoginController.Authen (KarmaCoreApp)" with arguments (["KarmaCoreApp.Models.AccountViewModels.LoginViewModel"]) - ModelState is Valid (ba7f4ac2)
+2020-07-08T09:15:12.5889636+07:00 0HM12SISVSV1N:00000002 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=KarmaCoreApp.Data.EF " (9958f5bb)
+2020-07-08T09:15:12.7474548+07:00 0HM12SISVSV1N:00000002 [INF] Executed DbCommand ("60"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[Birthday], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2020-07-08T09:15:13.0226918+07:00 0HM12SISVSV1N:00000002 [INF] Executed DbCommand ("11"ms) [Parameters=["@__user_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2020-07-08T09:15:13.0974502+07:00 0HM12SISVSV1N:00000002 [INF] Executed DbCommand ("3"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2020-07-08T09:15:13.1211556+07:00 0HM12SISVSV1N:00000002 [INF] Executed DbCommand ("2"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2020-07-08T09:15:13.1489087+07:00 0HM12SISVSV1N:00000002 [INF] Executed DbCommand ("2"ms) [Parameters=["@__role_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2020-07-08T09:15:13.1676092+07:00 0HM12SISVSV1N:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2020-07-08T09:15:13.2184177+07:00 0HM12SISVSV1N:00000002 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2020-07-08T09:15:13.2298290+07:00 0HM12SISVSV1N:00000002 [INF] User logged in. (fdce0db4)
+2020-07-08T09:15:13.2596432+07:00 0HM12SISVSV1N:00000002 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2020-07-08T09:15:13.3904769+07:00 0HM12SISVSV1N:00000002 [INF] Executed action "KarmaCoreApp.Areas.Admin.Controllers.LoginController.Authen (KarmaCoreApp)" in 976.2527ms (afa2e885)
+2020-07-08T09:15:13.4018071+07:00 0HM12SISVSV1N:00000002 [INF] Request finished in 1069.3312ms 200 application/json; charset=utf-8 (791a596a)
+2020-07-08T09:15:13.4121202+07:00 0HM12SISVSV1N:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:55321/Admin/Home/Index   (ca22a1cb)
+2020-07-08T09:15:13.4194638+07:00 0HM12SISVSV1N:00000003 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-07-08T09:15:13.4257335+07:00 0HM12SISVSV1N:00000003 [INF] Executing action method "KarmaCoreApp.Areas.Admin.Controllers.HomeController.Index (KarmaCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2020-07-08T09:15:13.7089504+07:00 0HM12SISVSV1N:00000003 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2020-07-08T09:15:14.0789750+07:00 0HM12SISVSV1N:00000003 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=KarmaCoreApp.Data.EF " (9958f5bb)
+2020-07-08T09:15:14.1264056+07:00 0HM12SISVSV1N:00000003 [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[URL], [dto].[ParentId], [dto].[IconCss], [dto].[Status], [dto].[SortOrder]
+FROM [Functions] AS [dto]" (0723d8ff)
+2020-07-08T09:15:14.6959331+07:00 0HM12SISVSV1N:00000003 [INF] Executed action "KarmaCoreApp.Areas.Admin.Controllers.HomeController.Index (KarmaCoreApp)" in 1268.5768ms (afa2e885)
+2020-07-08T09:15:14.7163039+07:00 0HM12SISVSV1N:00000003 [INF] Request finished in 1302.9323ms 200 text/html; charset=utf-8 (791a596a)
+2020-07-08T09:15:14.7759835+07:00 0HM12SISVSV1N:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:55321/Admin/Home/.admin-side/img/theme/team-4.jpg   (ca22a1cb)
+2020-07-08T09:15:14.7820862+07:00 0HM12SISVSV1P:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:55321/Admin/Home/.~/admin-side/img/theme/team-1.jpg   (ca22a1cb)
+2020-07-08T09:15:14.7941444+07:00 0HM12SISVSV1N:00000004 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-07-08T09:15:14.7972720+07:00 0HM12SISVSV1P:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-07-08T09:15:14.8100470+07:00 0HM12SISVSV1N:00000004 [INF] Request finished in 45.214ms 404  (791a596a)
+2020-07-08T09:15:14.8119932+07:00 0HM12SISVSV1P:00000001 [INF] Request finished in 34.1079ms 404  (791a596a)
+2020-07-08T09:15:22.4068375+07:00 0HM12SISVSV1P:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/bootstrap/dist/js/bootstrap.bundle.min.js.map   (ca22a1cb)
+2020-07-08T09:15:22.4082393+07:00 0HM12SISVSV1N:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/jquery-scroll-lock/dist/jquery-scrollLock.min.js.map   (ca22a1cb)
+2020-07-08T09:15:22.4190837+07:00 0HM12SISVSV1P:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-07-08T09:15:22.4246404+07:00 0HM12SISVSV1N:00000005 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-07-08T09:15:22.4405638+07:00 0HM12SISVSV1P:00000002 [INF] Request finished in 22.2522ms 404  (791a596a)
+2020-07-08T09:15:22.4438826+07:00 0HM12SISVSV1N:00000005 [INF] Request finished in 27.9321ms 404  (791a596a)
+2020-07-08T09:15:22.4581759+07:00 0HM12SISVSV1N:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/bootstrap/dist/css/bootstrap.min.css.map   (ca22a1cb)
+2020-07-08T09:15:22.4658016+07:00 0HM12SISVSV1N:00000006 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-07-08T09:15:22.4708139+07:00 0HM12SISVSV1N:00000006 [INF] Request finished in 15.8419ms 404  (791a596a)
+2020-07-08T09:15:27.7528462+07:00 0HM12SISVSV1N:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:55321/Admin/Account/Logout   (ca22a1cb)
+2020-07-08T09:15:27.7630194+07:00 0HM12SISVSV1N:00000007 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-07-08T09:15:27.7759365+07:00 0HM12SISVSV1N:00000007 [INF] Executing action method "KarmaCoreApp.Areas.Admin.Controllers.AccountController.Logout (KarmaCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2020-07-08T09:15:31.8522486+07:00 0HM12SISVSV1N:00000007 [INF] AuthenticationScheme: "Identity.Application" signed out. (d3f50c8d)
+2020-07-08T09:15:31.8623941+07:00 0HM12SISVSV1N:00000007 [INF] AuthenticationScheme: "Identity.External" signed out. (d3f50c8d)
+2020-07-08T09:15:31.8674091+07:00 0HM12SISVSV1N:00000007 [INF] AuthenticationScheme: "Identity.TwoFactorUserId" signed out. (d3f50c8d)
+2020-07-08T09:15:49.3298496+07:00 0HM12SISVSV1N:00000007 [INF] Executing RedirectResult, redirecting to "/Admin/Login/Index". (d98d540e)
+2020-07-08T09:15:49.3417757+07:00 0HM12SISVSV1N:00000007 [INF] Executed action "KarmaCoreApp.Areas.Admin.Controllers.AccountController.Logout (KarmaCoreApp)" in 21563.844ms (afa2e885)
+2020-07-08T09:15:49.3572203+07:00 0HM12SISVSV1N:00000007 [INF] Request finished in 21598.345ms 302  (791a596a)
+2020-07-08T09:15:49.3644212+07:00 0HM12SISVSV1N:00000008 [INF] Request starting HTTP/1.1 GET http://localhost:55321/Admin/Login/Index   (ca22a1cb)
+2020-07-08T09:15:49.3731279+07:00 0HM12SISVSV1N:00000008 [INF] Executing action method "KarmaCoreApp.Areas.Admin.Controllers.LoginController.Index (KarmaCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2020-07-08T09:15:49.3822136+07:00 0HM12SISVSV1N:00000008 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2020-07-08T09:15:49.4019847+07:00 0HM12SISVSV1N:00000008 [INF] Executed action "KarmaCoreApp.Areas.Admin.Controllers.LoginController.Index (KarmaCoreApp)" in 25.7912ms (afa2e885)
+2020-07-08T09:15:49.4130199+07:00 0HM12SISVSV1N:00000008 [INF] Request finished in 43.7128ms 200 text/html; charset=utf-8 (791a596a)
+2020-07-08T09:15:49.6696046+07:00 0HM12SISVSV1N:00000009 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/bootstrap/dist/css/bootstrap.min.css.map   (ca22a1cb)
+2020-07-08T09:15:49.6769219+07:00 0HM12SISVSV1N:00000009 [INF] Request finished in 12.1785ms 404  (791a596a)
+2020-07-08T09:15:49.7274692+07:00 0HM12SISVSV1N:0000000A [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/bootstrap/dist/js/bootstrap.bundle.min.js.map   (ca22a1cb)
+2020-07-08T09:15:49.7300288+07:00 0HM12SISVSV1P:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/jquery-scroll-lock/dist/jquery-scrollLock.min.js.map   (ca22a1cb)
+2020-07-08T09:15:49.7379816+07:00 0HM12SISVSV1N:0000000A [INF] Request finished in 34.6474ms 404  (791a596a)
+2020-07-08T09:15:49.7455943+07:00 0HM12SISVSV1P:00000003 [INF] Request finished in 20.861ms 404  (791a596a)
+2020-07-08T09:15:54.7103423+07:00 0HM12SISVSV1P:00000004 [INF] Request starting HTTP/1.1 POST http://localhost:55321/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 35 (ca22a1cb)
+2020-07-08T09:15:54.7232779+07:00 0HM12SISVSV1P:00000004 [INF] Executing action method "KarmaCoreApp.Areas.Admin.Controllers.LoginController.Authen (KarmaCoreApp)" with arguments (["KarmaCoreApp.Models.AccountViewModels.LoginViewModel"]) - ModelState is Valid (ba7f4ac2)
+2020-07-08T09:15:54.7285771+07:00 0HM12SISVSV1P:00000004 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=KarmaCoreApp.Data.EF " (9958f5bb)
+2020-07-08T09:15:54.7375309+07:00 0HM12SISVSV1P:00000004 [INF] Executed DbCommand ("3"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[Birthday], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2020-07-08T09:15:54.7550935+07:00 0HM12SISVSV1P:00000004 [INF] Executed DbCommand ("2"ms) [Parameters=["@__user_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2020-07-08T09:15:54.7627114+07:00 0HM12SISVSV1P:00000004 [INF] Executed DbCommand ("2"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2020-07-08T09:15:54.7706202+07:00 0HM12SISVSV1P:00000004 [INF] Executed DbCommand ("2"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2020-07-08T09:15:54.7771480+07:00 0HM12SISVSV1P:00000004 [INF] Executed DbCommand ("1"ms) [Parameters=["@__role_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2020-07-08T09:15:54.7844664+07:00 0HM12SISVSV1P:00000004 [INF] Executed DbCommand ("1"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2020-07-08T09:15:54.7890128+07:00 0HM12SISVSV1P:00000004 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2020-07-08T09:15:54.7929048+07:00 0HM12SISVSV1P:00000004 [INF] User logged in. (fdce0db4)
+2020-07-08T09:15:54.7974310+07:00 0HM12SISVSV1P:00000004 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2020-07-08T09:15:54.8037593+07:00 0HM12SISVSV1P:00000004 [INF] Executed action "KarmaCoreApp.Areas.Admin.Controllers.LoginController.Authen (KarmaCoreApp)" in 85.9309ms (afa2e885)
+2020-07-08T09:15:54.8101052+07:00 0HM12SISVSV1P:00000004 [INF] Request finished in 103.3777ms 200 application/json; charset=utf-8 (791a596a)
+2020-07-08T09:15:54.8226423+07:00 0HM12SISVSV1P:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:55321/Admin/Home/Index   (ca22a1cb)
+2020-07-08T09:15:54.8275517+07:00 0HM12SISVSV1P:00000005 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-07-08T09:15:54.8321859+07:00 0HM12SISVSV1P:00000005 [INF] Executing action method "KarmaCoreApp.Areas.Admin.Controllers.HomeController.Index (KarmaCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2020-07-08T09:15:54.8365676+07:00 0HM12SISVSV1P:00000005 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2020-07-08T09:15:54.8415223+07:00 0HM12SISVSV1P:00000005 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=KarmaCoreApp.Data.EF " (9958f5bb)
+2020-07-08T09:15:54.8502222+07:00 0HM12SISVSV1P:00000005 [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[URL], [dto].[ParentId], [dto].[IconCss], [dto].[Status], [dto].[SortOrder]
+FROM [Functions] AS [dto]" (0723d8ff)
+2020-07-08T09:15:54.8598915+07:00 0HM12SISVSV1P:00000005 [INF] Executed action "KarmaCoreApp.Areas.Admin.Controllers.HomeController.Index (KarmaCoreApp)" in 28.0862ms (afa2e885)
+2020-07-08T09:15:54.8819200+07:00 0HM12SISVSV1P:00000005 [INF] Request finished in 50.7288ms 200 text/html; charset=utf-8 (791a596a)
+2020-07-08T09:15:54.9766681+07:00 0HM12SISVSV1P:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:55321/Admin/Home/.admin-side/img/theme/team-4.jpg   (ca22a1cb)
+2020-07-08T09:15:54.9781800+07:00 0HM12SISVSV1N:0000000B [INF] Request starting HTTP/1.1 GET http://localhost:55321/Admin/Home/.~/admin-side/img/theme/team-1.jpg   (ca22a1cb)
+2020-07-08T09:15:54.9862193+07:00 0HM12SISVSV1P:00000006 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-07-08T09:15:54.9924115+07:00 0HM12SISVSV1N:0000000B [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-07-08T09:15:54.9960248+07:00 0HM12SISVSV1P:00000006 [INF] Request finished in 54.0152ms 404  (791a596a)
+2020-07-08T09:15:55.0037968+07:00 0HM12SISVSV1N:0000000B [INF] Request finished in 46.8405ms 404  (791a596a)
+2020-07-08T09:15:55.1000259+07:00 0HM12SISVSV1N:0000000C [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/bootstrap/dist/css/bootstrap.min.css.map   (ca22a1cb)
+2020-07-08T09:15:55.1054316+07:00 0HM12SISVSV1N:0000000C [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-07-08T09:15:55.1167738+07:00 0HM12SISVSV1N:0000000C [INF] Request finished in 20.0723ms 404  (791a596a)
+2020-07-08T09:15:55.2857061+07:00 0HM12SISVSV1N:0000000D [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/bootstrap/dist/js/bootstrap.bundle.min.js.map   (ca22a1cb)
+2020-07-08T09:15:55.2882593+07:00 0HM12SISVSV1P:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/jquery-scroll-lock/dist/jquery-scrollLock.min.js.map   (ca22a1cb)
+2020-07-08T09:15:55.2953989+07:00 0HM12SISVSV1N:0000000D [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-07-08T09:15:55.3284081+07:00 0HM12SISVSV1P:00000007 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-07-08T09:15:55.3560052+07:00 0HM12SISVSV1N:0000000D [INF] Request finished in 21.8263ms 404  (791a596a)
+2020-07-08T09:15:55.3711547+07:00 0HM12SISVSV1P:00000007 [INF] Request finished in 52.7945ms 404  (791a596a)
+2020-07-08T09:15:57.4693361+07:00 0HM12SISVSV1P:00000008 [INF] Request starting HTTP/1.1 GET http://localhost:55321/Admin/Account/Logout   (ca22a1cb)
+2020-07-08T09:15:57.4757249+07:00 0HM12SISVSV1P:00000008 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-07-08T09:15:57.4816862+07:00 0HM12SISVSV1P:00000008 [INF] Executing action method "KarmaCoreApp.Areas.Admin.Controllers.AccountController.Logout (KarmaCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2020-07-08T09:16:01.5189065+07:00 0HM12SISVSV1P:00000008 [INF] AuthenticationScheme: "Identity.Application" signed out. (d3f50c8d)
+2020-07-08T09:16:01.5244048+07:00 0HM12SISVSV1P:00000008 [INF] AuthenticationScheme: "Identity.External" signed out. (d3f50c8d)
+2020-07-08T09:16:01.5297828+07:00 0HM12SISVSV1P:00000008 [INF] AuthenticationScheme: "Identity.TwoFactorUserId" signed out. (d3f50c8d)
+2020-07-08T09:16:22.7377790+07:00 0HM12SISVSV1N:0000000E [INF] Request starting HTTP/1.1 GET http://localhost:55321/Admin/Home/Index   (ca22a1cb)
+2020-07-08T09:16:22.7666662+07:00 0HM12SISVSV1R:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:55321/Admin/Home/Index   (ca22a1cb)
+2020-07-08T09:16:22.7739154+07:00 0HM12SISVSV1P:00000008 [INF] Executing RedirectResult, redirecting to "/Admin/Login/Index". (d98d540e)
+2020-07-08T09:16:22.7816036+07:00 0HM12SISVSV1R:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-07-08T09:16:22.7834505+07:00 0HM12SISVSV1N:0000000E [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-07-08T09:16:22.7866449+07:00 0HM12SISVSV1P:00000008 [INF] Executed action "KarmaCoreApp.Areas.Admin.Controllers.AccountController.Logout (KarmaCoreApp)" in 25299.3253ms (afa2e885)
+2020-07-08T09:16:22.7938419+07:00 0HM12SISVSV1R:00000001 [INF] Executing action method "KarmaCoreApp.Areas.Admin.Controllers.HomeController.Index (KarmaCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2020-07-08T09:16:22.7983687+07:00 0HM12SISVSV1P:00000008 [INF] Request finished in 25327.5863ms 0  (791a596a)
+2020-07-08T09:16:22.8085868+07:00 0HM12SISVSV1R:00000001 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2020-07-08T09:16:22.8095451+07:00 0HM12SISVSV1N:0000000E [INF] Executing action method "KarmaCoreApp.Areas.Admin.Controllers.HomeController.Index (KarmaCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2020-07-08T09:16:22.8192905+07:00 0HM12SISVSV1N:0000000E [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2020-07-08T09:16:22.8211251+07:00 0HM12SISVSV1R:00000001 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=KarmaCoreApp.Data.EF " (9958f5bb)
+2020-07-08T09:16:22.8291136+07:00 0HM12SISVSV1N:0000000E [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=KarmaCoreApp.Data.EF " (9958f5bb)
+2020-07-08T09:16:22.8330334+07:00 0HM12SISVSV1R:00000001 [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[URL], [dto].[ParentId], [dto].[IconCss], [dto].[Status], [dto].[SortOrder]
+FROM [Functions] AS [dto]" (0723d8ff)
+2020-07-08T09:16:22.8828339+07:00 0HM12SISVSV1R:00000001 [INF] Executed action "KarmaCoreApp.Areas.Admin.Controllers.HomeController.Index (KarmaCoreApp)" in 73.0691ms (afa2e885)
+2020-07-08T09:16:22.8891404+07:00 0HM12SISVSV1N:0000000E [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[URL], [dto].[ParentId], [dto].[IconCss], [dto].[Status], [dto].[SortOrder]
+FROM [Functions] AS [dto]" (0723d8ff)
+2020-07-08T09:16:23.0498305+07:00 0HM12SISVSV1S:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:55321/Admin/Home/.~/admin-side/img/theme/team-1.jpg   (ca22a1cb)
+2020-07-08T09:16:23.0518978+07:00 0HM12SISVSV1N:0000000E [INF] Executed action "KarmaCoreApp.Areas.Admin.Controllers.HomeController.Index (KarmaCoreApp)" in 227.8208ms (afa2e885)
+2020-07-08T09:16:23.0541727+07:00 0HM12SISVSV1R:00000001 [INF] Request finished in 2498.1935ms 200 text/html; charset=utf-8 (791a596a)
+2020-07-08T09:16:23.0723905+07:00 0HM12SISVSV1S:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-07-08T09:16:23.0777520+07:00 0HM12SISVSV1R:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:55321/Admin/Home/.admin-side/img/theme/team-4.jpg   (ca22a1cb)
+2020-07-08T09:16:23.0906318+07:00 0HM12SISVSV1S:00000001 [INF] Request finished in 106.0466ms 404  (791a596a)
+2020-07-08T09:16:23.0925532+07:00 0HM12SISVSV1R:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-07-08T09:16:23.0994437+07:00 0HM12SISVSV1N:0000000E [INF] Request finished in 2714.7737ms 200 text/html; charset=utf-8 (791a596a)
+2020-07-08T09:16:23.1014780+07:00 0HM12SISVSV1R:00000002 [INF] Request finished in 29.1584ms 404  (791a596a)
+2020-07-08T09:16:23.1578204+07:00 0HM12SISVSV1R:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/bootstrap/dist/css/bootstrap.min.css.map   (ca22a1cb)
+2020-07-08T09:16:23.1638626+07:00 0HM12SISVSV1R:00000003 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-07-08T09:16:23.1701929+07:00 0HM12SISVSV1R:00000003 [INF] Request finished in 13.2416ms 404  (791a596a)
+2020-07-08T09:16:23.3719856+07:00 0HM12SISVSV1R:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/bootstrap/dist/js/bootstrap.bundle.min.js.map   (ca22a1cb)
+2020-07-08T09:16:23.3740485+07:00 0HM12SISVSV1S:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/jquery-scroll-lock/dist/jquery-scrollLock.min.js.map   (ca22a1cb)
+2020-07-08T09:16:23.3806151+07:00 0HM12SISVSV1R:00000004 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-07-08T09:16:23.3918447+07:00 0HM12SISVSV1S:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-07-08T09:16:23.3943155+07:00 0HM12SISVSV1R:00000004 [INF] Request finished in 19.9711ms 404  (791a596a)
+2020-07-08T09:16:23.3996813+07:00 0HM12SISVSV1S:00000002 [INF] Request finished in 28.6158ms 404  (791a596a)
+2020-07-08T09:16:37.7549077+07:00  [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=KarmaCoreApp.Data.EF " (9958f5bb)
+2020-07-08T09:16:38.3407409+07:00  [INF] Executed DbCommand ("37"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-07-08T09:16:38.3975684+07:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-07-08T09:16:38.4198530+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Functions] AS [f]" (0723d8ff)
+2020-07-08T09:16:38.4939049+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2020-07-08T09:16:38.5030357+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Colors] AS [c]" (0723d8ff)
+2020-07-08T09:16:38.5865715+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Slides] AS [s]" (0723d8ff)
+2020-07-08T09:16:38.5983702+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Sizes] AS [s]" (0723d8ff)
+2020-07-08T09:16:38.6136891+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [ProductCategories] AS [p]" (0723d8ff)
+2020-07-08T09:16:38.6647842+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-07-08T09:16:38.6911442+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-07-08T09:16:38.7055168+07:00  [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-07-08T09:16:40.0689450+07:00 0HM12SJP9G1S6:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:55321/   (ca22a1cb)
+2020-07-08T09:16:40.2218843+07:00 0HM12SJP9G1S6:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-07-08T09:16:40.5902972+07:00 0HM12SJP9G1S6:00000001 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2020-07-08T09:16:40.6400651+07:00 0HM12SJP9G1S6:00000001 [INF] Executing action method "KarmaCoreApp.Controllers.HomeController.Index (KarmaCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2020-07-08T09:16:45.6907850+07:00 0HM12SJP9G1S7:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin/login   (ca22a1cb)
+2020-07-08T09:16:45.7016762+07:00 0HM12SJP9G1S7:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-07-08T09:16:45.7209653+07:00 0HM12SJP9G1S7:00000001 [INF] Executing action method "KarmaCoreApp.Areas.Admin.Controllers.LoginController.Index (KarmaCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2020-07-08T09:16:45.8020761+07:00 0HM12SJP9G1S6:00000001 [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2020-07-08T09:16:46.2024707+07:00 0HM12SJP9G1S7:00000001 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2020-07-08T09:16:46.5117150+07:00 0HM12SJP9G1S7:00000001 [INF] Executed action "KarmaCoreApp.Areas.Admin.Controllers.LoginController.Index (KarmaCoreApp)" in 792.2089ms (afa2e885)
+2020-07-08T09:16:46.5585135+07:00 0HM12SJP9G1S6:00000001 [INF] Executed action "KarmaCoreApp.Controllers.HomeController.Index (KarmaCoreApp)" in 6003.1681ms (afa2e885)
+2020-07-08T09:16:46.5873485+07:00 0HM12SJP9G1S6:00000001 [INF] Request finished in 6573.9378ms 200 text/html; charset=utf-8 (791a596a)
+2020-07-08T09:16:46.7209700+07:00 0HM12SJP9G1S7:00000001 [INF] Request finished in 921.0353ms 200 text/html; charset=utf-8 (791a596a)
+2020-07-08T09:16:47.8954329+07:00 0HM12SJP9G1S7:00000002 [INF] Request starting HTTP/1.1 POST http://localhost:55321/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 35 (ca22a1cb)
+2020-07-08T09:16:47.9021918+07:00 0HM12SJP9G1S7:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-07-08T09:16:48.1292178+07:00 0HM12SJP9G1S7:00000002 [INF] Executing action method "KarmaCoreApp.Areas.Admin.Controllers.LoginController.Authen (KarmaCoreApp)" with arguments (["KarmaCoreApp.Models.AccountViewModels.LoginViewModel"]) - ModelState is Valid (ba7f4ac2)
+2020-07-08T09:16:48.1605780+07:00 0HM12SJP9G1S7:00000002 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=KarmaCoreApp.Data.EF " (9958f5bb)
+2020-07-08T09:16:48.3276899+07:00 0HM12SJP9G1S7:00000002 [INF] Executed DbCommand ("66"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[Birthday], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2020-07-08T09:16:48.6021345+07:00 0HM12SJP9G1S7:00000002 [INF] Executed DbCommand ("11"ms) [Parameters=["@__user_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2020-07-08T09:16:48.6763343+07:00 0HM12SJP9G1S7:00000002 [INF] Executed DbCommand ("3"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2020-07-08T09:16:48.7004535+07:00 0HM12SJP9G1S7:00000002 [INF] Executed DbCommand ("2"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2020-07-08T09:16:48.7331205+07:00 0HM12SJP9G1S7:00000002 [INF] Executed DbCommand ("2"ms) [Parameters=["@__role_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2020-07-08T09:16:48.7513250+07:00 0HM12SJP9G1S7:00000002 [INF] Executed DbCommand ("1"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2020-07-08T09:16:48.8004806+07:00 0HM12SJP9G1S7:00000002 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2020-07-08T09:16:48.8094711+07:00 0HM12SJP9G1S7:00000002 [INF] User logged in. (fdce0db4)
+2020-07-08T09:16:48.8356204+07:00 0HM12SJP9G1S7:00000002 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2020-07-08T09:16:48.9672966+07:00 0HM12SJP9G1S7:00000002 [INF] Executed action "KarmaCoreApp.Areas.Admin.Controllers.LoginController.Authen (KarmaCoreApp)" in 986.1804ms (afa2e885)
+2020-07-08T09:16:48.9789186+07:00 0HM12SJP9G1S7:00000002 [INF] Request finished in 1080.7787ms 200 application/json; charset=utf-8 (791a596a)
+2020-07-08T09:16:48.9903965+07:00 0HM12SJP9G1S7:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:55321/Admin/Home/Index   (ca22a1cb)
+2020-07-08T09:16:48.9979249+07:00 0HM12SJP9G1S7:00000003 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-07-08T09:16:49.0051538+07:00 0HM12SJP9G1S7:00000003 [INF] Executing action method "KarmaCoreApp.Areas.Admin.Controllers.HomeController.Index (KarmaCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2020-07-08T09:16:49.2852329+07:00 0HM12SJP9G1S7:00000003 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2020-07-08T09:16:49.6604239+07:00 0HM12SJP9G1S7:00000003 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=KarmaCoreApp.Data.EF " (9958f5bb)
+2020-07-08T09:16:49.7077958+07:00 0HM12SJP9G1S7:00000003 [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[URL], [dto].[ParentId], [dto].[IconCss], [dto].[Status], [dto].[SortOrder]
+FROM [Functions] AS [dto]" (0723d8ff)
+2020-07-08T09:16:50.2470352+07:00 0HM12SJP9G1S7:00000003 [INF] Executed action "KarmaCoreApp.Areas.Admin.Controllers.HomeController.Index (KarmaCoreApp)" in 1242.5452ms (afa2e885)
+2020-07-08T09:16:50.2710465+07:00 0HM12SJP9G1S7:00000003 [INF] Request finished in 1277.7865ms 200 text/html; charset=utf-8 (791a596a)
+2020-07-08T09:16:50.3160157+07:00 0HM12SJP9G1S7:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:55321/Admin/Home/.admin-side/img/theme/team-4.jpg   (ca22a1cb)
+2020-07-08T09:16:50.3374572+07:00 0HM12SJP9G1S8:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:55321/Admin/Home/.~/admin-side/img/theme/team-1.jpg   (ca22a1cb)
+2020-07-08T09:16:50.3386321+07:00 0HM12SJP9G1S7:00000004 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-07-08T09:16:50.3500464+07:00 0HM12SJP9G1S8:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-07-08T09:16:50.3570934+07:00 0HM12SJP9G1S7:00000004 [INF] Request finished in 42.0813ms 404  (791a596a)
+2020-07-08T09:16:50.3597755+07:00 0HM12SJP9G1S8:00000001 [INF] Request finished in 34.57ms 404  (791a596a)
+2020-07-08T09:16:53.1751045+07:00 0HM12SJP9G1S8:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:55321/Admin/Account/Logout   (ca22a1cb)
+2020-07-08T09:16:53.1833321+07:00 0HM12SJP9G1S8:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-07-08T09:16:53.1929599+07:00 0HM12SJP9G1S8:00000002 [INF] Executing action method "KarmaCoreApp.Areas.Admin.Controllers.AccountController.Logout (KarmaCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2020-07-08T09:16:53.2180648+07:00 0HM12SJP9G1S8:00000002 [INF] AuthenticationScheme: "Identity.Application" signed out. (d3f50c8d)
+2020-07-08T09:16:53.2296910+07:00 0HM12SJP9G1S8:00000002 [INF] AuthenticationScheme: "Identity.External" signed out. (d3f50c8d)
+2020-07-08T09:16:53.2371732+07:00 0HM12SJP9G1S8:00000002 [INF] AuthenticationScheme: "Identity.TwoFactorUserId" signed out. (d3f50c8d)
+2020-07-08T09:16:53.2504027+07:00 0HM12SJP9G1S8:00000002 [INF] Executing RedirectResult, redirecting to "/Admin/Login/Index". (d98d540e)
+2020-07-08T09:16:53.2604341+07:00 0HM12SJP9G1S8:00000002 [INF] Executed action "KarmaCoreApp.Areas.Admin.Controllers.AccountController.Logout (KarmaCoreApp)" in 65.3429ms (afa2e885)
+2020-07-08T09:16:53.2713458+07:00 0HM12SJP9G1S8:00000002 [INF] Request finished in 91.1311ms 302  (791a596a)
+2020-07-08T09:16:53.2803120+07:00 0HM12SJP9G1S8:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:55321/Admin/Login/Index   (ca22a1cb)
+2020-07-08T09:16:53.2887211+07:00 0HM12SJP9G1S8:00000003 [INF] Executing action method "KarmaCoreApp.Areas.Admin.Controllers.LoginController.Index (KarmaCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2020-07-08T09:16:53.2960040+07:00 0HM12SJP9G1S8:00000003 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2020-07-08T09:16:53.3123980+07:00 0HM12SJP9G1S8:00000003 [INF] Executed action "KarmaCoreApp.Areas.Admin.Controllers.LoginController.Index (KarmaCoreApp)" in 23.795ms (afa2e885)
+2020-07-08T09:16:53.3233478+07:00 0HM12SJP9G1S8:00000003 [INF] Request finished in 40.7405ms 200 text/html; charset=utf-8 (791a596a)
+2020-07-08T09:17:05.1273952+07:00 0HM12SJP9G1S8:00000004 [INF] Request starting HTTP/1.1 POST http://localhost:55321/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 35 (ca22a1cb)
+2020-07-08T09:17:05.1378297+07:00 0HM12SJP9G1S8:00000004 [INF] Executing action method "KarmaCoreApp.Areas.Admin.Controllers.LoginController.Authen (KarmaCoreApp)" with arguments (["KarmaCoreApp.Models.AccountViewModels.LoginViewModel"]) - ModelState is Valid (ba7f4ac2)
+2020-07-08T09:17:05.1464006+07:00 0HM12SJP9G1S8:00000004 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=KarmaCoreApp.Data.EF " (9958f5bb)
+2020-07-08T09:17:05.1554994+07:00 0HM12SJP9G1S8:00000004 [INF] Executed DbCommand ("1"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[Birthday], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2020-07-08T09:17:05.1728610+07:00 0HM12SJP9G1S8:00000004 [INF] Executed DbCommand ("2"ms) [Parameters=["@__user_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2020-07-08T09:17:05.1794107+07:00 0HM12SJP9G1S8:00000004 [INF] Executed DbCommand ("1"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2020-07-08T09:17:05.1866863+07:00 0HM12SJP9G1S8:00000004 [INF] Executed DbCommand ("1"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2020-07-08T09:17:05.1959356+07:00 0HM12SJP9G1S8:00000004 [INF] Executed DbCommand ("0"ms) [Parameters=["@__role_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2020-07-08T09:17:05.2025745+07:00 0HM12SJP9G1S8:00000004 [INF] Executed DbCommand ("1"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2020-07-08T09:17:05.2078579+07:00 0HM12SJP9G1S8:00000004 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2020-07-08T09:17:05.2156603+07:00 0HM12SJP9G1S8:00000004 [INF] User logged in. (fdce0db4)
+2020-07-08T09:17:05.2210401+07:00 0HM12SJP9G1S8:00000004 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2020-07-08T09:17:05.2297915+07:00 0HM12SJP9G1S8:00000004 [INF] Executed action "KarmaCoreApp.Areas.Admin.Controllers.LoginController.Authen (KarmaCoreApp)" in 92.3049ms (afa2e885)
+2020-07-08T09:17:05.2446758+07:00 0HM12SJP9G1S8:00000004 [INF] Request finished in 109.7939ms 200 application/json; charset=utf-8 (791a596a)
+2020-07-08T09:17:05.2558460+07:00 0HM12SJP9G1S8:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:55321/Admin/Home/Index   (ca22a1cb)
+2020-07-08T09:17:05.2636643+07:00 0HM12SJP9G1S8:00000005 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-07-08T09:17:05.2683419+07:00 0HM12SJP9G1S8:00000005 [INF] Executing action method "KarmaCoreApp.Areas.Admin.Controllers.HomeController.Index (KarmaCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2020-07-08T09:17:05.2754261+07:00 0HM12SJP9G1S8:00000005 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2020-07-08T09:17:05.2820006+07:00 0HM12SJP9G1S8:00000005 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=KarmaCoreApp.Data.EF " (9958f5bb)
+2020-07-08T09:17:05.2931694+07:00 0HM12SJP9G1S8:00000005 [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[URL], [dto].[ParentId], [dto].[IconCss], [dto].[Status], [dto].[SortOrder]
+FROM [Functions] AS [dto]" (0723d8ff)
+2020-07-08T09:17:05.3027065+07:00 0HM12SJP9G1S8:00000005 [INF] Executed action "KarmaCoreApp.Areas.Admin.Controllers.HomeController.Index (KarmaCoreApp)" in 34.5174ms (afa2e885)
+2020-07-08T09:17:05.3418940+07:00 0HM12SJP9G1S8:00000005 [INF] Request finished in 75.3305ms 200 text/html; charset=utf-8 (791a596a)
+2020-07-08T09:17:05.3587854+07:00 0HM12SJP9G1S8:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:55321/Admin/Home/.admin-side/img/theme/team-4.jpg   (ca22a1cb)
+2020-07-08T09:17:05.3723673+07:00 0HM12SJP9G1S7:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:55321/Admin/Home/.~/admin-side/img/theme/team-1.jpg   (ca22a1cb)
+2020-07-08T09:17:05.3811216+07:00 0HM12SJP9G1S8:00000006 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-07-08T09:17:05.3891754+07:00 0HM12SJP9G1S7:00000005 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-07-08T09:17:05.3923993+07:00 0HM12SJP9G1S8:00000006 [INF] Request finished in 34.7309ms 404  (791a596a)
+2020-07-08T09:17:05.3990554+07:00 0HM12SJP9G1S7:00000005 [INF] Request finished in 37.01ms 404  (791a596a)
+2020-07-08T09:17:08.4687662+07:00 0HM12SJP9G1S7:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:55321/Admin/Account/Logout   (ca22a1cb)
+2020-07-08T09:17:08.4758715+07:00 0HM12SJP9G1S7:00000006 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-07-08T09:17:08.4820789+07:00 0HM12SJP9G1S7:00000006 [INF] Executing action method "KarmaCoreApp.Areas.Admin.Controllers.AccountController.Logout (KarmaCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2020-07-08T09:17:08.4908362+07:00 0HM12SJP9G1S7:00000006 [INF] AuthenticationScheme: "Identity.Application" signed out. (d3f50c8d)
+2020-07-08T09:17:08.4987843+07:00 0HM12SJP9G1S7:00000006 [INF] AuthenticationScheme: "Identity.External" signed out. (d3f50c8d)
+2020-07-08T09:17:08.5045492+07:00 0HM12SJP9G1S7:00000006 [INF] AuthenticationScheme: "Identity.TwoFactorUserId" signed out. (d3f50c8d)
+2020-07-08T09:17:08.5114563+07:00 0HM12SJP9G1S7:00000006 [INF] Executing RedirectResult, redirecting to "/Admin/Login/Index". (d98d540e)
+2020-07-08T09:17:08.5174364+07:00 0HM12SJP9G1S7:00000006 [INF] Executed action "KarmaCoreApp.Areas.Admin.Controllers.AccountController.Logout (KarmaCoreApp)" in 35.1478ms (afa2e885)
+2020-07-08T09:17:08.5248995+07:00 0HM12SJP9G1S7:00000006 [INF] Request finished in 57.2965ms 302  (791a596a)
+2020-07-08T09:17:08.5374415+07:00 0HM12SJP9G1S7:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:55321/Admin/Login/Index   (ca22a1cb)
+2020-07-08T09:17:08.5477719+07:00 0HM12SJP9G1S7:00000007 [INF] Executing action method "KarmaCoreApp.Areas.Admin.Controllers.LoginController.Index (KarmaCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2020-07-08T09:17:08.5545193+07:00 0HM12SJP9G1S7:00000007 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2020-07-08T09:17:08.5680756+07:00 0HM12SJP9G1S7:00000007 [INF] Executed action "KarmaCoreApp.Areas.Admin.Controllers.LoginController.Index (KarmaCoreApp)" in 22.2144ms (afa2e885)
+2020-07-08T09:17:08.5775568+07:00 0HM12SJP9G1S7:00000007 [INF] Request finished in 40.592ms 200 text/html; charset=utf-8 (791a596a)
+2020-07-08T09:17:09.5845840+07:00 0HM12SJP9G1S7:00000008 [INF] Request starting HTTP/1.1 POST http://localhost:55321/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 35 (ca22a1cb)
+2020-07-08T09:17:09.5926265+07:00 0HM12SJP9G1S7:00000008 [INF] Executing action method "KarmaCoreApp.Areas.Admin.Controllers.LoginController.Authen (KarmaCoreApp)" with arguments (["KarmaCoreApp.Models.AccountViewModels.LoginViewModel"]) - ModelState is Valid (ba7f4ac2)
+2020-07-08T09:17:09.5990357+07:00 0HM12SJP9G1S7:00000008 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=KarmaCoreApp.Data.EF " (9958f5bb)
+2020-07-08T09:17:09.6142350+07:00 0HM12SJP9G1S7:00000008 [INF] Executed DbCommand ("3"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[Birthday], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2020-07-08T09:17:09.6357840+07:00 0HM12SJP9G1S7:00000008 [INF] Executed DbCommand ("2"ms) [Parameters=["@__user_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2020-07-08T09:17:09.6475776+07:00 0HM12SJP9G1S7:00000008 [INF] Executed DbCommand ("5"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2020-07-08T09:17:09.6577684+07:00 0HM12SJP9G1S7:00000008 [INF] Executed DbCommand ("1"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2020-07-08T09:17:09.6661146+07:00 0HM12SJP9G1S7:00000008 [INF] Executed DbCommand ("2"ms) [Parameters=["@__role_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2020-07-08T09:17:09.6733525+07:00 0HM12SJP9G1S7:00000008 [INF] Executed DbCommand ("1"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2020-07-08T09:17:09.6810404+07:00 0HM12SJP9G1S7:00000008 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2020-07-08T09:17:09.6856044+07:00 0HM12SJP9G1S7:00000008 [INF] User logged in. (fdce0db4)
+2020-07-08T09:17:09.6927898+07:00 0HM12SJP9G1S7:00000008 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2020-07-08T09:17:09.6986435+07:00 0HM12SJP9G1S7:00000008 [INF] Executed action "KarmaCoreApp.Areas.Admin.Controllers.LoginController.Authen (KarmaCoreApp)" in 108.2623ms (afa2e885)
+2020-07-08T09:17:09.7049910+07:00 0HM12SJP9G1S7:00000008 [INF] Request finished in 120.8981ms 200 application/json; charset=utf-8 (791a596a)
+2020-07-08T09:17:09.7174395+07:00 0HM12SJP9G1S7:00000009 [INF] Request starting HTTP/1.1 GET http://localhost:55321/Admin/Home/Index   (ca22a1cb)
+2020-07-08T09:17:09.7245514+07:00 0HM12SJP9G1S7:00000009 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-07-08T09:17:09.7307312+07:00 0HM12SJP9G1S7:00000009 [INF] Executing action method "KarmaCoreApp.Areas.Admin.Controllers.HomeController.Index (KarmaCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2020-07-08T09:17:09.7363123+07:00 0HM12SJP9G1S7:00000009 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2020-07-08T09:17:09.7448696+07:00 0HM12SJP9G1S7:00000009 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=KarmaCoreApp.Data.EF " (9958f5bb)
+2020-07-08T09:17:09.7544645+07:00 0HM12SJP9G1S7:00000009 [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[URL], [dto].[ParentId], [dto].[IconCss], [dto].[Status], [dto].[SortOrder]
+FROM [Functions] AS [dto]" (0723d8ff)
+2020-07-08T09:17:09.7706098+07:00 0HM12SJP9G1S7:00000009 [INF] Executed action "KarmaCoreApp.Areas.Admin.Controllers.HomeController.Index (KarmaCoreApp)" in 40.2892ms (afa2e885)
+2020-07-08T09:17:09.8527541+07:00 0HM12SJP9G1S7:00000009 [INF] Request finished in 74.9164ms 200 text/html; charset=utf-8 (791a596a)
+2020-07-08T09:17:09.8749587+07:00 0HM12SJP9G1S8:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:55321/Admin/Home/.~/admin-side/img/theme/team-1.jpg   (ca22a1cb)
+2020-07-08T09:17:09.9288921+07:00 0HM12SJP9G1S7:0000000A [INF] Request starting HTTP/1.1 GET http://localhost:55321/Admin/Home/.admin-side/img/theme/team-4.jpg   (ca22a1cb)
+2020-07-08T09:17:09.9357874+07:00 0HM12SJP9G1S8:00000007 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-07-08T09:17:09.9533068+07:00 0HM12SJP9G1S7:0000000A [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-07-08T09:17:09.9618714+07:00 0HM12SJP9G1S8:00000007 [INF] Request finished in 114.2768ms 404  (791a596a)
+2020-07-08T09:17:10.0370316+07:00 0HM12SJP9G1S7:0000000A [INF] Request finished in 88.1858ms 404  (791a596a)
+2020-07-08T09:17:11.7834123+07:00 0HM12SJP9G1S7:0000000B [INF] Request starting HTTP/1.1 GET http://localhost:55321/Admin/Account/Logout   (ca22a1cb)
+2020-07-08T09:17:11.7915463+07:00 0HM12SJP9G1S7:0000000B [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-07-08T09:17:11.7969589+07:00 0HM12SJP9G1S7:0000000B [INF] Executing action method "KarmaCoreApp.Areas.Admin.Controllers.AccountController.Logout (KarmaCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2020-07-08T09:17:11.8008727+07:00 0HM12SJP9G1S7:0000000B [INF] AuthenticationScheme: "Identity.Application" signed out. (d3f50c8d)
+2020-07-08T09:17:11.8064371+07:00 0HM12SJP9G1S7:0000000B [INF] AuthenticationScheme: "Identity.External" signed out. (d3f50c8d)
+2020-07-08T09:17:11.8130020+07:00 0HM12SJP9G1S7:0000000B [INF] AuthenticationScheme: "Identity.TwoFactorUserId" signed out. (d3f50c8d)
+2020-07-08T09:17:11.8180488+07:00 0HM12SJP9G1S7:0000000B [INF] Executing RedirectResult, redirecting to "/Admin/Login/Index". (d98d540e)
+2020-07-08T09:17:11.8242838+07:00 0HM12SJP9G1S7:0000000B [INF] Executed action "KarmaCoreApp.Areas.Admin.Controllers.AccountController.Logout (KarmaCoreApp)" in 26.3921ms (afa2e885)
+2020-07-08T09:17:11.8312673+07:00 0HM12SJP9G1S7:0000000B [INF] Request finished in 46.3505ms 302  (791a596a)
+2020-07-08T09:17:11.8396143+07:00 0HM12SJP9G1S7:0000000C [INF] Request starting HTTP/1.1 GET http://localhost:55321/Admin/Login/Index   (ca22a1cb)
+2020-07-08T09:17:11.8482675+07:00 0HM12SJP9G1S7:0000000C [INF] Executing action method "KarmaCoreApp.Areas.Admin.Controllers.LoginController.Index (KarmaCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2020-07-08T09:17:11.8529368+07:00 0HM12SJP9G1S7:0000000C [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2020-07-08T09:17:11.8636253+07:00 0HM12SJP9G1S7:0000000C [INF] Executed action "KarmaCoreApp.Areas.Admin.Controllers.LoginController.Index (KarmaCoreApp)" in 16.7772ms (afa2e885)
+2020-07-08T09:17:11.8731077+07:00 0HM12SJP9G1S7:0000000C [INF] Request finished in 31.741ms 200 text/html; charset=utf-8 (791a596a)
+2020-07-08T09:17:12.9997648+07:00 0HM12SJP9G1S7:0000000D [INF] Request starting HTTP/1.1 POST http://localhost:55321/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 35 (ca22a1cb)
+2020-07-08T09:17:13.0108820+07:00 0HM12SJP9G1S7:0000000D [INF] Executing action method "KarmaCoreApp.Areas.Admin.Controllers.LoginController.Authen (KarmaCoreApp)" with arguments (["KarmaCoreApp.Models.AccountViewModels.LoginViewModel"]) - ModelState is Valid (ba7f4ac2)
+2020-07-08T09:17:13.0171065+07:00 0HM12SJP9G1S7:0000000D [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=KarmaCoreApp.Data.EF " (9958f5bb)
+2020-07-08T09:17:13.0273285+07:00 0HM12SJP9G1S7:0000000D [INF] Executed DbCommand ("4"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[Birthday], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2020-07-08T09:17:13.0476478+07:00 0HM12SJP9G1S7:0000000D [INF] Executed DbCommand ("3"ms) [Parameters=["@__user_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2020-07-08T09:17:13.0591931+07:00 0HM12SJP9G1S7:0000000D [INF] Executed DbCommand ("3"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2020-07-08T09:17:13.0653217+07:00 0HM12SJP9G1S7:0000000D [INF] Executed DbCommand ("1"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2020-07-08T09:17:13.0743754+07:00 0HM12SJP9G1S7:0000000D [INF] Executed DbCommand ("1"ms) [Parameters=["@__role_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2020-07-08T09:17:13.0798591+07:00 0HM12SJP9G1S7:0000000D [INF] Executed DbCommand ("1"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2020-07-08T09:17:13.0840994+07:00 0HM12SJP9G1S7:0000000D [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2020-07-08T09:17:13.0893854+07:00 0HM12SJP9G1S7:0000000D [INF] User logged in. (fdce0db4)
+2020-07-08T09:17:13.0968972+07:00 0HM12SJP9G1S7:0000000D [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2020-07-08T09:17:13.1018368+07:00 0HM12SJP9G1S7:0000000D [INF] Executed action "KarmaCoreApp.Areas.Admin.Controllers.LoginController.Authen (KarmaCoreApp)" in 96.3742ms (afa2e885)
+2020-07-08T09:17:13.1088630+07:00 0HM12SJP9G1S7:0000000D [INF] Request finished in 108.6478ms 200 application/json; charset=utf-8 (791a596a)
+2020-07-08T09:17:13.1187314+07:00 0HM12SJP9G1S7:0000000E [INF] Request starting HTTP/1.1 GET http://localhost:55321/Admin/Home/Index   (ca22a1cb)
+2020-07-08T09:17:13.1265456+07:00 0HM12SJP9G1S7:0000000E [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-07-08T09:17:13.1317274+07:00 0HM12SJP9G1S7:0000000E [INF] Executing action method "KarmaCoreApp.Areas.Admin.Controllers.HomeController.Index (KarmaCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2020-07-08T09:17:13.1358939+07:00 0HM12SJP9G1S7:0000000E [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2020-07-08T09:17:13.1430597+07:00 0HM12SJP9G1S7:0000000E [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=KarmaCoreApp.Data.EF " (9958f5bb)
+2020-07-08T09:17:13.1506206+07:00 0HM12SJP9G1S7:0000000E [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[URL], [dto].[ParentId], [dto].[IconCss], [dto].[Status], [dto].[SortOrder]
+FROM [Functions] AS [dto]" (0723d8ff)
+2020-07-08T09:17:13.1608367+07:00 0HM12SJP9G1S7:0000000E [INF] Executed action "KarmaCoreApp.Areas.Admin.Controllers.HomeController.Index (KarmaCoreApp)" in 28.6062ms (afa2e885)
+2020-07-08T09:17:13.1817854+07:00 0HM12SJP9G1S7:0000000E [INF] Request finished in 64.054ms 200 text/html; charset=utf-8 (791a596a)
+2020-07-08T09:17:13.2069842+07:00 0HM12SJP9G1S7:0000000F [INF] Request starting HTTP/1.1 GET http://localhost:55321/Admin/Home/.admin-side/img/theme/team-4.jpg   (ca22a1cb)
+2020-07-08T09:17:13.2499136+07:00 0HM12SJP9G1S7:0000000F [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-07-08T09:17:13.2640063+07:00 0HM12SJP9G1S8:00000008 [INF] Request starting HTTP/1.1 GET http://localhost:55321/Admin/Home/.~/admin-side/img/theme/team-1.jpg   (ca22a1cb)
+2020-07-08T09:17:13.2651448+07:00 0HM12SJP9G1S7:0000000F [INF] Request finished in 50.0609ms 404  (791a596a)
+2020-07-08T09:17:13.2753323+07:00 0HM12SJP9G1S8:00000008 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-07-08T09:17:13.2812703+07:00 0HM12SJP9G1S8:00000008 [INF] Request finished in 38.3868ms 404  (791a596a)
+2020-07-08T09:17:20.7633159+07:00 0HM12SJP9G1S8:00000009 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/bootstrap/dist/js/bootstrap.bundle.min.js.map   (ca22a1cb)
+2020-07-08T09:17:20.7649904+07:00 0HM12SJP9G1S7:00000010 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/jquery-scroll-lock/dist/jquery-scrollLock.min.js.map   (ca22a1cb)
+2020-07-08T09:17:20.7874802+07:00 0HM12SJP9G1S8:00000009 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-07-08T09:17:20.7951723+07:00 0HM12SJP9G1S7:00000010 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-07-08T09:17:20.8000121+07:00 0HM12SJP9G1S8:00000009 [INF] Request finished in 40.6189ms 404  (791a596a)
+2020-07-08T09:17:20.8085652+07:00 0HM12SJP9G1S7:00000010 [INF] Request finished in 44.0246ms 404  (791a596a)
+2020-07-08T09:17:20.8110752+07:00 0HM12SJP9G1S9:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/bootstrap/dist/css/bootstrap.min.css.map   (ca22a1cb)
+2020-07-08T09:17:20.8181539+07:00 0HM12SJP9G1S9:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-07-08T09:17:20.8266433+07:00 0HM12SJP9G1S9:00000001 [INF] Request finished in 42.9343ms 404  (791a596a)
