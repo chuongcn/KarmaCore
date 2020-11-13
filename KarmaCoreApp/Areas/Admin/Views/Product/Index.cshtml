@@ -12,83 +12,101 @@
     <div class="col">
         <div class="card">
             <!-- Card header -->
-            <div class="card-header">
+            <div class="card-header" style="padding:1.5rem">
                 <div class="row">
                     <div class="col-sm-12">
                         <h2 class="mb-0">Product - <small class="text-muted">List products</small></h2>
                     </div>
                 </div>
             </div>
-
-            <!-- Light table -->
-            <div class="table-responsive py-4">
-                <div id="datatable-basic_wrapper" class="dataTables_wrapper dt-bootstrap4">
-                    <!--Search-->
-                    <div class="row">
-                        <div class="col-sm-12 col-md-6">
-                            <div id="datatable-basic_filter" class="dataTables_filter">
-                                <label>
-                                    Search:<input type="search" class="form-control form-control-sm" id="txtKeyword" placeholder="" aria-controls="datatable-basic">
-                                </label>
-                            </div>
-                        </div>
-                        <div class="col-sm-12 col-md-6">
-                            <a href="#" class="btn btn-sm btn-primary btn-round btn-icon" data-toggle="tooltip" data-original-title="Create product">
-                                <span class="btn-inner--icon"><i class="fas fa-user-edit"></i></span>
-                                <span class="btn-inner--text">Create</span>
-                            </a>
-                        </div>
-                    </div>
-                    <!--End Search-->
-
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <table class="table table-flush dataTable">
-                                <thead class="thead-light">
-                                    <tr>
-                                        <th>Name</th>
-                                        <th>Category</th>
-                                        <th>Price</th>
-                                        <th>Image</th>
-                                        <th>Created Date</th>
-                                        <th>Status</th>
-                                        <th>#</th>
-                                    </tr>
-                                </thead>
-                                <tbody id="tbl-content"></tbody>
-                            </table>
-                        </div>
-                    </div>
-
-                    <!--Pagination-->
-                    <div class="row">
-                        <div class="col-sm-12 col-md-5">
-                            <div class="dataTables_length" id="datatable-basic_length" role="status" aria-live="polite">
-                                <select id="ddlShowPage" class="form-control form-control-sm">
-                                    <option value="10" selected="selected">10</option>
-                                    <option value="20">20</option>
-                                    <option value="30">30</option>
-                                    <option value="50">50</option>
-                                </select>
-                                <span class="item-per-page">
-                                    bản ghi/trang.
-                                </span>
-                                Tổng số bản ghi: <strong id="lblTotalRecords"></strong>
-                            </div>
-                        </div>
-                        <div class="col-sm-12 col-md-7">
-                            <div class="dataTables_paginate paging_simple_numbers" id="datatable-basic_paginate">
-                                <ul id="paginationUL"></ul>
-                            </div>
-                        </div>
-                    </div>
-                    <!--End Pagination-->
-                </div>
-            </div>
-            <!-- End Light table -->
         </div>
     </div>
 </div>
+<!-- Light table -->
+<div class="row">
+    <div class="col">
+        <div class="card">
+            <div class="card-body">
+                <div class="table-responsive py-4">
+                    <div id="datatable-basic_wrapper" class="dataTables_wrapper dt-bootstrap4">
+                        <!--Search-->
+                        <div class="row">
+                            <div class="col">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <label class="form-control-label">Search</label>
+                                        <div class="form-group">
+                                            <div class="input-group input-group-alternative" id="">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text"><i class="ni ni-zoom-split-in"></i></span>
+                                                </div>
+                                                <input type="text" class="form-control form-control-sm" id="txtKeyword" placeholder="Search">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label class="form-control-label">Select category</label>
+                                            <select class="form-control form-control-sm" id="ddlCategorySearch">
+                                                <option>-- Select category --</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--End Search-->
+
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <table class="table table-flush dataTable">
+                                    <thead class="thead-light">
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Category</th>
+                                            <th>Price</th>
+                                            <th>Image</th>
+                                            <th>Created Date</th>
+                                            <th>Status</th>
+                                            <th>#</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="tbl-content"></tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <!--Pagination-->
+                        <div class="row">
+                            <div class="col-sm-12 col-md-5">
+                                <div class="dataTables_length" id="datatable-basic_length" role="status" aria-live="polite">
+                                    <select id="ddlShowPage" class="form-control form-control-sm">
+                                        <option value="10" selected="selected">10</option>
+                                        <option value="20">20</option>
+                                        <option value="30">30</option>
+                                        <option value="50">50</option>
+                                    </select>
+                                    <span class="item-per-page">
+                                        bản ghi/trang.
+                                    </span>
+                                    Tổng số bản ghi: <strong id="lblTotalRecords"></strong>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-7">
+                                <div class="dataTables_paginate paging_simple_numbers" id="datatable-basic_paginate">
+                                    <ul id="paginationUL"></ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!--End Pagination-->
+                    </div>
+                </div>
+                <!-- End Light table -->
+            </div>
+        </div>
+    </div>
+</div>
+
 
 <script id="table-template" type="x-tmpl-mustache">
     <tr>

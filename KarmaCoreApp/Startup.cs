@@ -6,6 +6,7 @@ using KarmaCoreApp.Data.EF.Repositories;
 using KarmaCoreApp.Data.Entities;
 using KarmaCoreApp.Data.IRepositories;
 using KarmaCoreApp.Helpers;
+using KarmaCoreApp.Infrastructure.Interfaces;
 using KarmaCoreApp.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -73,6 +74,10 @@ namespace KarmaCoreApp
             services.AddScoped<IUserClaimsPrincipalFactory<AppUser>, CustomClaimsPrincipalFactory>();
 
             services.AddMvc().AddJsonOptions(options => options.SerializerSettings.ContractResolver = new DefaultContractResolver());
+
+            services.AddTransient(typeof(IUnitOfWork), typeof(EFUnitOfWork));
+            services.AddTransient(typeof(IRepository<,>), typeof(EFRepository<,>));
+
 
             // Repositories
             services.AddTransient<IProductCategoryRepository, ProductCategoryRepository>();
