@@ -47,11 +47,11 @@ namespace KarmaCoreApp.Areas.Admin.Controllers
                 if (result.IsLockedOut)
                 {
                     _logger.LogWarning("User account locked out.");
-                    return new ObjectResult(new GenericResult(false, "Tài khoản đã bị khoá"));
+                    return new ObjectResult(new GenericResult(false, "User account locked out"));
                 }
                 else
                 {
-                    return new ObjectResult(new GenericResult(false, "Đăng nhập sai"));
+                    return new ObjectResult(new GenericResult(false, "Login failed"));
                 }
             }
 

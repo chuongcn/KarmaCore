@@ -3,7 +3,11 @@
     width: 100%;       
     font-style:italic;
 }
+.badge-karmar{
+    font-size:80%!important;
+    font-weight:800!important;
+}
 
-/*.invalid-feedback {
+    /*.invalid-feedback {
     font-size: 100%;
 }*/

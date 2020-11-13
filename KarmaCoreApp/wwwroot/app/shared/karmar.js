@@ -59,9 +59,9 @@
     },
     getStatus: function (status) {
         if (status == 1)
-            return '<span class="badge badge-success">Kích hoạt</span>';
+            return '<span class="badge badge-karmar badge-success">Active</span>';
         else
-            return '<span class="badge badge-danger">Khoá</span>';
+            return '<span class="badge badge-karmar badge-danger">Block</span>';
     },
     formatNumber: function (number, precision) {
         if (!isFinite(number)) {

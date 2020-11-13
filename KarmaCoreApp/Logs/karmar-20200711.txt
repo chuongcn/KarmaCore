@@ -1,0 +1,247 @@
+2020-07-11T13:48:32.2812741+07:00  [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=KarmaCoreApp.Data.EF " (9958f5bb)
+2020-07-11T13:48:33.0434129+07:00  [INF] Executed DbCommand ("51"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-07-11T13:48:33.1129747+07:00  [INF] Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-07-11T13:48:33.1358621+07:00  [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Functions] AS [f]" (0723d8ff)
+2020-07-11T13:48:33.2191340+07:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2020-07-11T13:48:33.2269810+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Colors] AS [c]" (0723d8ff)
+2020-07-11T13:48:33.2374258+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Sizes] AS [s]" (0723d8ff)
+2020-07-11T13:48:33.2492675+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [ProductCategories] AS [p]" (0723d8ff)
+2020-07-11T13:49:47.9395971+07:00  [INF] Executed DbCommand ("8"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [s].[Id], [s].[Name], [s].[Status], [s].[Value1], [s].[Value2], [s].[Value3], [s].[Value4], [s].[Value5]
+FROM [SystemConfigs] AS [s]" (0723d8ff)
+2020-07-11T13:50:19.3657295+07:00  [INF] Executed DbCommand ("128"ms) [Parameters=["@p0='?', @p1='?', @p2='?' (Size = 4000), @p3='?', @p4='?', @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?', @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (Size = 4000), @p12='?', @p13='?', @p14='?', @p15='?', @p16='?' (Size = 4000), @p17='?', @p18='?', @p19='?' (Size = 4000), @p20='?' (Size = 4000), @p21='?', @p22='?' (Size = 4000), @p23='?' (Size = 4000), @p24='?' (Size = 4000), @p25='?' (Size = 4000), @p26='?', @p27='?', @p28='?', @p29='?', @p30='?' (Size = 4000), @p31='?', @p32='?', @p33='?' (Size = 4000), @p34='?' (Size = 4000), @p35='?', @p36='?' (Size = 4000), @p37='?' (Size = 4000), @p38='?' (Size = 4000), @p39='?' (Size = 4000), @p40='?', @p41='?', @p42='?', @p43='?', @p44='?' (Size = 4000), @p45='?', @p46='?', @p47='?' (Size = 4000), @p48='?' (Size = 4000), @p49='?', @p50='?' (Size = 4000), @p51='?' (Size = 4000), @p52='?' (Size = 4000), @p53='?' (Size = 4000), @p54='?', @p55='?', @p56='?' (Size = 4000), @p57='?' (Size = 250), @p58='?', @p59='?' (Size = 250), @p60='?' (Size = 250), @p61='?' (Size = 250), @p62='?', @p63='?' (Size = 250), @p64='?' (Size = 4000), @p65='?' (Size = 250), @p66='?', @p67='?' (Size = 250), @p68='?' (Size = 250), @p69='?' (Size = 250), @p70='?', @p71='?' (Size = 250), @p72='?' (Size = 4000), @p73='?' (Size = 250), @p74='?', @p75='?' (Size = 250), @p76='?' (Size = 250), @p77='?' (Size = 250), @p78='?', @p79='?' (Size = 250), @p80='?' (Size = 4000), @p81='?' (Size = 250), @p82='?', @p83='?' (Size = 250), @p84='?' (Size = 250), @p85='?' (Size = 250), @p86='?', @p87='?' (Size = 250), @p88='?' (Size = 4000), @p89='?' (Size = 250), @p90='?', @p91='?' (Size = 250), @p92='?' (Size = 250), @p93='?' (Size = 250), @p94='?', @p95='?' (Size = 250), @p96='?' (Size = 4000), @p97='?' (Size = 250), @p98='?', @p99='?' (Size = 250), @p100='?' (Size = 250), @p101='?' (Size = 250), @p102='?', @p103='?' (Size = 250), @p104='?' (Size = 4000), @p105='?' (Size = 250), @p106='?', @p107='?' (Size = 250), @p108='?' (Size = 250), @p109='?' (Size = 250), @p110='?', @p111='?' (Size = 250), @p112='?' (Size = 4000), @p113='?' (Size = 250), @p114='?', @p115='?' (Size = 250), @p116='?' (Size = 250), @p117='?' (Size = 250), @p118='?', @p119='?' (Size = 250), @p120='?' (Size = 4000), @p121='?' (Size = 250), @p122='?', @p123='?' (Size = 250), @p124='?' (Size = 250), @p125='?' (Size = 250), @p126='?', @p127='?' (Size = 250), @p128='?' (Size = 4000), @p129='?' (Size = 250), @p130='?', @p131='?' (Size = 250), @p132='?' (Size = 250), @p133='?' (Size = 250), @p134='?', @p135='?' (Size = 250), @p136='?' (Size = 4000), @p137='?' (Size = 250), @p138='?', @p139='?' (Size = 250), @p140='?' (Size = 250), @p141='?' (Size = 250), @p142='?', @p143='?' (Size = 250), @p144='?' (Size = 4000), @p145='?' (Size = 250), @p146='?', @p147='?' (Size = 250), @p148='?' (Size = 250), @p149='?' (Size = 250), @p150='?', @p151='?' (Size = 250), @p152='?' (Size = 4000), @p153='?' (Size = 250), @p154='?', @p155='?' (Size = 250), @p156='?' (Size = 250), @p157='?' (Size = 250), @p158='?', @p159='?' (Size = 250), @p160='?' (Size = 4000), @p161='?' (Size = 250), @p162='?', @p163='?' (Size = 250), @p164='?' (Size = 250), @p165='?' (Size = 250), @p166='?', @p167='?' (Size = 250), @p168='?' (Size = 255), @p169='?' (Size = 128), @p170='?', @p171='?' (Size = 4000), @p172='?', @p173='?', @p174='?', @p175='?'"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+DECLARE @inserted0 TABLE ([Id] int, [_Position] [int]);
+MERGE [ProductCategories] USING (
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, 0),
+(@p14, @p15, @p16, @p17, @p18, @p19, @p20, @p21, @p22, @p23, @p24, @p25, @p26, @p27, 1),
+(@p28, @p29, @p30, @p31, @p32, @p33, @p34, @p35, @p36, @p37, @p38, @p39, @p40, @p41, 2),
+(@p42, @p43, @p44, @p45, @p46, @p47, @p48, @p49, @p50, @p51, @p52, @p53, @p54, @p55, 3)) AS i ([DateCreated], [DateModified], [Description], [HomeFlag], [HomeOrder], [Image], [Name], [ParentId], [SeoAlias], [SeoDescription], [SeoKeywords], [SeoPageTitle], [SortOrder], [Status], _Position) ON 1=0
+WHEN NOT MATCHED THEN
+INSERT ([DateCreated], [DateModified], [Description], [HomeFlag], [HomeOrder], [Image], [Name], [ParentId], [SeoAlias], [SeoDescription], [SeoKeywords], [SeoPageTitle], [SortOrder], [Status])
+VALUES (i.[DateCreated], i.[DateModified], i.[Description], i.[HomeFlag], i.[HomeOrder], i.[Image], i.[Name], i.[ParentId], i.[SeoAlias], i.[SeoDescription], i.[SeoKeywords], i.[SeoPageTitle], i.[SortOrder], i.[Status])
+OUTPUT INSERTED.[Id], i._Position
+INTO @inserted0;
+
+SELECT [t].[Id] FROM [ProductCategories] t
+INNER JOIN @inserted0 i ON ([t].[Id] = [i].[Id])
+ORDER BY [i].[_Position];
+
+DECLARE @inserted4 TABLE ([Id] int, [_Position] [int]);
+MERGE [Slides] USING (
+VALUES (@p56, @p57, @p58, @p59, @p60, @p61, @p62, @p63, 0),
+(@p64, @p65, @p66, @p67, @p68, @p69, @p70, @p71, 1),
+(@p72, @p73, @p74, @p75, @p76, @p77, @p78, @p79, 2),
+(@p80, @p81, @p82, @p83, @p84, @p85, @p86, @p87, 3),
+(@p88, @p89, @p90, @p91, @p92, @p93, @p94, @p95, 4),
+(@p96, @p97, @p98, @p99, @p100, @p101, @p102, @p103, 5),
+(@p104, @p105, @p106, @p107, @p108, @p109, @p110, @p111, 6),
+(@p112, @p113, @p114, @p115, @p116, @p117, @p118, @p119, 7),
+(@p120, @p121, @p122, @p123, @p124, @p125, @p126, @p127, 8),
+(@p128, @p129, @p130, @p131, @p132, @p133, @p134, @p135, 9),
+(@p136, @p137, @p138, @p139, @p140, @p141, @p142, @p143, 10),
+(@p144, @p145, @p146, @p147, @p148, @p149, @p150, @p151, 11),
+(@p152, @p153, @p154, @p155, @p156, @p157, @p158, @p159, 12),
+(@p160, @p161, @p162, @p163, @p164, @p165, @p166, @p167, 13)) AS i ([Content], [Description], [DisplayOrder], [GroupAlias], [Image], [Name], [Status], [Url], _Position) ON 1=0
+WHEN NOT MATCHED THEN
+INSERT ([Content], [Description], [DisplayOrder], [GroupAlias], [Image], [Name], [Status], [Url])
+VALUES (i.[Content], i.[Description], i.[DisplayOrder], i.[GroupAlias], i.[Image], i.[Name], i.[Status], i.[Url])
+OUTPUT INSERTED.[Id], i._Position
+INTO @inserted4;
+
+SELECT [t].[Id] FROM [Slides] t
+INNER JOIN @inserted4 i ON ([t].[Id] = [i].[Id])
+ORDER BY [i].[_Position];
+
+INSERT INTO [SystemConfigs] ([Id], [Name], [Status], [Value1], [Value2], [Value3], [Value4], [Value5])
+VALUES (@p168, @p169, @p170, @p171, @p172, @p173, @p174, @p175);" (0723d8ff)
+2020-07-11T13:50:19.5713375+07:00  [ERR] An exception occurred in the database while saving changes for context type '"KarmaCoreApp.Data.EF.AppDbContext"'."
+""Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.SqlClient.SqlException: Cannot insert the value NULL into column 'Description', table 'KarmaCoreApp_MASTERDB.dbo.Slides'; column does not allow nulls. UPDATE fails.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at System.Data.SqlClient.SqlDataReader.TryHasMoreResults(Boolean& moreResults)
+   at System.Data.SqlClient.SqlDataReader.TryNextResult(Boolean& more)
+   at System.Data.SqlClient.SqlDataReader.<>c__DisplayClass183_0.<NextResultAsync>b__1(Task t)
+   at System.Data.SqlClient.SqlDataReader.InvokeRetryable[T](Func`2 moreFunc, TaskCompletionSource`1 source, IDisposable objectToDispose)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(Tuple`2 parameters, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IReadOnlyList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)" (170f029e)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.SqlClient.SqlException: Cannot insert the value NULL into column 'Description', table 'KarmaCoreApp_MASTERDB.dbo.Slides'; column does not allow nulls. UPDATE fails.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at System.Data.SqlClient.SqlDataReader.TryHasMoreResults(Boolean& moreResults)
+   at System.Data.SqlClient.SqlDataReader.TryNextResult(Boolean& more)
+   at System.Data.SqlClient.SqlDataReader.<>c__DisplayClass183_0.<NextResultAsync>b__1(Task t)
+   at System.Data.SqlClient.SqlDataReader.InvokeRetryable[T](Func`2 moreFunc, TaskCompletionSource`1 source, IDisposable objectToDispose)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(Tuple`2 parameters, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IReadOnlyList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2020-07-11T13:50:19.7026785+07:00  [ERR] An error occurred while seeding the database (90f98c9f)
+System.AggregateException: One or more errors occurred. (Object reference not set to an instance of an object.) ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.System.IObserver<System.Collections.Generic.KeyValuePair<System.String,System.Object>>.OnNext(KeyValuePair`2 keyValuePair)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.EntityFrameworkCore.Internal.CoreLoggerExtensions.SaveChangesFailed(IDiagnosticsLogger`1 diagnostics, DbContext context, Exception exception)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at KarmaCoreApp.Data.EF.DbInitializer.Seed() in F:\SourceCodeNet\KarmaCore\KarmaCoreApp.Data.EF\DbInitializer.cs:line 206
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at KarmaCoreApp.Program.Main(String[] args) in F:\SourceCodeNet\KarmaCore\KarmaCoreApp\Program.cs:line 22
+---> (Inner Exception #0) System.NullReferenceException: Object reference not set to an instance of an object.
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.System.IObserver<System.Collections.Generic.KeyValuePair<System.String,System.Object>>.OnNext(KeyValuePair`2 keyValuePair)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.EntityFrameworkCore.Internal.CoreLoggerExtensions.SaveChangesFailed(IDiagnosticsLogger`1 diagnostics, DbContext context, Exception exception)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at KarmaCoreApp.Data.EF.DbInitializer.Seed() in F:\SourceCodeNet\KarmaCore\KarmaCoreApp.Data.EF\DbInitializer.cs:line 206<---
+
+2020-07-11T13:50:20.6873753+07:00 0HM15CQMOB4RC:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:55321/   (ca22a1cb)
+2020-07-11T13:50:21.2459872+07:00 0HM15CQMOB4RC:00000001 [INF] Authorization failed for user: null. (a4ab1676)
+2020-07-11T13:50:21.2515417+07:00 0HM15CQMOB4RC:00000001 [INF] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"'. (8b6446cb)
+2020-07-11T13:50:21.2673041+07:00 0HM15CQMOB4RC:00000001 [INF] Executing ChallengeResult with authentication schemes ([]). (f3dca807)
+2020-07-11T13:50:21.2970617+07:00 0HM15CQMOB4RC:00000001 [INF] AuthenticationScheme: "Identity.Application" was challenged. (d45f1f38)
+2020-07-11T13:50:21.3042448+07:00 0HM15CQMOB4RC:00000001 [INF] Executed action "KarmaCoreApp.Controllers.HomeController.Index (KarmaCoreApp)" in 100.7077ms (afa2e885)
+2020-07-11T13:50:21.3677804+07:00 0HM15CQMOB4RC:00000001 [INF] Request finished in 756.4392ms 302  (791a596a)
+2020-07-11T13:50:21.3974387+07:00 0HM15CQMOB4RC:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:55321/Account/Login?ReturnUrl=%2F   (ca22a1cb)
+2020-07-11T13:50:21.5897190+07:00 0HM15CQMOB4RC:00000002 [INF] Executing action method "KarmaCoreApp.Controllers.AccountController.Login (KarmaCoreApp)" with arguments (["/"]) - ModelState is Valid (ba7f4ac2)
+2020-07-11T13:50:21.6367913+07:00 0HM15CQMOB4RC:00000002 [INF] AuthenticationScheme: "Identity.External" signed out. (d3f50c8d)
+2020-07-11T13:50:24.8518165+07:00 0HM15CQMOB4RD:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin/login   (ca22a1cb)
+2020-07-11T13:50:24.8734852+07:00 0HM15CQMOB4RD:00000001 [INF] Executing action method "KarmaCoreApp.Areas.Admin.Controllers.LoginController.Index (KarmaCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2020-07-11T13:50:27.4524152+07:00 0HM15CQMOB4RD:00000001 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2020-07-11T13:50:27.4543405+07:00 0HM15CQMOB4RC:00000002 [INF] Executing ViewResult, running view at path "/Views/Account/Login.cshtml". (9707eebe)
+2020-07-11T13:50:27.9931331+07:00 0HM15CQMOB4RD:00000001 [INF] Executed action "KarmaCoreApp.Areas.Admin.Controllers.LoginController.Index (KarmaCoreApp)" in 3124.1074ms (afa2e885)
+2020-07-11T13:50:28.2177554+07:00 0HM15CQMOB4RD:00000001 [INF] Request finished in 3261.4648ms 200 text/html; charset=utf-8 (791a596a)
+2020-07-11T13:50:28.2281944+07:00 0HM15CQMOB4RG:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:55321/app/shared/alert.js   (ca22a1cb)
+2020-07-11T13:50:28.2305320+07:00 0HM15CQMOB4RE:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/css/site.css   (ca22a1cb)
+2020-07-11T13:50:28.2327239+07:00 0HM15CQMOB4RH:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:55321/app/controllers/login/index.js   (ca22a1cb)
+2020-07-11T13:50:28.2338569+07:00 0HM15CQMOB4RF:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:55321/app/shared/messages.js   (ca22a1cb)
+2020-07-11T13:50:28.2725887+07:00 0HM15CQMOB4RH:00000001 [INF] Sending file. Request path: '"/app/controllers/login/index.js"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\app\controllers\login\index.js"' (27b0a520)
+2020-07-11T13:50:28.2782560+07:00 0HM15CQMOB4RE:00000001 [INF] Sending file. Request path: '"/admin-side/css/site.css"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\css\site.css"' (27b0a520)
+2020-07-11T13:50:28.2803777+07:00 0HM15CQMOB4RF:00000001 [INF] Sending file. Request path: '"/app/shared/messages.js"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\app\shared\messages.js"' (27b0a520)
+2020-07-11T13:50:28.2814776+07:00 0HM15CQMOB4RG:00000001 [INF] Sending file. Request path: '"/app/shared/alert.js"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\app\shared\alert.js"' (27b0a520)
+2020-07-11T13:50:28.3514621+07:00 0HM15CQMOB4RE:00000001 [INF] Request finished in 148.1707ms 200 text/css (791a596a)
+2020-07-11T13:50:28.3559099+07:00 0HM15CQMOB4RH:00000001 [INF] Request finished in 115.8134ms 200 application/javascript (791a596a)
+2020-07-11T13:50:28.3658295+07:00 0HM15CQMOB4RF:00000001 [INF] Request finished in 133.0781ms 200 application/javascript (791a596a)
+2020-07-11T13:50:28.3753426+07:00 0HM15CQMOB4RI:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:55321/app/shared/karmar.js   (ca22a1cb)
+2020-07-11T13:50:28.3856331+07:00 0HM15CQMOB4RG:00000001 [INF] Request finished in 145.3662ms 200 application/javascript (791a596a)
+2020-07-11T13:50:28.3910012+07:00 0HM15CQMOB4RI:00000001 [INF] Sending file. Request path: '"/app/shared/karmar.js"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\app\shared\karmar.js"' (27b0a520)
+2020-07-11T13:50:28.4215943+07:00 0HM15CQMOB4RI:00000001 [INF] Request finished in 52.6714ms 200 application/javascript (791a596a)
+2020-07-11T13:50:28.8209305+07:00 0HM15CQMOB4RC:00000002 [INF] Executed action "KarmaCoreApp.Controllers.AccountController.Login (KarmaCoreApp)" in 7355.2123ms (afa2e885)
+2020-07-11T13:50:28.8471884+07:00 0HM15CQMOB4RC:00000002 [INF] Request finished in 7443.315ms 200 text/html; charset=utf-8 (791a596a)
+2020-07-11T13:50:29.6527865+07:00 0HM15CQMOB4RI:00000002 [INF] Request starting HTTP/1.1 POST http://localhost:55321/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 35 (ca22a1cb)
+2020-07-11T13:50:29.8011582+07:00 0HM15CQMOB4RI:00000002 [INF] Executing action method "KarmaCoreApp.Areas.Admin.Controllers.LoginController.Authen (KarmaCoreApp)" with arguments (["KarmaCoreApp.Models.AccountViewModels.LoginViewModel"]) - ModelState is Valid (ba7f4ac2)
+2020-07-11T13:50:29.8598090+07:00 0HM15CQMOB4RI:00000002 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=KarmaCoreApp.Data.EF " (9958f5bb)
+2020-07-11T13:50:29.9324349+07:00 0HM15CQMOB4RI:00000002 [INF] Executed DbCommand ("4"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[Birthday], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2020-07-11T13:50:30.2254433+07:00 0HM15CQMOB4RI:00000002 [INF] Executed DbCommand ("1"ms) [Parameters=["@__user_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2020-07-11T13:50:30.3110832+07:00 0HM15CQMOB4RI:00000002 [INF] Executed DbCommand ("7"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2020-07-11T13:50:30.3307076+07:00 0HM15CQMOB4RI:00000002 [INF] Executed DbCommand ("1"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2020-07-11T13:50:30.3600636+07:00 0HM15CQMOB4RI:00000002 [INF] Executed DbCommand ("1"ms) [Parameters=["@__role_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2020-07-11T13:50:30.3790379+07:00 0HM15CQMOB4RI:00000002 [INF] Executed DbCommand ("1"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2020-07-11T13:50:30.4140424+07:00 0HM15CQMOB4RI:00000002 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2020-07-11T13:50:30.4224546+07:00 0HM15CQMOB4RI:00000002 [INF] User logged in. (fdce0db4)
+2020-07-11T13:50:30.4513151+07:00 0HM15CQMOB4RI:00000002 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2020-07-11T13:50:30.5954957+07:00 0HM15CQMOB4RI:00000002 [INF] Executed action "KarmaCoreApp.Areas.Admin.Controllers.LoginController.Authen (KarmaCoreApp)" in 917.9451ms (afa2e885)
+2020-07-11T13:50:30.6145002+07:00 0HM15CQMOB4RI:00000002 [INF] Request finished in 957.1789ms 200 application/json; charset=utf-8 (791a596a)
+2020-07-11T13:50:30.6245098+07:00 0HM15CQMOB4RI:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:55321/Admin/Home/Index   (ca22a1cb)
+2020-07-11T13:50:30.6477806+07:00 0HM15CQMOB4RI:00000003 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-07-11T13:50:30.6566475+07:00 0HM15CQMOB4RI:00000003 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2020-07-11T13:50:30.6636108+07:00 0HM15CQMOB4RI:00000003 [INF] Executing action method "KarmaCoreApp.Areas.Admin.Controllers.HomeController.Index (KarmaCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2020-07-11T13:50:31.0123814+07:00 0HM15CQMOB4RI:00000003 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2020-07-11T13:50:31.4171844+07:00 0HM15CQMOB4RI:00000003 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=KarmaCoreApp.Data.EF " (9958f5bb)
+2020-07-11T13:50:31.4778994+07:00 0HM15CQMOB4RI:00000003 [INF] Executed DbCommand ("6"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[URL], [dto].[ParentId], [dto].[IconCss], [dto].[Status], [dto].[SortOrder]
+FROM [Functions] AS [dto]" (0723d8ff)
+2020-07-11T13:50:31.8905523+07:00 0HM15CQMOB4RI:00000003 [INF] Executed action "KarmaCoreApp.Areas.Admin.Controllers.HomeController.Index (KarmaCoreApp)" in 1234.3584ms (afa2e885)
+2020-07-11T13:50:31.9430070+07:00 0HM15CQMOB4RI:00000003 [INF] Request finished in 1316.3493ms 200 text/html; charset=utf-8 (791a596a)
+2020-07-11T13:50:31.9608950+07:00 0HM15CQMOB4RI:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:55321/Admin/Home/.~/admin-side/img/theme/team-1.jpg   (ca22a1cb)
+2020-07-11T13:50:31.9691059+07:00 0HM15CQMOB4RI:00000004 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-07-11T13:50:31.9801626+07:00 0HM15CQMOB4RI:00000004 [INF] Request finished in 16.6261ms 404  (791a596a)
+2020-07-11T13:50:32.0613306+07:00 0HM15CQMOB4RI:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:55321/lib/mustache.js/mustache.min.js?v=iaqfO5ue0VbSGcEiQn-OeXxnxAMK2-QgHXIDA5bWtGI   (ca22a1cb)
+2020-07-11T13:50:32.0867288+07:00 0HM15CQMOB4RI:00000005 [INF] Sending file. Request path: '"/lib/mustache.js/mustache.min.js"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\lib\mustache.js\mustache.min.js"' (27b0a520)
+2020-07-11T13:50:32.1220136+07:00 0HM15CQMOB4RI:00000005 [INF] Request finished in 57.631ms 200 application/javascript (791a596a)
+2020-07-11T13:50:35.2565791+07:00 0HM15CQMOB4RI:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin/product/index   (ca22a1cb)
+2020-07-11T13:50:35.2636550+07:00 0HM15CQMOB4RI:00000006 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-07-11T13:50:35.2764021+07:00 0HM15CQMOB4RI:00000006 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2020-07-11T13:50:35.2832758+07:00 0HM15CQMOB4RI:00000006 [INF] Executing action method "KarmaCoreApp.Areas.Admin.Controllers.ProductController.Index (KarmaCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2020-07-11T13:50:35.4751889+07:00 0HM15CQMOB4RI:00000006 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Product/Index.cshtml". (9707eebe)
+2020-07-11T13:50:35.4857329+07:00 0HM15CQMOB4RI:00000006 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=KarmaCoreApp.Data.EF " (9958f5bb)
+2020-07-11T13:50:35.4997320+07:00 0HM15CQMOB4RI:00000006 [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[URL], [dto].[ParentId], [dto].[IconCss], [dto].[Status], [dto].[SortOrder]
+FROM [Functions] AS [dto]" (0723d8ff)
+2020-07-11T13:50:35.5207817+07:00 0HM15CQMOB4RI:00000006 [INF] Executed action "KarmaCoreApp.Areas.Admin.Controllers.ProductController.Index (KarmaCoreApp)" in 250.9792ms (afa2e885)
+2020-07-11T13:50:35.5413404+07:00 0HM15CQMOB4RI:00000006 [INF] Request finished in 283.501ms 200 text/html; charset=utf-8 (791a596a)
+2020-07-11T13:50:35.5677125+07:00 0HM15CQMOB4RI:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:55321/app/controllers/product/index.js   (ca22a1cb)
+2020-07-11T13:50:35.5832141+07:00 0HM15CQMOB4RI:00000007 [INF] Sending file. Request path: '"/app/controllers/product/index.js"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\app\controllers\product\index.js"' (27b0a520)
+2020-07-11T13:50:35.6200676+07:00 0HM15CQMOB4RI:00000007 [INF] Request finished in 51.475ms 200 application/javascript (791a596a)
+2020-07-11T13:50:35.6844038+07:00 0HM15CQMOB4RI:00000008 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin/product/GetAll   (ca22a1cb)
+2020-07-11T13:50:35.6952146+07:00 0HM15CQMOB4RI:00000008 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-07-11T13:50:35.7061342+07:00 0HM15CQMOB4RI:00000008 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2020-07-11T13:50:35.7172734+07:00 0HM15CQMOB4RI:00000008 [INF] Executing action method "KarmaCoreApp.Areas.Admin.Controllers.ProductController.GetAll (KarmaCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2020-07-11T13:50:35.7413693+07:00 0HM15CQMOB4RI:00000008 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=KarmaCoreApp.Data.EF " (9958f5bb)
+2020-07-11T13:50:35.7726907+07:00 0HM15CQMOB4RI:00000008 [WRN] The Include operation for navigation '"[x].ProductCategory"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information. (10efaee6)
+2020-07-11T13:50:35.8062531+07:00 0HM15CQMOB4RI:00000008 [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[CategoryId], [x].[Image], [x].[Price], [x].[PromotionPrice], [x].[OriginalPrice], [x].[Description], [x].[Content], [x].[HomeFlag], [x].[HotFlag], [x].[ViewCount], [x].[Tags], [x].[Unit], [x].[Status], [x].[DateCreated], [x].[DateModified], [x].[SeoPageTitle], [x].[SeoAlias], [x].[SeoKeywords], [x].[SeoDescription]
+FROM [Products] AS [x]" (0723d8ff)
+2020-07-11T13:50:35.8256673+07:00 0HM15CQMOB4RI:00000008 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2020-07-11T13:50:35.8536215+07:00 0HM15CQMOB4RI:00000008 [INF] Executed action "KarmaCoreApp.Areas.Admin.Controllers.ProductController.GetAll (KarmaCoreApp)" in 144.9554ms (afa2e885)
+2020-07-11T13:50:35.8668332+07:00 0HM15CQMOB4RI:00000008 [INF] Request finished in 175.731ms 200 application/json; charset=utf-8 (791a596a)

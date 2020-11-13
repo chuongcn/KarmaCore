@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Start your development with a Dashboard for Bootstrap 4.">
     <meta name="author" content="Creative Tim">
-    <title>CMS - Web Content Management Systems</title>
+    <title>CMS - MrKarmar</title>
     <!-- Favicon -->
     <link rel="icon" href="~/admin-side/img/brand/favicon.png" type="image/png">
     <!-- Fonts -->
@@ -23,9 +23,15 @@
     <link rel="stylesheet" href="~/admin-side/vendor/sweetalert2/dist/sweetalert2.min.css">
 
     <!-- Page plugins -->
+    <link rel="stylesheet" href="~/admin-side/vendor/datatables.net-bs4/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="~/admin-side/vendor/datatables.net-buttons-bs4/css/buttons.bootstrap4.min.css">
+    <link rel="stylesheet" href="~/admin-side/vendor/datatables.net-select-bs4/css/select.bootstrap4.min.css">
+    <link rel="stylesheet" href="~/admin-side/vendor/animate.css/animate.min.css">
     <!-- Argon CSS -->
     <link href="~/admin-side/css/site.css" rel="stylesheet" />
     <link rel="stylesheet" href="~/admin-side/css/argon.css?v=1.1.0" type="text/css">
+
+    @RenderSection("Styles", required: false)
 </head>
 <body>
     <!-- Sidenav -->
@@ -37,20 +43,7 @@
         <nav class="navbar navbar-top navbar-expand navbar-dark bg-primary border-bottom">
             <div class="container-fluid">
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <!-- Search form -->
-                    <form class="navbar-search navbar-search-light form-inline mr-sm-3" id="navbar-search-main">
-                        <div class="form-group mb-0">
-                            <div class="input-group input-group-alternative input-group-merge">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text"><i class="fas fa-search"></i></span>
-                                </div>
-                                <input class="form-control" placeholder="Search" type="text">
-                            </div>
-                        </div>
-                        <button type="button" class="close" data-action="search-close" data-target="#navbar-search-main" aria-label="Close">
-                            <span aria-hidden="true">×</span>
-                        </button>
-                    </form>
+                    <h6 class="h1 text-white d-inline-block mb-0">CMS Web Content Management Systems </h6>
                     <!-- Navbar links -->
                     <ul class="navbar-nav align-items-center ml-md-auto">
                         <li class="nav-item d-xl-none">
@@ -98,82 +91,6 @@
                                             </div>
                                         </div>
                                     </a>
-                                    <a href="#!" class="list-group-item list-group-item-action">
-                                        <div class="row align-items-center">
-                                            <div class="col-auto">
-                                                <!-- Avatar -->
-                                                <img alt="Image placeholder" src="~/admin-side/img/theme/team-2.jpg" class="avatar rounded-circle">
-                                            </div>
-                                            <div class="col ml--2">
-                                                <div class="d-flex justify-content-between align-items-center">
-                                                    <div>
-                                                        <h4 class="mb-0 text-sm">John Snow</h4>
-                                                    </div>
-                                                    <div class="text-right text-muted">
-                                                        <small>3 hrs ago</small>
-                                                    </div>
-                                                </div>
-                                                <p class="text-sm mb-0">A new issue has been reported for Argon.</p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <a href="#!" class="list-group-item list-group-item-action">
-                                        <div class="row align-items-center">
-                                            <div class="col-auto">
-                                                <!-- Avatar -->
-                                                <img alt="Image placeholder" src="~/admin-side/img/theme/team-3.jpg" class="avatar rounded-circle">
-                                            </div>
-                                            <div class="col ml--2">
-                                                <div class="d-flex justify-content-between align-items-center">
-                                                    <div>
-                                                        <h4 class="mb-0 text-sm">John Snow</h4>
-                                                    </div>
-                                                    <div class="text-right text-muted">
-                                                        <small>5 hrs ago</small>
-                                                    </div>
-                                                </div>
-                                                <p class="text-sm mb-0">Your posts have been liked a lot.</p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <a href="#!" class="list-group-item list-group-item-action">
-                                        <div class="row align-items-center">
-                                            <div class="col-auto">
-                                                <!-- Avatar -->
-                                                <img alt="Image placeholder" src=".admin-side/img/theme/team-4.jpg" class="avatar rounded-circle">
-                                            </div>
-                                            <div class="col ml--2">
-                                                <div class="d-flex justify-content-between align-items-center">
-                                                    <div>
-                                                        <h4 class="mb-0 text-sm">John Snow</h4>
-                                                    </div>
-                                                    <div class="text-right text-muted">
-                                                        <small>2 hrs ago</small>
-                                                    </div>
-                                                </div>
-                                                <p class="text-sm mb-0">Let's meet at Starbucks at 11:30. Wdyt?</p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <a href="#!" class="list-group-item list-group-item-action">
-                                        <div class="row align-items-center">
-                                            <div class="col-auto">
-                                                <!-- Avatar -->
-                                                <img alt="Image placeholder" src="~/admin-side/img/theme/team-5.jpg" class="avatar rounded-circle">
-                                            </div>
-                                            <div class="col ml--2">
-                                                <div class="d-flex justify-content-between align-items-center">
-                                                    <div>
-                                                        <h4 class="mb-0 text-sm">John Snow</h4>
-                                                    </div>
-                                                    <div class="text-right text-muted">
-                                                        <small>3 hrs ago</small>
-                                                    </div>
-                                                </div>
-                                                <p class="text-sm mb-0">A new issue has been reported for Argon.</p>
-                                            </div>
-                                        </div>
-                                    </a>
                                 </div>
                                 <!-- View all -->
                                 <a href="#!" class="dropdown-item text-center text-primary font-weight-bold py-3">View all</a>
@@ -192,30 +109,6 @@
                                         <small>Calendar</small>
                                     </a>
                                     <a href="#!" class="col-4 shortcut-item">
-                                        <span class="shortcut-media avatar rounded-circle bg-gradient-orange">
-                                            <i class="ni ni-email-83"></i>
-                                        </span>
-                                        <small>Email</small>
-                                    </a>
-                                    <a href="#!" class="col-4 shortcut-item">
-                                        <span class="shortcut-media avatar rounded-circle bg-gradient-info">
-                                            <i class="ni ni-credit-card"></i>
-                                        </span>
-                                        <small>Payments</small>
-                                    </a>
-                                    <a href="#!" class="col-4 shortcut-item">
-                                        <span class="shortcut-media avatar rounded-circle bg-gradient-green">
-                                            <i class="ni ni-books"></i>
-                                        </span>
-                                        <small>Reports</small>
-                                    </a>
-                                    <a href="#!" class="col-4 shortcut-item">
-                                        <span class="shortcut-media avatar rounded-circle bg-gradient-purple">
-                                            <i class="ni ni-pin-3"></i>
-                                        </span>
-                                        <small>Maps</small>
-                                    </a>
-                                    <a href="#!" class="col-4 shortcut-item">
                                         <span class="shortcut-media avatar rounded-circle bg-gradient-yellow">
                                             <i class="ni ni-basket"></i>
                                         </span>
@@ -225,7 +118,7 @@
                             </div>
                         </li>
                     </ul>
-                  
+
                     @await Html.PartialAsync("_LoginPartial")
                 </div>
             </div>
@@ -235,22 +128,22 @@
         <div class="header bg-primary pb-6">
             <div class="container-fluid">
                 <div class="header-body">
-                    <div class="row align-items-center py-4">
-                        <div class="col-lg-6 col-7">
-                            <h6 class="h2 text-white d-inline-block mb-0">Default</h6>
-                            <nav aria-label="breadcrumb" class="d-none d-md-inline-block ml-md-4">
-                                <ol class="breadcrumb breadcrumb-links breadcrumb-dark">
-                                    <li class="breadcrumb-item"><a href="#"><i class="fas fa-home"></i></a></li>
-                                    <li class="breadcrumb-item"><a href="#">Dashboards</a></li>
-                                    <li class="breadcrumb-item active" aria-current="page">Default</li>
-                                </ol>
-                            </nav>
-                        </div>
-                        <div class="col-lg-6 col-5 text-right">
-                            <a href="#" class="btn btn-sm btn-neutral">New</a>
-                            <a href="#" class="btn btn-sm btn-neutral">Filters</a>
-                        </div>
-                    </div>
+                    @*<div class="row align-items-center py-4">
+                            <div class="col-lg-6 col-7">
+                                <h6 class="h2 text-white d-inline-block mb-0">Default</h6>
+                                <nav aria-label="breadcrumb" class="d-none d-md-inline-block ml-md-4">
+                                    <ol class="breadcrumb breadcrumb-links breadcrumb-dark">
+                                        <li class="breadcrumb-item"><a href="#"><i class="fas fa-home"></i></a></li>
+                                        <li class="breadcrumb-item"><a href="#">Dashboards</a></li>
+                                        <li class="breadcrumb-item active" aria-current="page">Default</li>
+                                    </ol>
+                                </nav>
+                            </div>
+                            <div class="col-lg-6 col-5 text-right">
+                                <a href="#" class="btn btn-sm btn-neutral">New</a>
+                                <a href="#" class="btn btn-sm btn-neutral">Filters</a>
+                            </div>
+                        </div>*@
                 </div>
             </div>
         </div>
@@ -273,6 +166,12 @@
     <script src="~/admin-side/vendor/chart.js/dist/Chart.extension.js"></script>
     <script src="~/admin-side/vendor/sweetalert2/dist/sweetalert2.all.min.js" asp-append-version="true"></script>
     <script src="~/admin-side/vendor/bootstrap-notify/bootstrap-notify.min.js" asp-append-version="true"></script>
+    <script src="~/admin-side/vendor/datatables.net/js/jquery.dataTables.min.js" asp-append-version="true"></script>
+    <script src="~/admin-side/vendor/datatables.net-bs4/js/dataTables.bootstrap4.min.js" asp-append-version="true"></script>
+    <script src="~/admin-side/vendor/datatables.net-buttons/js/dataTables.buttons.min.js" asp-append-version="true"></script>
+    <script src="~/admin-side/vendor/datatables.net-buttons-bs4/js/buttons.bootstrap4.min.js" asp-append-version="true"></script>
+    <script src="~/lib/mustache.js/mustache.min.js" asp-append-version="true"></script>
+    <script src="~/lib/jquery.twbsPagination.js/jquery.twbsPagination.min.js" asp-append-version="true"></script>
 
     <script src="~/admin-side/vendor/moment/min/moment.min.js"></script>
     <script src="~/admin-side/vendor/fullcalendar/dist/fullcalendar.min.js"></script>
@@ -285,5 +184,6 @@
     <script src="~/admin-side/js/argon.js?v=1.1.0"></script>
     <!-- Demo JS - remove this in your project -->
     <script src="~/admin-side/js/demo.min.js"></script>
+    @RenderSection("Scripts", required: false)
 </body>
 </html>

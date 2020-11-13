@@ -44,6 +44,7 @@ namespace KarmaCoreApp.Data.EF
                     NormalizedName = "Customer",
                     Description = "Customer"
                 });
+                await _context.SaveChangesAsync();
             }
             if (!_userManager.Users.Any())
             {
@@ -59,12 +60,13 @@ namespace KarmaCoreApp.Data.EF
                 }, "Admin@123");
                 var user = await _userManager.FindByNameAsync("admin");
                 await _userManager.AddToRoleAsync(user, "Admin");
+                await _context.SaveChangesAsync();
             }
             if (_context.Functions.Count() == 0)
             {
                 _context.Functions.AddRange(new List<Function>()
                 {
-                    new Function() {Id = "SYSTEM", Name = "System",ParentId = null,SortOrder = 1,Status = Status.Active,URL = "/",IconCss = "ni ni-settings text-info"  },
+                    new Function() {Id = "SYSTEM", Name = "System",ParentId = null,SortOrder = 1,Status = Status.Active,URL = "/",IconCss = "ni ni-settings text-red"  },
                     new Function() {Id = "ROLE", Name = "Role",ParentId = "SYSTEM",SortOrder = 1,Status = Status.Active,URL = "/admin/role/index"},
                     new Function() {Id = "FUNCTION", Name = "Function",ParentId = "SYSTEM",SortOrder = 2,Status = Status.Active,URL = "/admin/function/index"},
                     new Function() {Id = "USER", Name = "User",ParentId = "SYSTEM",SortOrder =3,Status = Status.Active,URL = "/admin/user/index"},
@@ -72,7 +74,7 @@ namespace KarmaCoreApp.Data.EF
                     new Function() {Id = "ERROR", Name = "Error",ParentId = "SYSTEM",SortOrder = 5,Status = Status.Active,URL = "/admin/error/index"},
                     new Function() {Id = "SETTING", Name = "Configuration",ParentId = "SYSTEM",SortOrder = 6,Status = Status.Active,URL = "/admin/setting/index"},
 
-                    new Function() {Id = "PRODUCT",Name = "Products",ParentId = null,SortOrder = 2,Status = Status.Active,URL = "/",IconCss = "ni ni-ui-04 text-red"  },
+                    new Function() {Id = "PRODUCT",Name = "Products",ParentId = null,SortOrder = 2,Status = Status.Active,URL = "/",IconCss = "ni ni-ui-04 text-primary"  },
                     new Function() {Id = "PRODUCT_CATEGORY",Name = "Category",ParentId = "PRODUCT",SortOrder =1,Status = Status.Active,URL = "/admin/productcategory/index"},
                     new Function() {Id = "PRODUCT_LIST",Name = "Product",ParentId = "PRODUCT",SortOrder = 2,Status = Status.Active,URL = "/admin/product/index",},
                     new Function() {Id = "BILL",Name = "Bill",ParentId = "PRODUCT",SortOrder = 3,Status = Status.Active,URL = "/admin/bill/index"},
@@ -88,11 +90,12 @@ namespace KarmaCoreApp.Data.EF
                     new Function() {Id = "SLIDE",Name = "Slide",ParentId = "UTILITY",SortOrder = 5,Status = Status.Active,URL = "/admin/slide/index"},
                     //new Function() {Id = "ADVERTISMENT",Name = "Advertisment",ParentId = "UTILITY",SortOrder = 6,Status = Status.Active,URL = "/admin/advertistment/index",IconCss = "fa-clone"  },
 
-                    new Function() {Id = "REPORT",Name = "Report",ParentId = null,SortOrder = 5,Status = Status.Active,URL = "/",IconCss = "ni ni-chart-pie-35 text-primary"  },
+                    new Function() {Id = "REPORT",Name = "Report",ParentId = null,SortOrder = 5,Status = Status.Active,URL = "/",IconCss = "ni ni-chart-pie-35 text-info"  },
                     new Function() {Id = "REVENUES",Name = "Revenue report",ParentId = "REPORT",SortOrder = 1,Status = Status.Active,URL = "/admin/report/revenues"},
                     new Function() {Id = "ACCESS",Name = "Visitor Report",ParentId = "REPORT",SortOrder = 2,Status = Status.Active,URL = "/admin/report/visitor"},
                     new Function() {Id = "READER",Name = "Reader Report",ParentId = "REPORT",SortOrder = 3,Status = Status.Active,URL = "/admin/report/reader"},
                 });
+                await _context.SaveChangesAsync();
             }
 
             if (_context.Footers.Count(x => x.Id == CommonConstants.DefaultFooterId) == 0)
@@ -103,7 +106,7 @@ namespace KarmaCoreApp.Data.EF
                     Id = CommonConstants.DefaultFooterId,
                     Content = content
                 });
-                _context.SaveChanges();
+                await _context.SaveChangesAsync();
             }
 
             if (_context.Colors.Count() == 0)
@@ -116,25 +119,68 @@ namespace KarmaCoreApp.Data.EF
                     new Color() {Name="Blue", Code="#1000ff" },
                 };
                 _context.Colors.AddRange(listColor);
+                await _context.SaveChangesAsync();
             }
-            //if (_context.AdvertistmentPages.Count() == 0)
-            //{
-            //    List<AdvertistmentPage> pages = new List<AdvertistmentPage>()
-            //    {
-            //        new AdvertistmentPage() {Id="home", Name="Home",AdvertistmentPositions = new List<AdvertistmentPosition>(){
-            //            new AdvertistmentPosition(){Id="home-left",Name="Bên trái"}
-            //        } },
-            //        new AdvertistmentPage() {Id="product-cate", Name="Product category" ,
-            //            AdvertistmentPositions = new List<AdvertistmentPosition>(){
-            //            new AdvertistmentPosition(){Id="product-cate-left",Name="Bên trái"}
-            //        }},
-            //        new AdvertistmentPage() {Id="product-detail", Name="Product detail",
-            //            AdvertistmentPositions = new List<AdvertistmentPosition>(){
-            //            new AdvertistmentPosition(){Id="product-detail-left",Name="Bên trái"}
-            //        } },
-            //    };
-            //    _context.AdvertistmentPages.AddRange(pages);
-            //}
+            if (_context.Sizes.Count() == 0)
+            {
+                List<Size> listSize = new List<Size>()
+                {
+                    new Size() { Name="XXL" },
+                    new Size() { Name="XL"},
+                    new Size() { Name="L" },
+                    new Size() { Name="M" },
+                    new Size() { Name="S" },
+                    new Size() { Name="XS" }
+                };
+                _context.Sizes.AddRange(listSize);
+                await _context.SaveChangesAsync();
+            }
+
+            if (_context.ProductCategories.Count() == 0)
+            {
+                List<ProductCategory> listProductCategory = new List<ProductCategory>()
+                {
+                    new ProductCategory() { Name="Men shirt",SeoAlias="men-shirt",ParentId = null,Status=Status.Active,SortOrder=1,
+                        Products = new List<Product>()
+                        {
+                            new Product(){Name = "Product 1",DateCreated=DateTime.Now,Image="/client-side/images/products/product-1.jpg",SeoAlias = "san-pham-1",Price = 1000,Status = Status.Active,OriginalPrice = 1000},
+                            new Product(){Name = "Product 2",DateCreated=DateTime.Now,Image="/client-side/images/products/product-1.jpg",SeoAlias = "san-pham-2",Price = 1000,Status = Status.Active,OriginalPrice = 1000},
+                            new Product(){Name = "Product 3",DateCreated=DateTime.Now,Image="/client-side/images/products/product-1.jpg",SeoAlias = "san-pham-3",Price = 1000,Status = Status.Active,OriginalPrice = 1000},
+                            new Product(){Name = "Product 4",DateCreated=DateTime.Now,Image="/client-side/images/products/product-1.jpg",SeoAlias = "san-pham-4",Price = 1000,Status = Status.Active,OriginalPrice = 1000},
+                            new Product(){Name = "Product 5",DateCreated=DateTime.Now,Image="/client-side/images/products/product-1.jpg",SeoAlias = "san-pham-5",Price = 1000,Status = Status.Active,OriginalPrice = 1000},
+                        }
+                    },
+                    new ProductCategory() { Name="Women shirt",SeoAlias="women-shirt",ParentId = null,Status=Status.Active ,SortOrder=2,
+                        Products = new List<Product>()
+                        {
+                            new Product(){Name = "Product 6",DateCreated=DateTime.Now,Image="/client-side/images/products/product-1.jpg",SeoAlias = "san-pham-6",Price = 1000,Status = Status.Active,OriginalPrice = 1000},
+                            new Product(){Name = "Product 7",DateCreated=DateTime.Now,Image="/client-side/images/products/product-1.jpg",SeoAlias = "san-pham-7",Price = 1000,Status = Status.Active,OriginalPrice = 1000},
+                            new Product(){Name = "Product 8",DateCreated=DateTime.Now,Image="/client-side/images/products/product-1.jpg",SeoAlias = "san-pham-8",Price = 1000,Status = Status.Active,OriginalPrice = 1000},
+                            new Product(){Name = "Product 9",DateCreated=DateTime.Now,Image="/client-side/images/products/product-1.jpg",SeoAlias = "san-pham-9",Price = 1000,Status = Status.Active,OriginalPrice = 1000},
+                            new Product(){Name = "Product 10",DateCreated=DateTime.Now,Image="/client-side/images/products/product-1.jpg",SeoAlias = "san-pham-10",Price = 1000,Status = Status.Active,OriginalPrice = 1000},
+                        }},
+                    new ProductCategory() { Name="Men shoes",SeoAlias="men-shoes",ParentId = null,Status=Status.Active ,SortOrder=3,
+                        Products = new List<Product>()
+                        {
+                            new Product(){Name = "Product 11",DateCreated=DateTime.Now,Image="/client-side/images/products/product-1.jpg",SeoAlias = "san-pham-11",Price = 1000,Status = Status.Active,OriginalPrice = 1000},
+                            new Product(){Name = "Product 12",DateCreated=DateTime.Now,Image="/client-side/images/products/product-1.jpg",SeoAlias = "san-pham-12",Price = 1000,Status = Status.Active,OriginalPrice = 1000},
+                            new Product(){Name = "Product 13",DateCreated=DateTime.Now,Image="/client-side/images/products/product-1.jpg",SeoAlias = "san-pham-13",Price = 1000,Status = Status.Active,OriginalPrice = 1000},
+                            new Product(){Name = "Product 14",DateCreated=DateTime.Now,Image="/client-side/images/products/product-1.jpg",SeoAlias = "san-pham-14",Price = 1000,Status = Status.Active,OriginalPrice = 1000},
+                            new Product(){Name = "Product 15",DateCreated=DateTime.Now,Image="/client-side/images/products/product-1.jpg",SeoAlias = "san-pham-15",Price = 1000,Status = Status.Active,OriginalPrice = 1000},
+                        }},
+                    new ProductCategory() { Name="Woment shoes",SeoAlias="women-shoes",ParentId = null,Status=Status.Active,SortOrder=4,
+                        Products = new List<Product>()
+                        {
+                            new Product(){Name = "Product 16",DateCreated=DateTime.Now, Image="/client-side/images/products/product-1.jpg",SeoAlias = "san-pham-16",Price = 1000,Status = Status.Active,OriginalPrice = 1000},
+                            new Product(){Name = "Product 17",DateCreated=DateTime.Now,Image="/client-side/images/products/product-1.jpg",SeoAlias = "san-pham-17",Price = 1000,Status = Status.Active,OriginalPrice = 1000},
+                            new Product(){Name = "Product 18",DateCreated=DateTime.Now,Image="/client-side/images/products/product-1.jpg",SeoAlias = "san-pham-18",Price = 1000,Status = Status.Active,OriginalPrice = 1000},
+                            new Product(){Name = "Product 19",DateCreated=DateTime.Now,Image="/client-side/images/products/product-1.jpg",SeoAlias = "san-pham-19",Price = 1000,Status = Status.Active,OriginalPrice = 1000},
+                            new Product(){Name = "Product 20",DateCreated=DateTime.Now,Image="/client-side/images/products/product-1.jpg",SeoAlias = "san-pham-20",Price = 1000,Status = Status.Active,OriginalPrice = 1000},
+                        }}
+                };
+                _context.ProductCategories.AddRange(listProductCategory);
+                await _context.SaveChangesAsync();
+            }
 
             if (_context.Slides.Count() == 0)
             {
@@ -157,65 +203,7 @@ namespace KarmaCoreApp.Data.EF
                     new Slide() {Name="Slide 11",Image="/client-side/images/brand11.png",Url="#",DisplayOrder = 11,GroupAlias = "brand",Status = true },
                 };
                 _context.Slides.AddRange(slides);
-            }
-
-            if (_context.Sizes.Count() == 0)
-            {
-                List<Size> listSize = new List<Size>()
-                {
-                    new Size() { Name="XXL" },
-                    new Size() { Name="XL"},
-                    new Size() { Name="L" },
-                    new Size() { Name="M" },
-                    new Size() { Name="S" },
-                    new Size() { Name="XS" }
-                };
-                _context.Sizes.AddRange(listSize);
-            }
-
-            if (_context.ProductCategories.Count() == 0)
-            {
-                List<ProductCategory> listProductCategory = new List<ProductCategory>()
-                {
-                    new ProductCategory() { Name="Men shirt",SeoAlias="men-shirt",ParentId = null,Status=Status.Active,SortOrder=1,
-                        Products = new List<Product>()
-                        {
-                            new Product(){Name = "Product 1",Image="/client-side/images/products/product-1.jpg",SeoAlias = "san-pham-1",Price = 1000,Status = Status.Active,OriginalPrice = 1000},
-                            new Product(){Name = "Product 2",Image="/client-side/images/products/product-1.jpg",SeoAlias = "san-pham-2",Price = 1000,Status = Status.Active,OriginalPrice = 1000},
-                            new Product(){Name = "Product 3",Image="/client-side/images/products/product-1.jpg",SeoAlias = "san-pham-3",Price = 1000,Status = Status.Active,OriginalPrice = 1000},
-                            new Product(){Name = "Product 4",Image="/client-side/images/products/product-1.jpg",SeoAlias = "san-pham-4",Price = 1000,Status = Status.Active,OriginalPrice = 1000},
-                            new Product(){Name = "Product 5",Image="/client-side/images/products/product-1.jpg",SeoAlias = "san-pham-5",Price = 1000,Status = Status.Active,OriginalPrice = 1000},
-                        }
-                    },
-                    new ProductCategory() { Name="Women shirt",SeoAlias="women-shirt",ParentId = null,Status=Status.Active ,SortOrder=2,
-                        Products = new List<Product>()
-                        {
-                            new Product(){Name = "Product 6",Image="/client-side/images/products/product-1.jpg",SeoAlias = "san-pham-6",Price = 1000,Status = Status.Active,OriginalPrice = 1000},
-                            new Product(){Name = "Product 7",Image="/client-side/images/products/product-1.jpg",SeoAlias = "san-pham-7",Price = 1000,Status = Status.Active,OriginalPrice = 1000},
-                            new Product(){Name = "Product 8",Image="/client-side/images/products/product-1.jpg",SeoAlias = "san-pham-8",Price = 1000,Status = Status.Active,OriginalPrice = 1000},
-                            new Product(){Name = "Product 9",Image="/client-side/images/products/product-1.jpg",SeoAlias = "san-pham-9",Price = 1000,Status = Status.Active,OriginalPrice = 1000},
-                            new Product(){Name = "Product 10",Image="/client-side/images/products/product-1.jpg",SeoAlias = "san-pham-10",Price = 1000,Status = Status.Active,OriginalPrice = 1000},
-                        }},
-                    new ProductCategory() { Name="Men shoes",SeoAlias="men-shoes",ParentId = null,Status=Status.Active ,SortOrder=3,
-                        Products = new List<Product>()
-                        {
-                            new Product(){Name = "Product 11",Image="/client-side/images/products/product-1.jpg",SeoAlias = "san-pham-11",Price = 1000,Status = Status.Active,OriginalPrice = 1000},
-                            new Product(){Name = "Product 12",Image="/client-side/images/products/product-1.jpg",SeoAlias = "san-pham-12",Price = 1000,Status = Status.Active,OriginalPrice = 1000},
-                            new Product(){Name = "Product 13",Image="/client-side/images/products/product-1.jpg",SeoAlias = "san-pham-13",Price = 1000,Status = Status.Active,OriginalPrice = 1000},
-                            new Product(){Name = "Product 14",Image="/client-side/images/products/product-1.jpg",SeoAlias = "san-pham-14",Price = 1000,Status = Status.Active,OriginalPrice = 1000},
-                            new Product(){Name = "Product 15",Image="/client-side/images/products/product-1.jpg",SeoAlias = "san-pham-15",Price = 1000,Status = Status.Active,OriginalPrice = 1000},
-                        }},
-                    new ProductCategory() { Name="Woment shoes",SeoAlias="women-shoes",ParentId = null,Status=Status.Active,SortOrder=4,
-                        Products = new List<Product>()
-                        {
-                            new Product(){Name = "Product 16",Image="/client-side/images/products/product-1.jpg",SeoAlias = "san-pham-16",Price = 1000,Status = Status.Active,OriginalPrice = 1000},
-                            new Product(){Name = "Product 17",Image="/client-side/images/products/product-1.jpg",SeoAlias = "san-pham-17",Price = 1000,Status = Status.Active,OriginalPrice = 1000},
-                            new Product(){Name = "Product 18",Image="/client-side/images/products/product-1.jpg",SeoAlias = "san-pham-18",Price = 1000,Status = Status.Active,OriginalPrice = 1000},
-                            new Product(){Name = "Product 19",Image="/client-side/images/products/product-1.jpg",SeoAlias = "san-pham-19",Price = 1000,Status = Status.Active,OriginalPrice = 1000},
-                            new Product(){Name = "Product 20",Image="/client-side/images/products/product-1.jpg",SeoAlias = "san-pham-20",Price = 1000,Status = Status.Active,OriginalPrice = 1000},
-                        }}
-                };
-                _context.ProductCategories.AddRange(listProductCategory);
+                await _context.SaveChangesAsync();
             }
 
             if (!_context.SystemConfigs.Any(x => x.Id == "HomeTitle"))
@@ -227,6 +215,7 @@ namespace KarmaCoreApp.Data.EF
                     Value1 = "Karmar Shop Home",
                     Status = Status.Active
                 });
+                await _context.SaveChangesAsync();
             }
             if (!_context.SystemConfigs.Any(x => x.Id == "HomeMetaKeyword"))
             {
@@ -237,6 +226,7 @@ namespace KarmaCoreApp.Data.EF
                     Value1 = "shopping, sales",
                     Status = Status.Active
                 });
+                await _context.SaveChangesAsync();
             }
             if (!_context.SystemConfigs.Any(x => x.Id == "HomeMetaDescription"))
             {
@@ -247,6 +237,7 @@ namespace KarmaCoreApp.Data.EF
                     Value1 = "Home Karmar",
                     Status = Status.Active
                 });
+                await _context.SaveChangesAsync();
             }
         }
     }

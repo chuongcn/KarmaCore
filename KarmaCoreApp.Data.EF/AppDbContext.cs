@@ -53,7 +53,7 @@ namespace KarmaCoreApp.Data.EF
         public DbSet<WholePrice> WholePrices { get; set; }
 
         //public DbSet<Advertisement> Advertisements { get; set; }
-        //public DbSet<AdvertisementPage> AdvertisementPages { get; set; }        
+        //public DbSet<AdvertisementPage> AdvertisementPages { get; set; }
         //public DbSet<AdvertisementPosition> AdvertisementPositions { get; set; }
 
         protected override void OnModelCreating(ModelBuilder builder)
@@ -75,7 +75,7 @@ namespace KarmaCoreApp.Data.EF
 
             #endregion Identity Config
 
-            builder.AddConfiguration(new TagConfiguration());            
+            builder.AddConfiguration(new TagConfiguration());
             builder.AddConfiguration(new BlogTagConfiguration());
             builder.AddConfiguration(new ContactDetailConfiguration());
             builder.AddConfiguration(new FooterConfiguration());
@@ -104,22 +104,21 @@ namespace KarmaCoreApp.Data.EF
                     changedOrAddedItem.DateModified = DateTime.Now;
                 }
             }
-
             return base.SaveChanges();
         }
+    }
 
-        public class DesignTimeDbContextFactory : IDesignTimeDbContextFactory<AppDbContext>
+    public class DesignTimeDbContextFactory : IDesignTimeDbContextFactory<AppDbContext>
+    {
+        public AppDbContext CreateDbContext(string[] args)
         {
-            public AppDbContext CreateDbContext(string[] args)
-            {
-                IConfiguration configuration = new ConfigurationBuilder()
-                     .SetBasePath(Directory.GetCurrentDirectory())
-                     .AddJsonFile("appsettings.json").Build();
-                var builder = new DbContextOptionsBuilder<AppDbContext>();
-                var connectionString = configuration.GetConnectionString("DefaultConnection");
-                builder.UseSqlServer(connectionString);
-                return new AppDbContext(builder.Options);
-            }
+            IConfiguration configuration = new ConfigurationBuilder()
+                 .SetBasePath(Directory.GetCurrentDirectory())
+                 .AddJsonFile("appsettings.json").Build();
+            var builder = new DbContextOptionsBuilder<AppDbContext>();
+            var connectionString = configuration.GetConnectionString("DefaultConnection");
+            builder.UseSqlServer(connectionString);
+            return new AppDbContext(builder.Options);
         }
     }
 }

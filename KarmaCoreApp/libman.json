@@ -8,6 +8,20 @@
       "files": [
         "moment.min.js"
       ]
+    },
+    {
+      "library": "mustache.js@2.3.0",
+      "destination": "wwwroot/lib/mustache.js/",
+      "files": [
+        "mustache.min.js"
+      ]
+    },
+    {
+      "library": "twbs-pagination@1.4.1",
+      "destination": "wwwroot/lib/jquery.twbsPagination.js/",
+      "files": [
+        "jquery.twbsPagination.min.js"
+      ]
     }
   ]
 }

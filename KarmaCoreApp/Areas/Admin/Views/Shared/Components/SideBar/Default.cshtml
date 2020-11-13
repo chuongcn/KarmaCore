@@ -5,7 +5,8 @@
         <!-- Brand -->
         <div class="sidenav-header d-flex align-items-center">
             <a class="navbar-brand" href="#">
-                <img src="~/admin-side/img/brand/blue.png" class="navbar-brand-img" alt="...">
+                @*<img src="~/admin-side/img/brand/blue.png" class="navbar-brand-img" alt="...">*@
+                <h6 class="h1 text-blue d-inline-block mb-0 navbar-brand-img">Karmar 2020 </h6>
             </a>
             <div class="ml-auto">
                 <!-- Sidenav toggler -->
@@ -18,7 +19,7 @@
                 </div>
             </div>
         </div>
-       
+
         <div class="navbar-inner">
             <!-- Collapse -->
             <div class="collapse navbar-collapse" id="sidenav-collapse-main">
@@ -33,7 +34,7 @@
                             </a>
                             @if (Model.Any(x => x.ParentId == item.Id))
                             {
-                                <div class="collapse show" id="@item.Name">
+                                <div class="collapse" id="@item.Name">
                                     <ul class="nav nav-sm flex-column">
                                         @foreach (var jitem in Model.Where(x => x.ParentId == item.Id))
                                         {
@@ -46,39 +47,26 @@
                             }
                         </li>
                     }
-
                 </ul>
                 <!-- Divider -->
                 <hr class="my-3">
                 <!-- Heading -->
                 <h6 class="navbar-heading p-0 text-muted">Design by Karmar 2020</h6>
                 <!-- Navigation -->
-                @*<ul class="navbar-nav mb-md-3">
-                <li class="nav-item">
-                    <a class="nav-link" href="https://demos.creative-tim.com/argon-dashboard/docs/getting-started/overview.html" target="_blank">
-                        <i class="ni ni-spaceship"></i>
-                        <span class="nav-link-text">Getting started</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="https://demos.creative-tim.com/argon-dashboard/docs/foundation/colors.html" target="_blank">
-                        <i class="ni ni-palette"></i>
-                        <span class="nav-link-text">Foundation</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="https://demos.creative-tim.com/argon-dashboard/docs/components/alerts.html" target="_blank">
-                        <i class="ni ni-ui-04"></i>
-                        <span class="nav-link-text">Components</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="https://demos.creative-tim.com/argon-dashboard/docs/plugins/charts.html" target="_blank">
-                        <i class="ni ni-chart-pie-35"></i>
-                        <span class="nav-link-text">Plugins</span>
-                    </a>
-                </li>
-            </ul>*@
+                <ul class="navbar-nav mb-md-3">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="ni ni-mobile-button text-default"></i>
+                            <span class="nav-link-text">0938.28.3738</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="mailto: support@karmarsoft.com" target="_blank" class="nav-link">
+                            <i class="ni ni-email-83 text-yellow"></i>
+                            <span class="nav-link-text">Email Support</span>
+                        </a>
+                    </li>       
+                </ul>
             </div>
         </div>
     </div>

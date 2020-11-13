@@ -8,7 +8,8 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace KarmaCoreApp.Data.Entities
 {
     [Table("ProductCategories")]
-    public class ProductCategory : DomainEntity<int>, IHasSeoMetaData, ISwitchable, ISortable, IDateTracking
+    public class ProductCategory : DomainEntity<int>,
+        IHasSeoMetaData, ISwitchable, ISortable, IDateTracking
     {
         public ProductCategory()
         {

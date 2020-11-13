@@ -1,0 +1,436 @@
+2020-09-12T06:52:40.1753019+07:00  [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=KarmaCoreApp.Data.EF " (9958f5bb)
+2020-09-12T06:52:43.6564069+07:00  [INF] Executed DbCommand ("143"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-09-12T06:52:43.9947425+07:00  [INF] Executed DbCommand ("83"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-09-12T06:52:44.2081713+07:00  [INF] Executed DbCommand ("105"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Functions] AS [f]" (0723d8ff)
+2020-09-12T06:52:45.3092815+07:00  [INF] Executed DbCommand ("203"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2020-09-12T06:52:45.3842862+07:00  [INF] Executed DbCommand ("40"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Colors] AS [c]" (0723d8ff)
+2020-09-12T06:52:45.4207851+07:00  [INF] Executed DbCommand ("12"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Sizes] AS [s]" (0723d8ff)
+2020-09-12T06:52:45.4529373+07:00  [INF] Executed DbCommand ("8"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [ProductCategories] AS [p]" (0723d8ff)
+2020-09-12T06:52:45.5020609+07:00  [INF] Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Slides] AS [s]" (0723d8ff)
+2020-09-12T06:52:47.4417821+07:00  [ERR] Failed executing DbCommand ("616"ms) [Parameters=["@p0='?' (Size = 4000), @p1='?' (Size = 250), @p2='?', @p3='?' (Size = 250), @p4='?' (Size = 250), @p5='?' (Size = 250), @p6='?', @p7='?' (Size = 250), @p8='?' (Size = 4000), @p9='?' (Size = 250), @p10='?', @p11='?' (Size = 250), @p12='?' (Size = 250), @p13='?' (Size = 250), @p14='?', @p15='?' (Size = 250), @p16='?' (Size = 4000), @p17='?' (Size = 250), @p18='?', @p19='?' (Size = 250), @p20='?' (Size = 250), @p21='?' (Size = 250), @p22='?', @p23='?' (Size = 250), @p24='?' (Size = 4000), @p25='?' (Size = 250), @p26='?', @p27='?' (Size = 250), @p28='?' (Size = 250), @p29='?' (Size = 250), @p30='?', @p31='?' (Size = 250), @p32='?' (Size = 4000), @p33='?' (Size = 250), @p34='?', @p35='?' (Size = 250), @p36='?' (Size = 250), @p37='?' (Size = 250), @p38='?', @p39='?' (Size = 250), @p40='?' (Size = 4000), @p41='?' (Size = 250), @p42='?', @p43='?' (Size = 250), @p44='?' (Size = 250), @p45='?' (Size = 250), @p46='?', @p47='?' (Size = 250), @p48='?' (Size = 4000), @p49='?' (Size = 250), @p50='?', @p51='?' (Size = 250), @p52='?' (Size = 250), @p53='?' (Size = 250), @p54='?', @p55='?' (Size = 250), @p56='?' (Size = 4000), @p57='?' (Size = 250), @p58='?', @p59='?' (Size = 250), @p60='?' (Size = 250), @p61='?' (Size = 250), @p62='?', @p63='?' (Size = 250), @p64='?' (Size = 4000), @p65='?' (Size = 250), @p66='?', @p67='?' (Size = 250), @p68='?' (Size = 250), @p69='?' (Size = 250), @p70='?', @p71='?' (Size = 250), @p72='?' (Size = 4000), @p73='?' (Size = 250), @p74='?', @p75='?' (Size = 250), @p76='?' (Size = 250), @p77='?' (Size = 250), @p78='?', @p79='?' (Size = 250), @p80='?' (Size = 4000), @p81='?' (Size = 250), @p82='?', @p83='?' (Size = 250), @p84='?' (Size = 250), @p85='?' (Size = 250), @p86='?', @p87='?' (Size = 250), @p88='?' (Size = 4000), @p89='?' (Size = 250), @p90='?', @p91='?' (Size = 250), @p92='?' (Size = 250), @p93='?' (Size = 250), @p94='?', @p95='?' (Size = 250), @p96='?' (Size = 4000), @p97='?' (Size = 250), @p98='?', @p99='?' (Size = 250), @p100='?' (Size = 250), @p101='?' (Size = 250), @p102='?', @p103='?' (Size = 250), @p104='?' (Size = 4000), @p105='?' (Size = 250), @p106='?', @p107='?' (Size = 250), @p108='?' (Size = 250), @p109='?' (Size = 250), @p110='?', @p111='?' (Size = 250)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+DECLARE @inserted0 TABLE ([Id] int, [_Position] [int]);
+MERGE [Slides] USING (
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, 0),
+(@p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, 1),
+(@p16, @p17, @p18, @p19, @p20, @p21, @p22, @p23, 2),
+(@p24, @p25, @p26, @p27, @p28, @p29, @p30, @p31, 3),
+(@p32, @p33, @p34, @p35, @p36, @p37, @p38, @p39, 4),
+(@p40, @p41, @p42, @p43, @p44, @p45, @p46, @p47, 5),
+(@p48, @p49, @p50, @p51, @p52, @p53, @p54, @p55, 6),
+(@p56, @p57, @p58, @p59, @p60, @p61, @p62, @p63, 7),
+(@p64, @p65, @p66, @p67, @p68, @p69, @p70, @p71, 8),
+(@p72, @p73, @p74, @p75, @p76, @p77, @p78, @p79, 9),
+(@p80, @p81, @p82, @p83, @p84, @p85, @p86, @p87, 10),
+(@p88, @p89, @p90, @p91, @p92, @p93, @p94, @p95, 11),
+(@p96, @p97, @p98, @p99, @p100, @p101, @p102, @p103, 12),
+(@p104, @p105, @p106, @p107, @p108, @p109, @p110, @p111, 13)) AS i ([Content], [Description], [DisplayOrder], [GroupAlias], [Image], [Name], [Status], [Url], _Position) ON 1=0
+WHEN NOT MATCHED THEN
+INSERT ([Content], [Description], [DisplayOrder], [GroupAlias], [Image], [Name], [Status], [Url])
+VALUES (i.[Content], i.[Description], i.[DisplayOrder], i.[GroupAlias], i.[Image], i.[Name], i.[Status], i.[Url])
+OUTPUT INSERTED.[Id], i._Position
+INTO @inserted0;
+
+SELECT [t].[Id] FROM [Slides] t
+INNER JOIN @inserted0 i ON ([t].[Id] = [i].[Id])
+ORDER BY [i].[_Position];" (627a98df)
+System.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'Description', table 'KarmaCoreApp_MASTERDB.dbo.Slides'; column does not allow nulls. UPDATE fails.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__108_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)
+ClientConnectionId:19324bc2-8c50-459b-9c8d-6fddb7dddf3c
+Error Number:515,State:2,Class:16
+2020-09-12T06:52:47.8387578+07:00  [ERR] An exception occurred in the database while saving changes for context type '"KarmaCoreApp.Data.EF.AppDbContext"'."
+""Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.SqlClient.SqlException: Cannot insert the value NULL into column 'Description', table 'KarmaCoreApp_MASTERDB.dbo.Slides'; column does not allow nulls. UPDATE fails.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__108_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(Tuple`2 parameters, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IReadOnlyList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)" (170f029e)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.SqlClient.SqlException: Cannot insert the value NULL into column 'Description', table 'KarmaCoreApp_MASTERDB.dbo.Slides'; column does not allow nulls. UPDATE fails.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__108_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(Tuple`2 parameters, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IReadOnlyList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2020-09-12T06:52:49.1523469+07:00  [ERR] An error occurred while seeding the database (90f98c9f)
+System.AggregateException: One or more errors occurred. (Object reference not set to an instance of an object.) ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.System.IObserver<System.Collections.Generic.KeyValuePair<System.String,System.Object>>.OnNext(KeyValuePair`2 keyValuePair)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.EntityFrameworkCore.Internal.CoreLoggerExtensions.SaveChangesFailed(IDiagnosticsLogger`1 diagnostics, DbContext context, Exception exception)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at KarmaCoreApp.Data.EF.DbInitializer.Seed() in F:\SourceCodeNet\KarmaCore\KarmaCoreApp.Data.EF\DbInitializer.cs:line 206
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at KarmaCoreApp.Program.Main(String[] args) in F:\SourceCodeNet\KarmaCore\KarmaCoreApp\Program.cs:line 22
+---> (Inner Exception #0) System.NullReferenceException: Object reference not set to an instance of an object.
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.System.IObserver<System.Collections.Generic.KeyValuePair<System.String,System.Object>>.OnNext(KeyValuePair`2 keyValuePair)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.EntityFrameworkCore.Internal.CoreLoggerExtensions.SaveChangesFailed(IDiagnosticsLogger`1 diagnostics, DbContext context, Exception exception)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at KarmaCoreApp.Data.EF.DbInitializer.Seed() in F:\SourceCodeNet\KarmaCore\KarmaCoreApp.Data.EF\DbInitializer.cs:line 206<---
+
+2020-09-12T06:52:52.1273608+07:00 0HM2MLN574NUI:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:55321/   (ca22a1cb)
+2020-09-12T06:52:54.0481062+07:00 0HM2MLN574NUI:00000001 [INF] Authorization failed for user: null. (a4ab1676)
+2020-09-12T06:52:54.0764713+07:00 0HM2MLN574NUI:00000001 [INF] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"'. (8b6446cb)
+2020-09-12T06:52:54.1426696+07:00 0HM2MLN574NUI:00000001 [INF] Executing ChallengeResult with authentication schemes ([]). (f3dca807)
+2020-09-12T06:52:54.2536889+07:00 0HM2MLN574NUI:00000001 [INF] AuthenticationScheme: "Identity.Application" was challenged. (d45f1f38)
+2020-09-12T06:52:54.2840456+07:00 0HM2MLN574NUI:00000001 [INF] Executed action "KarmaCoreApp.Controllers.HomeController.Index (KarmaCoreApp)" in 543.9106ms (afa2e885)
+2020-09-12T06:52:54.5161755+07:00 0HM2MLN574NUI:00000001 [INF] Request finished in 2594.6204ms 302  (791a596a)
+2020-09-12T06:52:54.5886073+07:00 0HM2MLN574NUI:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:55321/Account/Login?ReturnUrl=%2F   (ca22a1cb)
+2020-09-12T06:52:55.3000981+07:00 0HM2MLN574NUI:00000002 [INF] Executing action method "KarmaCoreApp.Controllers.AccountController.Login (KarmaCoreApp)" with arguments (["/"]) - ModelState is Valid (ba7f4ac2)
+2020-09-12T06:52:55.9145748+07:00 0HM2MLN574NUI:00000002 [INF] AuthenticationScheme: "Identity.External" signed out. (d3f50c8d)
+2020-09-12T06:53:10.3507751+07:00 0HM2MLN574NUH:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin   (ca22a1cb)
+2020-09-12T06:53:10.4010798+07:00 0HM2MLN574NUH:00000001 [INF] Executing action method "KarmaCoreApp.Areas.Admin.Controllers.LoginController.Index (KarmaCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2020-09-12T06:53:16.2390134+07:00 0HM2MLN574NUH:00000001 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2020-09-12T06:53:16.2440270+07:00 0HM2MLN574NUI:00000002 [INF] Executing ViewResult, running view at path "/Views/Account/Login.cshtml". (9707eebe)
+2020-09-12T06:53:17.9322404+07:00 0HM2MLN574NUH:00000001 [INF] Executed action "KarmaCoreApp.Areas.Admin.Controllers.LoginController.Index (KarmaCoreApp)" in 7474.7555ms (afa2e885)
+2020-09-12T06:53:18.6969532+07:00 0HM2MLN574NUJ:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/nucleo/css/nucleo.css   (ca22a1cb)
+2020-09-12T06:53:18.7047688+07:00 0HM2MLN574NUL:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/fortawesome/fontawesome-free/css/all.min.css   (ca22a1cb)
+2020-09-12T06:53:18.7404258+07:00 0HM2MLN574NUH:00000001 [INF] Request finished in 7895.4195ms 200 text/html; charset=utf-8 (791a596a)
+2020-09-12T06:53:18.7725580+07:00 0HM2MLN574NUN:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/bootstrap/dist/css/bootstrap.min.css?v=YLGeXaapI0_5IgZopewRJcFXomhRMlYYjugPLSyNjTY   (ca22a1cb)
+2020-09-12T06:53:18.8140244+07:00 0HM2MLN574NUM:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/sweetalert2/dist/sweetalert2.min.css   (ca22a1cb)
+2020-09-12T06:53:18.8235908+07:00 0HM2MLN574NUH:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/fullcalendar/dist/fullcalendar.min.css   (ca22a1cb)
+2020-09-12T06:53:19.1763152+07:00 0HM2MLN574NUJ:00000001 [INF] Sending file. Request path: '"/admin-side/vendor/nucleo/css/nucleo.css"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\vendor\nucleo\css\nucleo.css"' (27b0a520)
+2020-09-12T06:53:19.1835934+07:00 0HM2MLN574NUL:00000001 [INF] Sending file. Request path: '"/admin-side/vendor/fortawesome/fontawesome-free/css/all.min.css"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\vendor\fortawesome\fontawesome-free\css\all.min.css"' (27b0a520)
+2020-09-12T06:53:19.1955164+07:00 0HM2MLN574NUN:00000001 [INF] Sending file. Request path: '"/admin-side/vendor/bootstrap/dist/css/bootstrap.min.css"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\vendor\bootstrap\dist\css\bootstrap.min.css"' (27b0a520)
+2020-09-12T06:53:19.2018493+07:00 0HM2MLN574NUH:00000002 [INF] Sending file. Request path: '"/admin-side/vendor/fullcalendar/dist/fullcalendar.min.css"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\vendor\fullcalendar\dist\fullcalendar.min.css"' (27b0a520)
+2020-09-12T06:53:19.2161838+07:00 0HM2MLN574NUK:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/animate.css/animate.min.css   (ca22a1cb)
+2020-09-12T06:53:19.2242631+07:00 0HM2MLN574NUM:00000001 [INF] Sending file. Request path: '"/admin-side/vendor/sweetalert2/dist/sweetalert2.min.css"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\vendor\sweetalert2\dist\sweetalert2.min.css"' (27b0a520)
+2020-09-12T06:53:19.2432679+07:00 0HM2MLN574NUK:00000001 [INF] Sending file. Request path: '"/admin-side/vendor/animate.css/animate.min.css"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\vendor\animate.css\animate.min.css"' (27b0a520)
+2020-09-12T06:53:19.4724614+07:00 0HM2MLN574NUJ:00000001 [INF] Request finished in 1018.4441ms 200 text/css (791a596a)
+2020-09-12T06:53:19.4758113+07:00 0HM2MLN574NUL:00000001 [INF] Request finished in 997.0409ms 200 text/css (791a596a)
+2020-09-12T06:53:19.4822670+07:00 0HM2MLN574NUN:00000001 [INF] Request finished in 762.3726ms 200 text/css (791a596a)
+2020-09-12T06:53:19.5287889+07:00 0HM2MLN574NUJ:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/jquery/dist/jquery-3.4.1.min.js   (ca22a1cb)
+2020-09-12T06:53:19.5357697+07:00 0HM2MLN574NUL:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/css/site.css   (ca22a1cb)
+2020-09-12T06:53:19.5664143+07:00 0HM2MLN574NUN:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/css/argon.css?v=1.1.0   (ca22a1cb)
+2020-09-12T06:53:19.5824128+07:00 0HM2MLN574NUL:00000002 [INF] Sending file. Request path: '"/admin-side/css/site.css"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\css\site.css"' (27b0a520)
+2020-09-12T06:53:19.5900881+07:00 0HM2MLN574NUJ:00000002 [INF] Sending file. Request path: '"/admin-side/vendor/jquery/dist/jquery-3.4.1.min.js"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\vendor\jquery\dist\jquery-3.4.1.min.js"' (27b0a520)
+2020-09-12T06:53:19.6322642+07:00 0HM2MLN574NUM:00000001 [INF] Request finished in 1008.5097ms 200 text/css (791a596a)
+2020-09-12T06:53:19.6467767+07:00 0HM2MLN574NUN:00000002 [INF] Sending file. Request path: '"/admin-side/css/argon.css"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\css\argon.css"' (27b0a520)
+2020-09-12T06:53:19.7279677+07:00 0HM2MLN574NUM:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/bootstrap/dist/js/bootstrap.bundle.min.js   (ca22a1cb)
+2020-09-12T06:53:19.7322049+07:00 0HM2MLN574NUL:00000002 [INF] Request finished in 202.287ms 200 text/css (791a596a)
+2020-09-12T06:53:19.7666527+07:00 0HM2MLN574NUM:00000002 [INF] Sending file. Request path: '"/admin-side/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\vendor\bootstrap\dist\js\bootstrap.bundle.min.js"' (27b0a520)
+2020-09-12T06:53:19.7754899+07:00 0HM2MLN574NUL:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/js-cookie/js.cookie.js   (ca22a1cb)
+2020-09-12T06:53:19.8263768+07:00 0HM2MLN574NUL:00000003 [INF] Sending file. Request path: '"/admin-side/vendor/js-cookie/js.cookie.js"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\vendor\js-cookie\js.cookie.js"' (27b0a520)
+2020-09-12T06:53:20.0303594+07:00 0HM2MLN574NUJ:00000002 [INF] Request finished in 391.4626ms 200 application/javascript (791a596a)
+2020-09-12T06:53:20.0559983+07:00 0HM2MLN574NUL:00000003 [INF] Request finished in 248.4509ms 200 application/javascript (791a596a)
+2020-09-12T06:53:20.0930958+07:00 0HM2MLN574NUJ:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/jquery.scrollbar/jquery.scrollbar.min.js   (ca22a1cb)
+2020-09-12T06:53:20.1789867+07:00 0HM2MLN574NUJ:00000003 [INF] Sending file. Request path: '"/admin-side/vendor/jquery.scrollbar/jquery.scrollbar.min.js"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\vendor\jquery.scrollbar\jquery.scrollbar.min.js"' (27b0a520)
+2020-09-12T06:53:20.1994378+07:00 0HM2MLN574NUL:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/chart.js/dist/Chart.min.js   (ca22a1cb)
+2020-09-12T06:53:20.2106921+07:00 0HM2MLN574NUM:00000002 [INF] Request finished in 310.3156ms 200 application/javascript (791a596a)
+2020-09-12T06:53:20.2816328+07:00 0HM2MLN574NUL:00000004 [INF] Sending file. Request path: '"/admin-side/vendor/chart.js/dist/Chart.min.js"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\vendor\chart.js\dist\Chart.min.js"' (27b0a520)
+2020-09-12T06:53:20.3364633+07:00 0HM2MLN574NUM:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/jquery-scroll-lock/dist/jquery-scrollLock.min.js   (ca22a1cb)
+2020-09-12T06:53:20.3725044+07:00 0HM2MLN574NUJ:00000003 [INF] Request finished in 240.4778ms 200 application/javascript (791a596a)
+2020-09-12T06:53:20.5571107+07:00 0HM2MLN574NUM:00000003 [INF] Sending file. Request path: '"/admin-side/vendor/jquery-scroll-lock/dist/jquery-scrollLock.min.js"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\vendor\jquery-scroll-lock\dist\jquery-scrollLock.min.js"' (27b0a520)
+2020-09-12T06:53:20.6785530+07:00 0HM2MLN574NUJ:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/chart.js/dist/Chart.extension.js   (ca22a1cb)
+2020-09-12T06:53:20.7258127+07:00 0HM2MLN574NUK:00000001 [INF] Request finished in 1904.7606ms 200 text/css (791a596a)
+2020-09-12T06:53:20.9172263+07:00 0HM2MLN574NUJ:00000004 [INF] Sending file. Request path: '"/admin-side/vendor/chart.js/dist/Chart.extension.js"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\vendor\chart.js\dist\Chart.extension.js"' (27b0a520)
+2020-09-12T06:53:20.9405332+07:00 0HM2MLN574NUL:00000004 [INF] Request finished in 729.1651ms 200 application/javascript (791a596a)
+2020-09-12T06:53:20.9882464+07:00 0HM2MLN574NUK:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/sweetalert2/dist/sweetalert2.all.min.js?v=Qfxgn9jULeGAdbaeDjXeIhZB3Ra6NCK3dvjwAG8Y-xU   (ca22a1cb)
+2020-09-12T06:53:21.0086032+07:00 0HM2MLN574NUH:00000002 [INF] Request finished in 1670.9611ms 200 text/css (791a596a)
+2020-09-12T06:53:21.0514351+07:00 0HM2MLN574NUL:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:55321/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js   (ca22a1cb)
+2020-09-12T06:53:21.1570400+07:00 0HM2MLN574NUJ:00000004 [INF] Request finished in 559.6352ms 200 application/javascript (791a596a)
+2020-09-12T06:53:21.1718426+07:00 0HM2MLN574NUL:00000005 [INF] Sending file. Request path: '"/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js"' (27b0a520)
+2020-09-12T06:53:21.2567779+07:00 0HM2MLN574NUK:00000002 [INF] Sending file. Request path: '"/admin-side/vendor/sweetalert2/dist/sweetalert2.all.min.js"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\vendor\sweetalert2\dist\sweetalert2.all.min.js"' (27b0a520)
+2020-09-12T06:53:21.4270526+07:00 0HM2MLN574NUJ:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/moment/min/moment.min.js   (ca22a1cb)
+2020-09-12T06:53:21.4329949+07:00 0HM2MLN574NUL:00000005 [INF] Request finished in 382.2975ms 200 application/javascript (791a596a)
+2020-09-12T06:53:21.4471329+07:00 0HM2MLN574NUK:00000002 [INF] Request finished in 551.5984ms 200 application/javascript (791a596a)
+2020-09-12T06:53:21.5135748+07:00 0HM2MLN574NUJ:00000005 [INF] Sending file. Request path: '"/admin-side/vendor/moment/min/moment.min.js"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\vendor\moment\min\moment.min.js"' (27b0a520)
+2020-09-12T06:53:21.5190913+07:00 0HM2MLN574NUL:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/nucleo/fonts/nucleo-icons.woff2   (ca22a1cb)
+2020-09-12T06:53:21.5711558+07:00 0HM2MLN574NUL:00000006 [INF] Sending file. Request path: '"/admin-side/vendor/nucleo/fonts/nucleo-icons.woff2"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\vendor\nucleo\fonts\nucleo-icons.woff2"' (27b0a520)
+2020-09-12T06:53:21.5870885+07:00 0HM2MLN574NUK:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/fullcalendar/dist/fullcalendar.min.js   (ca22a1cb)
+2020-09-12T06:53:21.6567297+07:00 0HM2MLN574NUH:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/bootstrap-notify/bootstrap-notify.min.js?v=DRllCE_8rrevSAnSMWB4XO3zpr-3WaSuqUSNLD5NAzg   (ca22a1cb)
+2020-09-12T06:53:21.8071581+07:00 0HM2MLN574NUK:00000003 [INF] Sending file. Request path: '"/admin-side/vendor/fullcalendar/dist/fullcalendar.min.js"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\vendor\fullcalendar\dist\fullcalendar.min.js"' (27b0a520)
+2020-09-12T06:53:21.8544730+07:00 0HM2MLN574NUL:00000006 [INF] Request finished in 197.2495ms 200 font/woff2 (791a596a)
+2020-09-12T06:53:22.0612435+07:00 0HM2MLN574NUH:00000003 [INF] Sending file. Request path: '"/admin-side/vendor/bootstrap-notify/bootstrap-notify.min.js"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\vendor\bootstrap-notify\bootstrap-notify.min.js"' (27b0a520)
+2020-09-12T06:53:22.1527817+07:00 0HM2MLN574NUL:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/sweetalert2/dist/sweetalert2.min.js   (ca22a1cb)
+2020-09-12T06:53:22.2106309+07:00 0HM2MLN574NUJ:00000005 [INF] Request finished in 599.1805ms 200 application/javascript (791a596a)
+2020-09-12T06:53:22.2351401+07:00 0HM2MLN574NUH:00000003 [INF] Request finished in 539.5898ms 200 application/javascript (791a596a)
+2020-09-12T06:53:22.2427695+07:00 0HM2MLN574NUL:00000007 [INF] Sending file. Request path: '"/admin-side/vendor/sweetalert2/dist/sweetalert2.min.js"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\vendor\sweetalert2\dist\sweetalert2.min.js"' (27b0a520)
+2020-09-12T06:53:22.2782817+07:00 0HM2MLN574NUH:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:55321/app/shared/messages.js   (ca22a1cb)
+2020-09-12T06:53:22.2867172+07:00 0HM2MLN574NUJ:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:55321/app/shared/alert.js   (ca22a1cb)
+2020-09-12T06:53:22.2961609+07:00 0HM2MLN574NUN:00000002 [INF] Request finished in 1221.1873ms 200 text/css (791a596a)
+2020-09-12T06:53:22.3192675+07:00 0HM2MLN574NUH:00000004 [INF] Sending file. Request path: '"/app/shared/messages.js"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\app\shared\messages.js"' (27b0a520)
+2020-09-12T06:53:22.3535582+07:00 0HM2MLN574NUJ:00000006 [INF] Sending file. Request path: '"/app/shared/alert.js"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\app\shared\alert.js"' (27b0a520)
+2020-09-12T06:53:22.4202434+07:00 0HM2MLN574NUM:00000003 [INF] Request finished in 550.2368ms 200 application/javascript (791a596a)
+2020-09-12T06:53:22.4282490+07:00 0HM2MLN574NUN:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:55321/lib/jquery-validation/dist/jquery.validate.js   (ca22a1cb)
+2020-09-12T06:53:22.4701645+07:00 0HM2MLN574NUN:00000003 [INF] Sending file. Request path: '"/lib/jquery-validation/dist/jquery.validate.js"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\lib\jquery-validation\dist\jquery.validate.js"' (27b0a520)
+2020-09-12T06:53:22.4814832+07:00 0HM2MLN574NUJ:00000006 [INF] Request finished in 191.3493ms 200 application/javascript (791a596a)
+2020-09-12T06:53:22.4901957+07:00 0HM2MLN574NUM:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:55321/lib/jquery-validation/dist/additional-methods.js   (ca22a1cb)
+2020-09-12T06:53:22.5974639+07:00 0HM2MLN574NUJ:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:55321/app/shared/karmar.js   (ca22a1cb)
+2020-09-12T06:53:22.6059114+07:00 0HM2MLN574NUM:00000004 [INF] Sending file. Request path: '"/lib/jquery-validation/dist/additional-methods.js"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\lib\jquery-validation\dist\additional-methods.js"' (27b0a520)
+2020-09-12T06:53:22.6807262+07:00 0HM2MLN574NUJ:00000007 [INF] Sending file. Request path: '"/app/shared/karmar.js"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\app\shared\karmar.js"' (27b0a520)
+2020-09-12T06:53:22.6861430+07:00 0HM2MLN574NUN:00000003 [INF] Request finished in 247.7243ms 200 application/javascript (791a596a)
+2020-09-12T06:53:22.7374690+07:00 0HM2MLN574NUJ:00000007 [INF] Request finished in 196.4088ms 200 application/javascript (791a596a)
+2020-09-12T06:53:22.7716726+07:00 0HM2MLN574NUN:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:55321/app/controllers/login/index.js   (ca22a1cb)
+2020-09-12T06:53:22.8258957+07:00 0HM2MLN574NUL:00000007 [INF] Request finished in 778.5472ms 200 application/javascript (791a596a)
+2020-09-12T06:53:22.8810908+07:00 0HM2MLN574NUN:00000004 [INF] Sending file. Request path: '"/app/controllers/login/index.js"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\app\controllers\login\index.js"' (27b0a520)
+2020-09-12T06:53:22.9076325+07:00 0HM2MLN574NUM:00000004 [INF] Request finished in 258.4211ms 200 application/javascript (791a596a)
+2020-09-12T06:53:23.0038168+07:00 0HM2MLN574NUK:00000003 [INF] Request finished in 1376.7382ms 200 application/javascript (791a596a)
+2020-09-12T06:53:23.0717978+07:00 0HM2MLN574NUN:00000004 [INF] Request finished in 217.3053ms 200 application/javascript (791a596a)
+2020-09-12T06:53:23.1050842+07:00 0HM2MLN574NUM:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/js/argon.js?v=1.1.0   (ca22a1cb)
+2020-09-12T06:53:23.1350434+07:00 0HM2MLN574NUH:00000004 [INF] Request finished in 822.9914ms 200 application/javascript (791a596a)
+2020-09-12T06:53:23.1570142+07:00 0HM2MLN574NUM:00000005 [INF] Sending file. Request path: '"/admin-side/js/argon.js"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\js\argon.js"' (27b0a520)
+2020-09-12T06:53:23.2612910+07:00 0HM2MLN574NUM:00000005 [INF] Request finished in 239.1783ms 200 application/javascript (791a596a)
+2020-09-12T06:53:23.9320945+07:00 0HM2MLN574NUI:00000002 [INF] Executed action "KarmaCoreApp.Controllers.AccountController.Login (KarmaCoreApp)" in 29020.9906ms (afa2e885)
+2020-09-12T06:53:24.0122557+07:00 0HM2MLN574NUI:00000002 [INF] Request finished in 29375.483ms 200 text/html; charset=utf-8 (791a596a)
+2020-09-12T06:53:24.4575432+07:00 0HM2MLN574NUM:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/img/brand/favicon.png   (ca22a1cb)
+2020-09-12T06:53:24.4796857+07:00 0HM2MLN574NUM:00000006 [INF] Sending file. Request path: '"/admin-side/img/brand/favicon.png"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\img\brand\favicon.png"' (27b0a520)
+2020-09-12T06:53:24.5525575+07:00 0HM2MLN574NUM:00000006 [INF] Request finished in 160.9918ms 200 image/png (791a596a)
+2020-09-12T06:53:30.7722655+07:00 0HM2MLN574NUM:00000007 [INF] Request starting HTTP/1.1 POST http://localhost:55321/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 35 (ca22a1cb)
+2020-09-12T06:53:31.1646138+07:00 0HM2MLN574NUM:00000007 [INF] Executing action method "KarmaCoreApp.Areas.Admin.Controllers.LoginController.Authen (KarmaCoreApp)" with arguments (["KarmaCoreApp.Models.AccountViewModels.LoginViewModel"]) - ModelState is Valid (ba7f4ac2)
+2020-09-12T06:53:31.2507417+07:00 0HM2MLN574NUM:00000007 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=KarmaCoreApp.Data.EF " (9958f5bb)
+2020-09-12T06:53:31.5447385+07:00 0HM2MLN574NUM:00000007 [INF] Executed DbCommand ("21"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[Birthday], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2020-09-12T06:53:32.5054435+07:00 0HM2MLN574NUM:00000007 [INF] Executed DbCommand ("4"ms) [Parameters=["@__user_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2020-09-12T06:53:32.7959907+07:00 0HM2MLN574NUM:00000007 [INF] Executed DbCommand ("23"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2020-09-12T06:53:32.8649404+07:00 0HM2MLN574NUM:00000007 [INF] Executed DbCommand ("12"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2020-09-12T06:53:32.9556922+07:00 0HM2MLN574NUM:00000007 [INF] Executed DbCommand ("4"ms) [Parameters=["@__role_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2020-09-12T06:53:32.9999416+07:00 0HM2MLN574NUM:00000007 [INF] Executed DbCommand ("2"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2020-09-12T06:53:33.0856261+07:00 0HM2MLN574NUM:00000007 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2020-09-12T06:53:33.1078112+07:00 0HM2MLN574NUM:00000007 [INF] User logged in. (fdce0db4)
+2020-09-12T06:53:33.1930262+07:00 0HM2MLN574NUM:00000007 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2020-09-12T06:53:33.6580976+07:00 0HM2MLN574NUM:00000007 [INF] Executed action "KarmaCoreApp.Areas.Admin.Controllers.LoginController.Authen (KarmaCoreApp)" in 2817.3945ms (afa2e885)
+2020-09-12T06:53:33.7101209+07:00 0HM2MLN574NUM:00000007 [INF] Request finished in 2915.6579ms 200 application/json; charset=utf-8 (791a596a)
+2020-09-12T06:53:33.7345939+07:00 0HM2MLN574NUM:00000008 [INF] Request starting HTTP/1.1 GET http://localhost:55321/Admin/Home/Index   (ca22a1cb)
+2020-09-12T06:53:33.7960091+07:00 0HM2MLN574NUM:00000008 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-09-12T06:53:33.8164191+07:00 0HM2MLN574NUM:00000008 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2020-09-12T06:53:33.8325165+07:00 0HM2MLN574NUM:00000008 [INF] Executing action method "KarmaCoreApp.Areas.Admin.Controllers.HomeController.Index (KarmaCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2020-09-12T06:53:34.8010716+07:00 0HM2MLN574NUM:00000008 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2020-09-12T06:53:35.9899537+07:00 0HM2MLN574NUM:00000008 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=KarmaCoreApp.Data.EF " (9958f5bb)
+2020-09-12T06:53:36.1386907+07:00 0HM2MLN574NUM:00000008 [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[URL], [dto].[ParentId], [dto].[IconCss], [dto].[Status], [dto].[SortOrder]
+FROM [Functions] AS [dto]" (0723d8ff)
+2020-09-12T06:53:37.3579005+07:00 0HM2MLN574NUM:00000008 [INF] Executed action "KarmaCoreApp.Areas.Admin.Controllers.HomeController.Index (KarmaCoreApp)" in 3537.9389ms (afa2e885)
+2020-09-12T06:53:37.4331190+07:00 0HM2MLN574NUM:00000008 [INF] Request finished in 3670.2481ms 200 text/html; charset=utf-8 (791a596a)
+2020-09-12T06:53:37.5365144+07:00 0HM2MLN574NUK:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/img/theme/team-4.jpg   (ca22a1cb)
+2020-09-12T06:53:37.5497056+07:00 0HM2MLN574NUL:00000008 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/img/theme/bootstrap.jpg   (ca22a1cb)
+2020-09-12T06:53:37.6032423+07:00 0HM2MLN574NUN:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/img/theme/team-3.jpg   (ca22a1cb)
+2020-09-12T06:53:37.6321315+07:00 0HM2MLN574NUK:00000004 [INF] Sending file. Request path: '"/admin-side/img/theme/team-4.jpg"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\img\theme\team-4.jpg"' (27b0a520)
+2020-09-12T06:53:37.6373989+07:00 0HM2MLN574NUL:00000008 [INF] Sending file. Request path: '"/admin-side/img/theme/bootstrap.jpg"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\img\theme\bootstrap.jpg"' (27b0a520)
+2020-09-12T06:53:37.6447480+07:00 0HM2MLN574NUJ:00000008 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/img/theme/angular.jpg   (ca22a1cb)
+2020-09-12T06:53:37.7119793+07:00 0HM2MLN574NUN:00000005 [INF] Sending file. Request path: '"/admin-side/img/theme/team-3.jpg"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\img\theme\team-3.jpg"' (27b0a520)
+2020-09-12T06:53:37.7396696+07:00 0HM2MLN574NUJ:00000008 [INF] Sending file. Request path: '"/admin-side/img/theme/angular.jpg"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\img\theme\angular.jpg"' (27b0a520)
+2020-09-12T06:53:37.7847032+07:00 0HM2MLN574NUH:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/img/theme/team-2.jpg   (ca22a1cb)
+2020-09-12T06:53:37.9734014+07:00 0HM2MLN574NUK:00000004 [INF] Request finished in 235.1207ms 200 image/jpeg (791a596a)
+2020-09-12T06:53:38.0730948+07:00 0HM2MLN574NUL:00000008 [INF] Request finished in 231.5341ms 200 image/jpeg (791a596a)
+2020-09-12T06:53:38.1563804+07:00 0HM2MLN574NUK:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:55321/lib/mustache.js/mustache.min.js?v=iaqfO5ue0VbSGcEiQn-OeXxnxAMK2-QgHXIDA5bWtGI   (ca22a1cb)
+2020-09-12T06:53:38.1618132+07:00 0HM2MLN574NUL:00000009 [INF] Request starting HTTP/1.1 GET http://localhost:55321/app/shared/karmar.js   (ca22a1cb)
+2020-09-12T06:53:38.2077684+07:00 0HM2MLN574NUJ:00000008 [INF] Request finished in 427.0943ms 200 image/jpeg (791a596a)
+2020-09-12T06:53:38.2223322+07:00 0HM2MLN574NUK:00000005 [INF] Sending file. Request path: '"/lib/mustache.js/mustache.min.js"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\lib\mustache.js\mustache.min.js"' (27b0a520)
+2020-09-12T06:53:38.3011121+07:00 0HM2MLN574NUL:00000009 [INF] Sending file. Request path: '"/app/shared/karmar.js"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\app\shared\karmar.js"' (27b0a520)
+2020-09-12T06:53:38.3095909+07:00 0HM2MLN574NUJ:00000009 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/img/theme/sketch.jpg   (ca22a1cb)
+2020-09-12T06:53:38.6469762+07:00 0HM2MLN574NUL:00000009 [INF] Request finished in 286.5411ms 200 application/javascript (791a596a)
+2020-09-12T06:53:38.6583111+07:00 0HM2MLN574NUJ:00000009 [INF] Sending file. Request path: '"/admin-side/img/theme/sketch.jpg"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\img\theme\sketch.jpg"' (27b0a520)
+2020-09-12T06:53:38.7016076+07:00 0HM2MLN574NUK:00000005 [INF] Request finished in 197.1901ms 200 application/javascript (791a596a)
+2020-09-12T06:53:38.7342087+07:00 0HM2MLN574NUL:0000000A [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/fortawesome/fontawesome-free/webfonts/fa-solid-900.woff2   (ca22a1cb)
+2020-09-12T06:53:38.8018483+07:00 0HM2MLN574NUJ:00000009 [INF] Request finished in 452.7681ms 200 image/jpeg (791a596a)
+2020-09-12T06:53:38.8141297+07:00 0HM2MLN574NUL:0000000A [INF] Sending file. Request path: '"/admin-side/vendor/fortawesome/fontawesome-free/webfonts/fa-solid-900.woff2"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\vendor\fortawesome\fontawesome-free\webfonts\fa-solid-900.woff2"' (27b0a520)
+2020-09-12T06:53:38.8505474+07:00 0HM2MLN574NUK:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/img/theme/react.jpg   (ca22a1cb)
+2020-09-12T06:53:38.8812680+07:00 0HM2MLN574NUN:00000005 [INF] Request finished in 434.4751ms 200 image/jpeg (791a596a)
+2020-09-12T06:53:38.8853334+07:00 0HM2MLN574NUJ:0000000A [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/img/theme/img-1-1000x600.jpg   (ca22a1cb)
+2020-09-12T06:53:38.9314323+07:00 0HM2MLN574NUK:00000006 [INF] Sending file. Request path: '"/admin-side/img/theme/react.jpg"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\img\theme\react.jpg"' (27b0a520)
+2020-09-12T06:53:38.9376513+07:00 0HM2MLN574NUJ:0000000A [INF] Sending file. Request path: '"/admin-side/img/theme/img-1-1000x600.jpg"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\img\theme\img-1-1000x600.jpg"' (27b0a520)
+2020-09-12T06:53:39.1098603+07:00 0HM2MLN574NUN:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/js/demo.min.js   (ca22a1cb)
+2020-09-12T06:53:39.1394476+07:00 0HM2MLN574NUL:0000000A [INF] Request finished in 311.2142ms 200 font/woff2 (791a596a)
+2020-09-12T06:53:39.1507696+07:00 0HM2MLN574NUK:00000006 [INF] Request finished in 349.454ms 200 image/jpeg (791a596a)
+2020-09-12T06:53:39.2521609+07:00 0HM2MLN574NUL:0000000B [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/img/theme/vue.jpg   (ca22a1cb)
+2020-09-12T06:53:39.2709938+07:00 0HM2MLN574NUK:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:55321/Admin/Home/.~/admin-side/img/theme/team-1.jpg   (ca22a1cb)
+2020-09-12T06:53:39.2971512+07:00 0HM2MLN574NUH:00000005 [INF] Sending file. Request path: '"/admin-side/img/theme/team-2.jpg"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\img\theme\team-2.jpg"' (27b0a520)
+2020-09-12T06:53:39.3551751+07:00 0HM2MLN574NUL:0000000B [INF] Sending file. Request path: '"/admin-side/img/theme/vue.jpg"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\img\theme\vue.jpg"' (27b0a520)
+2020-09-12T06:53:39.4087725+07:00 0HM2MLN574NUK:00000007 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-09-12T06:53:39.4244333+07:00 0HM2MLN574NUN:00000006 [INF] Sending file. Request path: '"/admin-side/js/demo.min.js"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\js\demo.min.js"' (27b0a520)
+2020-09-12T06:53:39.4870989+07:00 0HM2MLN574NUM:00000009 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/img/theme/team-1.jpg   (ca22a1cb)
+2020-09-12T06:53:39.5021414+07:00 0HM2MLN574NUK:00000007 [INF] Request finished in 237.7724ms 404  (791a596a)
+2020-09-12T06:53:39.6030789+07:00 0HM2MLN574NUL:0000000B [INF] Request finished in 354.3622ms 200 image/jpeg (791a596a)
+2020-09-12T06:53:39.6235804+07:00 0HM2MLN574NUK:00000008 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/img/icons/cards/bitcoin.png   (ca22a1cb)
+2020-09-12T06:53:39.7900417+07:00 0HM2MLN574NUK:00000008 [INF] Sending file. Request path: '"/admin-side/img/icons/cards/bitcoin.png"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\img\icons\cards\bitcoin.png"' (27b0a520)
+2020-09-12T06:53:39.8507016+07:00 0HM2MLN574NUJ:0000000A [INF] Request finished in 852.6755ms 200 image/jpeg (791a596a)
+2020-09-12T06:53:39.9751021+07:00 0HM2MLN574NUN:00000006 [INF] Request finished in 600.0067ms 200 application/javascript (791a596a)
+2020-09-12T06:53:40.1003504+07:00 0HM2MLN574NUK:00000008 [INF] Request finished in 380.1179ms 200 image/png (791a596a)
+2020-09-12T06:53:40.2347874+07:00 0HM2MLN574NUH:00000005 [INF] Request finished in 2030.0884ms 200 image/jpeg (791a596a)
+2020-09-12T06:53:40.2414194+07:00 0HM2MLN574NUM:00000009 [INF] Sending file. Request path: '"/admin-side/img/theme/team-1.jpg"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\img\theme\team-1.jpg"' (27b0a520)
+2020-09-12T06:53:40.3146320+07:00 0HM2MLN574NUM:00000009 [INF] Request finished in 2796.5511ms 200 image/jpeg (791a596a)
+2020-09-12T06:53:46.5558725+07:00 0HM2MLN574NUM:0000000A [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin/product/index   (ca22a1cb)
+2020-09-12T06:53:46.5746593+07:00 0HM2MLN574NUM:0000000A [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-09-12T06:53:46.5953869+07:00 0HM2MLN574NUM:0000000A [INF] Authorization was successful for user: "admin". (d7eb274a)
+2020-09-12T06:53:46.6092184+07:00 0HM2MLN574NUM:0000000A [INF] Executing action method "KarmaCoreApp.Areas.Admin.Controllers.ProductController.Index (KarmaCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2020-09-12T06:53:47.1752625+07:00 0HM2MLN574NUM:0000000A [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Product/Index.cshtml". (9707eebe)
+2020-09-12T06:53:47.2149585+07:00 0HM2MLN574NUM:0000000A [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=KarmaCoreApp.Data.EF " (9958f5bb)
+2020-09-12T06:53:47.2571977+07:00 0HM2MLN574NUM:0000000A [INF] Executed DbCommand ("17"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[URL], [dto].[ParentId], [dto].[IconCss], [dto].[Status], [dto].[SortOrder]
+FROM [Functions] AS [dto]" (0723d8ff)
+2020-09-12T06:53:47.3310040+07:00 0HM2MLN574NUM:0000000A [INF] Executed action "KarmaCoreApp.Areas.Admin.Controllers.ProductController.Index (KarmaCoreApp)" in 720.2731ms (afa2e885)
+2020-09-12T06:53:47.5421783+07:00 0HM2MLN574NUM:0000000A [INF] Request finished in 821.0757ms 200 text/html; charset=utf-8 (791a596a)
+2020-09-12T06:53:47.7193610+07:00 0HM2MLN574NUM:0000000B [INF] Request starting HTTP/1.1 GET http://localhost:55321/app/controllers/product/index.js   (ca22a1cb)
+2020-09-12T06:53:47.7380107+07:00 0HM2MLN574NUM:0000000B [INF] Sending file. Request path: '"/app/controllers/product/index.js"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\app\controllers\product\index.js"' (27b0a520)
+2020-09-12T06:53:48.0788724+07:00 0HM2MLN574NUM:0000000B [INF] Request finished in 137.6786ms 200 application/javascript (791a596a)
+2020-09-12T06:53:48.2379644+07:00 0HM2MLN574NUM:0000000C [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin/product/GetAll   (ca22a1cb)
+2020-09-12T06:53:48.2674774+07:00 0HM2MLN574NUM:0000000C [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-09-12T06:53:48.2855595+07:00 0HM2MLN574NUM:0000000C [INF] Authorization was successful for user: "admin". (d7eb274a)
+2020-09-12T06:53:48.3202912+07:00 0HM2MLN574NUM:0000000C [INF] Executing action method "KarmaCoreApp.Areas.Admin.Controllers.ProductController.GetAll (KarmaCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2020-09-12T06:53:48.3525894+07:00 0HM2MLN574NUM:0000000C [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=KarmaCoreApp.Data.EF " (9958f5bb)
+2020-09-12T06:53:48.6061381+07:00 0HM2MLN574NUM:0000000C [WRN] The Include operation for navigation '"[x].ProductCategory"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information. (10efaee6)
+2020-09-12T06:53:48.8412620+07:00 0HM2MLN574NUM:0000000C [INF] Executed DbCommand ("22"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id] AS [Id1], [x].[Name], [x].[CategoryId] AS [Id0], [x].[Image], [x].[Price], [x].[PromotionPrice], [x].[OriginalPrice], [x].[Description], [x].[Content], [x].[HomeFlag], [x].[HotFlag], [x].[ViewCount], [x].[Tags], [x].[Unit], CASE
+    WHEN [x].[CategoryId] IS NOT NULL
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END, [x.ProductCategory].[Name] AS [Name0], [x.ProductCategory].[Description] AS [Description0], [x.ProductCategory].[ParentId], [x.ProductCategory].[HomeOrder], [x.ProductCategory].[Image] AS [Image0], [x.ProductCategory].[HomeFlag] AS [HomeFlag0], [x.ProductCategory].[SeoPageTitle], [x.ProductCategory].[SeoAlias], [x.ProductCategory].[SeoKeywords], [x.ProductCategory].[SeoDescription], [x.ProductCategory].[Status], [x.ProductCategory].[SortOrder], [x.ProductCategory].[DateCreated], [x.ProductCategory].[DateModified], [x.ProductCategory].[Id], [x].[Status] AS [Status0], [x].[DateCreated] AS [DateCreated0], [x].[DateModified] AS [DateModified0], [x].[SeoPageTitle] AS [SeoPageTitle0], [x].[SeoAlias] AS [SeoAlias0], [x].[SeoKeywords] AS [SeoKeywords0], [x].[SeoDescription] AS [SeoDescription0]
+FROM [Products] AS [x]
+INNER JOIN [ProductCategories] AS [x.ProductCategory] ON [x].[CategoryId] = [x.ProductCategory].[Id]" (0723d8ff)
+2020-09-12T06:53:48.9108740+07:00 0HM2MLN574NUM:0000000C [INF] Executed DbCommand ("6"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[Status], [dto].[DateCreated], [dto].[DateModified], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2020-09-12T06:53:48.9324996+07:00 0HM2MLN574NUM:0000000C [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[Status], [dto].[DateCreated], [dto].[DateModified], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2020-09-12T06:53:48.9473027+07:00 0HM2MLN574NUM:0000000C [INF] Executed DbCommand ("1"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[Status], [dto].[DateCreated], [dto].[DateModified], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2020-09-12T06:53:48.9606998+07:00 0HM2MLN574NUM:0000000C [INF] Executed DbCommand ("1"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[Status], [dto].[DateCreated], [dto].[DateModified], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2020-09-12T06:53:48.9756158+07:00 0HM2MLN574NUM:0000000C [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[Status], [dto].[DateCreated], [dto].[DateModified], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2020-09-12T06:53:48.9889574+07:00 0HM2MLN574NUM:0000000C [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[Status], [dto].[DateCreated], [dto].[DateModified], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2020-09-12T06:53:49.0026951+07:00 0HM2MLN574NUM:0000000C [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[Status], [dto].[DateCreated], [dto].[DateModified], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2020-09-12T06:53:49.0170290+07:00 0HM2MLN574NUM:0000000C [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[Status], [dto].[DateCreated], [dto].[DateModified], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2020-09-12T06:53:49.0307344+07:00 0HM2MLN574NUM:0000000C [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[Status], [dto].[DateCreated], [dto].[DateModified], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2020-09-12T06:53:49.0484776+07:00 0HM2MLN574NUM:0000000C [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[Status], [dto].[DateCreated], [dto].[DateModified], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2020-09-12T06:53:49.0685347+07:00 0HM2MLN574NUM:0000000C [INF] Executed DbCommand ("1"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[Status], [dto].[DateCreated], [dto].[DateModified], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2020-09-12T06:53:49.0840843+07:00 0HM2MLN574NUM:0000000C [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[Status], [dto].[DateCreated], [dto].[DateModified], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2020-09-12T06:53:49.0981889+07:00 0HM2MLN574NUM:0000000C [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[Status], [dto].[DateCreated], [dto].[DateModified], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2020-09-12T06:53:49.1113710+07:00 0HM2MLN574NUM:0000000C [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[Status], [dto].[DateCreated], [dto].[DateModified], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2020-09-12T06:53:49.1244725+07:00 0HM2MLN574NUM:0000000C [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[Status], [dto].[DateCreated], [dto].[DateModified], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2020-09-12T06:53:49.1377869+07:00 0HM2MLN574NUM:0000000C [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[Status], [dto].[DateCreated], [dto].[DateModified], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2020-09-12T06:53:49.1536619+07:00 0HM2MLN574NUM:0000000C [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[Status], [dto].[DateCreated], [dto].[DateModified], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2020-09-12T06:53:49.1674648+07:00 0HM2MLN574NUM:0000000C [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[Status], [dto].[DateCreated], [dto].[DateModified], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2020-09-12T06:53:49.1803094+07:00 0HM2MLN574NUM:0000000C [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[Status], [dto].[DateCreated], [dto].[DateModified], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2020-09-12T06:53:49.1934351+07:00 0HM2MLN574NUM:0000000C [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[Status], [dto].[DateCreated], [dto].[DateModified], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2020-09-12T06:53:49.2087582+07:00 0HM2MLN574NUM:0000000C [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2020-09-12T06:53:49.3562508+07:00 0HM2MLN574NUM:0000000C [INF] Executed action "KarmaCoreApp.Areas.Admin.Controllers.ProductController.GetAll (KarmaCoreApp)" in 1073.075ms (afa2e885)
+2020-09-12T06:53:49.3725320+07:00 0HM2MLN574NUM:0000000C [INF] Request finished in 1162.4155ms 200 application/json; charset=utf-8 (791a596a)

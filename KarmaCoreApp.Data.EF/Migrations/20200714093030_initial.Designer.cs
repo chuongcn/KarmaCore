@@ -12,7 +12,7 @@ using System;
 namespace KarmaCoreApp.Data.EF.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20200625100817_initial")]
+    [Migration("20200714093030_initial")]
     partial class initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
