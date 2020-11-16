@@ -1,0 +1,826 @@
+2020-11-14T13:01:29.9784048+07:00  [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=KarmaCoreApp.Data.EF " (9958f5bb)
+2020-11-14T13:01:34.5925553+07:00  [INF] Executed DbCommand ("146"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-11-14T13:01:35.4880347+07:00  [INF] Executed DbCommand ("144"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-11-14T13:01:35.8295703+07:00  [INF] Executed DbCommand ("18"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Functions] AS [f]" (0723d8ff)
+2020-11-14T13:01:36.3740321+07:00  [INF] Executed DbCommand ("48"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2020-11-14T13:01:36.4043814+07:00  [INF] Executed DbCommand ("8"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Colors] AS [c]" (0723d8ff)
+2020-11-14T13:01:36.4282114+07:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Sizes] AS [s]" (0723d8ff)
+2020-11-14T13:01:36.5318456+07:00  [INF] Executed DbCommand ("18"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [ProductCategories] AS [p]" (0723d8ff)
+2020-11-14T13:01:36.6623464+07:00  [INF] Executed DbCommand ("20"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Slides] AS [s]" (0723d8ff)
+2020-11-14T13:01:38.2655328+07:00  [ERR] Failed executing DbCommand ("333"ms) [Parameters=["@p0='?' (Size = 4000), @p1='?' (Size = 250), @p2='?', @p3='?' (Size = 250), @p4='?' (Size = 250), @p5='?' (Size = 250), @p6='?', @p7='?' (Size = 250), @p8='?' (Size = 4000), @p9='?' (Size = 250), @p10='?', @p11='?' (Size = 250), @p12='?' (Size = 250), @p13='?' (Size = 250), @p14='?', @p15='?' (Size = 250), @p16='?' (Size = 4000), @p17='?' (Size = 250), @p18='?', @p19='?' (Size = 250), @p20='?' (Size = 250), @p21='?' (Size = 250), @p22='?', @p23='?' (Size = 250), @p24='?' (Size = 4000), @p25='?' (Size = 250), @p26='?', @p27='?' (Size = 250), @p28='?' (Size = 250), @p29='?' (Size = 250), @p30='?', @p31='?' (Size = 250), @p32='?' (Size = 4000), @p33='?' (Size = 250), @p34='?', @p35='?' (Size = 250), @p36='?' (Size = 250), @p37='?' (Size = 250), @p38='?', @p39='?' (Size = 250), @p40='?' (Size = 4000), @p41='?' (Size = 250), @p42='?', @p43='?' (Size = 250), @p44='?' (Size = 250), @p45='?' (Size = 250), @p46='?', @p47='?' (Size = 250), @p48='?' (Size = 4000), @p49='?' (Size = 250), @p50='?', @p51='?' (Size = 250), @p52='?' (Size = 250), @p53='?' (Size = 250), @p54='?', @p55='?' (Size = 250), @p56='?' (Size = 4000), @p57='?' (Size = 250), @p58='?', @p59='?' (Size = 250), @p60='?' (Size = 250), @p61='?' (Size = 250), @p62='?', @p63='?' (Size = 250), @p64='?' (Size = 4000), @p65='?' (Size = 250), @p66='?', @p67='?' (Size = 250), @p68='?' (Size = 250), @p69='?' (Size = 250), @p70='?', @p71='?' (Size = 250), @p72='?' (Size = 4000), @p73='?' (Size = 250), @p74='?', @p75='?' (Size = 250), @p76='?' (Size = 250), @p77='?' (Size = 250), @p78='?', @p79='?' (Size = 250), @p80='?' (Size = 4000), @p81='?' (Size = 250), @p82='?', @p83='?' (Size = 250), @p84='?' (Size = 250), @p85='?' (Size = 250), @p86='?', @p87='?' (Size = 250), @p88='?' (Size = 4000), @p89='?' (Size = 250), @p90='?', @p91='?' (Size = 250), @p92='?' (Size = 250), @p93='?' (Size = 250), @p94='?', @p95='?' (Size = 250), @p96='?' (Size = 4000), @p97='?' (Size = 250), @p98='?', @p99='?' (Size = 250), @p100='?' (Size = 250), @p101='?' (Size = 250), @p102='?', @p103='?' (Size = 250), @p104='?' (Size = 4000), @p105='?' (Size = 250), @p106='?', @p107='?' (Size = 250), @p108='?' (Size = 250), @p109='?' (Size = 250), @p110='?', @p111='?' (Size = 250)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+DECLARE @inserted0 TABLE ([Id] int, [_Position] [int]);
+MERGE [Slides] USING (
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, 0),
+(@p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, 1),
+(@p16, @p17, @p18, @p19, @p20, @p21, @p22, @p23, 2),
+(@p24, @p25, @p26, @p27, @p28, @p29, @p30, @p31, 3),
+(@p32, @p33, @p34, @p35, @p36, @p37, @p38, @p39, 4),
+(@p40, @p41, @p42, @p43, @p44, @p45, @p46, @p47, 5),
+(@p48, @p49, @p50, @p51, @p52, @p53, @p54, @p55, 6),
+(@p56, @p57, @p58, @p59, @p60, @p61, @p62, @p63, 7),
+(@p64, @p65, @p66, @p67, @p68, @p69, @p70, @p71, 8),
+(@p72, @p73, @p74, @p75, @p76, @p77, @p78, @p79, 9),
+(@p80, @p81, @p82, @p83, @p84, @p85, @p86, @p87, 10),
+(@p88, @p89, @p90, @p91, @p92, @p93, @p94, @p95, 11),
+(@p96, @p97, @p98, @p99, @p100, @p101, @p102, @p103, 12),
+(@p104, @p105, @p106, @p107, @p108, @p109, @p110, @p111, 13)) AS i ([Content], [Description], [DisplayOrder], [GroupAlias], [Image], [Name], [Status], [Url], _Position) ON 1=0
+WHEN NOT MATCHED THEN
+INSERT ([Content], [Description], [DisplayOrder], [GroupAlias], [Image], [Name], [Status], [Url])
+VALUES (i.[Content], i.[Description], i.[DisplayOrder], i.[GroupAlias], i.[Image], i.[Name], i.[Status], i.[Url])
+OUTPUT INSERTED.[Id], i._Position
+INTO @inserted0;
+
+SELECT [t].[Id] FROM [Slides] t
+INNER JOIN @inserted0 i ON ([t].[Id] = [i].[Id])
+ORDER BY [i].[_Position];" (627a98df)
+System.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'Description', table 'KarmaCoreApp_MASTERDB.dbo.Slides'; column does not allow nulls. UPDATE fails.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__108_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)
+ClientConnectionId:c8d5e958-3b92-4785-96ef-23ead893434d
+Error Number:515,State:2,Class:16
+2020-11-14T13:01:38.4593104+07:00  [ERR] An exception occurred in the database while saving changes for context type '"KarmaCoreApp.Data.EF.AppDbContext"'."
+""Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.SqlClient.SqlException: Cannot insert the value NULL into column 'Description', table 'KarmaCoreApp_MASTERDB.dbo.Slides'; column does not allow nulls. UPDATE fails.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__108_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(Tuple`2 parameters, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IReadOnlyList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)" (170f029e)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.SqlClient.SqlException: Cannot insert the value NULL into column 'Description', table 'KarmaCoreApp_MASTERDB.dbo.Slides'; column does not allow nulls. UPDATE fails.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__108_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(Tuple`2 parameters, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IReadOnlyList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2020-11-14T13:01:39.0171566+07:00  [ERR] An error occurred while seeding the database (90f98c9f)
+System.AggregateException: One or more errors occurred. (Object reference not set to an instance of an object.) ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.System.IObserver<System.Collections.Generic.KeyValuePair<System.String,System.Object>>.OnNext(KeyValuePair`2 keyValuePair)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.EntityFrameworkCore.Internal.CoreLoggerExtensions.SaveChangesFailed(IDiagnosticsLogger`1 diagnostics, DbContext context, Exception exception)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at KarmaCoreApp.Data.EF.DbInitializer.Seed() in F:\SourceCodeNet\KarmaCore\KarmaCoreApp.Data.EF\DbInitializer.cs:line 206
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at KarmaCoreApp.Program.Main(String[] args) in F:\SourceCodeNet\KarmaCore\KarmaCoreApp\Program.cs:line 22
+---> (Inner Exception #0) System.NullReferenceException: Object reference not set to an instance of an object.
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.System.IObserver<System.Collections.Generic.KeyValuePair<System.String,System.Object>>.OnNext(KeyValuePair`2 keyValuePair)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.EntityFrameworkCore.Internal.CoreLoggerExtensions.SaveChangesFailed(IDiagnosticsLogger`1 diagnostics, DbContext context, Exception exception)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at KarmaCoreApp.Data.EF.DbInitializer.Seed() in F:\SourceCodeNet\KarmaCore\KarmaCoreApp.Data.EF\DbInitializer.cs:line 206<---
+
+2020-11-14T13:01:41.6149912+07:00 0HM48CB0HCKBV:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:55321/   (ca22a1cb)
+2020-11-14T13:01:43.6710021+07:00 0HM48CB0HCKBV:00000001 [INF] Authorization failed for user: null. (a4ab1676)
+2020-11-14T13:01:43.6890809+07:00 0HM48CB0HCKBV:00000001 [INF] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"'. (8b6446cb)
+2020-11-14T13:01:43.7272082+07:00 0HM48CB0HCKBV:00000001 [INF] Executing ChallengeResult with authentication schemes ([]). (f3dca807)
+2020-11-14T13:01:43.8224605+07:00 0HM48CB0HCKBV:00000001 [INF] AuthenticationScheme: "Identity.Application" was challenged. (d45f1f38)
+2020-11-14T13:01:43.8499206+07:00 0HM48CB0HCKBV:00000001 [INF] Executed action "KarmaCoreApp.Controllers.HomeController.Index (KarmaCoreApp)" in 303.5622ms (afa2e885)
+2020-11-14T13:01:44.0681766+07:00 0HM48CB0HCKBV:00000001 [INF] Request finished in 2635.47ms 302  (791a596a)
+2020-11-14T13:01:44.1231870+07:00 0HM48CB0HCKBV:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:55321/Account/Login?ReturnUrl=%2F   (ca22a1cb)
+2020-11-14T13:01:44.7302774+07:00 0HM48CB0HCKBV:00000002 [INF] Executing action method "KarmaCoreApp.Controllers.AccountController.Login (KarmaCoreApp)" with arguments (["/"]) - ModelState is Valid (ba7f4ac2)
+2020-11-14T13:01:44.8601002+07:00 0HM48CB0HCKBV:00000002 [INF] AuthenticationScheme: "Identity.External" signed out. (d3f50c8d)
+2020-11-14T13:01:48.1007900+07:00 0HM48CB0HCKBU:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin   (ca22a1cb)
+2020-11-14T13:01:48.1663046+07:00 0HM48CB0HCKBU:00000001 [INF] Executing action method "KarmaCoreApp.Areas.Admin.Controllers.LoginController.Index (KarmaCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2020-11-14T13:01:52.0693858+07:00 0HM48CB0HCKC0:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin   (ca22a1cb)
+2020-11-14T13:01:52.0877161+07:00 0HM48CB0HCKC0:00000001 [INF] Executing action method "KarmaCoreApp.Areas.Admin.Controllers.LoginController.Index (KarmaCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2020-11-14T13:02:03.0871243+07:00 0HM48CB0HCKBU:00000001 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2020-11-14T13:02:03.0973776+07:00 0HM48CB0HCKC0:00000001 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2020-11-14T13:02:03.1154159+07:00 0HM48CB0HCKBV:00000002 [INF] Executing ViewResult, running view at path "/Views/Account/Login.cshtml". (9707eebe)
+2020-11-14T13:02:05.5843453+07:00 0HM48CB0HCKC0:00000001 [INF] Executed action "KarmaCoreApp.Areas.Admin.Controllers.LoginController.Index (KarmaCoreApp)" in 13441.3302ms (afa2e885)
+2020-11-14T13:02:05.6103405+07:00 0HM48CB0HCKBU:00000001 [INF] Executed action "KarmaCoreApp.Areas.Admin.Controllers.LoginController.Index (KarmaCoreApp)" in 17381.0671ms (afa2e885)
+2020-11-14T13:02:05.9098558+07:00 0HM48CB0HCKBU:00000001 [INF] Request finished in 17751.4297ms 200 text/html; charset=utf-8 (791a596a)
+2020-11-14T13:02:05.9103999+07:00 0HM48CB0HCKC0:00000001 [INF] Request finished in 13814.5645ms 200 text/html; charset=utf-8 (791a596a)
+2020-11-14T13:02:07.9765990+07:00 0HM48CB0HCKC0:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/nucleo/css/nucleo.css   (ca22a1cb)
+2020-11-14T13:02:07.9806908+07:00 0HM48CB0HCKC1:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/fortawesome/fontawesome-free/css/all.min.css   (ca22a1cb)
+2020-11-14T13:02:08.1570237+07:00 0HM48CB0HCKC1:00000001 [INF] Sending file. Request path: '"/admin-side/vendor/fortawesome/fontawesome-free/css/all.min.css"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\vendor\fortawesome\fontawesome-free\css\all.min.css"' (27b0a520)
+2020-11-14T13:02:08.1678201+07:00 0HM48CB0HCKC0:00000002 [INF] Sending file. Request path: '"/admin-side/vendor/nucleo/css/nucleo.css"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\vendor\nucleo\css\nucleo.css"' (27b0a520)
+2020-11-14T13:02:08.1835522+07:00 0HM48CB0HCKBV:00000002 [INF] Executed action "KarmaCoreApp.Controllers.AccountController.Login (KarmaCoreApp)" in 23846.2979ms (afa2e885)
+2020-11-14T13:02:08.2247735+07:00 0HM48CB0HCKBV:00000002 [INF] Request finished in 24092.1658ms 200 text/html; charset=utf-8 (791a596a)
+2020-11-14T13:02:08.2842907+07:00 0HM48CB0HCKC1:00000001 [INF] Request finished in 295.0591ms 200 text/css (791a596a)
+2020-11-14T13:02:08.2960343+07:00 0HM48CB0HCKC0:00000002 [INF] Request finished in 320.739ms 200 text/css (791a596a)
+2020-11-14T13:02:08.4638092+07:00 0HM48CB0HCKC0:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/animate.css/animate.min.css   (ca22a1cb)
+2020-11-14T13:02:08.5136388+07:00 0HM48CB0HCKC0:00000003 [INF] Sending file. Request path: '"/admin-side/vendor/animate.css/animate.min.css"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\vendor\animate.css\animate.min.css"' (27b0a520)
+2020-11-14T13:02:08.6468846+07:00 0HM48CB0HCKC0:00000003 [INF] Request finished in 173.4365ms 200 text/css (791a596a)
+2020-11-14T13:02:08.7727097+07:00 0HM48CB0HCKC0:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/bootstrap/dist/css/bootstrap.min.css?v=rldnE7wZYJj3Q43t5v8fg1ojKRwyt0Wtfm-224CacZs   (ca22a1cb)
+2020-11-14T13:02:08.8299441+07:00 0HM48CB0HCKC0:00000004 [INF] Sending file. Request path: '"/admin-side/vendor/bootstrap/dist/css/bootstrap.min.css"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\vendor\bootstrap\dist\css\bootstrap.min.css"' (27b0a520)
+2020-11-14T13:02:08.8942898+07:00 0HM48CB0HCKC0:00000004 [INF] Request finished in 128.3993ms 200 text/css (791a596a)
+2020-11-14T13:02:08.9463905+07:00 0HM48CB0HCKC0:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/fullcalendar/dist/fullcalendar.min.css   (ca22a1cb)
+2020-11-14T13:02:08.9783461+07:00 0HM48CB0HCKC0:00000005 [INF] Sending file. Request path: '"/admin-side/vendor/fullcalendar/dist/fullcalendar.min.css"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\vendor\fullcalendar\dist\fullcalendar.min.css"' (27b0a520)
+2020-11-14T13:02:09.0624329+07:00 0HM48CB0HCKC0:00000005 [INF] Request finished in 83.4328ms 200 text/css (791a596a)
+2020-11-14T13:02:09.1433350+07:00 0HM48CB0HCKC0:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/sweetalert2/dist/sweetalert2.min.css   (ca22a1cb)
+2020-11-14T13:02:09.1634210+07:00 0HM48CB0HCKC0:00000006 [INF] Sending file. Request path: '"/admin-side/vendor/sweetalert2/dist/sweetalert2.min.css"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\vendor\sweetalert2\dist\sweetalert2.min.css"' (27b0a520)
+2020-11-14T13:02:09.1930448+07:00 0HM48CB0HCKC1:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/css/argon.css?v=1.1.0   (ca22a1cb)
+2020-11-14T13:02:09.2298350+07:00 0HM48CB0HCKC1:00000002 [INF] Sending file. Request path: '"/admin-side/css/argon.css"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\css\argon.css"' (27b0a520)
+2020-11-14T13:02:09.2418553+07:00 0HM48CB0HCKC0:00000006 [INF] Request finished in 77.1279ms 200 text/css (791a596a)
+2020-11-14T13:02:09.3323777+07:00 0HM48CB0HCKC1:00000002 [INF] Request finished in 143.8115ms 200 text/css (791a596a)
+2020-11-14T13:02:09.4139290+07:00 0HM48CB0HCKC1:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/css/site.css   (ca22a1cb)
+2020-11-14T13:02:09.4969026+07:00 0HM48CB0HCKC0:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/jquery/dist/jquery-3.4.1.min.js   (ca22a1cb)
+2020-11-14T13:02:09.5351590+07:00 0HM48CB0HCKC1:00000003 [INF] Sending file. Request path: '"/admin-side/css/site.css"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\css\site.css"' (27b0a520)
+2020-11-14T13:02:09.5677901+07:00 0HM48CB0HCKC0:00000007 [INF] Sending file. Request path: '"/admin-side/vendor/jquery/dist/jquery-3.4.1.min.js"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\vendor\jquery\dist\jquery-3.4.1.min.js"' (27b0a520)
+2020-11-14T13:02:09.5922109+07:00 0HM48CB0HCKC1:00000003 [INF] Request finished in 179.5398ms 200 text/css (791a596a)
+2020-11-14T13:02:09.8413405+07:00 0HM48CB0HCKC0:00000007 [INF] Request finished in 378.88ms 200 application/javascript (791a596a)
+2020-11-14T13:02:10.0159833+07:00 0HM48CB0HCKC0:00000008 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/bootstrap/dist/js/bootstrap.bundle.min.js   (ca22a1cb)
+2020-11-14T13:02:10.0490842+07:00 0HM48CB0HCKC0:00000008 [INF] Sending file. Request path: '"/admin-side/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\vendor\bootstrap\dist\js\bootstrap.bundle.min.js"' (27b0a520)
+2020-11-14T13:02:10.2735872+07:00 0HM48CB0HCKC0:00000008 [INF] Request finished in 255.9257ms 200 application/javascript (791a596a)
+2020-11-14T13:02:10.6276885+07:00 0HM48CB0HCKC0:00000009 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/js-cookie/js.cookie.js   (ca22a1cb)
+2020-11-14T13:02:10.6506639+07:00 0HM48CB0HCKC0:00000009 [INF] Sending file. Request path: '"/admin-side/vendor/js-cookie/js.cookie.js"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\vendor\js-cookie\js.cookie.js"' (27b0a520)
+2020-11-14T13:02:10.6907457+07:00 0HM48CB0HCKC1:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/jquery.scrollbar/jquery.scrollbar.min.js   (ca22a1cb)
+2020-11-14T13:02:10.7126922+07:00 0HM48CB0HCKC1:00000004 [INF] Sending file. Request path: '"/admin-side/vendor/jquery.scrollbar/jquery.scrollbar.min.js"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\vendor\jquery.scrollbar\jquery.scrollbar.min.js"' (27b0a520)
+2020-11-14T13:02:10.7346688+07:00 0HM48CB0HCKC0:00000009 [INF] Request finished in 101.3721ms 200 application/javascript (791a596a)
+2020-11-14T13:02:10.8167533+07:00 0HM48CB0HCKC1:00000004 [INF] Request finished in 126.5024ms 200 application/javascript (791a596a)
+2020-11-14T13:02:10.9349986+07:00 0HM48CB0HCKC1:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/jquery-scroll-lock/dist/jquery-scrollLock.min.js   (ca22a1cb)
+2020-11-14T13:02:10.9677755+07:00 0HM48CB0HCKC1:00000005 [INF] Sending file. Request path: '"/admin-side/vendor/jquery-scroll-lock/dist/jquery-scrollLock.min.js"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\vendor\jquery-scroll-lock\dist\jquery-scrollLock.min.js"' (27b0a520)
+2020-11-14T13:02:11.0386895+07:00 0HM48CB0HCKC1:00000005 [INF] Request finished in 96.5565ms 200 application/javascript (791a596a)
+2020-11-14T13:02:11.1656052+07:00 0HM48CB0HCKC1:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/chart.js/dist/Chart.min.js   (ca22a1cb)
+2020-11-14T13:02:11.1887885+07:00 0HM48CB0HCKC1:00000006 [INF] Sending file. Request path: '"/admin-side/vendor/chart.js/dist/Chart.min.js"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\vendor\chart.js\dist\Chart.min.js"' (27b0a520)
+2020-11-14T13:02:11.2491305+07:00 0HM48CB0HCKC0:0000000A [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/chart.js/dist/Chart.extension.js   (ca22a1cb)
+2020-11-14T13:02:11.2788562+07:00 0HM48CB0HCKC0:0000000A [INF] Sending file. Request path: '"/admin-side/vendor/chart.js/dist/Chart.extension.js"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\vendor\chart.js\dist\Chart.extension.js"' (27b0a520)
+2020-11-14T13:02:11.3332489+07:00 0HM48CB0HCKC0:0000000A [INF] Request finished in 80.782ms 200 application/javascript (791a596a)
+2020-11-14T13:02:11.3827480+07:00 0HM48CB0HCKC0:0000000B [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/sweetalert2/dist/sweetalert2.all.min.js?v=4DzxRASIPJFHQ-3prwOSAyanNx7MOlqGPpEJCZHW8DU   (ca22a1cb)
+2020-11-14T13:02:11.4203454+07:00 0HM48CB0HCKC0:0000000B [INF] Sending file. Request path: '"/admin-side/vendor/sweetalert2/dist/sweetalert2.all.min.js"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\vendor\sweetalert2\dist\sweetalert2.all.min.js"' (27b0a520)
+2020-11-14T13:02:11.4581116+07:00 0HM48CB0HCKC0:0000000B [INF] Request finished in 64.3459ms 200 application/javascript (791a596a)
+2020-11-14T13:02:11.4726767+07:00 0HM48CB0HCKC1:00000006 [INF] Request finished in 297.7384ms 200 application/javascript (791a596a)
+2020-11-14T13:02:11.5157077+07:00 0HM48CB0HCKC1:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/bootstrap-notify/bootstrap-notify.min.js?v=DRllCE_8rrevSAnSMWB4XO3zpr-3WaSuqUSNLD5NAzg   (ca22a1cb)
+2020-11-14T13:02:11.5376432+07:00 0HM48CB0HCKC1:00000007 [INF] Sending file. Request path: '"/admin-side/vendor/bootstrap-notify/bootstrap-notify.min.js"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\vendor\bootstrap-notify\bootstrap-notify.min.js"' (27b0a520)
+2020-11-14T13:02:11.5591105+07:00 0HM48CB0HCKC1:00000007 [INF] Request finished in 43.2647ms 200 application/javascript (791a596a)
+2020-11-14T13:02:11.6916091+07:00 0HM48CB0HCKC1:00000008 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/moment/min/moment.min.js   (ca22a1cb)
+2020-11-14T13:02:11.7119545+07:00 0HM48CB0HCKC0:0000000C [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/fullcalendar/dist/fullcalendar.min.js   (ca22a1cb)
+2020-11-14T13:02:11.7178357+07:00 0HM48CB0HCKC2:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/sweetalert2/dist/sweetalert2.min.js   (ca22a1cb)
+2020-11-14T13:02:11.7539104+07:00 0HM48CB0HCKC0:0000000C [INF] Sending file. Request path: '"/admin-side/vendor/fullcalendar/dist/fullcalendar.min.js"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\vendor\fullcalendar\dist\fullcalendar.min.js"' (27b0a520)
+2020-11-14T13:02:11.7618308+07:00 0HM48CB0HCKC2:00000001 [INF] Sending file. Request path: '"/admin-side/vendor/sweetalert2/dist/sweetalert2.min.js"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\vendor\sweetalert2\dist\sweetalert2.min.js"' (27b0a520)
+2020-11-14T13:02:11.7731107+07:00 0HM48CB0HCKC1:00000008 [INF] Sending file. Request path: '"/admin-side/vendor/moment/min/moment.min.js"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\vendor\moment\min\moment.min.js"' (27b0a520)
+2020-11-14T13:02:11.9237955+07:00 0HM48CB0HCKC2:00000001 [INF] Request finished in 134.4666ms 200 application/javascript (791a596a)
+2020-11-14T13:02:11.9500339+07:00 0HM48CB0HCKC1:00000008 [INF] Request finished in 232.2251ms 200 application/javascript (791a596a)
+2020-11-14T13:02:12.0231149+07:00 0HM48CB0HCKC0:0000000C [INF] Request finished in 324.2044ms 200 application/javascript (791a596a)
+2020-11-14T13:02:12.0567443+07:00 0HM48CB0HCKC0:0000000D [INF] Request starting HTTP/1.1 GET http://localhost:55321/app/shared/alert.js   (ca22a1cb)
+2020-11-14T13:02:12.0780319+07:00 0HM48CB0HCKC0:0000000D [INF] Sending file. Request path: '"/app/shared/alert.js"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\app\shared\alert.js"' (27b0a520)
+2020-11-14T13:02:12.1321127+07:00 0HM48CB0HCKC1:00000009 [INF] Request starting HTTP/1.1 GET http://localhost:55321/app/shared/messages.js   (ca22a1cb)
+2020-11-14T13:02:12.1494875+07:00 0HM48CB0HCKC0:0000000D [INF] Request finished in 89.0284ms 200 application/javascript (791a596a)
+2020-11-14T13:02:12.1743352+07:00 0HM48CB0HCKC1:00000009 [INF] Sending file. Request path: '"/app/shared/messages.js"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\app\shared\messages.js"' (27b0a520)
+2020-11-14T13:02:12.2570590+07:00 0HM48CB0HCKC0:0000000E [INF] Request starting HTTP/1.1 GET http://localhost:55321/app/shared/karmar.js   (ca22a1cb)
+2020-11-14T13:02:12.2649148+07:00 0HM48CB0HCKC1:00000009 [INF] Request finished in 120.5474ms 200 application/javascript (791a596a)
+2020-11-14T13:02:12.3161030+07:00 0HM48CB0HCKC0:0000000E [INF] Sending file. Request path: '"/app/shared/karmar.js"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\app\shared\karmar.js"' (27b0a520)
+2020-11-14T13:02:12.6332648+07:00 0HM48CB0HCKC0:0000000E [INF] Request finished in 176.3458ms 200 application/javascript (791a596a)
+2020-11-14T13:02:13.1416493+07:00 0HM48CB0HCKC0:0000000F [INF] Request starting HTTP/1.1 GET http://localhost:55321/app/controllers/login/index.js   (ca22a1cb)
+2020-11-14T13:02:13.1649316+07:00 0HM48CB0HCKC0:0000000F [INF] Sending file. Request path: '"/app/controllers/login/index.js"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\app\controllers\login\index.js"' (27b0a520)
+2020-11-14T13:02:13.2506120+07:00 0HM48CB0HCKC0:0000000F [INF] Request finished in 106.6755ms 200 application/javascript (791a596a)
+2020-11-14T13:02:13.3136367+07:00 0HM48CB0HCKC0:00000010 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/js/argon.js?v=1.1.0   (ca22a1cb)
+2020-11-14T13:02:13.3644178+07:00 0HM48CB0HCKC0:00000010 [INF] Sending file. Request path: '"/admin-side/js/argon.js"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\js\argon.js"' (27b0a520)
+2020-11-14T13:02:13.9767317+07:00 0HM48CB0HCKC0:00000010 [INF] Request finished in 685.6132ms 200 application/javascript (791a596a)
+2020-11-14T13:02:14.3244262+07:00 0HM48CB0HCKC0:00000011 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/nucleo/fonts/nucleo-icons.woff2   (ca22a1cb)
+2020-11-14T13:02:14.3438864+07:00 0HM48CB0HCKC0:00000011 [INF] Sending file. Request path: '"/admin-side/vendor/nucleo/fonts/nucleo-icons.woff2"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\vendor\nucleo\fonts\nucleo-icons.woff2"' (27b0a520)
+2020-11-14T13:02:14.4104708+07:00 0HM48CB0HCKC0:00000011 [INF] Request finished in 87.2851ms 200 font/woff2 (791a596a)
+2020-11-14T13:06:36.8727922+07:00 0HM48CB0HCKC0:00000012 [INF] Request starting HTTP/1.1 POST http://localhost:55321/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 35 (ca22a1cb)
+2020-11-14T13:06:37.2984286+07:00 0HM48CB0HCKC0:00000012 [INF] Executing action method "KarmaCoreApp.Areas.Admin.Controllers.LoginController.Authen (KarmaCoreApp)" with arguments (["KarmaCoreApp.Models.AccountViewModels.LoginViewModel"]) - ModelState is Valid (ba7f4ac2)
+2020-11-14T13:06:37.3936837+07:00 0HM48CB0HCKC0:00000012 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=KarmaCoreApp.Data.EF " (9958f5bb)
+2020-11-14T13:06:37.7388107+07:00 0HM48CB0HCKC0:00000012 [INF] Executed DbCommand ("9"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[Birthday], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2020-11-14T13:06:38.6728252+07:00 0HM48CB0HCKC0:00000012 [INF] Executed DbCommand ("3"ms) [Parameters=["@__user_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2020-11-14T13:06:38.9338496+07:00 0HM48CB0HCKC0:00000012 [INF] Executed DbCommand ("11"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2020-11-14T13:06:38.9956731+07:00 0HM48CB0HCKC0:00000012 [INF] Executed DbCommand ("4"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2020-11-14T13:06:39.0907054+07:00 0HM48CB0HCKC0:00000012 [INF] Executed DbCommand ("3"ms) [Parameters=["@__role_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2020-11-14T13:06:39.1353770+07:00 0HM48CB0HCKC0:00000012 [INF] Executed DbCommand ("2"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2020-11-14T13:06:39.2301069+07:00 0HM48CB0HCKC0:00000012 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2020-11-14T13:06:39.2538151+07:00 0HM48CB0HCKC0:00000012 [INF] User logged in. (fdce0db4)
+2020-11-14T13:06:39.3373695+07:00 0HM48CB0HCKC0:00000012 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2020-11-14T13:06:39.7893247+07:00 0HM48CB0HCKC0:00000012 [INF] Executed action "KarmaCoreApp.Areas.Admin.Controllers.LoginController.Authen (KarmaCoreApp)" in 2851.6416ms (afa2e885)
+2020-11-14T13:06:39.8100990+07:00 0HM48CB0HCKC0:00000012 [INF] Request finished in 2939.633ms 200 application/json; charset=utf-8 (791a596a)
+2020-11-14T13:06:39.8655186+07:00 0HM48CB0HCKC0:00000013 [INF] Request starting HTTP/1.1 GET http://localhost:55321/Admin/Home/Index   (ca22a1cb)
+2020-11-14T13:06:39.9353553+07:00 0HM48CB0HCKC0:00000013 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-11-14T13:06:39.9539500+07:00 0HM48CB0HCKC0:00000013 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2020-11-14T13:06:39.9691254+07:00 0HM48CB0HCKC0:00000013 [INF] Executing action method "KarmaCoreApp.Areas.Admin.Controllers.HomeController.Index (KarmaCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2020-11-14T13:06:41.3754064+07:00 0HM48CB0HCKC0:00000013 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2020-11-14T13:06:42.7251082+07:00 0HM48CB0HCKC0:00000013 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=KarmaCoreApp.Data.EF " (9958f5bb)
+2020-11-14T13:06:43.0379563+07:00 0HM48CB0HCKC0:00000013 [INF] Executed DbCommand ("11"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[URL], [dto].[ParentId], [dto].[IconCss], [dto].[Status], [dto].[SortOrder]
+FROM [Functions] AS [dto]" (0723d8ff)
+2020-11-14T13:06:45.3666187+07:00 0HM48CB0HCKC0:00000013 [INF] Executed action "KarmaCoreApp.Areas.Admin.Controllers.HomeController.Index (KarmaCoreApp)" in 5413.8207ms (afa2e885)
+2020-11-14T13:06:45.7234598+07:00 0HM48CB0HCKC0:00000013 [INF] Request finished in 5597.2252ms 200 text/html; charset=utf-8 (791a596a)
+2020-11-14T13:06:46.0020792+07:00 0HM48CB0HCKC2:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/datatables.net-select-bs4/css/select.bootstrap4.min.css   (ca22a1cb)
+2020-11-14T13:06:46.0138150+07:00 0HM48CB0HCKC1:0000000A [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/datatables.net-buttons-bs4/css/buttons.bootstrap4.min.css   (ca22a1cb)
+2020-11-14T13:06:46.0471891+07:00 0HM48CB0HCKC2:00000002 [INF] Sending file. Request path: '"/admin-side/vendor/datatables.net-select-bs4/css/select.bootstrap4.min.css"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\vendor\datatables.net-select-bs4\css\select.bootstrap4.min.css"' (27b0a520)
+2020-11-14T13:06:46.0548457+07:00 0HM48CB0HCKC1:0000000A [INF] Sending file. Request path: '"/admin-side/vendor/datatables.net-buttons-bs4/css/buttons.bootstrap4.min.css"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\vendor\datatables.net-buttons-bs4\css\buttons.bootstrap4.min.css"' (27b0a520)
+2020-11-14T13:06:46.0711337+07:00 0HM48CB0HCKC3:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/img/theme/team-1.jpg   (ca22a1cb)
+2020-11-14T13:06:46.0806854+07:00 0HM48CB0HCKC4:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/datatables.net-bs4/js/dataTables.bootstrap4.min.js?v=n5OcGsPalh5OjgRvgnZadkBhuAzpMtWr2JsN3pD0Nn8   (ca22a1cb)
+2020-11-14T13:06:46.1860304+07:00 0HM48CB0HCKC3:00000001 [INF] Sending file. Request path: '"/admin-side/img/theme/team-1.jpg"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\img\theme\team-1.jpg"' (27b0a520)
+2020-11-14T13:06:46.1983377+07:00 0HM48CB0HCKC1:0000000A [INF] Request finished in 549.5561ms 200 text/css (791a596a)
+2020-11-14T13:06:46.2343640+07:00 0HM48CB0HCKC4:00000001 [INF] Sending file. Request path: '"/admin-side/vendor/datatables.net-bs4/js/dataTables.bootstrap4.min.js"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\vendor\datatables.net-bs4\js\dataTables.bootstrap4.min.js"' (27b0a520)
+2020-11-14T13:06:46.2715901+07:00 0HM48CB0HCKC2:00000002 [INF] Request finished in 575.5093ms 200 text/css (791a596a)
+2020-11-14T13:06:46.3583516+07:00 0HM48CB0HCKC1:0000000B [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/datatables.net-buttons/js/dataTables.buttons.min.js?v=NGG_qejTn1L6euLXXm88jjAixzzoUai9oY7TIk8q830   (ca22a1cb)
+2020-11-14T13:06:46.3836950+07:00 0HM48CB0HCKC2:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/datatables.net-buttons-bs4/js/buttons.bootstrap4.min.js?v=P3hlCXEOINKYxJWotv7nmQeVPDhFtvqROBxUfMWOw44   (ca22a1cb)
+2020-11-14T13:06:46.3900778+07:00 0HM48CB0HCKC4:00000001 [INF] Request finished in 505.4718ms 200 application/javascript (791a596a)
+2020-11-14T13:06:46.4000151+07:00 0HM48CB0HCKC5:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/datatables.net/js/jquery.dataTables.min.js?v=GuXEL1HY4ADy_NU6PCrM-_oF7r_23d2Fj9mKqW8ZJ4M   (ca22a1cb)
+2020-11-14T13:06:46.4277939+07:00 0HM48CB0HCKC2:00000003 [INF] Sending file. Request path: '"/admin-side/vendor/datatables.net-buttons-bs4/js/buttons.bootstrap4.min.js"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\vendor\datatables.net-buttons-bs4\js\buttons.bootstrap4.min.js"' (27b0a520)
+2020-11-14T13:06:46.4369502+07:00 0HM48CB0HCKC1:0000000B [INF] Sending file. Request path: '"/admin-side/vendor/datatables.net-buttons/js/dataTables.buttons.min.js"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\vendor\datatables.net-buttons\js\dataTables.buttons.min.js"' (27b0a520)
+2020-11-14T13:06:46.5076173+07:00 0HM48CB0HCKC4:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:55321/lib/mustache.js/mustache.min.js?v=53-oMwTN8IFjuTd1TZQ6sm76tL5EniKpslfRUQ0t6Os   (ca22a1cb)
+2020-11-14T13:06:46.5337782+07:00 0HM48CB0HCKC2:00000003 [INF] Request finished in 137.3511ms 200 application/javascript (791a596a)
+2020-11-14T13:06:46.5533967+07:00 0HM48CB0HCKC5:00000001 [INF] Sending file. Request path: '"/admin-side/vendor/datatables.net/js/jquery.dataTables.min.js"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\vendor\datatables.net\js\jquery.dataTables.min.js"' (27b0a520)
+2020-11-14T13:06:46.6198929+07:00 0HM48CB0HCKC4:00000002 [INF] Sending file. Request path: '"/lib/mustache.js/mustache.min.js"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\lib\mustache.js\mustache.min.js"' (27b0a520)
+2020-11-14T13:06:46.6345955+07:00 0HM48CB0HCKC2:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/js/demo.min.js   (ca22a1cb)
+2020-11-14T13:06:46.6663800+07:00 0HM48CB0HCKC0:00000014 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/datatables.net-bs4/css/dataTables.bootstrap4.min.css   (ca22a1cb)
+2020-11-14T13:06:46.6857013+07:00 0HM48CB0HCKC1:0000000B [INF] Request finished in 196.9894ms 200 application/javascript (791a596a)
+2020-11-14T13:06:46.6942857+07:00 0HM48CB0HCKC2:00000004 [INF] Sending file. Request path: '"/admin-side/js/demo.min.js"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\js\demo.min.js"' (27b0a520)
+2020-11-14T13:06:46.7371744+07:00 0HM48CB0HCKC0:00000014 [INF] Sending file. Request path: '"/admin-side/vendor/datatables.net-bs4/css/dataTables.bootstrap4.min.css"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\vendor\datatables.net-bs4\css\dataTables.bootstrap4.min.css"' (27b0a520)
+2020-11-14T13:06:46.8139226+07:00 0HM48CB0HCKC1:0000000C [INF] Request starting HTTP/1.1 GET http://localhost:55321/Admin/Home/.~/admin-side/img/theme/team-1.jpg   (ca22a1cb)
+2020-11-14T13:06:46.8383694+07:00 0HM48CB0HCKC4:00000002 [INF] Request finished in 391.2425ms 200 application/javascript (791a596a)
+2020-11-14T13:06:46.8462319+07:00 0HM48CB0HCKC2:00000004 [INF] Request finished in 221.8325ms 200 application/javascript (791a596a)
+2020-11-14T13:06:46.8874065+07:00 0HM48CB0HCKC1:0000000C [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-11-14T13:06:46.8994618+07:00 0HM48CB0HCKC3:00000001 [INF] Request finished in 636.2851ms 200 image/jpeg (791a596a)
+2020-11-14T13:06:46.9045102+07:00 0HM48CB0HCKC5:00000001 [INF] Request finished in 1029.4899ms 200 application/javascript (791a596a)
+2020-11-14T13:06:46.9343802+07:00 0HM48CB0HCKC1:0000000C [INF] Request finished in 169.9267ms 404  (791a596a)
+2020-11-14T13:06:47.0331479+07:00 0HM48CB0HCKC0:00000014 [INF] Request finished in 811.8588ms 200 text/css (791a596a)
+2020-11-14T13:06:47.0540953+07:00 0HM48CB0HCKC3:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:55321/lib/jquery.twbsPagination.js/jquery.twbsPagination.min.js?v=RJcG7Vu6g4cDoCJMj8NaE5l5D8fxj6OZhGF3no3ji1A   (ca22a1cb)
+2020-11-14T13:06:47.0833072+07:00 0HM48CB0HCKC3:00000002 [INF] Sending file. Request path: '"/lib/jquery.twbsPagination.js/jquery.twbsPagination.min.js"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\lib\jquery.twbsPagination.js\jquery.twbsPagination.min.js"' (27b0a520)
+2020-11-14T13:06:47.1184707+07:00 0HM48CB0HCKC3:00000002 [INF] Request finished in 146.3215ms 200 application/javascript (791a596a)
+2020-11-14T13:06:47.5613196+07:00 0HM48CB0HCKC3:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin-side/vendor/fortawesome/fontawesome-free/webfonts/fa-solid-900.woff2   (ca22a1cb)
+2020-11-14T13:06:47.5899577+07:00 0HM48CB0HCKC3:00000003 [INF] Sending file. Request path: '"/admin-side/vendor/fortawesome/fontawesome-free/webfonts/fa-solid-900.woff2"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\admin-side\vendor\fortawesome\fontawesome-free\webfonts\fa-solid-900.woff2"' (27b0a520)
+2020-11-14T13:06:47.7689197+07:00 0HM48CB0HCKC3:00000003 [INF] Request finished in 199.7827ms 200 font/woff2 (791a596a)
+2020-11-14T13:06:52.4055634+07:00 0HM48CB0HCKC3:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin/product/index   (ca22a1cb)
+2020-11-14T13:06:52.4462726+07:00 0HM48CB0HCKC3:00000004 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-11-14T13:06:52.4711609+07:00 0HM48CB0HCKC3:00000004 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2020-11-14T13:06:52.4891147+07:00 0HM48CB0HCKC3:00000004 [INF] Executing action method "KarmaCoreApp.Areas.Admin.Controllers.ProductController.Index (KarmaCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2020-11-14T13:06:53.1115099+07:00 0HM48CB0HCKC3:00000004 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Product/Index.cshtml". (9707eebe)
+2020-11-14T13:06:53.1777504+07:00 0HM48CB0HCKC3:00000004 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=KarmaCoreApp.Data.EF " (9958f5bb)
+2020-11-14T13:06:53.2032887+07:00 0HM48CB0HCKC3:00000004 [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[URL], [dto].[ParentId], [dto].[IconCss], [dto].[Status], [dto].[SortOrder]
+FROM [Functions] AS [dto]" (0723d8ff)
+2020-11-14T13:06:53.2433761+07:00 0HM48CB0HCKC3:00000004 [INF] Executed action "KarmaCoreApp.Areas.Admin.Controllers.ProductController.Index (KarmaCoreApp)" in 776.8029ms (afa2e885)
+2020-11-14T13:06:53.2976702+07:00 0HM48CB0HCKC3:00000004 [INF] Request finished in 873.0675ms 200 text/html; charset=utf-8 (791a596a)
+2020-11-14T13:06:53.4549462+07:00 0HM48CB0HCKC3:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:55321/app/controllers/product/index.js   (ca22a1cb)
+2020-11-14T13:06:53.4852490+07:00 0HM48CB0HCKC3:00000005 [INF] Sending file. Request path: '"/app/controllers/product/index.js"'. Physical path: '"F:\SourceCodeNet\KarmaCore\KarmaCoreApp\wwwroot\app\controllers\product\index.js"' (27b0a520)
+2020-11-14T13:06:53.5290728+07:00 0HM48CB0HCKC3:00000005 [INF] Request finished in 77.6653ms 200 application/javascript (791a596a)
+2020-11-14T13:06:54.1270761+07:00 0HM48CB0HCKC3:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin/product/GetAllCategories   (ca22a1cb)
+2020-11-14T13:06:54.1354722+07:00 0HM48CB0HCKC0:00000015 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin/product/GetAllPaging?categoryId=--%20Select%20category%20--&keyword=&page=1&pageSize=10   (ca22a1cb)
+2020-11-14T13:06:54.2419859+07:00 0HM48CB0HCKC3:00000006 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-11-14T13:06:54.3384771+07:00 0HM48CB0HCKC0:00000015 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-11-14T13:06:54.4034077+07:00 0HM48CB0HCKC3:00000006 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2020-11-14T13:06:54.4711125+07:00 0HM48CB0HCKC0:00000015 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2020-11-14T13:06:54.5934842+07:00 0HM48CB0HCKC3:00000006 [INF] Executing action method "KarmaCoreApp.Areas.Admin.Controllers.ProductController.GetAllCategories (KarmaCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2020-11-14T13:06:54.7138990+07:00 0HM48CB0HCKC0:00000015 [INF] Executing action method "KarmaCoreApp.Areas.Admin.Controllers.ProductController.GetAllPaging (KarmaCoreApp)" with arguments (["", "", "1", "10"]) - ModelState is Invalid (ba7f4ac2)
+2020-11-14T13:06:54.7715951+07:00 0HM48CB0HCKC3:00000006 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=KarmaCoreApp.Data.EF " (9958f5bb)
+2020-11-14T13:06:54.8159967+07:00 0HM48CB0HCKC0:00000015 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=KarmaCoreApp.Data.EF " (9958f5bb)
+2020-11-14T13:06:54.8791836+07:00 0HM48CB0HCKC0:00000015 [INF] Executed DbCommand ("7"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Products] AS [x]
+WHERE [x].[Status] = 1" (0723d8ff)
+2020-11-14T13:06:55.1452785+07:00 0HM48CB0HCKC3:00000006 [INF] Executed DbCommand ("10"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[Description], [x].[ParentId], [x].[HomeOrder], [x].[Image], [x].[HomeFlag], [x].[SeoPageTitle], [x].[SeoAlias], [x].[SeoKeywords], [x].[SeoDescription], [x].[Status], [x].[SortOrder], [x].[DateCreated], [x].[DateModified]
+FROM [ProductCategories] AS [x]
+ORDER BY [x].[ParentId]" (0723d8ff)
+2020-11-14T13:06:55.2161317+07:00 0HM48CB0HCKC3:00000006 [INF] Executed DbCommand ("7"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[Status], [dto].[DateCreated], [dto].[DateModified], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2020-11-14T13:06:55.2232435+07:00 0HM48CB0HCKC0:00000015 [INF] Executed DbCommand ("15"ms) [Parameters=["@__p_0='?', @__p_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id] AS [Id1], [x].[Name], [x].[CategoryId] AS [Id0], [x].[Image], [x].[Price], [x].[PromotionPrice], [x].[OriginalPrice], [x].[Description], [x].[Content], [x].[HomeFlag], [x].[HotFlag], [x].[ViewCount], [x].[Tags], [x].[Unit], CASE
+    WHEN [x].[CategoryId] IS NOT NULL
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END, [x.ProductCategory].[Name] AS [Name0], [x.ProductCategory].[Description] AS [Description0], [x.ProductCategory].[ParentId], [x.ProductCategory].[HomeOrder], [x.ProductCategory].[Image] AS [Image0], [x.ProductCategory].[HomeFlag] AS [HomeFlag0], [x.ProductCategory].[SeoPageTitle], [x.ProductCategory].[SeoAlias], [x.ProductCategory].[SeoKeywords], [x.ProductCategory].[SeoDescription], [x.ProductCategory].[Status], [x.ProductCategory].[SortOrder], [x.ProductCategory].[DateCreated], [x.ProductCategory].[DateModified], [x.ProductCategory].[Id], [x].[Status] AS [Status0], [x].[DateCreated] AS [DateCreated0], [x].[DateModified] AS [DateModified0], [x].[SeoPageTitle] AS [SeoPageTitle0], [x].[SeoAlias] AS [SeoAlias0], [x].[SeoKeywords] AS [SeoKeywords0], [x].[SeoDescription] AS [SeoDescription0]
+FROM [Products] AS [x]
+INNER JOIN [ProductCategories] AS [x.ProductCategory] ON [x].[CategoryId] = [x.ProductCategory].[Id]
+WHERE [x].[Status] = 1
+ORDER BY [DateCreated0] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2020-11-14T13:06:55.2655910+07:00 0HM48CB0HCKC3:00000006 [INF] Executed DbCommand ("6"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[Status], [dto].[DateCreated], [dto].[DateModified], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2020-11-14T13:06:55.2742156+07:00 0HM48CB0HCKC0:00000015 [INF] Executed DbCommand ("6"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[Status], [dto].[DateCreated], [dto].[DateModified], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2020-11-14T13:06:55.2930593+07:00 0HM48CB0HCKC3:00000006 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[Status], [dto].[DateCreated], [dto].[DateModified], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2020-11-14T13:06:55.3126725+07:00 0HM48CB0HCKC0:00000015 [INF] Executed DbCommand ("4"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[Status], [dto].[DateCreated], [dto].[DateModified], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2020-11-14T13:06:55.3204476+07:00 0HM48CB0HCKC3:00000006 [INF] Executed DbCommand ("3"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[Status], [dto].[DateCreated], [dto].[DateModified], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2020-11-14T13:06:55.3535955+07:00 0HM48CB0HCKC0:00000015 [INF] Executed DbCommand ("4"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[Status], [dto].[DateCreated], [dto].[DateModified], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2020-11-14T13:06:55.3651091+07:00 0HM48CB0HCKC3:00000006 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2020-11-14T13:06:55.3910593+07:00 0HM48CB0HCKC0:00000015 [INF] Executed DbCommand ("11"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[Status], [dto].[DateCreated], [dto].[DateModified], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2020-11-14T13:06:55.4153416+07:00 0HM48CB0HCKC0:00000015 [INF] Executed DbCommand ("1"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[Status], [dto].[DateCreated], [dto].[DateModified], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2020-11-14T13:06:55.4373843+07:00 0HM48CB0HCKC0:00000015 [INF] Executed DbCommand ("2"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[Status], [dto].[DateCreated], [dto].[DateModified], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2020-11-14T13:06:55.4650935+07:00 0HM48CB0HCKC0:00000015 [INF] Executed DbCommand ("3"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[Status], [dto].[DateCreated], [dto].[DateModified], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2020-11-14T13:06:55.4880575+07:00 0HM48CB0HCKC0:00000015 [INF] Executed DbCommand ("1"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[Status], [dto].[DateCreated], [dto].[DateModified], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2020-11-14T13:06:55.5131656+07:00 0HM48CB0HCKC0:00000015 [INF] Executed DbCommand ("1"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[Status], [dto].[DateCreated], [dto].[DateModified], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2020-11-14T13:06:55.5437220+07:00 0HM48CB0HCKC0:00000015 [INF] Executed DbCommand ("3"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[Status], [dto].[DateCreated], [dto].[DateModified], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2020-11-14T13:06:55.5906145+07:00 0HM48CB0HCKC0:00000015 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2020-11-14T13:06:55.7044786+07:00 0HM48CB0HCKC3:00000006 [INF] Executed action "KarmaCoreApp.Areas.Admin.Controllers.ProductController.GetAllCategories (KarmaCoreApp)" in 1436.5361ms (afa2e885)
+2020-11-14T13:06:55.7337257+07:00 0HM48CB0HCKC0:00000015 [INF] Executed action "KarmaCoreApp.Areas.Admin.Controllers.ProductController.GetAllPaging (KarmaCoreApp)" in 1351.2831ms (afa2e885)
+2020-11-14T13:06:55.7612375+07:00 0HM48CB0HCKC3:00000006 [INF] Request finished in 1684.2337ms 200 application/json; charset=utf-8 (791a596a)
+2020-11-14T13:06:55.8160417+07:00 0HM48CB0HCKC0:00000015 [INF] Request finished in 1682.3672ms 200 application/json; charset=utf-8 (791a596a)
+2020-11-14T13:06:55.8479560+07:00 0HM48CB0HCKC0:00000016 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin/product/GetAllPaging?categoryId=&keyword=&page=1&pageSize=10   (ca22a1cb)
+2020-11-14T13:06:55.8717180+07:00 0HM48CB0HCKC0:00000016 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-11-14T13:06:55.9080696+07:00 0HM48CB0HCKC0:00000016 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2020-11-14T13:06:55.9251262+07:00 0HM48CB0HCKC0:00000016 [INF] Executing action method "KarmaCoreApp.Areas.Admin.Controllers.ProductController.GetAllPaging (KarmaCoreApp)" with arguments (["", "", "1", "10"]) - ModelState is Valid (ba7f4ac2)
+2020-11-14T13:06:55.9423871+07:00 0HM48CB0HCKC0:00000016 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=KarmaCoreApp.Data.EF " (9958f5bb)
+2020-11-14T13:06:55.9604410+07:00 0HM48CB0HCKC0:00000016 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Products] AS [x]
+WHERE [x].[Status] = 1" (0723d8ff)
+2020-11-14T13:06:55.9812955+07:00 0HM48CB0HCKC0:00000016 [INF] Executed DbCommand ("1"ms) [Parameters=["@__p_0='?', @__p_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id] AS [Id1], [x].[Name], [x].[CategoryId] AS [Id0], [x].[Image], [x].[Price], [x].[PromotionPrice], [x].[OriginalPrice], [x].[Description], [x].[Content], [x].[HomeFlag], [x].[HotFlag], [x].[ViewCount], [x].[Tags], [x].[Unit], CASE
+    WHEN [x].[CategoryId] IS NOT NULL
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END, [x.ProductCategory].[Name] AS [Name0], [x.ProductCategory].[Description] AS [Description0], [x.ProductCategory].[ParentId], [x.ProductCategory].[HomeOrder], [x.ProductCategory].[Image] AS [Image0], [x.ProductCategory].[HomeFlag] AS [HomeFlag0], [x.ProductCategory].[SeoPageTitle], [x.ProductCategory].[SeoAlias], [x.ProductCategory].[SeoKeywords], [x.ProductCategory].[SeoDescription], [x.ProductCategory].[Status], [x.ProductCategory].[SortOrder], [x.ProductCategory].[DateCreated], [x.ProductCategory].[DateModified], [x.ProductCategory].[Id], [x].[Status] AS [Status0], [x].[DateCreated] AS [DateCreated0], [x].[DateModified] AS [DateModified0], [x].[SeoPageTitle] AS [SeoPageTitle0], [x].[SeoAlias] AS [SeoAlias0], [x].[SeoKeywords] AS [SeoKeywords0], [x].[SeoDescription] AS [SeoDescription0]
+FROM [Products] AS [x]
+INNER JOIN [ProductCategories] AS [x.ProductCategory] ON [x].[CategoryId] = [x.ProductCategory].[Id]
+WHERE [x].[Status] = 1
+ORDER BY [DateCreated0] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2020-11-14T13:06:56.0074125+07:00 0HM48CB0HCKC0:00000016 [INF] Executed DbCommand ("1"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[Status], [dto].[DateCreated], [dto].[DateModified], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2020-11-14T13:06:56.0342513+07:00 0HM48CB0HCKC0:00000016 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[Status], [dto].[DateCreated], [dto].[DateModified], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2020-11-14T13:06:56.0522038+07:00 0HM48CB0HCKC0:00000016 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[Status], [dto].[DateCreated], [dto].[DateModified], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2020-11-14T13:06:56.0694310+07:00 0HM48CB0HCKC0:00000016 [INF] Executed DbCommand ("1"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[Status], [dto].[DateCreated], [dto].[DateModified], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2020-11-14T13:06:56.0868946+07:00 0HM48CB0HCKC0:00000016 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[Status], [dto].[DateCreated], [dto].[DateModified], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2020-11-14T13:06:56.1034857+07:00 0HM48CB0HCKC0:00000016 [INF] Executed DbCommand ("1"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[Status], [dto].[DateCreated], [dto].[DateModified], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2020-11-14T13:06:56.1200519+07:00 0HM48CB0HCKC0:00000016 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[Status], [dto].[DateCreated], [dto].[DateModified], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2020-11-14T13:06:56.1380782+07:00 0HM48CB0HCKC0:00000016 [INF] Executed DbCommand ("1"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[Status], [dto].[DateCreated], [dto].[DateModified], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2020-11-14T13:06:56.1547202+07:00 0HM48CB0HCKC0:00000016 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[Status], [dto].[DateCreated], [dto].[DateModified], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2020-11-14T13:06:56.1713929+07:00 0HM48CB0HCKC0:00000016 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[Status], [dto].[DateCreated], [dto].[DateModified], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2020-11-14T13:06:56.1867603+07:00 0HM48CB0HCKC0:00000016 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2020-11-14T13:06:56.2163126+07:00 0HM48CB0HCKC0:00000016 [INF] Executed action "KarmaCoreApp.Areas.Admin.Controllers.ProductController.GetAllPaging (KarmaCoreApp)" in 313.7875ms (afa2e885)
+2020-11-14T13:06:56.2450593+07:00 0HM48CB0HCKC0:00000016 [INF] Request finished in 389.4158ms 200 application/json; charset=utf-8 (791a596a)
+2020-11-14T13:07:00.9732002+07:00 0HM48CB0HCKC0:00000017 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin/product/GetAllPaging?categoryId=1&keyword=&page=1&pageSize=10   (ca22a1cb)
+2020-11-14T13:07:00.9916945+07:00 0HM48CB0HCKC0:00000017 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-11-14T13:07:01.0092380+07:00 0HM48CB0HCKC0:00000017 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2020-11-14T13:07:01.0237753+07:00 0HM48CB0HCKC0:00000017 [INF] Executing action method "KarmaCoreApp.Areas.Admin.Controllers.ProductController.GetAllPaging (KarmaCoreApp)" with arguments (["1", "", "1", "10"]) - ModelState is Valid (ba7f4ac2)
+2020-11-14T13:07:01.0378753+07:00 0HM48CB0HCKC0:00000017 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=KarmaCoreApp.Data.EF " (9958f5bb)
+2020-11-14T13:07:01.0695376+07:00 0HM48CB0HCKC0:00000017 [INF] Executed DbCommand ("5"ms) [Parameters=["@__categoryId_Value_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Products] AS [x]
+WHERE ([x].[Status] = 1) AND ([x].[CategoryId] = @__categoryId_Value_0)" (0723d8ff)
+2020-11-14T13:07:01.1484521+07:00 0HM48CB0HCKC0:00000017 [INF] Executed DbCommand ("12"ms) [Parameters=["@__categoryId_Value_0='?', @__p_1='?', @__p_2='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id] AS [Id1], [x].[Name], [x].[CategoryId] AS [Id0], [x].[Image], [x].[Price], [x].[PromotionPrice], [x].[OriginalPrice], [x].[Description], [x].[Content], [x].[HomeFlag], [x].[HotFlag], [x].[ViewCount], [x].[Tags], [x].[Unit], CASE
+    WHEN [x].[CategoryId] IS NOT NULL
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END, [x.ProductCategory].[Name] AS [Name0], [x.ProductCategory].[Description] AS [Description0], [x.ProductCategory].[ParentId], [x.ProductCategory].[HomeOrder], [x.ProductCategory].[Image] AS [Image0], [x.ProductCategory].[HomeFlag] AS [HomeFlag0], [x.ProductCategory].[SeoPageTitle], [x.ProductCategory].[SeoAlias], [x.ProductCategory].[SeoKeywords], [x.ProductCategory].[SeoDescription], [x.ProductCategory].[Status], [x.ProductCategory].[SortOrder], [x.ProductCategory].[DateCreated], [x.ProductCategory].[DateModified], [x.ProductCategory].[Id], [x].[Status] AS [Status0], [x].[DateCreated] AS [DateCreated0], [x].[DateModified] AS [DateModified0], [x].[SeoPageTitle] AS [SeoPageTitle0], [x].[SeoAlias] AS [SeoAlias0], [x].[SeoKeywords] AS [SeoKeywords0], [x].[SeoDescription] AS [SeoDescription0]
+FROM [Products] AS [x]
+INNER JOIN [ProductCategories] AS [x.ProductCategory] ON [x].[CategoryId] = [x.ProductCategory].[Id]
+WHERE ([x].[Status] = 1) AND ([x].[CategoryId] = @__categoryId_Value_0)
+ORDER BY [DateCreated0] DESC
+OFFSET @__p_1 ROWS FETCH NEXT @__p_2 ROWS ONLY" (0723d8ff)
+2020-11-14T13:07:01.1724945+07:00 0HM48CB0HCKC0:00000017 [INF] Executed DbCommand ("1"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[Status], [dto].[DateCreated], [dto].[DateModified], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2020-11-14T13:07:01.1877965+07:00 0HM48CB0HCKC0:00000017 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[Status], [dto].[DateCreated], [dto].[DateModified], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2020-11-14T13:07:01.2032773+07:00 0HM48CB0HCKC0:00000017 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[Status], [dto].[DateCreated], [dto].[DateModified], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2020-11-14T13:07:01.2188965+07:00 0HM48CB0HCKC0:00000017 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[Status], [dto].[DateCreated], [dto].[DateModified], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2020-11-14T13:07:01.2344836+07:00 0HM48CB0HCKC0:00000017 [INF] Executed DbCommand ("1"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[Status], [dto].[DateCreated], [dto].[DateModified], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2020-11-14T13:07:01.2488513+07:00 0HM48CB0HCKC0:00000017 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2020-11-14T13:07:01.2653250+07:00 0HM48CB0HCKC0:00000017 [INF] Executed action "KarmaCoreApp.Areas.Admin.Controllers.ProductController.GetAllPaging (KarmaCoreApp)" in 258.3226ms (afa2e885)
+2020-11-14T13:07:01.2819910+07:00 0HM48CB0HCKC0:00000017 [INF] Request finished in 330.8707ms 200 application/json; charset=utf-8 (791a596a)
+2020-11-14T13:07:03.2263345+07:00 0HM48CB0HCKC0:00000018 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin/product/GetAllPaging?categoryId=&keyword=&page=1&pageSize=10   (ca22a1cb)
+2020-11-14T13:07:03.2488972+07:00 0HM48CB0HCKC0:00000018 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-11-14T13:07:03.2703276+07:00 0HM48CB0HCKC0:00000018 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2020-11-14T13:07:03.2921207+07:00 0HM48CB0HCKC0:00000018 [INF] Executing action method "KarmaCoreApp.Areas.Admin.Controllers.ProductController.GetAllPaging (KarmaCoreApp)" with arguments (["", "", "1", "10"]) - ModelState is Valid (ba7f4ac2)
+2020-11-14T13:07:03.3093453+07:00 0HM48CB0HCKC0:00000018 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=KarmaCoreApp.Data.EF " (9958f5bb)
+2020-11-14T13:07:03.3262859+07:00 0HM48CB0HCKC0:00000018 [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Products] AS [x]
+WHERE [x].[Status] = 1" (0723d8ff)
+2020-11-14T13:07:03.3461632+07:00 0HM48CB0HCKC0:00000018 [INF] Executed DbCommand ("1"ms) [Parameters=["@__p_0='?', @__p_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id] AS [Id1], [x].[Name], [x].[CategoryId] AS [Id0], [x].[Image], [x].[Price], [x].[PromotionPrice], [x].[OriginalPrice], [x].[Description], [x].[Content], [x].[HomeFlag], [x].[HotFlag], [x].[ViewCount], [x].[Tags], [x].[Unit], CASE
+    WHEN [x].[CategoryId] IS NOT NULL
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END, [x.ProductCategory].[Name] AS [Name0], [x.ProductCategory].[Description] AS [Description0], [x.ProductCategory].[ParentId], [x.ProductCategory].[HomeOrder], [x.ProductCategory].[Image] AS [Image0], [x.ProductCategory].[HomeFlag] AS [HomeFlag0], [x.ProductCategory].[SeoPageTitle], [x.ProductCategory].[SeoAlias], [x.ProductCategory].[SeoKeywords], [x.ProductCategory].[SeoDescription], [x.ProductCategory].[Status], [x.ProductCategory].[SortOrder], [x.ProductCategory].[DateCreated], [x.ProductCategory].[DateModified], [x.ProductCategory].[Id], [x].[Status] AS [Status0], [x].[DateCreated] AS [DateCreated0], [x].[DateModified] AS [DateModified0], [x].[SeoPageTitle] AS [SeoPageTitle0], [x].[SeoAlias] AS [SeoAlias0], [x].[SeoKeywords] AS [SeoKeywords0], [x].[SeoDescription] AS [SeoDescription0]
+FROM [Products] AS [x]
+INNER JOIN [ProductCategories] AS [x.ProductCategory] ON [x].[CategoryId] = [x.ProductCategory].[Id]
+WHERE [x].[Status] = 1
+ORDER BY [DateCreated0] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2020-11-14T13:07:03.3644757+07:00 0HM48CB0HCKC0:00000018 [INF] Executed DbCommand ("1"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[Status], [dto].[DateCreated], [dto].[DateModified], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2020-11-14T13:07:03.3807956+07:00 0HM48CB0HCKC0:00000018 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[Status], [dto].[DateCreated], [dto].[DateModified], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2020-11-14T13:07:03.3973133+07:00 0HM48CB0HCKC0:00000018 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[Status], [dto].[DateCreated], [dto].[DateModified], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2020-11-14T13:07:03.4121702+07:00 0HM48CB0HCKC0:00000018 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[Status], [dto].[DateCreated], [dto].[DateModified], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2020-11-14T13:07:03.4284024+07:00 0HM48CB0HCKC0:00000018 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[Status], [dto].[DateCreated], [dto].[DateModified], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2020-11-14T13:07:03.4443651+07:00 0HM48CB0HCKC0:00000018 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[Status], [dto].[DateCreated], [dto].[DateModified], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2020-11-14T13:07:03.4624613+07:00 0HM48CB0HCKC0:00000018 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[Status], [dto].[DateCreated], [dto].[DateModified], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2020-11-14T13:07:03.4822384+07:00 0HM48CB0HCKC0:00000018 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[Status], [dto].[DateCreated], [dto].[DateModified], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2020-11-14T13:07:03.5050838+07:00 0HM48CB0HCKC0:00000018 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[Status], [dto].[DateCreated], [dto].[DateModified], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2020-11-14T13:07:03.5269637+07:00 0HM48CB0HCKC0:00000018 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[Status], [dto].[DateCreated], [dto].[DateModified], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2020-11-14T13:07:03.5438342+07:00 0HM48CB0HCKC0:00000018 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2020-11-14T13:07:03.5618233+07:00 0HM48CB0HCKC0:00000018 [INF] Executed action "KarmaCoreApp.Areas.Admin.Controllers.ProductController.GetAllPaging (KarmaCoreApp)" in 297.1413ms (afa2e885)
+2020-11-14T13:07:03.5793996+07:00 0HM48CB0HCKC0:00000018 [INF] Request finished in 369.5424ms 200 application/json; charset=utf-8 (791a596a)
+2020-11-14T13:07:09.6579655+07:00 0HM48CB0HCKC0:00000019 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin/product/GetAllPaging?categoryId=&keyword=12&page=1&pageSize=10   (ca22a1cb)
+2020-11-14T13:07:09.6742529+07:00 0HM48CB0HCKC0:00000019 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-11-14T13:07:09.6891472+07:00 0HM48CB0HCKC0:00000019 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2020-11-14T13:07:09.7032767+07:00 0HM48CB0HCKC0:00000019 [INF] Executing action method "KarmaCoreApp.Areas.Admin.Controllers.ProductController.GetAllPaging (KarmaCoreApp)" with arguments (["", "12", "1", "10"]) - ModelState is Valid (ba7f4ac2)
+2020-11-14T13:07:09.7182194+07:00 0HM48CB0HCKC0:00000019 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=KarmaCoreApp.Data.EF " (9958f5bb)
+2020-11-14T13:07:09.7541603+07:00 0HM48CB0HCKC0:00000019 [INF] Executed DbCommand ("6"ms) [Parameters=["@__keyword_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Products] AS [x]
+WHERE ([x].[Status] = 1) AND ((CHARINDEX(@__keyword_0, [x].[Name]) > 0) OR (@__keyword_0 = N''))" (0723d8ff)
+2020-11-14T13:07:09.8327475+07:00 0HM48CB0HCKC0:00000019 [INF] Executed DbCommand ("13"ms) [Parameters=["@__keyword_0='?' (Size = 4000), @__p_1='?', @__p_2='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id] AS [Id1], [x].[Name], [x].[CategoryId] AS [Id0], [x].[Image], [x].[Price], [x].[PromotionPrice], [x].[OriginalPrice], [x].[Description], [x].[Content], [x].[HomeFlag], [x].[HotFlag], [x].[ViewCount], [x].[Tags], [x].[Unit], CASE
+    WHEN [x].[CategoryId] IS NOT NULL
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END, [x.ProductCategory].[Name] AS [Name0], [x.ProductCategory].[Description] AS [Description0], [x.ProductCategory].[ParentId], [x.ProductCategory].[HomeOrder], [x.ProductCategory].[Image] AS [Image0], [x.ProductCategory].[HomeFlag] AS [HomeFlag0], [x.ProductCategory].[SeoPageTitle], [x.ProductCategory].[SeoAlias], [x.ProductCategory].[SeoKeywords], [x.ProductCategory].[SeoDescription], [x.ProductCategory].[Status], [x.ProductCategory].[SortOrder], [x.ProductCategory].[DateCreated], [x.ProductCategory].[DateModified], [x.ProductCategory].[Id], [x].[Status] AS [Status0], [x].[DateCreated] AS [DateCreated0], [x].[DateModified] AS [DateModified0], [x].[SeoPageTitle] AS [SeoPageTitle0], [x].[SeoAlias] AS [SeoAlias0], [x].[SeoKeywords] AS [SeoKeywords0], [x].[SeoDescription] AS [SeoDescription0]
+FROM [Products] AS [x]
+INNER JOIN [ProductCategories] AS [x.ProductCategory] ON [x].[CategoryId] = [x.ProductCategory].[Id]
+WHERE ([x].[Status] = 1) AND ((CHARINDEX(@__keyword_0, [x].[Name]) > 0) OR (@__keyword_0 = N''))
+ORDER BY [DateCreated0] DESC
+OFFSET @__p_1 ROWS FETCH NEXT @__p_2 ROWS ONLY" (0723d8ff)
+2020-11-14T13:07:09.8643652+07:00 0HM48CB0HCKC0:00000019 [INF] Executed DbCommand ("1"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[Status], [dto].[DateCreated], [dto].[DateModified], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2020-11-14T13:07:09.8788958+07:00 0HM48CB0HCKC0:00000019 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2020-11-14T13:07:09.8933243+07:00 0HM48CB0HCKC0:00000019 [INF] Executed action "KarmaCoreApp.Areas.Admin.Controllers.ProductController.GetAllPaging (KarmaCoreApp)" in 205.0095ms (afa2e885)
+2020-11-14T13:07:09.9101287+07:00 0HM48CB0HCKC0:00000019 [INF] Request finished in 250.975ms 200 application/json; charset=utf-8 (791a596a)
+2020-11-14T13:07:14.4509625+07:00 0HM48CB0HCKC0:0000001A [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin/product/GetAllPaging?categoryId=&keyword=1&page=1&pageSize=10   (ca22a1cb)
+2020-11-14T13:07:14.4665256+07:00 0HM48CB0HCKC0:0000001A [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-11-14T13:07:14.4813491+07:00 0HM48CB0HCKC0:0000001A [INF] Authorization was successful for user: "admin". (d7eb274a)
+2020-11-14T13:07:14.4955784+07:00 0HM48CB0HCKC0:0000001A [INF] Executing action method "KarmaCoreApp.Areas.Admin.Controllers.ProductController.GetAllPaging (KarmaCoreApp)" with arguments (["", "1", "1", "10"]) - ModelState is Valid (ba7f4ac2)
+2020-11-14T13:07:14.5118830+07:00 0HM48CB0HCKC0:0000001A [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=KarmaCoreApp.Data.EF " (9958f5bb)
+2020-11-14T13:07:14.5312281+07:00 0HM48CB0HCKC0:0000001A [INF] Executed DbCommand ("0"ms) [Parameters=["@__keyword_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Products] AS [x]
+WHERE ([x].[Status] = 1) AND ((CHARINDEX(@__keyword_0, [x].[Name]) > 0) OR (@__keyword_0 = N''))" (0723d8ff)
+2020-11-14T13:07:14.5508569+07:00 0HM48CB0HCKC0:0000001A [INF] Executed DbCommand ("1"ms) [Parameters=["@__keyword_0='?' (Size = 4000), @__p_1='?', @__p_2='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id] AS [Id1], [x].[Name], [x].[CategoryId] AS [Id0], [x].[Image], [x].[Price], [x].[PromotionPrice], [x].[OriginalPrice], [x].[Description], [x].[Content], [x].[HomeFlag], [x].[HotFlag], [x].[ViewCount], [x].[Tags], [x].[Unit], CASE
+    WHEN [x].[CategoryId] IS NOT NULL
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END, [x.ProductCategory].[Name] AS [Name0], [x.ProductCategory].[Description] AS [Description0], [x.ProductCategory].[ParentId], [x.ProductCategory].[HomeOrder], [x.ProductCategory].[Image] AS [Image0], [x.ProductCategory].[HomeFlag] AS [HomeFlag0], [x.ProductCategory].[SeoPageTitle], [x.ProductCategory].[SeoAlias], [x.ProductCategory].[SeoKeywords], [x.ProductCategory].[SeoDescription], [x.ProductCategory].[Status], [x.ProductCategory].[SortOrder], [x.ProductCategory].[DateCreated], [x.ProductCategory].[DateModified], [x.ProductCategory].[Id], [x].[Status] AS [Status0], [x].[DateCreated] AS [DateCreated0], [x].[DateModified] AS [DateModified0], [x].[SeoPageTitle] AS [SeoPageTitle0], [x].[SeoAlias] AS [SeoAlias0], [x].[SeoKeywords] AS [SeoKeywords0], [x].[SeoDescription] AS [SeoDescription0]
+FROM [Products] AS [x]
+INNER JOIN [ProductCategories] AS [x.ProductCategory] ON [x].[CategoryId] = [x.ProductCategory].[Id]
+WHERE ([x].[Status] = 1) AND ((CHARINDEX(@__keyword_0, [x].[Name]) > 0) OR (@__keyword_0 = N''))
+ORDER BY [DateCreated0] DESC
+OFFSET @__p_1 ROWS FETCH NEXT @__p_2 ROWS ONLY" (0723d8ff)
+2020-11-14T13:07:14.5670904+07:00 0HM48CB0HCKC0:0000001A [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[Status], [dto].[DateCreated], [dto].[DateModified], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2020-11-14T13:07:14.5802571+07:00 0HM48CB0HCKC0:0000001A [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[Status], [dto].[DateCreated], [dto].[DateModified], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2020-11-14T13:07:14.5947690+07:00 0HM48CB0HCKC0:0000001A [INF] Executed DbCommand ("1"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[Status], [dto].[DateCreated], [dto].[DateModified], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2020-11-14T13:07:14.6083611+07:00 0HM48CB0HCKC0:0000001A [INF] Executed DbCommand ("1"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[Status], [dto].[DateCreated], [dto].[DateModified], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2020-11-14T13:07:14.6220735+07:00 0HM48CB0HCKC0:0000001A [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[Status], [dto].[DateCreated], [dto].[DateModified], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2020-11-14T13:07:14.6358668+07:00 0HM48CB0HCKC0:0000001A [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[Status], [dto].[DateCreated], [dto].[DateModified], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2020-11-14T13:07:14.6500533+07:00 0HM48CB0HCKC0:0000001A [INF] Executed DbCommand ("1"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[Status], [dto].[DateCreated], [dto].[DateModified], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2020-11-14T13:07:14.6648825+07:00 0HM48CB0HCKC0:0000001A [INF] Executed DbCommand ("1"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[Status], [dto].[DateCreated], [dto].[DateModified], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2020-11-14T13:07:14.6791068+07:00 0HM48CB0HCKC0:0000001A [INF] Executed DbCommand ("1"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[Status], [dto].[DateCreated], [dto].[DateModified], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2020-11-14T13:07:14.6941066+07:00 0HM48CB0HCKC0:0000001A [INF] Executed DbCommand ("1"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[Status], [dto].[DateCreated], [dto].[DateModified], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2020-11-14T13:07:14.7105954+07:00 0HM48CB0HCKC0:0000001A [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2020-11-14T13:07:14.7339688+07:00 0HM48CB0HCKC0:0000001A [INF] Executed action "KarmaCoreApp.Areas.Admin.Controllers.ProductController.GetAllPaging (KarmaCoreApp)" in 247.204ms (afa2e885)
+2020-11-14T13:07:14.7699248+07:00 0HM48CB0HCKC0:0000001A [INF] Request finished in 298.8364ms 200 application/json; charset=utf-8 (791a596a)
+2020-11-14T13:07:19.2003564+07:00 0HM48CB0HCKC0:0000001B [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin/product/GetAllPaging?categoryId=&keyword=22&page=1&pageSize=10   (ca22a1cb)
+2020-11-14T13:07:19.2197520+07:00 0HM48CB0HCKC0:0000001B [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-11-14T13:07:19.2329898+07:00 0HM48CB0HCKC0:0000001B [INF] Authorization was successful for user: "admin". (d7eb274a)
+2020-11-14T13:07:19.2463906+07:00 0HM48CB0HCKC0:0000001B [INF] Executing action method "KarmaCoreApp.Areas.Admin.Controllers.ProductController.GetAllPaging (KarmaCoreApp)" with arguments (["", "22", "1", "10"]) - ModelState is Valid (ba7f4ac2)
+2020-11-14T13:07:19.2605520+07:00 0HM48CB0HCKC0:0000001B [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=KarmaCoreApp.Data.EF " (9958f5bb)
+2020-11-14T13:07:19.2745698+07:00 0HM48CB0HCKC0:0000001B [INF] Executed DbCommand ("0"ms) [Parameters=["@__keyword_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Products] AS [x]
+WHERE ([x].[Status] = 1) AND ((CHARINDEX(@__keyword_0, [x].[Name]) > 0) OR (@__keyword_0 = N''))" (0723d8ff)
+2020-11-14T13:07:19.2907039+07:00 0HM48CB0HCKC0:0000001B [INF] Executed DbCommand ("1"ms) [Parameters=["@__keyword_0='?' (Size = 4000), @__p_1='?', @__p_2='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id] AS [Id1], [x].[Name], [x].[CategoryId] AS [Id0], [x].[Image], [x].[Price], [x].[PromotionPrice], [x].[OriginalPrice], [x].[Description], [x].[Content], [x].[HomeFlag], [x].[HotFlag], [x].[ViewCount], [x].[Tags], [x].[Unit], CASE
+    WHEN [x].[CategoryId] IS NOT NULL
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END, [x.ProductCategory].[Name] AS [Name0], [x.ProductCategory].[Description] AS [Description0], [x.ProductCategory].[ParentId], [x.ProductCategory].[HomeOrder], [x.ProductCategory].[Image] AS [Image0], [x.ProductCategory].[HomeFlag] AS [HomeFlag0], [x.ProductCategory].[SeoPageTitle], [x.ProductCategory].[SeoAlias], [x.ProductCategory].[SeoKeywords], [x.ProductCategory].[SeoDescription], [x.ProductCategory].[Status], [x.ProductCategory].[SortOrder], [x.ProductCategory].[DateCreated], [x.ProductCategory].[DateModified], [x.ProductCategory].[Id], [x].[Status] AS [Status0], [x].[DateCreated] AS [DateCreated0], [x].[DateModified] AS [DateModified0], [x].[SeoPageTitle] AS [SeoPageTitle0], [x].[SeoAlias] AS [SeoAlias0], [x].[SeoKeywords] AS [SeoKeywords0], [x].[SeoDescription] AS [SeoDescription0]
+FROM [Products] AS [x]
+INNER JOIN [ProductCategories] AS [x.ProductCategory] ON [x].[CategoryId] = [x.ProductCategory].[Id]
+WHERE ([x].[Status] = 1) AND ((CHARINDEX(@__keyword_0, [x].[Name]) > 0) OR (@__keyword_0 = N''))
+ORDER BY [DateCreated0] DESC
+OFFSET @__p_1 ROWS FETCH NEXT @__p_2 ROWS ONLY" (0723d8ff)
+2020-11-14T13:07:19.3038074+07:00 0HM48CB0HCKC0:0000001B [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2020-11-14T13:07:19.3166563+07:00 0HM48CB0HCKC0:0000001B [INF] Executed action "KarmaCoreApp.Areas.Admin.Controllers.ProductController.GetAllPaging (KarmaCoreApp)" in 83.741ms (afa2e885)
+2020-11-14T13:07:19.3310759+07:00 0HM48CB0HCKC0:0000001B [INF] Request finished in 132.1591ms 200 application/json; charset=utf-8 (791a596a)
+2020-11-14T13:07:20.2152713+07:00 0HM48CB0HCKC0:0000001C [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin/product/GetAllPaging?categoryId=&keyword=22&page=1&pageSize=10   (ca22a1cb)
+2020-11-14T13:07:20.2324444+07:00 0HM48CB0HCKC0:0000001C [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-11-14T13:07:20.2473210+07:00 0HM48CB0HCKC0:0000001C [INF] Authorization was successful for user: "admin". (d7eb274a)
+2020-11-14T13:07:20.2633437+07:00 0HM48CB0HCKC0:0000001C [INF] Executing action method "KarmaCoreApp.Areas.Admin.Controllers.ProductController.GetAllPaging (KarmaCoreApp)" with arguments (["", "22", "1", "10"]) - ModelState is Valid (ba7f4ac2)
+2020-11-14T13:07:20.2812882+07:00 0HM48CB0HCKC0:0000001C [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=KarmaCoreApp.Data.EF " (9958f5bb)
+2020-11-14T13:07:20.2970508+07:00 0HM48CB0HCKC0:0000001C [INF] Executed DbCommand ("0"ms) [Parameters=["@__keyword_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Products] AS [x]
+WHERE ([x].[Status] = 1) AND ((CHARINDEX(@__keyword_0, [x].[Name]) > 0) OR (@__keyword_0 = N''))" (0723d8ff)
+2020-11-14T13:07:20.3156106+07:00 0HM48CB0HCKC0:0000001C [INF] Executed DbCommand ("1"ms) [Parameters=["@__keyword_0='?' (Size = 4000), @__p_1='?', @__p_2='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id] AS [Id1], [x].[Name], [x].[CategoryId] AS [Id0], [x].[Image], [x].[Price], [x].[PromotionPrice], [x].[OriginalPrice], [x].[Description], [x].[Content], [x].[HomeFlag], [x].[HotFlag], [x].[ViewCount], [x].[Tags], [x].[Unit], CASE
+    WHEN [x].[CategoryId] IS NOT NULL
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END, [x.ProductCategory].[Name] AS [Name0], [x.ProductCategory].[Description] AS [Description0], [x.ProductCategory].[ParentId], [x.ProductCategory].[HomeOrder], [x.ProductCategory].[Image] AS [Image0], [x.ProductCategory].[HomeFlag] AS [HomeFlag0], [x.ProductCategory].[SeoPageTitle], [x.ProductCategory].[SeoAlias], [x.ProductCategory].[SeoKeywords], [x.ProductCategory].[SeoDescription], [x.ProductCategory].[Status], [x.ProductCategory].[SortOrder], [x.ProductCategory].[DateCreated], [x.ProductCategory].[DateModified], [x.ProductCategory].[Id], [x].[Status] AS [Status0], [x].[DateCreated] AS [DateCreated0], [x].[DateModified] AS [DateModified0], [x].[SeoPageTitle] AS [SeoPageTitle0], [x].[SeoAlias] AS [SeoAlias0], [x].[SeoKeywords] AS [SeoKeywords0], [x].[SeoDescription] AS [SeoDescription0]
+FROM [Products] AS [x]
+INNER JOIN [ProductCategories] AS [x.ProductCategory] ON [x].[CategoryId] = [x.ProductCategory].[Id]
+WHERE ([x].[Status] = 1) AND ((CHARINDEX(@__keyword_0, [x].[Name]) > 0) OR (@__keyword_0 = N''))
+ORDER BY [DateCreated0] DESC
+OFFSET @__p_1 ROWS FETCH NEXT @__p_2 ROWS ONLY" (0723d8ff)
+2020-11-14T13:07:20.3287087+07:00 0HM48CB0HCKC0:0000001C [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2020-11-14T13:07:20.3437224+07:00 0HM48CB0HCKC0:0000001C [INF] Executed action "KarmaCoreApp.Areas.Admin.Controllers.ProductController.GetAllPaging (KarmaCoreApp)" in 96.2895ms (afa2e885)
+2020-11-14T13:07:20.3593987+07:00 0HM48CB0HCKC0:0000001C [INF] Request finished in 143.5848ms 200 application/json; charset=utf-8 (791a596a)
+2020-11-14T13:07:20.3786893+07:00 0HM48CB0HCKC0:0000001D [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin/product/GetAllPaging?categoryId=&keyword=22&page=1&pageSize=10   (ca22a1cb)
+2020-11-14T13:07:20.3990568+07:00 0HM48CB0HCKC0:0000001D [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-11-14T13:07:20.4317981+07:00 0HM48CB0HCKC0:0000001D [INF] Authorization was successful for user: "admin". (d7eb274a)
+2020-11-14T13:07:20.4684614+07:00 0HM48CB0HCKC0:0000001D [INF] Executing action method "KarmaCoreApp.Areas.Admin.Controllers.ProductController.GetAllPaging (KarmaCoreApp)" with arguments (["", "22", "1", "10"]) - ModelState is Valid (ba7f4ac2)
+2020-11-14T13:07:20.4897490+07:00 0HM48CB0HCKC0:0000001D [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=KarmaCoreApp.Data.EF " (9958f5bb)
+2020-11-14T13:07:20.5360937+07:00 0HM48CB0HCKC0:0000001D [INF] Executed DbCommand ("4"ms) [Parameters=["@__keyword_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Products] AS [x]
+WHERE ([x].[Status] = 1) AND ((CHARINDEX(@__keyword_0, [x].[Name]) > 0) OR (@__keyword_0 = N''))" (0723d8ff)
+2020-11-14T13:07:20.5556736+07:00 0HM48CB0HCKC0:0000001D [INF] Executed DbCommand ("1"ms) [Parameters=["@__keyword_0='?' (Size = 4000), @__p_1='?', @__p_2='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id] AS [Id1], [x].[Name], [x].[CategoryId] AS [Id0], [x].[Image], [x].[Price], [x].[PromotionPrice], [x].[OriginalPrice], [x].[Description], [x].[Content], [x].[HomeFlag], [x].[HotFlag], [x].[ViewCount], [x].[Tags], [x].[Unit], CASE
+    WHEN [x].[CategoryId] IS NOT NULL
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END, [x.ProductCategory].[Name] AS [Name0], [x.ProductCategory].[Description] AS [Description0], [x.ProductCategory].[ParentId], [x.ProductCategory].[HomeOrder], [x.ProductCategory].[Image] AS [Image0], [x.ProductCategory].[HomeFlag] AS [HomeFlag0], [x.ProductCategory].[SeoPageTitle], [x.ProductCategory].[SeoAlias], [x.ProductCategory].[SeoKeywords], [x.ProductCategory].[SeoDescription], [x.ProductCategory].[Status], [x.ProductCategory].[SortOrder], [x.ProductCategory].[DateCreated], [x.ProductCategory].[DateModified], [x.ProductCategory].[Id], [x].[Status] AS [Status0], [x].[DateCreated] AS [DateCreated0], [x].[DateModified] AS [DateModified0], [x].[SeoPageTitle] AS [SeoPageTitle0], [x].[SeoAlias] AS [SeoAlias0], [x].[SeoKeywords] AS [SeoKeywords0], [x].[SeoDescription] AS [SeoDescription0]
+FROM [Products] AS [x]
+INNER JOIN [ProductCategories] AS [x.ProductCategory] ON [x].[CategoryId] = [x.ProductCategory].[Id]
+WHERE ([x].[Status] = 1) AND ((CHARINDEX(@__keyword_0, [x].[Name]) > 0) OR (@__keyword_0 = N''))
+ORDER BY [DateCreated0] DESC
+OFFSET @__p_1 ROWS FETCH NEXT @__p_2 ROWS ONLY" (0723d8ff)
+2020-11-14T13:07:20.5740533+07:00 0HM48CB0HCKC0:0000001D [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2020-11-14T13:07:20.6048663+07:00 0HM48CB0HCKC0:0000001D [INF] Executed action "KarmaCoreApp.Areas.Admin.Controllers.ProductController.GetAllPaging (KarmaCoreApp)" in 175.128ms (afa2e885)
+2020-11-14T13:07:20.6224670+07:00 0HM48CB0HCKC0:0000001D [INF] Request finished in 237.5631ms 200 application/json; charset=utf-8 (791a596a)
+2020-11-14T13:07:20.7549468+07:00 0HM48CB0HCKC0:0000001E [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin/product/GetAllPaging?categoryId=&keyword=22&page=1&pageSize=10   (ca22a1cb)
+2020-11-14T13:07:20.7704671+07:00 0HM48CB0HCKC0:0000001E [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-11-14T13:07:20.7848574+07:00 0HM48CB0HCKC0:0000001E [INF] Authorization was successful for user: "admin". (d7eb274a)
+2020-11-14T13:07:20.7983380+07:00 0HM48CB0HCKC0:0000001E [INF] Executing action method "KarmaCoreApp.Areas.Admin.Controllers.ProductController.GetAllPaging (KarmaCoreApp)" with arguments (["", "22", "1", "10"]) - ModelState is Valid (ba7f4ac2)
+2020-11-14T13:07:20.8122154+07:00 0HM48CB0HCKC0:0000001E [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=KarmaCoreApp.Data.EF " (9958f5bb)
+2020-11-14T13:07:20.8263247+07:00 0HM48CB0HCKC0:0000001E [INF] Executed DbCommand ("0"ms) [Parameters=["@__keyword_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Products] AS [x]
+WHERE ([x].[Status] = 1) AND ((CHARINDEX(@__keyword_0, [x].[Name]) > 0) OR (@__keyword_0 = N''))" (0723d8ff)
+2020-11-14T13:07:20.8422116+07:00 0HM48CB0HCKC0:0000001E [INF] Executed DbCommand ("1"ms) [Parameters=["@__keyword_0='?' (Size = 4000), @__p_1='?', @__p_2='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id] AS [Id1], [x].[Name], [x].[CategoryId] AS [Id0], [x].[Image], [x].[Price], [x].[PromotionPrice], [x].[OriginalPrice], [x].[Description], [x].[Content], [x].[HomeFlag], [x].[HotFlag], [x].[ViewCount], [x].[Tags], [x].[Unit], CASE
+    WHEN [x].[CategoryId] IS NOT NULL
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END, [x.ProductCategory].[Name] AS [Name0], [x.ProductCategory].[Description] AS [Description0], [x.ProductCategory].[ParentId], [x.ProductCategory].[HomeOrder], [x.ProductCategory].[Image] AS [Image0], [x.ProductCategory].[HomeFlag] AS [HomeFlag0], [x.ProductCategory].[SeoPageTitle], [x.ProductCategory].[SeoAlias], [x.ProductCategory].[SeoKeywords], [x.ProductCategory].[SeoDescription], [x.ProductCategory].[Status], [x.ProductCategory].[SortOrder], [x.ProductCategory].[DateCreated], [x.ProductCategory].[DateModified], [x.ProductCategory].[Id], [x].[Status] AS [Status0], [x].[DateCreated] AS [DateCreated0], [x].[DateModified] AS [DateModified0], [x].[SeoPageTitle] AS [SeoPageTitle0], [x].[SeoAlias] AS [SeoAlias0], [x].[SeoKeywords] AS [SeoKeywords0], [x].[SeoDescription] AS [SeoDescription0]
+FROM [Products] AS [x]
+INNER JOIN [ProductCategories] AS [x.ProductCategory] ON [x].[CategoryId] = [x.ProductCategory].[Id]
+WHERE ([x].[Status] = 1) AND ((CHARINDEX(@__keyword_0, [x].[Name]) > 0) OR (@__keyword_0 = N''))
+ORDER BY [DateCreated0] DESC
+OFFSET @__p_1 ROWS FETCH NEXT @__p_2 ROWS ONLY" (0723d8ff)
+2020-11-14T13:07:20.8548355+07:00 0HM48CB0HCKC0:0000001E [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2020-11-14T13:07:20.8687761+07:00 0HM48CB0HCKC0:0000001E [INF] Executed action "KarmaCoreApp.Areas.Admin.Controllers.ProductController.GetAllPaging (KarmaCoreApp)" in 83.5284ms (afa2e885)
+2020-11-14T13:07:20.8889237+07:00 0HM48CB0HCKC0:0000001E [INF] Request finished in 127.5005ms 200 application/json; charset=utf-8 (791a596a)
+2020-11-14T13:07:20.9228149+07:00 0HM48CB0HCKC0:0000001F [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin/product/GetAllPaging?categoryId=&keyword=22&page=1&pageSize=10   (ca22a1cb)
+2020-11-14T13:07:20.9455206+07:00 0HM48CB0HCKC0:0000001F [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-11-14T13:07:20.9618232+07:00 0HM48CB0HCKC0:0000001F [INF] Authorization was successful for user: "admin". (d7eb274a)
+2020-11-14T13:07:20.9776522+07:00 0HM48CB0HCKC0:0000001F [INF] Executing action method "KarmaCoreApp.Areas.Admin.Controllers.ProductController.GetAllPaging (KarmaCoreApp)" with arguments (["", "22", "1", "10"]) - ModelState is Valid (ba7f4ac2)
+2020-11-14T13:07:20.9912794+07:00 0HM48CB0HCKC0:0000001F [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=KarmaCoreApp.Data.EF " (9958f5bb)
+2020-11-14T13:07:21.0060882+07:00 0HM48CB0HCKC0:0000001F [INF] Executed DbCommand ("1"ms) [Parameters=["@__keyword_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Products] AS [x]
+WHERE ([x].[Status] = 1) AND ((CHARINDEX(@__keyword_0, [x].[Name]) > 0) OR (@__keyword_0 = N''))" (0723d8ff)
+2020-11-14T13:07:21.0242665+07:00 0HM48CB0HCKC0:0000001F [INF] Executed DbCommand ("1"ms) [Parameters=["@__keyword_0='?' (Size = 4000), @__p_1='?', @__p_2='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id] AS [Id1], [x].[Name], [x].[CategoryId] AS [Id0], [x].[Image], [x].[Price], [x].[PromotionPrice], [x].[OriginalPrice], [x].[Description], [x].[Content], [x].[HomeFlag], [x].[HotFlag], [x].[ViewCount], [x].[Tags], [x].[Unit], CASE
+    WHEN [x].[CategoryId] IS NOT NULL
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END, [x.ProductCategory].[Name] AS [Name0], [x.ProductCategory].[Description] AS [Description0], [x.ProductCategory].[ParentId], [x.ProductCategory].[HomeOrder], [x.ProductCategory].[Image] AS [Image0], [x.ProductCategory].[HomeFlag] AS [HomeFlag0], [x.ProductCategory].[SeoPageTitle], [x.ProductCategory].[SeoAlias], [x.ProductCategory].[SeoKeywords], [x.ProductCategory].[SeoDescription], [x.ProductCategory].[Status], [x.ProductCategory].[SortOrder], [x.ProductCategory].[DateCreated], [x.ProductCategory].[DateModified], [x.ProductCategory].[Id], [x].[Status] AS [Status0], [x].[DateCreated] AS [DateCreated0], [x].[DateModified] AS [DateModified0], [x].[SeoPageTitle] AS [SeoPageTitle0], [x].[SeoAlias] AS [SeoAlias0], [x].[SeoKeywords] AS [SeoKeywords0], [x].[SeoDescription] AS [SeoDescription0]
+FROM [Products] AS [x]
+INNER JOIN [ProductCategories] AS [x.ProductCategory] ON [x].[CategoryId] = [x.ProductCategory].[Id]
+WHERE ([x].[Status] = 1) AND ((CHARINDEX(@__keyword_0, [x].[Name]) > 0) OR (@__keyword_0 = N''))
+ORDER BY [DateCreated0] DESC
+OFFSET @__p_1 ROWS FETCH NEXT @__p_2 ROWS ONLY" (0723d8ff)
+2020-11-14T13:07:21.0424896+07:00 0HM48CB0HCKC0:0000001F [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2020-11-14T13:07:21.0625994+07:00 0HM48CB0HCKC0:0000001F [INF] Executed action "KarmaCoreApp.Areas.Admin.Controllers.ProductController.GetAllPaging (KarmaCoreApp)" in 97.7538ms (afa2e885)
+2020-11-14T13:07:21.0783699+07:00 0HM48CB0HCKC0:0000001F [INF] Request finished in 157.8289ms 200 application/json; charset=utf-8 (791a596a)
+2020-11-14T13:07:24.1520134+07:00 0HM48CB0HCKC0:00000020 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin/product/GetAllPaging?categoryId=&keyword=44&page=1&pageSize=10   (ca22a1cb)
+2020-11-14T13:07:24.1678305+07:00 0HM48CB0HCKC0:00000020 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-11-14T13:07:24.1815270+07:00 0HM48CB0HCKC0:00000020 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2020-11-14T13:07:24.1936926+07:00 0HM48CB0HCKC0:00000020 [INF] Executing action method "KarmaCoreApp.Areas.Admin.Controllers.ProductController.GetAllPaging (KarmaCoreApp)" with arguments (["", "44", "1", "10"]) - ModelState is Valid (ba7f4ac2)
+2020-11-14T13:07:24.2060859+07:00 0HM48CB0HCKC0:00000020 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=KarmaCoreApp.Data.EF " (9958f5bb)
+2020-11-14T13:07:24.2208465+07:00 0HM48CB0HCKC0:00000020 [INF] Executed DbCommand ("0"ms) [Parameters=["@__keyword_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Products] AS [x]
+WHERE ([x].[Status] = 1) AND ((CHARINDEX(@__keyword_0, [x].[Name]) > 0) OR (@__keyword_0 = N''))" (0723d8ff)
+2020-11-14T13:07:24.2375982+07:00 0HM48CB0HCKC0:00000020 [INF] Executed DbCommand ("1"ms) [Parameters=["@__keyword_0='?' (Size = 4000), @__p_1='?', @__p_2='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id] AS [Id1], [x].[Name], [x].[CategoryId] AS [Id0], [x].[Image], [x].[Price], [x].[PromotionPrice], [x].[OriginalPrice], [x].[Description], [x].[Content], [x].[HomeFlag], [x].[HotFlag], [x].[ViewCount], [x].[Tags], [x].[Unit], CASE
+    WHEN [x].[CategoryId] IS NOT NULL
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END, [x.ProductCategory].[Name] AS [Name0], [x.ProductCategory].[Description] AS [Description0], [x.ProductCategory].[ParentId], [x.ProductCategory].[HomeOrder], [x.ProductCategory].[Image] AS [Image0], [x.ProductCategory].[HomeFlag] AS [HomeFlag0], [x.ProductCategory].[SeoPageTitle], [x.ProductCategory].[SeoAlias], [x.ProductCategory].[SeoKeywords], [x.ProductCategory].[SeoDescription], [x.ProductCategory].[Status], [x.ProductCategory].[SortOrder], [x.ProductCategory].[DateCreated], [x.ProductCategory].[DateModified], [x.ProductCategory].[Id], [x].[Status] AS [Status0], [x].[DateCreated] AS [DateCreated0], [x].[DateModified] AS [DateModified0], [x].[SeoPageTitle] AS [SeoPageTitle0], [x].[SeoAlias] AS [SeoAlias0], [x].[SeoKeywords] AS [SeoKeywords0], [x].[SeoDescription] AS [SeoDescription0]
+FROM [Products] AS [x]
+INNER JOIN [ProductCategories] AS [x.ProductCategory] ON [x].[CategoryId] = [x.ProductCategory].[Id]
+WHERE ([x].[Status] = 1) AND ((CHARINDEX(@__keyword_0, [x].[Name]) > 0) OR (@__keyword_0 = N''))
+ORDER BY [DateCreated0] DESC
+OFFSET @__p_1 ROWS FETCH NEXT @__p_2 ROWS ONLY" (0723d8ff)
+2020-11-14T13:07:24.2502843+07:00 0HM48CB0HCKC0:00000020 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2020-11-14T13:07:24.2636253+07:00 0HM48CB0HCKC0:00000020 [INF] Executed action "KarmaCoreApp.Areas.Admin.Controllers.ProductController.GetAllPaging (KarmaCoreApp)" in 82.302ms (afa2e885)
+2020-11-14T13:07:24.2771547+07:00 0HM48CB0HCKC0:00000020 [INF] Request finished in 127.0648ms 200 application/json; charset=utf-8 (791a596a)
+2020-11-14T13:07:27.4039037+07:00 0HM48CB0HCKC0:00000021 [INF] Request starting HTTP/1.1 GET http://localhost:55321/admin/product/GetAllPaging?categoryId=&keyword=16&page=1&pageSize=10   (ca22a1cb)
+2020-11-14T13:07:27.4350692+07:00 0HM48CB0HCKC0:00000021 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-11-14T13:07:27.4586963+07:00 0HM48CB0HCKC0:00000021 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2020-11-14T13:07:27.4804612+07:00 0HM48CB0HCKC0:00000021 [INF] Executing action method "KarmaCoreApp.Areas.Admin.Controllers.ProductController.GetAllPaging (KarmaCoreApp)" with arguments (["", "16", "1", "10"]) - ModelState is Valid (ba7f4ac2)
+2020-11-14T13:07:27.4977027+07:00 0HM48CB0HCKC0:00000021 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=KarmaCoreApp.Data.EF " (9958f5bb)
+2020-11-14T13:07:27.5279997+07:00 0HM48CB0HCKC0:00000021 [INF] Executed DbCommand ("7"ms) [Parameters=["@__keyword_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Products] AS [x]
+WHERE ([x].[Status] = 1) AND ((CHARINDEX(@__keyword_0, [x].[Name]) > 0) OR (@__keyword_0 = N''))" (0723d8ff)
+2020-11-14T13:07:27.5515905+07:00 0HM48CB0HCKC0:00000021 [INF] Executed DbCommand ("1"ms) [Parameters=["@__keyword_0='?' (Size = 4000), @__p_1='?', @__p_2='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id] AS [Id1], [x].[Name], [x].[CategoryId] AS [Id0], [x].[Image], [x].[Price], [x].[PromotionPrice], [x].[OriginalPrice], [x].[Description], [x].[Content], [x].[HomeFlag], [x].[HotFlag], [x].[ViewCount], [x].[Tags], [x].[Unit], CASE
+    WHEN [x].[CategoryId] IS NOT NULL
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END, [x.ProductCategory].[Name] AS [Name0], [x.ProductCategory].[Description] AS [Description0], [x.ProductCategory].[ParentId], [x.ProductCategory].[HomeOrder], [x.ProductCategory].[Image] AS [Image0], [x.ProductCategory].[HomeFlag] AS [HomeFlag0], [x.ProductCategory].[SeoPageTitle], [x.ProductCategory].[SeoAlias], [x.ProductCategory].[SeoKeywords], [x.ProductCategory].[SeoDescription], [x.ProductCategory].[Status], [x.ProductCategory].[SortOrder], [x.ProductCategory].[DateCreated], [x.ProductCategory].[DateModified], [x.ProductCategory].[Id], [x].[Status] AS [Status0], [x].[DateCreated] AS [DateCreated0], [x].[DateModified] AS [DateModified0], [x].[SeoPageTitle] AS [SeoPageTitle0], [x].[SeoAlias] AS [SeoAlias0], [x].[SeoKeywords] AS [SeoKeywords0], [x].[SeoDescription] AS [SeoDescription0]
+FROM [Products] AS [x]
+INNER JOIN [ProductCategories] AS [x.ProductCategory] ON [x].[CategoryId] = [x.ProductCategory].[Id]
+WHERE ([x].[Status] = 1) AND ((CHARINDEX(@__keyword_0, [x].[Name]) > 0) OR (@__keyword_0 = N''))
+ORDER BY [DateCreated0] DESC
+OFFSET @__p_1 ROWS FETCH NEXT @__p_2 ROWS ONLY" (0723d8ff)
+2020-11-14T13:07:27.5702845+07:00 0HM48CB0HCKC0:00000021 [INF] Executed DbCommand ("1"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[Status], [dto].[DateCreated], [dto].[DateModified], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2020-11-14T13:07:27.5873937+07:00 0HM48CB0HCKC0:00000021 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2020-11-14T13:07:27.6069714+07:00 0HM48CB0HCKC0:00000021 [INF] Executed action "KarmaCoreApp.Areas.Admin.Controllers.ProductController.GetAllPaging (KarmaCoreApp)" in 153.4752ms (afa2e885)
+2020-11-14T13:07:27.6298996+07:00 0HM48CB0HCKC0:00000021 [INF] Request finished in 222.7019ms 200 application/json; charset=utf-8 (791a596a)

@@ -1,0 +1,63 @@
+﻿@{
+    ViewData["Title"] = "Index";
+}
+
+@section Styles{
+    <link href="~/admin-side/vendor/jquery-easyui/themes/material/easyui.css" rel="stylesheet" />
+    <link href="~/admin-side/vendor/jquery-easyui/themes/icon.css" rel="stylesheet" />
+}
+
+@section Scripts{
+    <script src="~/admin-side/vendor/jquery-easyui/jquery.easyui.min.js"></script>
+    <script src="~/app/controllers/product-category/index.js" asp-append-version="true"></script>
+    <script>
+        var productCategory = new productCategoryController;
+        productCategory.initialize();
+    </script>
+}
+
+<div class="row">
+    <div class="col">
+        <div class="card">
+            <!-- Card header -->
+            <div class="card-header" style="padding:1.5rem">
+                <div class="row">
+                    <div class="col-6">
+                        <h2 class="mb-0">Product Category - <small class="text-muted">List product category</small></h2>
+                    </div>
+                    <div class="col-6 text-right">
+                        <button class="btn btn-icon btn-primary" id="btnCreate" type="button">
+                            <span class="btn-inner--icon"><i class="fa fa-plus-circle"></i></span>
+                            <span class="btn-inner--text">Create</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Light table -->
+<div class="row">
+    <div class="col">
+        <div class="card">
+            <div class="card-body">
+                <div class="table-responsive py-4">
+                    <div id="datatable-basic_wrapper" class="dataTables_wrapper dt-bootstrap4">
+                        <!--Tree Data-->
+                        <div class="row">
+                            <div class="col">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <ul id="treeProductCategory"></ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--End Tree Data-->
+                    </div>
+                </div>
+                <!-- End Light table -->
+            </div>
+        </div>
+    </div>
+</div>
