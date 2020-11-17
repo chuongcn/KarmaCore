@@ -1,5 +1,6 @@
 ﻿using KarmaCoreApp.Application.Interfaces;
 using Microsoft.AspNetCore.Mvc;
+using System.Collections.Generic;
 
 namespace KarmaCoreApp.Areas.Admin.Controllers
 {
@@ -26,6 +27,50 @@ namespace KarmaCoreApp.Areas.Admin.Controllers
             return new OkObjectResult(model);
         }
 
-        #endregion Get Data API
+        [HttpPost]
+        public IActionResult UpdateParentId(int sourceId, int targetId, Dictionary<int, int> items)
+        {
+            if (!ModelState.IsValid)
+            {
+                return new BadRequestObjectResult(ModelState);
+            }
+            else
+            {
+                if (sourceId == targetId)
+                {
+                    return new BadRequestResult();
+                }
+                else
+                {
+                    _productCategoryService.UpdateParentId(sourceId, targetId, items);
+                    _productCategoryService.Save();
+                    return new OkResult();
+                }
+            }
+        }
+
+        [HttpPost]
+        public IActionResult ReOrder(int sourceId, int targetId)
+        {
+            if (!ModelState.IsValid)
+            {
+                return new BadRequestObjectResult(ModelState);
+            }
+            else
+            {
+                if (sourceId == targetId)
+                {
+                    return new BadRequestResult();
+                }
+                else
+                {
+                    _productCategoryService.ReOrder(sourceId, targetId);
+                    _productCategoryService.Save();
+                    return new OkResult();
+                }
+            }
+        }
+
+        #endregion 
     }
 }
