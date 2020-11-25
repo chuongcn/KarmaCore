@@ -41,7 +41,7 @@
                 if (res.Success) {
                     window.location.href = "/Admin/Home/Index";
                 } else {
-                    MessageNotification.show('Login failed', 'danger');                    
+                    MessageNotification.show('Login failed', 'danger');
                 }
             }
         })
