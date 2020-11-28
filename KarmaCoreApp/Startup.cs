@@ -83,6 +83,8 @@ namespace KarmaCoreApp
             services.AddTransient<IProductCategoryRepository, ProductCategoryRepository>();
             services.AddTransient<IFunctionRepository, FunctionRepository>();
             services.AddTransient<IProductRepository, ProductRepository>();
+            services.AddTransient<ITagRepository, TagRepository>();
+            services.AddTransient<IProductTagRepository, ProductTagRepository>();
 
             //Services
             services.AddTransient<IProductCategoryService, ProductCategoryService>();

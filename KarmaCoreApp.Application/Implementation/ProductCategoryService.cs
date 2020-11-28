@@ -6,7 +6,6 @@ using KarmaCoreApp.Data.Entities;
 using KarmaCoreApp.Data.Enums;
 using KarmaCoreApp.Data.IRepositories;
 using KarmaCoreApp.Infrastructure.Interfaces;
-using System;
 using System.Collections.Generic;
 using System.Linq;
 

@@ -1,7 +1,13 @@
 ﻿@{
     ViewData["Title"] = "Index";
 }
+@section Styles{
+    <link href="~/admin-side/vendor/jquery-easyui/themes/material/easyui.css" rel="stylesheet" />
+    <link href="~/admin-side/vendor/jquery-easyui/themes/icon.css" rel="stylesheet" />
+}
+
 @section Scripts{
+    <script src="~/admin-side/vendor/jquery-easyui/jquery.easyui.min.js"></script>   
     <script src="~/app/controllers/product/index.js"></script>
     <script>
         var product = new productController();
@@ -14,8 +20,14 @@
             <!-- Card header -->
             <div class="card-header" style="padding:1.5rem">
                 <div class="row">
-                    <div class="col-sm-12">
-                        <h2 class="mb-0">Product - <small class="text-muted">List products</small></h2>
+                    <div class="col-6">
+                        <h2 class="mb-0">Product <small class="text-muted">List product </small></h2>
+                    </div>
+                    <div class="col-6 text-right">
+                        <button class="btn btn-icon btn-primary" id="btnCreate" type="button">
+                            <span class="btn-inner--icon"><i class="fa fa-plus-circle"></i></span>
+                            <span class="btn-inner--text">Create</span>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -129,12 +141,13 @@
             {{{Status}}}
         </td>
         <td class="table-actions">
-            <a href="#!" class="table-action" data-toggle="tooltip" data-original-title="Edit product">
+            <a href="" class="table-action btn-edit" data-id="{{Id}}" data-toggle="tooltip" data-original-title="Edit product">
                 <i class="fas fa-user-edit"></i>
             </a>
-            <a href="#!" class="table-action table-action-delete" data-toggle="tooltip" data-original-title="Delete product">
+            <a href="" class="table-action table-action-delete btn-delete" data-id="{{Id}}" data-toggle="tooltip" data-original-title="Delete product">
                 <i class="fas fa-trash"></i>
             </a>
         </td>
     </tr>
 </script>
+@Html.Partial("_AddEditModal.cshtml")
